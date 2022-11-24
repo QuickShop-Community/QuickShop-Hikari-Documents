@@ -46,6 +46,8 @@ Fortunately, for the most of users, all you need to do is run a simple command:
 
 and you're done! Players now able to create and use shops and access to most features.
 
+To advanced permission setup, you check [here](./permissions.md).
+
 ## It's done
 
 Now QuickShop-Hikari can running on your server, for more settings, check the left navigation and see different sections.
