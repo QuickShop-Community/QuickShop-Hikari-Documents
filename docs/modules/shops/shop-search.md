@@ -12,7 +12,7 @@ Execute command `/qs find <itemname>`.
 
 Currently it only supports English name, we not support i18n name yet!
 
-## Thrid party addon
+## Third party addon
 
 There have a addon [[QuickShop Addon] Shop Search by Ronsane](https://www.spigotmc.org/resources/95104/) available on SpigotMC, you can use this addon for advanced shop searching.
 
