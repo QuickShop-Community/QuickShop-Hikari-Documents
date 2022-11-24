@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkquick_shop_hikari_documents=self.webpackChunkquick_shop_hikari_documents||[]).push([[3073],{3169:s=>{s.exports=JSON.parse('{"permalink":"/QuickShop-Hikari-Documents/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
