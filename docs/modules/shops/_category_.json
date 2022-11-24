@@ -1,0 +1,8 @@
+{
+  "label": "Shop Features",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "All features related to a quickshop."
+  }
+}
