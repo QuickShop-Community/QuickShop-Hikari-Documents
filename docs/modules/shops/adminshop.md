@@ -16,6 +16,6 @@ Looking an quickshop and execute `/qs unlimited` to toggle that shop between lim
 
 ## Automatic change the owner when a shop turn to unlimited
 
-You can turn on [`unlimited-shop-owner-change`](https://github.com/Ghost-chu/QuickShop-Hikari/blob/f7b12693d753fa9d2f147238b3afdf0e4030cfa6/quickshop-bukkit/src/main/resources/config.yml#L51) in config.yml, then configure [`unlimited-shop-owner-change-account`](https://github.com/Ghost-chu/QuickShop-Hikari/blob/f7b12693d753fa9d2f147238b3afdf0e4030cfa6/quickshop-bukkit/src/main/resources/config.yml#L55) in config.yml to an player username or uuid. Then all **new** unlimited shops will automatically transfer to specfic player.
+You can turn on `unlimited-shop-owner-change` in config.yml, then configure `unlimited-shop-owner-change-account` in config.yml to an player username or uuid. Then all **new** unlimited shops will automatically transfer to specfic player.
 
 The mechanic is not limited by the option that control maximum number of stores a player can create.
