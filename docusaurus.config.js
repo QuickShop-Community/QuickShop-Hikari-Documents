@@ -120,7 +120,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `License under Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
