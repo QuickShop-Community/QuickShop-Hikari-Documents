@@ -2,46 +2,23 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Welcome to QuickShop-Hikari Documents
 
-Let's discover **Docusaurus in less than 5 minutes**.
+QuickShop Hikari is a Shop plugin that allows players to create Chest Shops to easily sell and buy items, without the
+need for any commands.  
+In fact, all commands in QuickShop are not even needed for normal gameplay.
 
-## Getting Started
+This version of QuickShop ([Ghost-chu/QuickShop-Hikari][quickshop-hikari]) is a fork
+from [PotatoCraft-Studio's version][quickshop-potato] which itself is a fork from the [Reremake][quickshop-ghostchu] of
+the [original QuickShop][quickshop-original].
 
-Get started by **creating a new site**.
+QuickShop Hikari is maintained by Ghost-chu and has the goal to modernize the core content of QuickShop and adapt it to
+the latest versions of Minecraft.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+[quickshop-hikari]: https://github.com/Ghost-chu/QuickShop-Hikari
 
-### What you'll need
+[quickshop-potato]: https://github.com/PotatoCraft-Studio/QuickShop-Reremake/
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+[quickshop-ghostchu]: https://github.com/Ghost-chu/QuickShop-Reremake
 
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+[quickshop-original]: https://github.com/KaiKikuchi/QuickShop
