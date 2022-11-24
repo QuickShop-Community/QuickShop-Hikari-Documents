@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'QuickShop-Hikari User Documents',
   tagline: 'QuickShop-Hikari Wiki',
-  url: 'https://ghost-chu.github.io/QuickShop-Hikari-Documents',
-  baseUrl: '/',
+  url: 'https://ghost-chu.github.io/',
+  baseUrl: '/QuickShop-Hikari-Documents',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -57,7 +57,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'QuickShop-Hikari User Documents',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
