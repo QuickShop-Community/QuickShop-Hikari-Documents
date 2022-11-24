@@ -30,7 +30,7 @@ Drop the QuickShop jar into your `plugins` folder, start the server, then execut
 
 ![console test](./img/qs-command-test.png)
 
-If you see any errors in output, you can read FAQ section or join our Discord support server and ask in `#qs-support` channel.
+If you see any errors in output, you can read FAQ section or join our [Discord][dc] support server and ask in `#qsh-support` channel.
 
 ## Configure QuickShop to allow player use it
 
@@ -60,3 +60,4 @@ Now QuickShop-Hikari can running on your server, for more settings, check the le
 [plib]: https://www.spigotmc.org/resources/1997
 [luckperm]: https://luckperms.net/
 [qs-modrinth]: https://modrinth.com/plugin/quickshop-hikari
+[dc]: https://discord.gg/Bu3dVtmsD3
