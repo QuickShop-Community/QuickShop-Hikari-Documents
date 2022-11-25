@@ -55,3 +55,8 @@ limits:
 ```
 
 In this example, the player who have `linustechtips.cotton` permission can create up to `12345` shops.
+
+## Bypass permission
+
+QuickShop doesn't have limit bypass permission, but you could set the number to a number that big enough like 999999.  
+When a player have multiple ranks, QuickShop will pick the biggest one (more shops).
