@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkquick_shop_hikari_documents=self.webpackChunkquick_shop_hikari_documents||[]).push([[6808],{3957:e=>{e.exports=JSON.parse('{"permalink":"/QuickShop-Hikari-Documents/blog/tags/hello","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

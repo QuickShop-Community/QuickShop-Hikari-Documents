@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkquick_shop_hikari_documents=self.webpackChunkquick_shop_hikari_documents||[]).push([[7812],{213:s=>{s.exports=JSON.parse('{"label":"docusaurus","permalink":"/QuickShop-Hikari-Documents/blog/tags/docusaurus","allTagsPath":"/QuickShop-Hikari-Documents/blog/tags","count":4}')}}]);
