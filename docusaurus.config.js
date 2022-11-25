@@ -52,7 +52,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Ghost-chu/QuickShop-Hikari-Documents/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Ghost-chu/QuickShop-Hikari-Documents/tree/master/',
         },
         blog: false,
         theme: {
@@ -76,7 +76,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
           // { to: '/blog', label: 'Blog', position: 'left' },
           // {
@@ -89,12 +89,33 @@ const config = {
       footer: {
         style: 'dark',
         links: [
+          // {
+          //   title: 'Docs',
+          //   items: [
+          //     {
+          //       label: 'Tutorial',
+          //       to: '/docs/intro',
+          //     },
+          //   ],
+          // },
           {
-            title: 'Docs',
+            title: 'Get QuickShop-Hikari',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Modrinth',
+                href: 'https://modrinth.com/mod/quickshop-hikari',
+              },
+              {
+                label: 'SpigotMC',
+                href: 'https://www.spigotmc.org/resources/100125',
+              },
+              {
+                label: 'CodeMC CI',
+                href: 'https://ci.codemc.io/job/Ghost-chu/job/QuickShop-Hikari',
+              },
+              {
+                label: 'Github Releases',
+                href: 'https://github.com/Ghost-chu/QuickShop-Hikari',
               },
             ],
           },
@@ -102,16 +123,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/Bu3dVtmsD3',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Github',
+                href: 'https://github.com/Ghost-chu/QuickShop-Hikari/discussions',
+              },
+              {
+                label: 'SpigotMC',
+                href: 'https://www.spigotmc.org/threads/547268',
               },
             ],
           },
@@ -124,12 +145,16 @@ const config = {
               // },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/Ghost-chu/QuickShop-Hikari',
+              },
+              {
+                label: 'Paste Viewer',
+                href: 'https://ghost-chu.github.io/quickshop-hikari-paste-viewer',
               },
             ],
           },
         ],
-        copyright: `License under Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). Built with Docusaurus.`,
+        copyright: `Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
