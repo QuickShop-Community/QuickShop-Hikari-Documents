@@ -38,3 +38,17 @@ Same as Fill the stock, just take items out of shop container, then space will r
 You can name your shop for identify, the name will shown instead of location in logs and transactions.
 
 Looking at a quickshop, execute command `/qs name <name>` and you will name your quickshop.
+
+## Change the shop price
+
+You can change your shop price after shop created by use Control Panel.
+
+Looking at a quickshop, then click the `Price: xx [Change]` button, and enter new price in the chat.  
+
+![change-price](img/change-price.png)
+
+## Remove your shop
+
+To remove your quickshop, you can simple break the shop container, or use Control Panel.
+
+![click-to-remove-shop](img/remove-shop.png)
