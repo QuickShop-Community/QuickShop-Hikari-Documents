@@ -9,7 +9,7 @@ To check plugin's permission nodes, please click [here](../../setup/permissions.
 
 Looking at a quickshop, execute command `/qs permission group list` will listing all users you configured on this shop.
 
-![showcase1](img/per-shop-permission-management-group-list-demo2.png)
+![showcase1](img/per-shop-permission-management-group-list-demo.png)
 
 ## Default Shop Permission Groups
 
@@ -77,6 +77,8 @@ Looking at a quickshop and execute command `/qs permission user set <player> <gr
 If this player already in another group, it will be removed from old group.
 
 You can also use `/qs permission user unset <player>` to send player back to default group.
+
+![showcase2](img/per-shop-permission-management-group-list-demo2.png)
 
 ## Usage: Ban a player from your shop
 
