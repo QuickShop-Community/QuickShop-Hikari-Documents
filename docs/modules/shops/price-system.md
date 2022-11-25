@@ -16,7 +16,7 @@ enable: true
 
 ## Define unspecified item price limit
 
-You can limit the all items maxmiunm or minimal price that not match any rules.
+You can limit all items maximum or minimum price that not match any rules.
 
 ```yaml
 undefined: # This option not control by enable option, always enabled

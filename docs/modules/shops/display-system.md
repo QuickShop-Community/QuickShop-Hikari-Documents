@@ -16,12 +16,12 @@ Real DisplayItem is out of the box and doesn't need any configure.
 BUT, it will heavy impact the server performance when many shops are loaded in same time.  
 It also have risk that allow players dupe items, because the item is real exists on the server.
 
-## Virual DisplayItem
+## Virtual DisplayItem
 
 This work mode will send a Item packet to player's client to trick client display a floating item that above the shop container.  
 Player *can* see the item BUT it actually not exists on the server, it won't affect the server performance and more security.
 
-To use this feature, you need install [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/) and set `display-type` to `2`.
+To use this feature, you need to install [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/) and set `display-type` to `2`.
 
 ## Configuration
 
@@ -58,7 +58,7 @@ Note: If display item already globally disabled, it won't force spawn display it
 ## DisplayItem Guard
 
 When QuickShop working **under Real DisplayItem mode**, DisplayItem Guard will enabled to protect DisplayItem dupe with Hopper, Water etc.  
-Server administrators will receiver alert when player trying to dupe display items.  
+Server administrators will receive alert when player trying to dupe display items.  
 
 You can disable the alert by tweak the settings:
 

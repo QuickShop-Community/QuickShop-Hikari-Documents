@@ -2,10 +2,10 @@
 
 ## Player Protection
 
-By default, players that doesn't have permission or not the owner cannot remove another player's shop.  
+By default, players that don't have permission or not the owner cannot remove another player's shop.  
 And they also cannot open the shop container, put in items or take out items.
 
-But of some reason, you don't want QuicKShop handle shop protection, you can disable by tweak config settings to disable it like below:
+But for some reason, you don't want QuickShop handle shop protection, you can disable by tweak config settings to disable it like below:
 
 ```yaml
   #Should QS try to lock shops for other players?

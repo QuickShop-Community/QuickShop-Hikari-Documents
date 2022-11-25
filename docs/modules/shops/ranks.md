@@ -1,6 +1,6 @@
 # Ranks
 
-QuickShop provides a ranks system to allow control the maxmium shops that player can own.
+QuickShop provides a ranks system to allow control the maximum shops that player can own.
 
 ## Permission based
 
@@ -59,4 +59,4 @@ In this example, the player who have `linustechtips.cotton` permission can creat
 ## Bypass permission
 
 QuickShop doesn't have limit bypass permission, but you could set the number to a number that big enough like 999999.  
-When a player have multiple ranks, QuickShop will pick the biggest one (more shops).
+When a player has multiple ranks, QuickShop will pick the biggest one (more shops).

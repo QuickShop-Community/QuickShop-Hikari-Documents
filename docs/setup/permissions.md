@@ -4,7 +4,7 @@ Most QuickShop features are controlled by permission, you're able to control mos
 
 ## Basic LuckPerms Guide
 
-To give a group for the specfic permission, you can use:  
+To give a group for the specific permission, you can use:  
 **Grant**: `/lp group <group> permission set <permission> true`  
 
 Or revoke it by execute:  

@@ -4,7 +4,7 @@ QuickShop-Hikari supports some Multi-Currency economy plugin or bridge plugin, b
 
 ## Supported Economy Plugin
 
-QuickShop-Hikari current supports the multi-curreny economy plugin below:
+QuickShop-Hikari current supports the multi-Currency economy plugin below:
 
 * GemsEconomy
 * TheNewEconomy
@@ -28,7 +28,7 @@ Note: Only one processor can be enabled in same time which mean once you choose 
 
 ## Set default currency
 
-You need set a currency for default usage (like new shop default currency), configure it in config.yml:
+You need to set a currency for default usage (like new shop default currency),and configure it in config.yml:
 
 ```yaml
 # The currency used to create shops.
@@ -39,8 +39,8 @@ currency: ''
 
 ## Set multi-currency alternate symbol
 
-You can set a alternate for symbols, QuickShop-Hikari will use alternate for specfic currencies in text.
-
+You can set a alternate for symbols, QuickShop-Hikari will use alternate for specific currencies in text.
+ 
 ```yaml
   # This setting is for multi-currency setups.
   # If nothing matches in this list, it falls back to the name of currency itself.

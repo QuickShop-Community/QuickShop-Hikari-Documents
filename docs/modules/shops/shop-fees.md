@@ -42,7 +42,7 @@ You can refund the creation cost by turn on `shop.refund` option, and if you wan
 ## Price changing fee
 
 To prevent player change their shops price too frequently, you can turn on price changing fee by turn on option `shop.price-change-requires-fee`.  
-After option enabled, player need pay the tax account money that specficed by `shop.fee-for-price-change` option everytime their changes.
+After the option is enabled, player need pay the tax account money that specficed by `shop.fee-for-price-change` option everytime their changes.
 
 ## Naming fee
 
