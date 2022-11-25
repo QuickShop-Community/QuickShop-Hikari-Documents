@@ -79,7 +79,7 @@ tax-free-for-unlimited-shop: false
 show-tax: false
 ```
 
-## Transaction Tax
+### Transaction Tax
 
 For every transaction, we will took some amount from transaction for tax, it controlled by option `tax`.  
 
@@ -87,7 +87,7 @@ For every transaction, we will took some amount from transaction for tax, it con
 
 You can also turn on `show-tax` to allow player see the taxes included in transaction.
 
-## Tax Account
+### Tax Account
 
 By default, all tax were going to a account named `tax`.  
 Depends on the difference in economy plugins and the design of your server, default value may won't work well, and you might want change it.
