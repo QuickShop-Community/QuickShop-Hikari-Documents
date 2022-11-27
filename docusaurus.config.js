@@ -154,7 +154,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>. Built with Docusaurus.`,
+        copyright: `All contents are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

@@ -8,8 +8,8 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        QuickShop was designed to easy to use for players without any commands required for simple cases.
+        Put the chest, click the it, enter the price and go to go!
       </>
     ),
   },
@@ -18,18 +18,17 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        QuickShop let your players focus in the game, No need to remember complicated commands, Right-Click the sign and use Control Panel to edit shop properties.
+        In complex situations, auto-completion can also help players complete commands quickly.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Powered by Love and Cat paws',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        QuickShop-Hikari is a open-source and free software, try the most great shop plugin in Bukkit community without pay for it.
       </>
     ),
   },
