@@ -1,6 +1,6 @@
 # Item Reference (Item Lookup)
 
-In some situation, only use Material name is not enough.  
+In some situations, only use Material name is not enough.  
 
 ## Why
 
@@ -17,7 +17,7 @@ rules: # Rules set
     max: 1.00 # Max price (double)
 ```
 
-But if I want limit a Slimefun gadget?
+But if I want to limit a Slimefun gadget?
 
 ## Create a item reference
 

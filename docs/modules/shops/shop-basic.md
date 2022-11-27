@@ -4,7 +4,7 @@ This page of document will help you learn how to create and purchase a quickshop
 
 ## Create a selling shop
 
-First of all, you need put a shop container (e.g Chest), and under **Survival mode**, **left click** the container, QuickShop will ask you for price.  
+First of all, you need to put a shop container (e.g Chest), and under **Survival mode**, **left click** the container, QuickShop will ask you for the price.  
 Type `10` for price in chat, you will created a shop that selling items for 10$.  
 
 | Ask for price, enter in chat      | Shop Created                          |
@@ -43,7 +43,7 @@ Looking at a quickshop, execute command `/qs name <name>` and you will name your
 
 ## Change the shop price
 
-You can change your shop price after shop created by use Control Panel.
+You can change your shop price after shop created by using Control Panel.
 
 Looking at a quickshop, then click the `Price: xx [Change]` button, and enter new price in the chat.  
 

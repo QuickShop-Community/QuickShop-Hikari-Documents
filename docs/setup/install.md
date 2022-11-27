@@ -8,7 +8,7 @@ This will walk through installing QuickShop-Hikari on your Spigot server.
   * You also can use [Paper][paper] and it's fork for better compatibility, more features and higher performance.
 * Plugin [Vault][vault] for bridge economy system between QuickShop and your economy plugins.
 * Plugin [ProtocolLib][plib] for Virtual DisplayItem, Per-player localization.
-* Any Vault compatiable economy plugin like [XConomy][xconomy], If you have [EssentialsX][essx], it will also works well.
+* Any Vault compatible economy plugin like [XConomy][xconomy], If you have [EssentialsX][essx], it will also works well.
 * A permission management plugin like [LuckPerms][luckperm].
 
 In the following documents, we will assume that you are using the latest version of QuickShop-Hikari, ProtocolLib, XConomy, Vault and LuckPerms under Windows 11 operation system (Linux basiclly same).

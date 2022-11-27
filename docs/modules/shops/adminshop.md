@@ -16,6 +16,6 @@ Looking an quickshop and execute `/qs unlimited` to toggle that shop between lim
 
 ## Automatic change the owner when a shop turn to unlimited
 
-You can turn on `unlimited-shop-owner-change` in config.yml, then configure `unlimited-shop-owner-change-account` in config.yml to an player username or uuid. Then all **new** unlimited shops will automatically transfer to specfic player.
+You can turn on `unlimited-shop-owner-change` in config.yml, then configure `unlimited-shop-owner-change-account` in config.yml to an player username or uuid. Then all **new** unlimited shops will automatically transfer to specific player.
 
 The mechanic is not limited by the option that control maximum number of stores a player can create.

@@ -3,7 +3,7 @@
 QuickShop-Hikari provide a system to allow control every single shop's permissions.
 
 **THIS IS NOT PLUGIN PERMISSION NODES, IT IS SHOP LEVEL!**  
-To check plugin's permission nodes, please click [here](../../setup/permissions.md).
+To check the plugin's permission nodes, please click [here](../../setup/permissions.md).
 
 ## Check the current shop settings
 
@@ -13,7 +13,7 @@ Looking at a quickshop, execute command `/qs permission group list` will listing
 
 ## Default Shop Permission Groups
 
-QuickShop-Hikari have built-in groups at below:
+QuickShop-Hikari has built-in groups below:
 
 * quickshop-hikari.blocked - All players in this shop will cannot purchase this shop.
 * quickshop-hiakri.everyone - All undefined players will have this group's permissions.
@@ -22,7 +22,7 @@ QuickShop-Hikari have built-in groups at below:
 
 ## Default Shop Permission Permissions
 
-QuickShop-Hikati have built-in permissions in the list below:
+QuickShop-Hikari has built-in permissions in the list below:
 
 * quickshop-hikari.purchase  
   Any players who own this permission can purchase with this shop.
@@ -67,7 +67,7 @@ Incorrect group permissions configure will cause plugin stop working.
 
 :::
 
-Open `group.yml` and you will be able to edit permissions in every single groups.
+Open `group.yml` and you will be able to edit permissions in every single group.
 
 You cannot delete `quickshop-hikari.everyone`, `quickshop-hikari.staff` and `quickshop-hikari.administrator` groups. It may cause plugin working incorrectly.
 
