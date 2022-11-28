@@ -29,4 +29,3 @@ Depending on the implementation of different economy plugins, the assignment may
 When the amount is too small, rounding may occur due to the implementation of the economy plugin, or decimal precision may be lost such as `2.899999999999999`.
 
 QuickShop-Hikari have a workaround about this, but still, if this problem occurs, please do not report it as a bug, it is expected.
-
