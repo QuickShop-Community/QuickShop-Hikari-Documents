@@ -1,56 +1,56 @@
 # Installation
 
-This will walk through installing QuickShop-Hikari on your Spigot server.
+This page will walk you through the process of installing QuickShop-Hikari on your Spigot server.  
 
 ## Requirements
 
 * A [Spigot][spigot]-based Minecraft server (1.18.2 or higher, Java 17+)
-  * You also can use [Paper][paper] and it's fork for better compatibility, more features and higher performance.
-* Plugin [Vault][vault] for bridge economy system between QuickShop and your economy plugins.
-* Plugin [ProtocolLib][plib] for Virtual DisplayItem, Per-player localization.
-* Any Vault compatible economy plugin like [XConomy][xconomy], If you have [EssentialsX][essx], it will also works well.
+  * You can also use [Paper][paper], which is a fork of Spigot for better compatibility, more features and higher performance.
+* [Vault][vault] for bridging the economy system between QuickShop and your economy plugins.
+* [ProtocolLib][plib] for virtual display item, Per-player localization.
+* Any Vault compatible economy plugin, such as [XConomy][xconomy], If you have [EssentialsX][essx], it will also works well.
 * A permission management plugin like [LuckPerms][luckperm].
 
-In the following documents, we will assume that you are using the latest version of QuickShop-Hikari, ProtocolLib, XConomy, Vault and LuckPerms under Windows 11 operation system (Linux basiclly same).
+In this document, we assume that you are using the latest version of QuickShop-Hikari, ProtocolLib, XConomy, Vault and LuckPerms under Windows 11 operation system (Linux is basically the same).
 
-## Install dependencies
+## Installing dependencies
 
-Before install QuickShop-Hikari, you should make sure you have all dependencies including [Vault][vault], [ProtocolLib][plib], [XConomy][xconomy] (or [EssentialsX][essx] if you want) and [LuckPerms][luckperm] installed!
+Before installing QuickShop-Hikari, you should make sure that you have all dependencies installed, including [Vault][vault], [ProtocolLib][plib], [XConomy][xconomy] (or [EssentialsX][essx] if you want) and [LuckPerms][luckperm]!
 
-Just download them and drop into `plugins` folder and you're done!
+Download the plugins and drop them into `plugins` folder and you're all set!
 
-## Install QuickShop-Hikari
+## Installing QuickShop-Hikari
 
-Download latest QuickShop-Hikari from [Modrinth][qs-modrinth], if you find multiple files that have `Compat-` prefix in file name, ignore them in this step.  
-The only file you need download should have a **Primary** tag like the image below:
+Download the latest version of QuickShop-Hikari from [Modrinth][qs-modrinth], if you find multiple files that have `Compat-` prefix in file name, ignore them in this step.  
+The only file you need to download should have a **Primary** tag like this in the image below:
 
 ![download primary file](./img/download-primary.png)
 
-Drop the QuickShop jar into your `plugins` folder, start the server, then execute `qs` command in console. If your install properly, plugin commands help will output like the image below:
+Drop the QuickShop jar into your `plugins` folder, start the server, then execute `qs` in the console. If you properly installed the plugin, a command help page will pop-up like this in the image below:
 
 ![console test](./img/qs-command-test.png)
 
-If you see any errors in output, you can read FAQ section or join our [Discord][dc] support server and ask in `#qsh-support` channel.
+If you see any errors in the output, you can read the FAQ section or join our [Discord][dc] support server and ask them in the `#qsh-support` channel.
 
-## Configure QuickShop to allow player use it
+## Configure QuickShop to allow players to use it
 
-By default settings, players are unable to create their shops.
+By default, players are unable to create shops.
 
-To allow players create and own shops, you must grant the necessary permissions to players.
+To allow players to create and own shops, you must grant the necessary permissions to them.
 
-Fortunately, for the most of users, all you need to do is run a simple command:
+Fortunately, for most of the users, all you need to do is to run a simple command:
 
 ```mcfunction
 /lp group default permission set quickshop.player true
 ```
 
-and you're done! Players now able to create and use shops and access to most features.
+and you're done! Players are now able to create and use shops, they will also have access to other features.
 
-To advanced permission setup, you check [here](./permissions.md).
+For advanced permission setup, you can check [here](./permissions.md).
 
-## It's done
+## All set! You are good to go!
 
-Now QuickShop-Hikari can running on your server, for more settings, check the left navigation and see different sections.
+Now QuickShop-Hikari is running on your server, for more settings, check the navigation panel on the left and see different sections.
 
 [spigot]: https://www.spigotmc.org/wiki/buildtools/
 [paper]: https://papermc.io/
