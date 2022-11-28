@@ -3,9 +3,8 @@ sidebar_position: 1
 ---
 
 # Welcome to QuickShop-Hikari Documents
-
-QuickShop Hikari is a Shop plugin that allows players to create Chest Shops to easily sell and buy items, without the
-need for any commands.  
+ 
+QuickShop Hikari is a shop plugin for Minecraft that lets the players to create chest shops, which allows them to easily sell and buy items from others without using any commands.  
 In fact, all commands in QuickShop are not even needed for normal gameplay.
 
 This version of QuickShop ([Ghost-chu/QuickShop-Hikari][quickshop-hikari]) is a fork
