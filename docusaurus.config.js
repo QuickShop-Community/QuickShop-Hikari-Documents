@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'QuickShop-Hikari User Documents',
-  tagline: 'QuickShop-Hikari Wiki',
+  title: 'QuickShop-Hikari Docs',
+  tagline: 'QuickShop-Hikari User Documents',
   url: 'https://ghost-chu.github.io/',
   baseUrl: '/QuickShop-Hikari-Documents',
   onBrokenLinks: 'throw',
