@@ -8,7 +8,7 @@ To edit the limit rules, you need to open `price-restriction.yml` file.
 
 ## Enable the limiter
 
-Limiter are disabled by default, you must turn on it before edit the rules to let it take the effects.
+Limiter is disabled by default, you must turn on it before edit the rules to let it take the effects.
 
 ```yaml
 enable: true
