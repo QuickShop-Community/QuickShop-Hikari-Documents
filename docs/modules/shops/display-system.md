@@ -67,7 +67,7 @@ You can disable the alert by tweak the settings:
 send-display-item-protection-alert: false
 ```
 
-QuickShop also will check the all display items to make sure them still at the position they should be, and reset, respawn them when need. 
+QuickShop also will check all display items to make sure they are still at the position they should be, and reset, respawn them when need. 
 You can tweak the options below the change this:
 
 ```yaml

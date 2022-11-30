@@ -4,7 +4,7 @@ QuickShop provide a price limiter allow you specific the item's min or max price
 
 ![price-restricted](img/price-restricted.png)
 
-To edit the limit rules, you need open `price-restriction.yml` file.
+To edit the limit rules, you need to open `price-restriction.yml` file.
 
 ## Enable the limiter
 
@@ -75,7 +75,7 @@ The `currency` only works under [Multi Currency](../multi-currency.md) mode.
 The `min` means the item minimal price.  
 The `max` means the item maxmium price.  
 
-All items in one rule set share same price limit, to give different price limit, you must create another rule.  
+All items in one rule set to share the same price limit, to give different price limit, you must create another rule.   
 
 ## Permission
 

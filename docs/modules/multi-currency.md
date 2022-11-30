@@ -12,7 +12,7 @@ QuickShop-Hikari current supports the multi-Currency economy plugin below:
 
 ## Enable Multi-Currency support
 
-To enable multi-currency feature, you need configure QuickShop economy processor to a supported mode, this can be configured in config.yml:
+To enable multi-currency feature, you need to configure QuickShop economy processor to a supported mode, this can be configured in config.yml:
 
 ```yaml
 # What economy provider should QuickShop use?

@@ -43,7 +43,7 @@ You can purge them by execute command:
 /qs database purgelogs
 ```
 
-## Use Virual DisplayItem
+## Use Virtual DisplayItem
 
 :::note
 
@@ -59,7 +59,7 @@ See [DisplayItem System](shops/display-system.md)
 
 :::note
 
-This feature are **DISABLED** by default.
+This feature is **DISABLED** by default.
 
 :::  
 

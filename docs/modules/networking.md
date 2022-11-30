@@ -18,9 +18,9 @@ QuickShop/Hikari - 3.4.0.2 Java/17.0.3
 
 ## Use HTTP proxy
 
-In mose cases, you won't need this, but in some countries, you might cannot access our cloud services like CrowdinOTA or Paste.  
+In most cases, you won't need this, but in some countries, you might not access our cloud services like CrowdinOTA or Paste.  
 
-To configure http proxy, you need add the arguments in your JVM startup command line.
+To configure http proxy, you need to add the arguments in your JVM startup command line.
 
 ```bash
 java -Xmx4G ... <JVM FLAG> ... -jar server.jar nogui
@@ -28,7 +28,7 @@ java -Xmx4G ... <JVM FLAG> ... -jar server.jar nogui
 
 ## Set proxy JVM flag
 
-### Without authencation
+### Without authentication
 
 ```bash
 -Dcom.ghostchu.quickshop.QuickShop.proxyHost=<host> -Dcom.ghostchu.quickshop.QuickShop.proxyPort=<port>

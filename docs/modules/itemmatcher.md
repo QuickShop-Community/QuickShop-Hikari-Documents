@@ -27,7 +27,7 @@ matcher:
 ```
 
 By default, QuickShop-Hikari will use Bukkit's matcher to provide the best cross-compatibility.  
-But still, you can toggle to QuickShop Item Matcher if you need customize the comparing or running QuickShop on the server jar which have bug affect the Bukkit comparing system.
+But still, you can toggle to QuickShop Item Matcher if you need to customize the comparing or running QuickShop on the server jar which have bug affect the Bukkit comparing system.
 
 ## Customize the metadata compareing
 
