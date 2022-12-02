@@ -1,57 +1,57 @@
 # Permission
 
-Most QuickShop features are controlled by permission, you're able to control most feature by learn QuickShop-Hikari's permissions.
+Most QuickShop features are controlled by permissions, you are able to control most features by using QuickShop-Hikari's permissions.
 
 ## Basic LuckPerms Guide
 
-To give a group for the specific permission, you can use:  
+To give a group a specific permission, you can use:  
 **Grant**: `/lp group <group> permission set <permission> true`  
 
-Or revoke it by execute:  
+To revoke it, execute:  
 **Revoke**: `/lp group <group> permission unset <permission>`
 
-If a permission are included in a *Simple Permission*, you can explicit override to disable it:  
+If a permission is included in a *Simple Permission*, you can explicit override to disable it:  
 **Force disable**: `/lp group <group> permission set <permission> false`
 
-If you don't know what name for your group, just type `default`.  
-To learn more about LuckPerms, you can read their wiki [here](https://luckperms.net/wiki/Home).
+If you don't know what is the name of your group, use `default`.  
+To learn more about LuckPerms, you can read their wiki at [here](https://luckperms.net/wiki/Home).
 
 ## Simple Permissions
 
-QuickShop provides a simple permission that allow you quick setup permissions, they're:
+QuickShop provides a simple permission that allows you to quickly setup permissions, they are:
 
-`quickshop.player` which contains all [sub permission nodes](https://github.com/Ghost-chu/QuickShop-Hikari/blob/f7b12693d753fa9d2f147238b3afdf0e4030cfa6/quickshop-bukkit/src/main/resources/plugin.yml#L78) that player required.  
+`quickshop.player` which contains all [sub permission nodes](https://github.com/Ghost-chu/QuickShop-Hikari/blob/f7b12693d753fa9d2f147238b3afdf0e4030cfa6/quickshop-bukkit/src/main/resources/plugin.yml#L78) that players required.  
 `quickshop.moderator` which contains all [sub permission nodes](https://github.com/Ghost-chu/QuickShop-Hikari/blob/f7b12693d753fa9d2f147238b3afdf0e4030cfa6/quickshop-bukkit/src/main/resources/plugin.yml#L101) that moderators required.  
 
 The biggest advantage of using Simple Permission is that when a new permission is added to QuickShop, it will be automatically authorized without additional configuration.
 
 ## Details Permissions
 
-There is a detailed list of all QuickShop-Hikari permission nodes, you can grant/revoke them by command.
+There is a detailed list of all QuickShop-Hikari permission nodes, you can grant/revoke them by using command.
 
 ### Player Permissions
 
 * quickshop.use  
-  Required for any QuickShop Actions.
+  Required for any QuickShop actions.
 * quickshop.create.sell  
-  Required to make a shop (Sell-Mode)
+  Required to create a shop (Sell-Mode)
 * quickshop.create.buy  
-  Required to make a shop (Buy-Mode) or to switch from Sell to Buy-Mode.
+  Required to create a shop (Buy-Mode) or to switch from Sell to Buy-Mode.
 * quickshop.create.stacks  
   Required to allow selling items in stacks.
 * quickshop.create.changeitem  
-  Allows a player to change a shop's item.
+  Allows the player to change a shop's item.
 * quickshop.create.changeamount  
-  Allows a player to change the item amount per buy/sell.
+  Allows the player to change the amount per buy/sell.
 * quickshop.create.changeprice  
-  Allows a player to change the buy/sell price of their shops.
+  Allows the player to change the buy/sell price of their shops.
 * quickshop.create.double  
-  Allows a player to create a double chest shop.
+  Allows the player to create a double chest shop.
 * quickshop.create.cmd  
   Required to have access to the `/qs create` command.  
   This command may bypass certain protections of not-supported protection plugins!
 * quickshop.transfer  
-  Required to transfer all owned shops to another player.
+  Required to transfer shops to another player.
 * quickshop.find  
   Required to use `/qs find <item>`
 * quickshop.fetchmessage  
