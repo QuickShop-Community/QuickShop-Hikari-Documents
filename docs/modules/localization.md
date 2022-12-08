@@ -54,7 +54,7 @@ Type `/qs debug` in-game to turn on the debug mode, re-join the server or change
 
 ## Force to use single language
 
-If your server are not facing the players from worldwide, or you want force everybody only can see one language on your server, you can disable unused languages from config.yml.
+If your server is not facing players across the world, or if you want to disable specific languages on your server, you can set it in config.yml.
 
 ```yaml
 #Choose which languages should be enabled

@@ -43,11 +43,11 @@ You can purge them by execute command:
 /qs database purgelogs
 ```
 
-## Use Virual DisplayItem
+## Use Virtual DisplayItem
 
 :::note
 
-This feature are **ENABLED** by default but only works if you have ProtocolLib installed.
+This feature is **ENABLED** by default but only works if you have ProtocolLib installed.
 
 :::  
 
@@ -59,7 +59,7 @@ See [DisplayItem System](shops/display-system.md)
 
 :::note
 
-This feature are **DISABLED** by default.
+This feature is **DISABLED** by default.
 
 :::  
 
@@ -80,7 +80,7 @@ include-offlineplayer-list: false
 
 :::note
 
-This feature are **ENABLED** by default.
+This feature is **ENABLED** by default.
 
 :::
 
@@ -100,7 +100,7 @@ shop:
 
 :::note
 
-This feature are **DISABLED** by default.
+This feature is **DISABLED** by default.
 
 :::
 
@@ -119,11 +119,11 @@ shop:
 
 :::note
 
-This feature are **DISABLED** by default.
+This feature is **DISABLED** by default.
 
 :::
 
-If your server are not migrated from QuickShop-Reremake, you should keep this option off to avoid unnecessary sign metadata checks.
+If your server is not migrated from QuickShop-Reremake, you should keep this option off to avoid unnecessary sign metadata checks.
 
 ```yaml
 # Legacy data updater

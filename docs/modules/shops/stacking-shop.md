@@ -10,7 +10,7 @@ QuickShop allow you sell/buy multiple item in bundles.
 
 ## Configure
 
-Stacking shop feature are disabled by default. To enable it, you need configure the config.yml.
+Stacking shop feature is disabled by default. To enable it, you need to configure config.yml.
 
 ```yaml
 shop:
