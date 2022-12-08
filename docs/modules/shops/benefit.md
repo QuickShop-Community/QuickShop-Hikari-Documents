@@ -35,5 +35,5 @@ QuickShop-Hikari have a workaround about this, but still, if this problem occurs
 By default, for security, QuickShop-Hikari disallow add offline players into shop benefits, To remove this restriction, you must add the JVM Startup Flag like below:
 
 ```bash
--Dcom.ghostchu.quickshop.quickshop.command.subcommand.SubCommand_Benefit.allowOffline=true
+-Dcom.ghostchu.quickshop.command.subcommand.SubCommand_Benefit.allowOffline=true
 ```
