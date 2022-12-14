@@ -1,17 +1,17 @@
-# Differences from Hikari
+# Differences between Hikari and Reremake
 
-If you are a Reremake user, you may be confused about the difference between Hikari and Reremake.
+If you are a Reremake user, you may be confused about the differences between Hikari and Reremake.
 
-## Compare
+## Comparison
 
 ✔️ = Full Support  
-✔️+ = Full Support with enhanced  
+✔️+ = Enhanced full support  
 ❌ = Unsupported  
 ⚠️ = Partial Support (or doesn't work)  
 
 | Features                                                                                | Reremake                            | Hikari                   |
 | --------------------------------------------------------------------------------------- | ----------------------------------- | ------------------------ |
-| Minecraft Compatibility                                                                 | 1.16+                               | 1.18.2+                    |
+| Minecraft version compatibility                                                                 | 1.16+                               | 1.18.2+                    |
 | Simple interaction                                                                      | ✔️                                   | ✔️                        |
 | Full customize interaction                                                              | ❌                                   | ✔️                        |
 | NBT                                                                                     | ✔️                                   | ✔️                        |
@@ -57,8 +57,8 @@ If you are a Reremake user, you may be confused about the difference between Hik
 
 ## Which one should I use?
 
-Well, It depends on what is your needs.  
-If you have a old 1.16 server instance, Reremake is your only choice.  
-If you're in China which have GFW interfere, you also should consider Reremake because it doesn't need load libraries from Global Internet.  
+Well, it depends on what your needs are.  
+If you have an old 1.16 server instance, Reremake is your only choice.  
+If you are in China which has GFW interfere, you also should consider Reremake because it doesn't need to load libraries from Global Internet.  
 
-Otherwise, give Hikari a try!
+If none of these applies, give Hikari a try!
