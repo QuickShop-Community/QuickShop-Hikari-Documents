@@ -6,7 +6,7 @@ DiscordSRV addon will allow you hook QuickShop-Hikari into your [DiscordSRV](htt
 
 Addon will read DiscordSRV's player binding data and use DiscordSRV's API send embed messages to player.  
 
-Embed messages can be customize in use [Labguage Override System](../modules/localization.md).
+Embed messages can be customize in use [Language Override System](../modules/localization.md).
 
 ## Configuration
 
