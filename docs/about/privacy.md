@@ -19,7 +19,7 @@ To quit bStats metrics, you can disable bstats service in QuickShop-Hikari's con
 #Disallow QuickShop to send metrics data to bStats.
 #Please let the metrics enabled, it helps the author :).
 disabled-metrics: false
-```s
+```
 
 Note: The collected data won't deleted from bStats, to remove exists data, please contact bStats administrators.  
 Note: We respect your bStats global settings, if you has been disabled bStats in global, we won't send any data to bStats.  
