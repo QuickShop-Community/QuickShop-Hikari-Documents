@@ -15,7 +15,6 @@ All data collected will be displayed on this page: [bStats - QuickShop-Hikari](h
 To quit bStats metrics, you can disable bstats service in QuickShop-Hikari's configuration:
 
 ```yaml
-
 #Disallow QuickShop to send metrics data to bStats.
 #Please let the metrics enabled, it helps the author :).
 disabled-metrics: false
