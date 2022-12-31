@@ -10,6 +10,14 @@ To help translate QuickShop-Hikari, please visit our [Crowdin Homepage](https://
 
 ## Crowdin OTA
 
+:::info
+
+Due the unaffordable bills, we have temporarily disabled this service.  
+
+See [here](https://modrinth.com/plugin/quickshop-hikari/version/3.6.0.3) for details.
+
+:::
+
 QuickShop-Hikari will auto update translations from Crowdin via Crowdin OTA, all directly local changes will overrided when you reload QuickShop-Hikari or restart your server.
 
 Your installation will keep translations up-to-date without any touch.
