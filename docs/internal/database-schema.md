@@ -10,7 +10,14 @@ For the latest code definition for each table, see: [DataTables.java](https://gi
 
 ### `data`
 
-This data table stores all the existing store data on this server or the store data that has been deleted but is still referenced in a specific form, and does not contain coordinate information.
+This data table stores all the existing store data on this server or the store data that has been deleted but is still referenced in a specific form, and does not contain coordinate information.  
+No matter what, a data record should not be modified after it is created, until it got deleted.  
+Any new changes to the shop should create a new copy, apply the changes to the copy, and insert it as a new record.
+
+Basiclly, Copy-on-write.  
+
+A data record only be deleted from the database when no any table references their `data_id`.
+
 
 | Column Name     | DataType                 | Default             | Description                                                                                        |
 | --------------- | ------------------------ | ------------------- | -------------------------------------------------------------------------------------------------- |
@@ -32,7 +39,8 @@ This data table stores all the existing store data on this server or the store d
 
 ### `shops`
 
-This table is used to store shop to shop data mapping, so that shop ID will not change when shop data changes.
+This table is used to store shop to shop data mapping, so that shop ID will not change when shop data changes.  
+Multiple `shop_id` can correspond to the same `data_id`.
 
 | Column Name | DataType                 | Default        | Description                     |
 | ----------- | ------------------------ | -------------- | ------------------------------- |
