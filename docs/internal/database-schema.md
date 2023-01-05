@@ -83,10 +83,11 @@ This table is used to store the metadata, e.g database schema version.
 
 This table is used to store the player data, e.g locales.
 
-| Column Name | DataType                         | Default | Description                |
-| ----------- | -------------------------------- | ------- | -------------------------- |
-| uuid        | VARCHAR(36) NOT NULL Primary Key | N/A     | The player unique id       |
-| locale      | TEXT NOT NULL                    | N/A     | The player's client locale |
+| Column Name | DataType                         | Default | Description                      |
+| ----------- | -------------------------------- | ------- | -------------------------------- |
+| uuid        | VARCHAR(36) NOT NULL Primary Key | N/A     | The player unique id             |
+| locale      | VARCHAR(255) NOT NULL            | N/A     | The player's client locale       |
+| cachedName  | VARCHAR(255) NOT NULL            | N/A     | The player's username last known |
 
 ### `external_cache`
 
