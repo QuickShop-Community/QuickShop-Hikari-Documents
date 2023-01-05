@@ -14,4 +14,4 @@ QuickShop record the amounts of balance that deposit or withdraw, and re-withdra
 
 ## For Inventory
 
-QuickShop will take a snapshot for both shop inventory and player inventory, and re-set them when transaction failed.
+QuickShop will take a snapshot for both shop inventory and player inventory, and restore the snapshot them when transaction failed.
