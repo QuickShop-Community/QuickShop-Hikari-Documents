@@ -3,7 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-
+const DefaultLocale = 'en';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'QuickShop-Hikari Docs',
@@ -24,7 +24,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-Hans', 'zh-Hant'],
+    locales: ['af-ZA','ar-SA','bg-BG','ca-ES','cs-CZ','da-DK','de-DE','el-GR','en-US','es-ES','fi-FI','fr-FR','he-IL','hi-IN','hu-HU','it-IT','ja-JP','ko-KR','lt-LT','nl-NL','no-NO','pl-PL','pt-BR','pt-PT','ro-RO','ru-RU','sr-Cyrl','sr-SP','sv-SE','th-TH','tr-TR','uk-UA','vi-VN','zh-CN','zh-HK','zh-TW'],
   },
   themes: [
     // ... Your other themes.
@@ -51,8 +51,14 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Ghost-chu/QuickShop-Hikari-Documents/tree/master/',
+          editUrl: ({locale, versionDocsDirPath, docPath}) => {
+            // 将简体中文文档链接到 Crowdin
+            if (locale !== DefaultLocale) {
+              return `https://crowdin.com/project/quickshop-hikari-documents/${locale}`;
+            }
+            //  将英文文档链接到 GitHub
+            return `https://github.com/Ghost-chu/QuickShop-Hikari-Documents/edit/master/docs/${versionDocsDirPath}/${docPath}`;
+          },
         },
         blog: false,
         theme: {
@@ -77,6 +83,10 @@ const config = {
             docId: 'intro',
             position: 'left',
             label: 'Docs',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
           },
           // { to: '/blog', label: 'Blog', position: 'left' },
           // {
