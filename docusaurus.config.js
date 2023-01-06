@@ -3,7 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const DefaultLocale = 'en';
+const DefaultLocale = 'en-US';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'QuickShop-Hikari Docs',
@@ -23,7 +23,7 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
+    defaultLocale: 'en-US',
     locales: ['af-ZA','ar-SA','bg-BG','ca-ES','cs-CZ','da-DK','de-DE','el-GR','en-US','es-ES','fi-FI','fr-FR','he-IL','hi-IN','hu-HU','it-IT','ja-JP','ko-KR','lt-LT','nl-NL','no-NO','pl-PL','pt-BR','pt-PT','ro-RO','ru-RU','sr-Cyrl','sr-SP','sv-SE','th-TH','tr-TR','uk-UA','vi-VN','zh-CN','zh-HK','zh-TW'],
   },
   themes: [
