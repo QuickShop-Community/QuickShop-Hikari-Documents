@@ -3,7 +3,7 @@ api_token_env: CROWDIN_PERSONAL_TOKEN
 preserve_hierarchy: true
 files:
   # JSON 翻译文件
-  - source: /i18n/en/**/*
+  - source: /i18n/en-US/**/*
     translation: /i18n/%locale%/**/%original_file_name%
   # Markdown 文档文件 
   - source: /docs/**/*
