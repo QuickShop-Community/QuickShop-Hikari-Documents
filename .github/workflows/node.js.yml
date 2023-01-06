@@ -18,7 +18,8 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-      - run: npm run crowdin:sync
+      - name: Sync with Crowdin
+        run: npm run crowdin:sync
       - name: Build website
         run: npm run build
 
