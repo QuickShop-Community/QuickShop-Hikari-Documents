@@ -115,6 +115,28 @@ shop:
   display-auto-despawn: false
 ```
 
+## Enable Async Owner Name Fetch
+
+:::note
+
+This feature is **DISABLED** by default.
+
+You can adjust this option in `config.yml`:
+
+:::
+
+```yaml
+  #[BETA] Should we async fetch the owner name?
+  #If you enable this option, the calls for ContainerShop#ownerName will return the cached result.
+  #If the request out of cache, QuickShop-Hikari will allow up to 20 ms for sync fetch username.
+  #Then it will turn to background and return "N/A" this time.
+  #This may cause some display problems (e.g. the info sign will show that the shop owner is N/A)
+  #But once the cache is completed for fetching in the background, the next request will return the correct username
+  #This is very useful for large servers, because sometimes players may accidentally load a large number of long ago shops, resulting in a large number of main route IO requests for username queries and causing a spike in lagging
+  async-owner-name-fetch: false
+```
+
+
 ## Disable QuickShop-Reremake shop sign migrating
 
 :::note
@@ -132,3 +154,4 @@ If your server is not migrated from QuickShop-Reremake, you should keep this opt
 legacy-updater:
   shop-sign: false
 ```
+
