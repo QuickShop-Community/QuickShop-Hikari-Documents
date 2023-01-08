@@ -37,7 +37,7 @@ const config = {
         hashed: true,
         // For Docs using Chinese, The `language` is recommended to set to:
         // ```
-        // language: ["en", "zh"],
+         language: ["en", "zh","ar","da","de","du","es","fi","fr","hi","hu","it","ja","jp","ko","nl","no","pt","ro","ru","sv","ta","th","tr","vi"],
         // ```
       }),
     ],
@@ -52,11 +52,9 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: ({locale, versionDocsDirPath, docPath}) => {
-            // 将简体中文文档链接到 Crowdin
             if (locale !== DefaultLocale) {
               return `https://crowdin.com/project/quickshop-hikari-documents/${locale}`;
             }
-            //  将英文文档链接到 GitHub
             return `https://github.com/Ghost-chu/QuickShop-Hikari-Documents/edit/master/docs/${versionDocsDirPath}/${docPath}`;
           },
         },
