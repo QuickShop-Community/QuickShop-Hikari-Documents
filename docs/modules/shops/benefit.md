@@ -12,7 +12,7 @@ For example:
 * `/qs benefit add Venti 30%`
 
 In those commands, shop owner set split `50%` rewards to Nahida and `30%` to Venti.
-When a shop earn `100\$`, Nahida will get `50$` for rewards, and Venti will get `30$` for rewards, and shop owner will get remains `20%` (`20$`) for rewards.
+When a shop earn `100$`, Nahida will get `50$` for rewards, and Venti will get `30$` for rewards, and shop owner will get remains `20%` (`20$`) for rewards..
 
 ## Remove from benefits
 
