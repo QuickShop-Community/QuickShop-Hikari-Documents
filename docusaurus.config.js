@@ -24,20 +24,15 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en-US',
-    locales: ['af-ZA','ar-SA','bg-BG','ca-ES','cs-CZ','da-DK','de-DE','el-GR','en-US','es-ES','fi-FI','fr-FR','he-IL','hi-IN','hu-HU','it-IT','ja-JP','ko-KR','lt-LT','nl-NL','no-NO','pl-PL','pt-BR','pt-PT','ro-RO','ru-RU','sr-Cyrl','sr-SP','sv-SE','th-TH','tr-TR','uk-UA','vi-VN','zh-CN','zh-HK','zh-TW'],
+    locales: ['af-ZA', 'ar-SA', 'bg-BG', 'ca-ES', 'cs-CZ', 'da-DK', 'de-DE', 'el-GR', 'en-US', 'es-ES', 'fi-FI', 'fr-FR', 'he-IL', 'hi-IN', 'hu-HU', 'it-IT', 'ja-JP', 'ko-KR', 'lt-LT', 'nl-NL', 'no-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ro-RO', 'ru-RU', 'sr-Cyrl', 'sr-SP', 'sv-SE', 'th-TH', 'tr-TR', 'uk-UA', 'vi-VN', 'zh-CN', 'zh-HK', 'zh-TW'],
   },
   themes: [
     // ... Your other themes.
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
-      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
       ({
-        // ... Your options.
-        // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
-        // For Docs using Chinese, The `language` is recommended to set to:
-        // ```
-         language: ["en", "zh","ar","da","de","du","es","fi","fr","hi","hu","it","ja","jp","ko","nl","no","pt","ro","ru","sv","ta","th","tr","vi"],
+        language: ["en", "zh", "ja", "de"],
         // ```
       }),
     ],
@@ -51,7 +46,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: ({locale, versionDocsDirPath, docPath}) => {
+          editUrl: ({ locale, versionDocsDirPath, docPath }) => {
             if (locale !== DefaultLocale) {
               return `https://crowdin.com/project/quickshop-hikari-documents/${locale}`;
             }
