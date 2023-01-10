@@ -1,6 +1,12 @@
-# Website
+# QuickShop-Hikari Documents
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This documents is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+
+### Help us translate / improve this document
+
+For translate, please check here: https://crowdin.com/project/quickshop-hikari-documents  
+
+If you want help us improve the page, please switch to `American English` and click `Edit this page` on the document bottom to open a Pull Request.
 
 ### Installation
 

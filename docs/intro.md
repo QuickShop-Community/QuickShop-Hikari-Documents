@@ -21,3 +21,11 @@ the latest versions of Minecraft.
 [quickshop-ghostchu]: https://github.com/Ghost-chu/QuickShop-Reremake
 
 [quickshop-original]: https://github.com/KaiKikuchi/QuickShop
+
+## Help us translate or improve the documents
+
+For translate, please check here: https://crowdin.com/project/quickshop-hikari-documents  
+
+If you want help us improve the page, please switch to `American English` and click `Edit this page` on the document bottom to open a Pull Request on Github.
+
+
