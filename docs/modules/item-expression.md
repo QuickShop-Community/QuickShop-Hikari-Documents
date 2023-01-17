@@ -34,7 +34,7 @@ This feature added since Hikari-4.0.0.0.
 Add `%` prefix before enchantment namespaced key.
 
 ```yaml
-- "minecraft:sharpness" # select all items with sharpness enchantment
-- "minecraft:sharpness|1|3" # select all items with sharpness enchantment but only the enchantment level between 1 and 3
-- "ecoenchants:soulbound" # it also support 3rd-party enchantments IF they registered into Bukkit enchantments registry...
+- "%minecraft:sharpness" # select all items with sharpness enchantment
+- "%minecraft:sharpness|1|3" # select all items with sharpness enchantment but only the enchantment level between 1 and 3
+- "%ecoenchants:soulbound" # it also support 3rd-party enchantments IF they registered into Bukkit enchantments registry...
 ```
