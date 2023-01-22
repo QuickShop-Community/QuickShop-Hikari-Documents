@@ -41,7 +41,7 @@ Same for days, months and hours.
 
 Available time units:
 
-* SECOND - 1 second
+* ~~SECOND - 1 second~~ DELETED DUE PERFORMANCE IMPACT
 * MINUTE - 1 mintue
 * HOUR - 1 hour
 * DAY - 1 day
