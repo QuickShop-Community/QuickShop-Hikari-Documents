@@ -41,8 +41,8 @@ Same for days, months and hours.
 
 Available time units:
 
-* ~~SECOND - 1 second~~ DELETED DUE PERFORMANCE IMPACT, all exists and new second rules will update every mintue instead
-* MINUTE - 1 mintue
+* ~~SECOND - 1 second~~ DELETED DUE PERFORMANCE IMPACT, all exists and new second rules will update every minute instead
+* MINUTE - 1 minute
 * HOUR - 1 hour
 * DAY - 1 day
 * WEEK - 1 week
