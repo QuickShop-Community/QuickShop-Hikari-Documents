@@ -43,6 +43,13 @@ Including:
 * Online Mode
 * Your QuickShop-Hikari unique ID
 
+### Regenerate QuickShop-Hikari unique ID
+
+While you install QuickShop-Hikari in fresh, the your unique ID will be generated and write into your `config.yml`.  
+The ID does not depend on any other information for calculation and is completely random, It is used in our bug tracking and other scenarios where different QuickShop-Hikari instances need to be identified.  
+
+In case you are sure that no addon is using this value, you can remove this from the configuration file so that QuickShop-Hikari will generate a new unique ID.
+
 ### Quit Rollbar Error Tracking
 
 To quit Rollbar Error Tracking, you can disable rollbar service in QuickShop-Hikari's configuration:
