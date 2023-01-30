@@ -31,6 +31,10 @@ features:
   mod-notify-shop-transfer: false
 ```
 
+## Per-player Settings
+
+Players are able to use `/qs discord <type> <enable/disable>` to toggle personal notifaction settings.
+
 ## Screenshot
 
 ![](https://user-images.githubusercontent.com/30802565/206912863-aecd677f-194a-40bf-8f2c-564f7e3be368.png)
