@@ -54,7 +54,7 @@ If you are a Reremake user, you may be confused about the differences between Hi
 | [Transaction System](../modules/transaction-system.md)                                  | ⚠️ (It doesn't work at all actually) | ✔️+                       |
 | Jar digital signature and integrity check self-protection                               | ✔️                                   | ❌                        |
 | Automatically adjust server configs                                                     | ✔️                                   | ❌                        |
-| Enchantments Filter                                                                     | ❌                                   | ❌                        |
+| Enchantments Filter                                                                     | ❌                                   | ✔️                        |
 | Buy & Sell in single block                                                              | ❌                                   | ❌                        |
 
 ## Which one should I use?
