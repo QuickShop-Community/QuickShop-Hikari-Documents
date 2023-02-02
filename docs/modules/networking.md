@@ -31,13 +31,13 @@ java -Xmx4G ... <JVM FLAG> ... -jar server.jar nogui
 ### Without authentication
 
 ```bash
--Dcom.ghostchu.quickshop.QuickShop.proxyHost=<host> -Dcom.ghostchu.quickshop.QuickShop.proxyPort=<port>
+-Dcom.ghostchu.quickshop.QuickShopBukkit.proxyHost=<host> -Dcom.ghostchu.quickshop.QuickShopBukkit.proxyPort=<port>
 ```
 
 ### With Basic authentication
 
 ```bash
--Dcom.ghostchu.quickshop.QuickShop.proxyHost=<host> -Dcom.ghostchu.quickshop.QuickShop.proxyPort=<port> -Dcom.ghostchu.quickshop.QuickShop.proxyUsername=<user> -Dcom.ghostchu.quickshop.QuickShop.proxyPassword=<password>
+-Dcom.ghostchu.quickshop.QuickShopBukkit.proxyHost=<host> -Dcom.ghostchu.quickshop.QuickShopBukkit.proxyPort=<port> -Dcom.ghostchu.quickshop.QuickShopBukkit.proxyUsername=<user> -Dcom.ghostchu.quickshop.QuickShopBukkit.proxyPassword=<password>
 ```
 
 ## Disable SSL verify
@@ -45,5 +45,5 @@ java -Xmx4G ... <JVM FLAG> ... -jar server.jar nogui
 To force ignore the SSL errors, you can add this startup flags to disable SSL verify.
 
 ```bash
--Dcom.ghostchu.quickshop.QuickShop.verifySSL=false
+-Dcom.ghostchu.quickshop.QuickShopBukkit.verifySSL=false
 ```
