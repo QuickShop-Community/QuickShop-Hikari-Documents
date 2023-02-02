@@ -110,3 +110,12 @@ To disable the CrowdinOTA, please add it in startup flag:
 -Dcom.ghostchu.quickshop.localization.text.SimpleTextManager.enableCrowdinOTA=false
 ```
 
+### Self-Hosted OTA Server
+
+If you self-hosted our translation server by using [CrowdinCopyDeploy](https://github.com/Ghost-chu/CrowdinCopyDeploy) tool, you're able to change the OTA server to yourself server.
+
+```shell
+-Dcom.ghostchu.quickshop.localization.text.SimpleTextManager=<YOUR_SERVER_ADDRESS>
+```
+
+
