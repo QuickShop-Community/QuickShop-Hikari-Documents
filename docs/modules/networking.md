@@ -7,13 +7,13 @@ Most of QuickShop-Hikari web requests doesn't use system proxy.
 User-Agent are unchangeable, it force hardcoded as:
 
 ```plain
-QuickShop/<fork-name> - <version> Java/<java-version>
+QuickShop/<fork-name>-<version> Java/<java-version>
 ```
 
 It looks like this:
 
 ```plain
-QuickShop/Hikari - 3.4.0.2 Java/17.0.3
+QuickShop/Hikari-3.4.0.2 Java/17.0.3
 ```
 
 ## Use HTTP proxy
