@@ -71,6 +71,12 @@ The Paste Viewer hosting on Github Pages, access the uploaded data through Cloud
 
 While we generating your Paste, we will censor your sensitive data, Don't send your Paste to anyone you don't trust.
 
+## IP Detecting
+
+We will send an IP lookup request to CloudFlare to determine if your server is located in mainland China. For more information, please see: [Regional legal restrictions](netease.md).
+
+The URL we will request: `https://cloudflare.com/cdn-cgi/trace`.
+
 ## Updater
 
 For checking update, QuickShop-Hikari will request CodeMC.io's Nexus for checking updates.  
