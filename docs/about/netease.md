@@ -13,7 +13,7 @@ This feature will request the CloudFlare network, see: [Privacy Policy -> IP Det
 We fully understand and respect the ownership of NetEase Games in its exclusive territories and are committed to protecting all of its interests from unlawful infringement.
 QuickShop-Hikari, as a community expansion component of Mojang Minecraft, is not recognized and protected by the laws of mainland China and risks infringement of its proprietary interests.
 
-We have seen that people in the community have received letters from NetEase's lawyers or have been sued, and although we have not seen official documents regarding this until now (2023/02/13), we have reason to believe that QuickShop-Hikari is potentially at risk of violating its interests and have risk of abuse.
+We have seen that people in the community have received letters from NetEase's lawyers or have been sued, and although we have not seen official documents regarding this until now (2023/02/13), we have reason to believe that QuickShop-Hikari is potentially at risk of violating its interests and have risk of abuse under their [Term of use](http://update.unisdk.163.com/html/latest_v5.html).
 
 For information, please refer to:
 
