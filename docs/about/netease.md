@@ -19,5 +19,5 @@ Therefore, in accordance with the relevant laws and regulations, we have taken t
 
 * IP address-based detection and blocking of QuickShop-Hikari in protected areas.
 
-QuickShop-Hikari is an [open source software](https://www.gnu.org/licenses/quick-guide-gplv3.zh-cn.html), anyone can fork and modify it, we have no right to ask other people to fork or modify our software. Therefore, the above stated restrictions are only valid for the official download channel of QuickShop-Hikari team.  
+QuickShop-Hikari is an [open source software](https://www.gnu.org/licenses/quick-guide-gplv3.zh-cn.html), anyone can fork and modify it, we have no right to ask other people to don't fork or don't modify our software. Therefore, the above stated restrictions are only valid for the official download channel of QuickShop-Hikari team.  
 If you are running a forked or modified version, please contact the author of the forked or modified version, the QuickShop-Hikari team cannot do anything about it.
