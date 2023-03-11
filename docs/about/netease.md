@@ -1,5 +1,11 @@
 # Regional legal restrictions
 
+:::info
+
+This restriction has been removed since 4.1.0.4.
+
+:::  
+
 Since 4.1.0.2, QuickShop-Hikari will no longer be allowed to run in regions where [NetEase Games is the exclusive distributor (e.g. Mainland China)](https://mc.163.com/) due to the potential legal and regulatory risks.
 
 This restriction cannot be lifted.

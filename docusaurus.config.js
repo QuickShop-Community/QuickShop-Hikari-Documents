@@ -51,7 +51,7 @@ const config = {
             if (locale !== DefaultLocale) {
               return `https://crowdin.com/project/quickshop-hikari-documents/${locale}`;
             }
-            return `https://github.com/Ghost-chu/QuickShop-Hikari-Documents/edit/master/docs/${versionDocsDirPath}/${docPath}`;
+            return `https://github.com/Ghost-chu/QuickShop-Hikari-Documents/edit/master/${versionDocsDirPath}/${docPath}`;
           },
         },
         blog: false,
