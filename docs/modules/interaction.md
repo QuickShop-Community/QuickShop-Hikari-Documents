@@ -55,5 +55,5 @@ The value value of the configuration indicates the action corresponding to the b
 * `NONE` - Do nothing.
 * `TRADE_INTERACTION` - If there is a shop at the target location, send the shop information panel. Otherwise ask the player for shop creation.
 * `CONTROL_PANEL` - If there is a shop at the target location, send the shop control panel. Otherwise do nothing.
-* `TRADE_DIRECT` - If there is a shop at the target location, directly purchase for 1x item (or 1x stack in stacking shop) without ask.'
+* `TRADE_DIRECT` - If there is a shop at the target location, directly purchase for 1x item (or 1x stack in stacking shop) without ask.
 * `TRADE_DIRECT_ALL` - If there is a shop at the target location, directly purchase for as much as possible items without ask. (same with type `all` keyword in the chat when quickshop asking the amount in purchase)
