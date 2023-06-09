@@ -11,7 +11,7 @@ Otherwise it will doesn't work at all.
 
 ## Commands
 
-`/qs display control <auto/enable/disable>`
+`/qs displaycontrol <auto/enable/disable>`
 
 * `auto` - Default behavior, will enable display on Java Edition clients, and disable on Bedrock clients.
 * `enable` - Always enable display on all clients. *If server disabled display items, this option will respect the server global settings.*
