@@ -102,9 +102,9 @@ game-language: default
 
 ## Disable CrowdinOTA
 
-If you're in the region which cannot access our OTA server, or you have a really slow connection, you can disable CrowdinOTA directly, QuickShop-Hikari will still use cached translations or bundled translations.
+If you're in a region which cannot access our OTA server, or you have a really slow connection, you can disable CrowdinOTA directly, QuickShop-Hikari will still use cached translations or bundled translations.
 
-To disable the CrowdinOTA, please add it in startup flag:
+To disable the CrowdinOTA, please add it in the startup flag:
 
 ```shell
 -Dcom.ghostchu.quickshop.localization.text.SimpleTextManager.enableCrowdinOTA=false
