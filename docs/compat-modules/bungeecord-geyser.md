@@ -1,6 +1,6 @@
 # BungeeCord-Geyser
 
-This is a BungeeCord plugin, you need install it on your BungeeCord's plugins folder.
+This is a BungeeCord plugin, you need install it on your BungeeCord's plugins folder, you also need depend plugin [Addon-BungeeCord](./bungeecord.md).
 
 ## How does it works
 
