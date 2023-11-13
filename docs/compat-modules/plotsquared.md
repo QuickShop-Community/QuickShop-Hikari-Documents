@@ -1,5 +1,11 @@
 # PlotSquared
 
+:::info
+
+Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at.md).
+
+:::
+
 This module added supports to [PlotSquared v6](https://www.spigotmc.org/resources/plotsquared-v6.77506/).
 
 ## How does it works

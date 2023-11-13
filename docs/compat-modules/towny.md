@@ -1,5 +1,11 @@
 # Towny
 
+:::info
+
+Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at.md).
+
+:::
+
 :::caution
 
 Warning! This is a SUPER COMPLEX module, read the guidelines carefully!

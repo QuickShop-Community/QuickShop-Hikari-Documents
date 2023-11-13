@@ -1,5 +1,11 @@
 # BentoBox
 
+:::info
+
+Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at.md).
+
+:::
+
 This compatibility module added [BentoBox](https://www.spigotmc.org/resources/73261) supports.
 
 ## How it works?

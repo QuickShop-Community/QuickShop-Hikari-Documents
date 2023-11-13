@@ -1,5 +1,11 @@
 # Velocity
 
+:::info
+
+Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at.md).
+
+:::
+
 This is a Velocity plugin, you need install it on your Velocity's plugins folder.
 
 ## How does it works

@@ -1,5 +1,11 @@
 # Residence
 
+:::info
+
+Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at.md).
+
+:::
+
 This module added [Residence](https://www.spigotmc.org/resources/residence-1-7-10-up-to-1-19.11480/) supports.
 
 ## How does it works

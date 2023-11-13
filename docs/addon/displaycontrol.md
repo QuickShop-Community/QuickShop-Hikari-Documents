@@ -1,5 +1,11 @@
 # DisplayControl Addon
 
+:::info
+
+Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at.md).
+
+:::
+
 DisplayControl Addon gives you the ability to allow player controls the display item behavior on different clients.
 
 **THIS ADDON ONLY WORKS WITH VIRTUAL DISPLAY ITEM TOGETHER**
