@@ -57,17 +57,19 @@ At the end of the conversion, regardless of whether the conversion was successfu
 Execute the command in the console:
 
 ```shell
-/quickshop-hikari:quickshop migratefromreremake (overwrite)
+/quickshop-hikari:quickshop migratefromreremake (overwrite) (migratelogs)
 ```
 
 > (overwrite): When a Reremake conflicts with a Hikari store during conversion, is the converter allowed to overwrite this conflicting Hikari store with data from the Reremake. It accepts `true` or `false`
+
+> (migratelogs): Should Hikari also migrate the history transactions logs from `qs.log` (and it's compressed archives) to new database? It still in beta, use at your own risks. Currently only support migrate Purchase logs.
 
 > /quickshop-hikari:quickshop: Since QuickShop-Hikari and QuickShop-Reremake are installed at the same time, there will be command contention issues. This command uses namespaces in order to solve the problem of commands being grabbed by Reremake.
 
 The following is a example of this command:
 
 ```shell
-/quickshop-hikari:quickshop migratefromreremake true
+/quickshop-hikari:quickshop migratefromreremake true false
 ```
 
 ### Converting
