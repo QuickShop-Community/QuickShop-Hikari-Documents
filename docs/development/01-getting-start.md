@@ -31,7 +31,13 @@ When there is a conflict between the article and the content in the Javadoc, ple
     <artifactId>quickshop-bukkit</artifactId>
     <version>VERSION HERE</version>
     <scope>provided</scope>
-    <classifier>shaded</classifier>
+</dependency>
+<!--You need also bring in quickshop-common module to your project so it will help you resolve our used 3rd-party libraries-->
+<dependency>
+    <groupId>com.ghostchu</groupId>
+    <artifactId>quickshop-common</artifactId>
+    <version>VERSION HERE</version>
+    <scope>provided</scope>
 </dependency>
 </dependencies>
 ```
