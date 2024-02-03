@@ -45,6 +45,7 @@ If you are a Reremake user, you may be confused about the differences between Hi
 | [Stacking Shop](../modules/shops/stacking-shop.md)                                      | ✔️                                   | ✔️                        |
 | [Command Alias](../modules/cmd-alias.md)                                                | ✔️                                   | ✔️                        |
 | [Item Reference (Item Lookup)](../modules/item-ref.md)                                  | ❌                                   | ✔️                        |
+| [Shop History](../modules/shops/shop-history.md)                                        | ❌                                   | ✔️                        |
 | [Economy Formatter](../modules/economy-formatter.md)                                    | ✔️                                   | ✔️                        |
 | [Database Backup (Exporter/Importer)](../modules/datasource.md)                         | ⚠️                                   | ✔️                        |
 | [Database Type](../modules/datasource.md)                                               | MySQL/SQLite                        | MySQL/H2                 |
@@ -60,7 +61,7 @@ If you are a Reremake user, you may be confused about the differences between Hi
 ## Which one should I use?
 
 Well, it depends on what your needs are.  
-If you have an old 1.15 server instance, Reremake is your only choice.  
-If you are in China which has GFW interfere, you also should consider Reremake because it doesn't need to load libraries from Global Internet.  
+If you have an old server (<1.18.2) instance, Reremake is your only choice.  
+~~If you are in China which has GFW interfere, you also should consider Reremake because it doesn't need to load libraries from Global Internet.~~ Solved in 6.0.0.0.  
 
 If none of these applies, give Hikari a try!
