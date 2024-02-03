@@ -51,7 +51,7 @@ You can set a alternate for symbols, QuickShop-Hikari will use alternate for spe
 
 ## Change the currency for shops
 
-Looking at a quickshop, execute `/qs currency <new-currency>` to change shop currency.
+Looking at a quickshop, execute `/quickshop currency <new-currency>` to change shop currency.
 
 ## Ongoing Fee Currency
 

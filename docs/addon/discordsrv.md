@@ -39,7 +39,7 @@ features:
 
 ## Per-player Settings
 
-Players are able to use `/qs discord <type> <enable/disable>` to toggle personal notifaction settings.
+Players are able to use `/quickshop discord <type> <enable/disable>` to toggle personal notifaction settings.
 
 ## Screenshot
 

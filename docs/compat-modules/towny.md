@@ -14,11 +14,11 @@ Warning! This is a SUPER COMPLEX module, read the guidelines carefully!
 
 ## Commands
 
-### /qs nation
+### /quickshop nation
 
 Nation sub-command allow you switch a quickshop between regular shop and nation shop.
 
-### /qs town
+### /quickshop town
 
 Town sub-command allow you switch a quickshop between regular shop and town shop.
 

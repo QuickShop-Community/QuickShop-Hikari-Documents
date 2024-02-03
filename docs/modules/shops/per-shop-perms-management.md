@@ -7,7 +7,7 @@ To check the plugin's permission nodes, please click [here](../../setup/permissi
 
 ## Check the current shop settings
 
-Looking at a quickshop, execute command `/qs permission group list` will listing all users you configured on this shop.
+Looking at a quickshop, execute command `/quickshop permission group list` will listing all users you configured on this shop.
 
 ![showcase1](img/per-shop-permission-management-group-list-demo.png)
 
@@ -17,7 +17,7 @@ QuickShop-Hikari has built-in groups below:
 
 * quickshop-hikari.blocked - All players in this shop will cannot purchase this shop.
 * quickshop-hiakri.everyone - All undefined players will have this group's permissions.
-* quickshop-hikari.staff - Use command `/qs staff` will add that player into this group.
+* quickshop-hikari.staff - Use command `/quickshop staff` will add that player into this group.
 * quickshop-hikari.administrator - Exactly same permission with shop owner, can do almost everything on this shop.
 
 ## Default Shop Permission Permissions
@@ -31,7 +31,7 @@ QuickShop-Hikari has built-in permissions in the list below:
 * quickshop-hikari.preview_shop  
   Any players who own this permission will have a `[Preview Item]` button on shop purchase info panel and allow to open this shop's preview GUI.
 * quickshop-hikari.search  
-  Any players who own this permission will make this shop visible on that player's `/qs find` results.
+  Any players who own this permission will make this shop visible on that player's `/quickshop find` results.
 * quickshop-hikari.delete  
   Any players who own this permission can delete this shop.
 * quickshop-hikari.alert.receive  
@@ -43,9 +43,9 @@ QuickShop-Hikari has built-in permissions in the list below:
 * quickshop-hikari.management_permission  
   Any players who own this permission can management the per-shop permissions on this shop.
 * quickshop-hikari.toggle_display  
-  Any players who own this permission can use command `/qs toggledisplay` to toggle per-shop display item.
+  Any players who own this permission can use command `/quickshop toggledisplay` to toggle per-shop display item.
 * quickshop-hikari.set_shoptype  
-  Any players who own this permission can use command `/qs buy` or `/qs sell` to switch shop type between selling and buying.
+  Any players who own this permission can use command `/quickshop buy` or `/quickshop sell` to switch shop type between selling and buying.
 * quickshop-hikari.set_price  
   Any players who own this permission can modify the price on this shop.
 * quickshop-hikari.set_item  
@@ -73,10 +73,10 @@ You cannot delete `quickshop-hikari.everyone`, `quickshop-hikari.staff` and `qui
 
 ## Assign players to specific permission group
 
-Looking at a quickshop and execute command `/qs permission user set <player> <group>`, then a player will assign to new group.  
+Looking at a quickshop and execute command `/quickshop permission user set <player> <group>`, then a player will assign to new group.  
 If this player already in another group, it will be removed from old group.
 
-You can also use `/qs permission user unset <player>` to send player back to default group.
+You can also use `/quickshop permission user unset <player>` to send player back to default group.
 
 ![showcase2](img/per-shop-permission-management-group-list-demo2.png)
 

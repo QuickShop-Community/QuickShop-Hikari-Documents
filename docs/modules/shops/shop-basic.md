@@ -39,7 +39,7 @@ Same as Fill the stock, just take items out of shop container, then space will r
 
 You can name your shop for identify, the name will shown instead of location in logs and transactions.
 
-Looking at a quickshop, execute command `/qs name <name>` and you will name your quickshop.
+Looking at a quickshop, execute command `/quickshop name <name>` and you will name your quickshop.
 
 ## Change the shop price
 

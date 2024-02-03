@@ -48,35 +48,39 @@ There is a detailed list of all QuickShop-Hikari permission nodes, you can grant
 * quickshop.create.double  
   Allows the player to create a double chest shop.
 * quickshop.create.cmd  
-  Required to have access to the `/qs create` command.  
+  Required to have access to the `/quickshop create` command.  
   This command may bypass certain protections of not-supported protection plugins!
 * quickshop.transfer  
   Required to transfer shops to another player.
 * quickshop.find  
-  Required to use `/qs find <item>`
+  Required to use `/quickshop find <item>`
 * quickshop.fetchmessage  
-  Required to use `/qs fetchmessage`
+  Required to use `/quickshop fetchmessage`
 * quickshop.staff  
-  Required to use `/qs staff` and all its subcommands.
+  Required to use `/quickshop staff` and all its subcommands.
 * quickshop.preview  
   Required to use the GUI Item Preview.
 * quickshop.currency  
-  Required to use the `/qs currency <currency>`
+  Required to use the `/quickshop currency <currency>`
 * quickshop.shopnaming  
-  Required to use the `/qs name <name>`
+  Required to use the `/quickshop name <name>`
 * quickshop.permission  
-  Required to use the `/qs permission`
+  Required to use the `/quickshop permission`
 * quickshop.benefit  
-  Required to use the `/qs benefit`
+  Required to use the `/quickshop benefit`
+* quickshop.sign  
+  Required to use the `/quickshop sign`
+* quickshop.history  
+  Required to use the `/quickshop history`
+* quickshop.suggestprice  
+  Required to use the `/quickshop suggestprice`
 
 ### Admin Permissions
 
 * quickshop.unlimited  
-  Required to use `/qs unlimited`
-* quickshop.alwayscounting  
-  Required to use `/qs alwayscounting`
+  Required to use `/quickshop unlimited`
 * quickshop.setowner  
-  Required to use /qs setowner
+  Required to use /quickshop setowner
 * quickshop.other.destroy  
   Allows the player to remove/destroy the shops of others.
 * quickshop.other.open  
@@ -98,29 +102,29 @@ There is a detailed list of all QuickShop-Hikari permission nodes, you can grant
 * quickshop.alerts  
   Required to receive notifications about possible cheating, plugin warnings and updates.
 * quickshop.info  
-  Required to use `/qs info`
+  Required to use `/quickshop info`
 * quickshop.debug  
-  Required to use `/qs debug`
+  Required to use `/quickshop debug`
 * quickshop.paste  
-  Required to use `/qs paste`
+  Required to use `/quickshop paste`
 * quickshop.purge  
-  Required to use `/qs purge`
+  Required to use `/quickshop purge`
 * quickshop.create.admin  
-  Required to bypass any protection-checks while creating a shop using `/qs supercreate`
+  Required to bypass any protection-checks while creating a shop using `/quickshop supercreate`
 * quickshop.tax  
   Permission to bypass the tax fee.
 * quickshop.tax.bypassunlimited  
   Permission to bypass the tax fee but only in the unlimited shop.
 * quickshop.cleanghost  
-  Permission to remove any broken shop using `/qs cleanghost`
+  Permission to remove any broken shop using `/quickshop cleanghost`
 * quickshop.export  
-  Permission to use `/qs export`  
+  Permission to use `/quickshop export`  
   This permission is pointless since the command is console only.
 * quickshop.recovery  
-  Permission to use `/qs recovery`  
+  Permission to use `/quickshop recovery`  
   This permission is pointless since the command is console only.
 * quickshop.removeworld  
-  Permission to remove all shops in a world using /qs removeworld
+  Permission to remove all shops in a world using /quickshop removeworld
 * quickshop.other.changeitem  
   Allows the player to change the item of someone's shop.
 * quickshop.other.changeamount  
@@ -129,5 +133,9 @@ There is a detailed list of all QuickShop-Hikari permission nodes, you can grant
   Allows the player to change the name of someone's shop.
 * quickshop.bypass.namefee  
   Allows the player to bypass the fee of shop naming.
+* quickshop.other.sign  
+  Allows a staff member to change the sign type of someone else's shop.
+* quickshop.other.history  
+  Permission to view the other's shop history
 * quickshop.database  
-  Permission to use `/qs database`
+  Permission to use `/quickshop database`

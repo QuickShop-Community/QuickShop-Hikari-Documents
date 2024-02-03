@@ -42,7 +42,7 @@ Translation support [MiniMessage](https://docs.adventure.kyori.net/minimessage/)
 
 ### Make it work
 
-Save and execute command `/qs reload` to make it works.
+Save and execute command `/quickshop reload` to make it works.
 
 ### Updating
 
@@ -50,7 +50,7 @@ The override file won't automatically update, you must do it by yourself once ou
 
 ### DEBUG: How I can know which locale code that Minecraft using?
 
-Type `/qs debug` in-game to turn on the debug mode, re-join the server or change the client language, the server console should print the locale code that you using.
+Type `/quickshop debug` in-game to turn on the debug mode, re-join the server or change the client language, the server console should print the locale code that you using.
 
 ## Force to use single language
 

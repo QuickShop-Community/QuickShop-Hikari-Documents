@@ -64,8 +64,8 @@ Note: The collected data won't deleted from Rollbar, to remove exists data, plea
 
 ## Paste
 
-When you creating a paste by `/qs paste` command, you data will upload to [Lucko's Bytebin](https://bytebin.lucko.me/).  
-To avoid data uploading, you can create local paste by using command `/qs paste file`, the paste will save to your local disk without uploading.
+When you creating a paste by `/quickshop paste` command, you data will upload to [Lucko's Bytebin](https://bytebin.lucko.me/).  
+To avoid data uploading, you can create local paste by using command `/quickshop paste file`, the paste will save to your local disk without uploading.
 
 The Paste Viewer hosting on Github Pages, access the uploaded data through CloudFlare Worker.
 

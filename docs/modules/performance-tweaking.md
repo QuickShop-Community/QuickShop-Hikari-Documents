@@ -15,7 +15,7 @@ While the QuickShop-Hikari working progress, some data will went to a isolated d
 Trim the isolated data can improve the plugin startup time and database query time.
 
 ```plain
-/qs database trim
+/quickshop database trim
 ```
 
 ## Purge the history logs
@@ -40,7 +40,7 @@ QuickShop-Hikari will record logs into database including:
 You can purge them by execute command:
 
 ```plain
-/qs database purgelogs
+/quickshop database purgelogs
 ```
 
 ## Use Virtual DisplayItem

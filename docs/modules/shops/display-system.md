@@ -50,7 +50,7 @@ Too many items in same region may hurt client fps, especially when you are in a 
 You can disable or enable display item for single shop by looking a quickshop and execute:
 
 ```mcfunction
-/qs toggledisplay
+/quickshop toggledisplay
 ```
 
 Note: If display item already globally disabled, it won't force spawn display items.
