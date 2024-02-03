@@ -11,7 +11,7 @@ If you are a Reremake user, you may be confused about the differences between Hi
 
 | Features                                                                                | Reremake                            | Hikari                   |
 | --------------------------------------------------------------------------------------- | ----------------------------------- | ------------------------ |
-| Minecraft version compatibility                                                                 | 1.16+                               | 1.18.2+                    |
+| Minecraft version compatibility                                                                 | 1.15+                               | 1.18.2+                    |
 | Simple interaction                                                                      | ✔️                                   | ✔️                        |
 | Full customize interaction                                                              | ❌                                   | ✔️                        |
 | NBT                                                                                     | ✔️                                   | ✔️                        |
@@ -60,7 +60,7 @@ If you are a Reremake user, you may be confused about the differences between Hi
 ## Which one should I use?
 
 Well, it depends on what your needs are.  
-If you have an old 1.16 server instance, Reremake is your only choice.  
+If you have an old 1.15 server instance, Reremake is your only choice.  
 If you are in China which has GFW interfere, you also should consider Reremake because it doesn't need to load libraries from Global Internet.  
 
 If none of these applies, give Hikari a try!
