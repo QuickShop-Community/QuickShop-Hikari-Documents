@@ -54,9 +54,9 @@ This operation requires that it must be performed on the main thread of the serv
 
 ```java
 Shop shop = ...;
-
-shop.onLoad(); // load the shop and put it into loaded shops list
-shop.onUnload(); // unload the shop and remove it from loaded shops list
+ShopManager manager = ...;
+manager.unloadShop(shop); // load the shop and put it into loaded shops list
+manager.loadShop(shop); // unload the shop and remove it from loaded shops list
 ```
 
 ## Delete or disable shop
@@ -65,9 +65,8 @@ This operation requires that it must be performed on the main thread of the serv
 
 ```java
 Shop shop = ...;
-
-shop.delete(); // Permanently delete this store, both memory and database
-shop.delete(true); // Delete this store from memory only, it still will load back from database in next loading
+ShopManager manager = ...;
+manager.deleteShop(shop) // Permanently delete this store, both memory and database
 ```
 
 ## Identify a store
@@ -75,13 +74,13 @@ shop.delete(true); // Delete this store from memory only, it still will load bac
 Please note that store locations are technically variable and you should not use coordinates to identify a store.  
 Also RuntimeRandomUniqueId should not be used to identify the store, as the name suggests, the value changes every time the server restarts, it should only be used to handle scenarios where the player interacts with the server.
 
-```
+```java
 long shopId = shop.getShopId(); // never changes unless this shop was deleted, it can be -1 if shop not ready yet, e.g ShopCreateEvent, use ShopCreateSuccessEvent instead.
 ```
 
 ## Getting a shop is buying mode or selling mode
 
-```
+```java
 ShopType type = shop.getShopType();
 // It can be ShopType.SELLING or ShopType.BUYING
 ```
@@ -90,7 +89,7 @@ ShopType type = shop.getShopType();
 
 Although the value is stored in the ItemStack in the implementation, you should not get this value directly from the ItemStack, it can be overwritten by the configuration in runtime.
 
-```
+```java
 int stackingAmount = shop.getShopStackingAmount();
 ```
 
