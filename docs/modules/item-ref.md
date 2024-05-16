@@ -21,7 +21,7 @@ But if I want to limit a Slimefun gadget?
 
 ## Create a item reference
 
-Holding the item you want to create a reference for, then execute command `/qs lookup create <name>`.
+Holding the item you want to create a reference for, then execute command `/quickshop lookup create <name>`.
 
 ![item-ref](./img/itemref.png)
 

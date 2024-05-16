@@ -12,13 +12,13 @@ This addon was added into QuickShop-Hikari at 4.1.0.0-SNAPSHOT
 
 :::
 
-This addon added a command `/qs list` to allow the player or server administrator to listing all shops.
+This addon added a command `/quickshop list` to allow the player or server administrator to listing all shops.
 
 
 ## Permissions
 
-* `quickshopaddon.list.self` - The permission to use `/qs list` to query self shops
-* `quickshopaddon.list.other` - The permission to use `/qs list <player_name>` to query others shops
+* `quickshopaddon.list.self` - The permission to use `/quickshop list` to query self shops
+* `quickshopaddon.list.other` - The permission to use `/quickshop list <player_name>` to query others shops
 
 ## Listing
 

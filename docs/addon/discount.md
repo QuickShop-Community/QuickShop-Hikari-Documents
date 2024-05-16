@@ -11,7 +11,7 @@ Discount Addon added Discount Code in your QuickShop-Hikari server.
 ## Permission
 
 * **quickshopaddon.discount.use** *(default: everyone)*  
-  Permission to use any `/qs discount` commands.
+  Permission to use any `/quickshop discount` commands.
 * **quickshopaddon.discount.bypass** *(default: OP)*  
   Permission to bypass the owner checks to force config discount codes, add non-self shops in allow list or remove a discount code.
 * **quickshopaddon.discount.create.server_all_shops** *(default: OP)*  
@@ -26,7 +26,7 @@ Discount Addon added Discount Code in your QuickShop-Hikari server.
 To create a discount code, you need use discount command:
 
 ```plain
-/qs discount create <code> <code-type> <rate> [max-usage] [threshold] [expired-time]
+/quickshop discount create <code> <code-type> <rate> [max-usage] [threshold] [expired-time]
 ```
 
 Command pretty long, but you have in-game command assistant to help you in your tab complete hint.  
@@ -37,14 +37,14 @@ Command pretty long, but you have in-game command assistant to help you in your 
 
 * SERVER_ALL_SHOPS (Applied to all shops in your server)
 * PLAYER_ALL_SHOPS (Applied to all shops belongs to code creator)
-* SPECIFIC_SHOPS (Applied to shops in allow list that added by command `/qs discount config <code> addshop`)
+* SPECIFIC_SHOPS (Applied to shops in allow list that added by command `/quickshop discount config <code> addshop`)
 
 ## Install a code
 
 To use a Discount Code, you need install them before purchase shops.
 
 ```plain
-/qs discount install <code>
+/quickshop discount install <code>
 ```
 
 The installed code will remember during this session.
@@ -54,7 +54,7 @@ The installed code will remember during this session.
 To uninstall a Discount Code, you need use command:
 
 ```plain
-/qs discount uninstall <code>
+/quickshop discount uninstall <code>
 ```
 
 ## Show detailes for a installed discount code
@@ -62,7 +62,7 @@ To uninstall a Discount Code, you need use command:
 To use `info` subcommand, you can query the code creator, range, remaining usage, expired time, threshold and discount rate.
 
 ```plain
-/qs disount info
+/quickshop disount info
 ```
 
 ![](https://user-images.githubusercontent.com/30802565/208291677-85469f8b-2c34-4563-bb57-619cfe70e105.png)
@@ -72,7 +72,7 @@ To use `info` subcommand, you can query the code creator, range, remaining usage
 To remove your a specified discount code, execute command:
 
 ```plain
-/qs discount remove <code>
+/quickshop discount remove <code>
 ```
 
 ## Check if discount code can be applied to specific shop

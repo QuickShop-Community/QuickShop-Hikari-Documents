@@ -8,7 +8,7 @@ Even set a shop to admin shop, **the shop owner still is you!**
 
 ## Set a shop to unlimited shop
 
-Looking an quickshop and execute `/qs unlimited` to toggle that shop between limited or unlimited.
+Looking an quickshop and execute `/quickshop unlimited` to toggle that shop between limited or unlimited.
 
 | Unlimited Shop                         | Limited Shop (Out of stock)            |
 | -------------------------------------- | -------------------------------------- |

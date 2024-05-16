@@ -16,7 +16,7 @@ This addon allows store owners to set a limit on the number of sales for their s
 
 ## Permissions
 
-* `quickshopaddon.limit.use` - Permission to use `/qs limit`
+* `quickshopaddon.limit.use` - Permission to use `/quickshop limit`
 
 ## Usage
 
@@ -27,7 +27,7 @@ This restriction does not reset periodically.
 Limit player purchases to a maximum of 32 items in this store:
 
 ```
-/qs limit set 32
+/quickshop limit set 32
 ```
 
 ### Periodic repetition limit
@@ -37,8 +37,8 @@ This restriction type allows resetting everyone's quota at certain intervals.
 Limit players to purchase up to 16 items per month.
 
 ```
-/qs limit set 32
-/qs limit period MONTH
+/quickshop limit set 32
+/quickshop limit period MONTH
 ```
 
 The system is based on the QuickShop-Hikari calendar system.  

@@ -42,7 +42,7 @@ Translation support [MiniMessage](https://docs.adventure.kyori.net/minimessage/)
 
 ### Make it work
 
-Save and execute command `/qs reload` to make it works.
+Save and execute command `/quickshop reload` to make it works.
 
 ### Updating
 
@@ -50,7 +50,7 @@ The override file won't automatically update, you must do it by yourself once ou
 
 ### DEBUG: How I can know which locale code that Minecraft using?
 
-Type `/qs debug` in-game to turn on the debug mode, re-join the server or change the client language, the server console should print the locale code that you using.
+Type `/quickshop debug` in-game to turn on the debug mode, re-join the server or change the client language, the server console should print the locale code that you using.
 
 ## Force to use single language
 
@@ -63,7 +63,7 @@ If your server is not facing players across the world, or if you want to disable
 #The language files will automatically update thorough Crowdin OTA system, you can translate it there:
 #https://crowdin.com/project/quickshop-hikari
 #If you want custom the language file, use language override system:
-#https://github.com/Ghost-chu/QuickShop-Hikari/wiki/Use-translation-override-system
+#https://ghost-chu.github.io/QuickShop-Hikari-Documents/docs/modules/localization
 enabled-languages:
   - '*'
 ```

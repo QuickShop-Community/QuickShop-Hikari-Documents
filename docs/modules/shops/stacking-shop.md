@@ -35,4 +35,4 @@ Note: The amount of items in one stack cannot up over the Item's max stacksize d
 
 ## Change the amount for stack
 
-To change the amount of item in your stacking shop, use command `/qs size <newamount>`.
+To change the amount of item in your stacking shop, use command `/quickshop size <newamount>`.

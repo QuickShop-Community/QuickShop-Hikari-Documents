@@ -4,7 +4,7 @@ QuickShop have a built-in shop searcher will allow you search the shops on your 
 
 ## Usage
 
-Execute command `/qs find <itemname>`.
+Execute command `/quickshop find <itemname>`.
 
 ![shopsearch](./img/shopfinding.png)
 

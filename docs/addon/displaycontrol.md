@@ -17,7 +17,7 @@ Otherwise, it will doesn't work at all.
 
 ## Commands
 
-`/qs displaycontrol <auto/enable/disable>`
+`/quickshop displaycontrol <auto/enable/disable>`
 
 * `auto` - Default behavior, will enable display on Java Edition clients, and disable on Bedrock clients.
 * `enable` - Always enable display on all clients. *If the server disabled display items, this option will respect the server global settings.*
@@ -25,7 +25,7 @@ Otherwise, it will doesn't work at all.
 
 ## Permissions
 
-* `quickshopaddon.displaycontrol.use` - Allows players to use `/qs displaycontrol` commands
+* `quickshopaddon.displaycontrol.use` - Allows players to use `/quickshop displaycontrol` commands
 
 ## Demo
 
