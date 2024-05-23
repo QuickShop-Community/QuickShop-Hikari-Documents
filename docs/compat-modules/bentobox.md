@@ -6,10 +6,10 @@ Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-
 
 :::
 
-This compatibility module added [BentoBox](https://www.spigotmc.org/resources/73261) supports.
+This compatibility module adds [BentoBox](https://www.spigotmc.org/resources/73261) support.
 
-## How it works?
+## How does it work?
 
-Compatibility Module will register a listener to listen IslandDeletedEvent, IslandResettedEvent, TeamLeaveEvent and TeamKickEvent calls, and remove shops while island got deleted or team member kicked from that island.
+Compatibility Module will register a listener to listen for IslandDeletedEvent, IslandResettedEvent, TeamLeaveEvent and TeamKickEvent calls, and will remove shops when an island gets deleted or a team member is kicked from that island.
 
-In same time, we allow island owner override all shops permissions on their island, so island owner can modify or remove all of shops on their island even not created by island owner.
+It also allows the island owner to override all shops permissions on their island, so the island owner can modify or remove all of the shops on their island, even those not created by the island owner.
