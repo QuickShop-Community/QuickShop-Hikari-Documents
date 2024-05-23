@@ -6,8 +6,8 @@ Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-
 
 :::
 
-ARM compatibility module added [AdvancedRegionMarket](https://www.spigotmc.org/resources/advancedregionmarket.58732/) supports.
+The ARM compatibility module adds [AdvancedRegionMarket](https://www.spigotmc.org/resources/advancedregionmarket.58732/) support.
 
-## How it works?
+## How does it work?
 
-Compatibility Module will register a listener to listen RemoveRegionEvent and RestoreRegionEvent calls, and remove shops in those regions.
+The ARM Compatibility Module will register a listener to listen for RemoveRegionEvent and RestoreRegionEvent calls, and will remove shops in those regions.
