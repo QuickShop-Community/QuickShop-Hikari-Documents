@@ -14,7 +14,7 @@ the [original QuickShop][quickshop-original].
 QuickShop Hikari is maintained by Ghost-chu and has the goal to modernize the core content of QuickShop and adapt it to
 the latest versions of Minecraft.
 
-[quickshop-hikari]: https://github.com/Ghost-chu/QuickShop-Hikari
+[quickshop-hikari]: https://github.com/QuickShop-Community/QuickShop-Hikari
 
 [quickshop-potato]: https://github.com/PotatoCraft-Studio/QuickShop-Reremake/
 

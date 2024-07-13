@@ -10,7 +10,7 @@ Since 4.1.0.2, QuickShop-Hikari will no longer be allowed to run in regions wher
 
 This restriction cannot be lifted.
 
-For more information on how this mechanism works, please refer to: [EnvironmentChecker](https://github.com/Ghost-chu/QuickShop-Hikari/blob/hikari/quickshop-bukkit/src/main/java/com/ghostchu/quickshop/util/envcheck/EnvironmentChecker.java).
+For more information on how this mechanism works, please refer to: [EnvironmentChecker](https://github.com/QuickShop-Community/QuickShop-Hikari/blob/hikari/quickshop-bukkit/src/main/java/com/ghostchu/quickshop/util/envcheck/EnvironmentChecker.java).
 
 This feature will request the CloudFlare network, we have changed our privacy policy, see: [Privacy Policy -> IP Detecting](privacy.md)
 

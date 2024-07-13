@@ -22,7 +22,7 @@ Because all local changes will lost on restart or reload, it's impossible to edi
 
 Before using the override system, You must get the original translation file from the Github (because the local override file is an empty file by default).
 
-[Click Here](https://github.com/Ghost-chu/QuickShop-Hikari/tree/hikari/crowdin/lang)
+[Click Here](https://github.com/QuickShop-Community/QuickShop-Hikari/tree/hikari/crowdin/lang)
 
 Search your locale and click in, then download the translation.
 
@@ -63,7 +63,7 @@ If your server is not facing players across the world, or if you want to disable
 #The language files will automatically update thorough Crowdin OTA system, you can translate it there:
 #https://crowdin.com/project/quickshop-hikari
 #If you want custom the language file, use language override system:
-#https://ghost-chu.github.io/QuickShop-Hikari-Documents/docs/modules/localization
+#https://quickShop-community.github.io/QuickShop-Hikari-Documents/docs/modules/localization
 enabled-languages:
   - '*'
 ```

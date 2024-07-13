@@ -8,7 +8,7 @@ const DefaultLocale = 'en-US';
 const config = {
   title: 'QuickShop-Hikari Docs',
   tagline: 'QuickShop-Hikari User Documents',
-  url: 'https://ghost-chu.github.io/',
+  url: 'https://quickshop-community.github.io/',
   baseUrl: '/QuickShop-Hikari-Documents',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -16,7 +16,7 @@ const config = {
   trailingSlash: false,
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Ghost-chu', // Usually your GitHub org/user name.
+  organizationName: 'QuickShop-Community', // Usually your GitHub org/user name.
   projectName: 'QuickShop-Hikari-Documents', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -51,7 +51,7 @@ const config = {
             if (locale !== DefaultLocale) {
               return `https://crowdin.com/project/quickshop-hikari-documents/${locale}`;
             }
-            return `https://github.com/Ghost-chu/QuickShop-Hikari-Documents/edit/master/${versionDocsDirPath}/${docPath}`;
+            return `https://github.com/QuickShop-Community/QuickShop-Hikari-Documents/edit/master/${versionDocsDirPath}/${docPath}`;
           },
         },
         blog: false,
@@ -119,7 +119,7 @@ const config = {
               },
               {
                 label: 'Github Releases',
-                href: 'https://github.com/Ghost-chu/QuickShop-Hikari',
+                href: 'https://github.com/QuickShop-Community/QuickShop-Hikari',
               },
             ],
           },
@@ -132,7 +132,7 @@ const config = {
               },
               {
                 label: 'Github',
-                href: 'https://github.com/Ghost-chu/QuickShop-Hikari/discussions',
+                href: 'https://github.com/QuickShop-Community/QuickShop-Hikari/discussions',
               },
               {
                 label: 'SpigotMC',
@@ -149,7 +149,7 @@ const config = {
               // },
               {
                 label: 'GitHub',
-                href: 'https://github.com/Ghost-chu/QuickShop-Hikari',
+                href: 'https://github.com/QuickShop-Community/QuickShop-Hikari',
               },
               {
                 label: 'Paste Viewer',

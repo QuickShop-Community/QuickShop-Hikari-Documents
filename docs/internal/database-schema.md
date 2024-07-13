@@ -6,7 +6,7 @@ This chapter will explain the implementation details of QuickShop Hikari's datab
 
 This section explains the database tables created by QuickShop-Hikari.  
 Unless otherwise specified, the initial `qs_` in table name is the table prefix.  
-For the latest code definition for each table, see: [DataTables.java](https://github.com/Ghost-chu/QuickShop-Hikari/blob/hikari/quickshop-bukkit/src/main/java/com/ghostchu/quickshop/database/DataTables.java)
+For the latest code definition for each table, see: [DataTables.java](https://github.com/QuickShop-Community/QuickShop-Hikari/blob/hikari/quickshop-bukkit/src/main/java/com/ghostchu/quickshop/database/DataTables.java)
 
 ### `data`
 
@@ -128,5 +128,5 @@ TODO
 TODO
 
 [ItemStack]: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html
-[YAML ItemStack Serialize]: https://github.com/Ghost-chu/QuickShop-Hikari/blob/dc8a1b3da68f1c4367328b4647be77f8d4aa9468/quickshop-bukkit/src/main/java/com/ghostchu/quickshop/util/Util.java#L1039
-[ShopType Id]: https://github.com/Ghost-chu/QuickShop-Hikari/blob/dc8a1b3da68f1c4367328b4647be77f8d4aa9468/quickshop-api/src/main/java/com/ghostchu/quickshop/api/shop/ShopType.java#L12
+[YAML ItemStack Serialize]: https://github.com/QuickShop-Community/QuickShop-Hikari/blob/dc8a1b3da68f1c4367328b4647be77f8d4aa9468/quickshop-bukkit/src/main/java/com/ghostchu/quickshop/util/Util.java#L1039
+[ShopType Id]: https://github.com/QuickShop-Community/QuickShop-Hikari/blob/dc8a1b3da68f1c4367328b4647be77f8d4aa9468/quickshop-api/src/main/java/com/ghostchu/quickshop/api/shop/ShopType.java#L12

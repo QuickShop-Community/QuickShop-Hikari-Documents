@@ -20,8 +20,8 @@ To learn more about LuckPerms, you can read their wiki at [here](https://luckper
 
 QuickShop provides a simple permission that allows you to quickly setup permissions, they are:
 
-`quickshop.player` which contains all [sub permission nodes](https://github.com/Ghost-chu/QuickShop-Hikari/blob/f7b12693d753fa9d2f147238b3afdf0e4030cfa6/quickshop-bukkit/src/main/resources/plugin.yml#L78) that players required.  
-`quickshop.moderator` which contains all [sub permission nodes](https://github.com/Ghost-chu/QuickShop-Hikari/blob/f7b12693d753fa9d2f147238b3afdf0e4030cfa6/quickshop-bukkit/src/main/resources/plugin.yml#L101) that moderators required.  
+`quickshop.player` which contains all [sub permission nodes](https://github.com/QuickShop-Community/QuickShop-Hikari/blob/f7b12693d753fa9d2f147238b3afdf0e4030cfa6/quickshop-bukkit/src/main/resources/plugin.yml#L78) that players required.  
+`quickshop.moderator` which contains all [sub permission nodes](https://github.com/QuickShop-Community/QuickShop-Hikari/blob/f7b12693d753fa9d2f147238b3afdf0e4030cfa6/quickshop-bukkit/src/main/resources/plugin.yml#L101) that moderators required.  
 
 The biggest advantage of using Simple Permission is that when a new permission is added to QuickShop, it will be automatically authorized without additional configuration.
 
@@ -29,4 +29,4 @@ The biggest advantage of using Simple Permission is that when a new permission i
 
 There is a detailed list of all QuickShop-Hikari permission nodes, you can grant/revoke them by using command.
 
-See [plugin.yml -> permissions](https://github.com/Ghost-chu/QuickShop-Hikari/blob/hikari/quickshop-bukkit/src/main/resources/plugin.yml) node.
+See [plugin.yml -> permissions](https://github.com/QuickShop-Community/QuickShop-Hikari/blob/hikari/quickshop-bukkit/src/main/resources/plugin.yml) node.
