@@ -4,9 +4,9 @@ QuickShop-Hikari use client-language to display for players. All translations of
 
 ## Crowdin Project
 
-[![Crowdin](https://badges.crowdin.net/quickshop-hikari/localized.svg)](https://crowdin.com/project/quickshop-hikari)
+[![Crowdin](https://badges.crowdin.net/qs-hikari/localized.svg)](https://crowdin.com/project/qs-hikari)
 
-To help translate QuickShop-Hikari, please visit our [Crowdin Homepage](https://crowdin.com/project/quickshop-hikari).
+To help translate QuickShop-Hikari, please visit our [Crowdin Homepage](https://crowdin.com/project/qs-hikari).
 
 ## Crowdin OTA
 
@@ -61,7 +61,7 @@ If your server is not facing players across the world, or if you want to disable
 #Any client connect to server that using disabled language, will fallback to game-language option there
 #Set to - '*' to enable all available languages
 #The language files will automatically update thorough Crowdin OTA system, you can translate it there:
-#https://crowdin.com/project/quickshop-hikari
+#https://crowdin.com/project/qs-hikari
 #If you want custom the language file, use language override system:
 #https://quickShop-community.github.io/QuickShop-Hikari-Documents/docs/modules/localization
 enabled-languages:
