@@ -2,7 +2,8 @@
 
 By default, QuickShop will register the command prefix below:
 
-* qs (root command, cannot remove or change it)
+* quickshop (root command, cannot remove or change it)
+* qs
 * shop
 * chestshop
 * cshop
@@ -16,6 +17,7 @@ All optional prefix are defined in config.yml like this:
 # - playershop
 # - pshop
 custom-commands:
+  - qs
   - shop
   - chestshop
   - cshop
