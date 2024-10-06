@@ -8,6 +8,8 @@ QuickShop-Hikari current supports the multi-Currency economy plugin below:
 
 * GemsEconomy
 * TheNewEconomy
+* CoinsEngine
+* 
 <!--* Any other economy plugin that support [Reserve](https://www.spigotmc.org/resources/50739/)-->
 
 ## Enable Multi-Currency support
@@ -19,12 +21,14 @@ To enable multi-currency feature, you need to configure QuickShop economy proces
 # 0=Vault
 # 3=GemsEconomy with Multi-Currency on
 # 4=TNE with Multi-Currency on
+# 5=CoinsEngine with Multi-Currency on (experimental)
+# 6=Treasury with Multi-Currency on (experimental)
 # DO NOT TOUCH THIS IF YOU DON'T KNOW WHAT IT DOES. ASK FOR SUPPORT BEFORE TOUCHING THIS!
 economy-type: 0
 ```
 
-Set `economy-type` to `3` or `4` will enable the Multi-Currency feature.  
-Note: Only one processor can be enabled in same time which mean once you choose `3` or `4`, Vault will be disabled.
+Set `economy-type` to `3-6` will enable the Multi-Currency feature.  
+Note: Only one processor can be enabled in same time which mean once you choose `3-6`, Vault will be disabled.
 
 ## Set default currency
 

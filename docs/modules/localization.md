@@ -63,7 +63,7 @@ If your server is not facing players across the world, or if you want to disable
 #The language files will automatically update thorough Crowdin OTA system, you can translate it there:
 #https://crowdin.com/project/qs-hikari
 #If you want custom the language file, use language override system:
-#https://quickShop-community.github.io/QuickShop-Hikari-Documents/docs/modules/localization
+#https://quickshop-community.github.io/QuickShop-Hikari-Documents/docs/modules/localization
 enabled-languages:
   - '*'
 ```
