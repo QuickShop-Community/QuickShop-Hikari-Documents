@@ -1,4 +1,4 @@
-# ItemAdder
+# ItemsAdder
 
 :::info
 
@@ -12,10 +12,10 @@ This compatibility module added in 6.0.0.0.
 
 :::
 
-This compatibility module allow users using [ItemExpression](../modules/item-expression.md) to select the specific ItemAdder item.
+This compatibility module allow users using [ItemExpression](../modules/item-expression.md) to select the specific ItemsAdder item.
 
 ## Usage
 
 ```
-itemadder:<itemid>
+itemsadder:<itemid>
 ```
