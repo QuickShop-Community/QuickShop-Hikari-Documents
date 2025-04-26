@@ -1,0 +1,1 @@
+(self.webpackChunkquick_shop_hikari_documents=self.webpackChunkquick_shop_hikari_documents||[]).push([[5741],{5741:()=>{}}]);
