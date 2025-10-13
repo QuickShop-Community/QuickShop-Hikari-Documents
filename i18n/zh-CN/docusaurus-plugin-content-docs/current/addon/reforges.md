@@ -6,12 +6,6 @@
 
 :::
 
-:::info
-
-此插件在 5.0.0.0快照版本添加到 QuickShop-Hikari 中。
-
-:::
-
 该插件添加了 EcoEnchants 对以下方面的支持：
 
 - 在商店信息面板上显示 Reforges 的重铸信息。
