@@ -1,23 +1,17 @@
-# EcoEnchants Addon
+# EcoEnchants 插件
 
 :::info
 
-Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at.md).
+找不到在哪里下载JAR？ [点击这里](../faq/where-addons-compacts-at.md). [Click here](../faq/where-addons-compacts-at.md).
 
 :::
 
-:::info
-
-This addon was added into QuickShop-Hikari at 5.0.0.0
-
-:::
-
-This addon added EcoEnchants support for:
+该插件添加了 EcoEnchants 对以下方面的支持：
 
 - Display the EcoEnchants's enchantments name on sign and shop info panel.
 - Display the EcoEnchants's enchantments in the hover item previewing.
 
-| Without EcoEnchants Addon                             | With EcoEnchants Addon                             |
+| 无 EcoEnchants 附属                                      | 有 EcoEnchants 附属                                   |
 | ----------------------------------------------------- | -------------------------------------------------- |
 | ![ecoenchants-without](./img/ecoenchants_without.jpg) | ![ecoenchants-without](./img/ecoenchants_with.jpg) |
 
