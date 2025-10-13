@@ -6,12 +6,6 @@ Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-
 
 :::
 
-:::info
-
-This addon was added into QuickShop-Hikari at 5.1.1.0
-
-:::
-
 :::caution
 
 This Addon is still in an experimental stage, so please manage your backup files properly before using it. Use at your own risk.
@@ -44,7 +38,7 @@ _This is not necessary if you are using an H2 database._
 
 ### Prepare for convert
 
-To avoid data corruption, no players (including administrators) are allowed on the server while data conversion is being performed, and all operations will be performed on the console.\
+To avoid data corruption, no players (including administrators) are allowed on the server while data conversion is being performed, and all operations will be performed on the console.  
 If a player is in the server, the conversion cannot be started.
 
 Once the conversion has begun, the server will be locked during the conversion process and no players will be able to join the server during the conversion.
