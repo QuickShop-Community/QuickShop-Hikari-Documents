@@ -47,7 +47,7 @@ You can purge them by execute command:
 
 :::note
 
-This feature is **ENABLED** by default but only works if you have ProtocolLib installed.
+This feature is **ENABLED** by default but only works if you have ProtocolLib or PacketEvents installed.
 
 :::
 
@@ -63,9 +63,9 @@ This feature is **DISABLED** by default.
 
 :::
 
-The offline-player auto-complete can offer better experenice for player auto-complete.\
-But it can create massive Mojang API requests if server running under online-mode.\
-It can increase the load of Mojang's API server and may ban your ip for few mintues to too frequent requests.\
+The offline-player auto-complete can offer better experenice for player auto-complete.  
+But it can create massive Mojang API requests if server running under online-mode.  
+It can increase the load of Mojang's API server and may ban your ip for few mintues to too frequent requests.  
 Turn off this feature by set the settings in config.yml like below:
 
 ```yaml
@@ -84,7 +84,7 @@ This feature is **DISABLED** by default.
 
 :::
 
-QuickShop-Hikari will recalculate the shop inventory contents for update stock/space on hopper move event.\
+QuickShop-Hikari will recalculate the shop inventory contents for update stock/space on hopper move event.  
 It may cause the heavy load the hurt the TPS on busy or redstone theme servers.
 
 it can be disabled by change the setting below:
@@ -104,7 +104,7 @@ This feature is **DISABLED** by default.
 
 :::
 
-The display-auto-despawn will check ALL loaded shops location and calculate the distance with ALL online players who in the same world with target shop.\
+The display-auto-despawn will check ALL loaded shops location and calculate the distance with ALL online players who in the same world with target shop.  
 It can cause the heavy load on your server.
 
 Disable this feature by change the setting below:
