@@ -4,7 +4,7 @@ ItemStack Loader is a workaround for loading the Bukkit ItemStack.
 
 :::caution
 
-Before use this function, you **MUST** create a server full backup. After enable this function, all changes will write into worlds and databases, and it is persistent, rollback without backup is impossble.
+Before use this function, you **MUST** create a server full backup. After enable this function, all changes will write into worlds and databases, and it is persistent, rollback without backup is impossible.
 
 :::
 
