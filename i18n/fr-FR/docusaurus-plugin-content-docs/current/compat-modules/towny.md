@@ -26,7 +26,7 @@ Town sub-command allow you switch a quickshop between regular shop and town shop
 
 For a nation shop, the shop owner will changed to nation fake player created by Towny, and use Nation's Tax account for receiving the shop taxes.
 
-All purchases will deposit or withdraw money from nation Towny account.\
+All purchases will deposit or withdraw money from nation Towny account.  
 At the same time, if the bank mode is enabled, the price will be forced to adjust automatically according to the price of the item in the profile.
 
 If Plot type restriction is enabled, only a specific Plot type can create a Nation Shop.
@@ -35,7 +35,7 @@ If Plot type restriction is enabled, only a specific Plot type can create a Nati
 
 For a town shop, the shop owner will changed to town fake player created by Towny, and use Town's Tax account for receiving the shop taxes.
 
-All purchases will deposit or withdraw money from town Towny account.\
+All purchases will deposit or withdraw money from town Towny account.  
 At the same time, if the bank mode is enabled, the price will be forced to adjust automatically according to the price of the item in the profile.
 
 If Plot type restriction is enabled, only a specific Plot type can create a Town Shop.
@@ -88,7 +88,7 @@ bank-mode:
 
 ## Permission Override
 
-By adjust configuration, you're allow mayor or king automaticlly grant administrator permission on all shops in their management range.
+By adjust configuration, you're allow mayor or king automatically grant administrator permission on all shops in their management range.
 
 ```yaml
 #Should allow Mayor grant the shop administrator permission on they town.
@@ -168,7 +168,7 @@ This causes Towny and QuickShop Hikari to use accounts with the same name but di
 
 You can adjust the option in configuration to enable workaround.
 
-NOTE: It will force turned on if detected EssentialsX installed on your server.\
+NOTE: It will force turned on if detected EssentialsX installed on your server.  
 At present, we do not provide a method for disable it.
 
 ```yaml
