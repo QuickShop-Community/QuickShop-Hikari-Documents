@@ -4,17 +4,17 @@ This chapter will explain the implementation details of QuickShop Hikari's datab
 
 ## Tables
 
-This section explains the database tables created by QuickShop-Hikari.\
-Unless otherwise specified, the initial `qs_` in table name is the table prefix.\
+This section explains the database tables created by QuickShop-Hikari.  
+Unless otherwise specified, the initial `qs_` in table name is the table prefix.  
 For the latest code definition for each table, see: [DataTables.java](https://github.com/QuickShop-Community/QuickShop-Hikari/blob/hikari/quickshop-bukkit/src/main/java/com/ghostchu/quickshop/database/DataTables.java)
 
 ### `data`
 
-This data table stores all the existing store data on this server or the store data that has been deleted but is still referenced in a specific form, and does not contain coordinate information.\
-No matter what, a data record should not be modified after it is created, until it got deleted.\
+This data table stores all the existing store data on this server or the store data that has been deleted but is still referenced in a specific form, and does not contain coordinate information.  
+No matter what, a data record should not be modified after it is created, until it got deleted.  
 Any new changes to the shop should create a new copy, apply the changes to the copy, and insert it as a new record.
 
-Basiclly, Copy-on-write.
+Basically, Copy-on-write.
 
 A data record only be deleted from the database when no any table references their `data_id`.
 
@@ -29,7 +29,7 @@ A data record only be deleted from the database when no any table references the
 | unlimited                                                 | BIT NOT NULL                              | 0                   | Indicates whether this store is an unlimited store, 0=Limited, 1=Unlimited                         |
 | hologram                                                  | BIT NOT NULL                              | 0                   | Indicates the suspension status of this store's display item, 0=Follow global settings, 1=Disabled |
 | tax_account                          | VARCHAR(36)            | NULL                | The uuid for tax account, If it is not NULL, tax will be paid to the specified account             |
-| permissions                                               | MEDIUMTEXT                                | Empty Json          | Indicates the override status of the store player permission group, serilized to JSON string       |
+| permissions                                               | MEDIUMTEXT                                | Empty Json          | Indicates the override status of the store player permission group, serialized to JSON string      |
 | extra                                                     | LONGTEXT                                  | Empty Yaml          | Used to store experimental settings of QuickShop Hikari or persistent data of other plugins        |
 | inv_wrapper                          | VARCHAR(255) NOT NULL  | N/A                 | Unique identifier for InventoryWrapper for this shop data entry                                    |
 | inv_symbol_link | TEXT NOT NULL                             | N/A                 | Unique Inventory symbol used to pass to InventoryWrapper, for locating inventory                   |
@@ -38,7 +38,7 @@ A data record only be deleted from the database when no any table references the
 
 ### `shops`
 
-This table is used to store shop to shop data mapping, so that shop ID will not change when shop data changes.\
+This table is used to store shop to shop data mapping, so that shop ID will not change when shop data changes.  
 Multiple `shop_id` can correspond to the same `data_id`.
 
 | Column Name                  | DataType                 | Default        | Description                                                        |
