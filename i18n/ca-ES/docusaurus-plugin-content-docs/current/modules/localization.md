@@ -10,7 +10,7 @@ To help translate QuickShop-Hikari, please visit our [Crowdin Homepage](https://
 
 ## Crowdin OTA
 
-QuickShop-Hikari will auto update translations from Crowdin via Crowdin OTA, all directly local changes will overrided when you reload QuickShop-Hikari or restart your server.
+QuickShop-Hikari will auto update translations from Crowdin via Crowdin OTA, all directly local changes will override when you reload QuickShop-Hikari or restart your server.
 
 Your installation will keep translations up-to-date without any touch.
 
