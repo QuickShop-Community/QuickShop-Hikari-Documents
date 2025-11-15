@@ -26,7 +26,7 @@ Town 子命令允许您在普通商店和城镇商店之间切换。
 
 对于国家商店，店主将更改为由Towny创建的对应国家的假玩家，并使用该国家所指定的税收账户作为其税务帐户。
 
-All purchases will deposit or withdraw money from nation Towny account.\
+All purchases will deposit or withdraw money from nation Towny account.  
 At the same time, if the bank mode is enabled, the price will be forced to adjust automatically according to the price of the item in the profile.
 
 如果启用了地皮类型限制，则只有特定的地皮类型才能创建国家商店。
@@ -35,7 +35,7 @@ At the same time, if the bank mode is enabled, the price will be forced to adjus
 
 对于城镇商店，店主将更改为Towny创建的城镇的假玩家，并使用该城镇所指定的的税收帐户作为其税务账户。
 
-All purchases will deposit or withdraw money from town Towny account.\
+All purchases will deposit or withdraw money from town Towny account.  
 At the same time, if the bank mode is enabled, the price will be forced to adjust automatically according to the price of the item in the profile.
 
 如果启用了地皮类型限制，则只有特定的地皮类型才能创建城镇商店。
@@ -88,7 +88,7 @@ At the same time, if the bank mode is enabled, the price will be forced to adjus
 
 ## 权限覆盖
 
-通过调整配置，您可以允许市长或国王自动授予其管理范围内所有商店的管理员权限。
+By adjust configuration, you're allow mayor or king automatically grant administrator permission on all shops in their management range.
 
 ```yaml
 #由市长授权设立商店管理员。
@@ -168,7 +168,7 @@ Because Essentials use username to lookup user account if API calls is username 
 
 You can adjust the option in configuration to enable workaround.
 
-NOTE: It will force turned on if detected EssentialsX installed on your server.\
+NOTE: It will force turned on if detected EssentialsX installed on your server.  
 At present, we do not provide a method for disable it.
 
 ```yaml
