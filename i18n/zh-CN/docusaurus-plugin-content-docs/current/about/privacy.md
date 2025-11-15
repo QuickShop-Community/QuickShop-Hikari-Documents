@@ -1,115 +1,93 @@
-# Privacy
+# 隐私政策
 
-When using the QuickShop Hikari service, we will send the necessary and partial optional data to the relevant service provider.
+When using the QuickShop-Hikari service, we will send the necessary and partial optional data to the relevant service provider.
 
 ## bStats
 
-We use [bStats.org](https://bstats.org/) to collect statistical indicators so that we can better improve our products.
+我们使用 [bStats.org](https://bstats.org/) 来收集统计指标，以便更好地改进我们的产品。
 
-[bStats's Privacy Policy](https://bstats.org/privacy-policy)
+[bStats的隐私政策](https://bstats.org/privacy-policy)
 
-All data collected will be displayed on this page: [bStats - QuickShop-Hikari](https://bstats.org/plugin/bukkit/QuickShop-Hikari/14281)
+收集到的所有数据将显示在此页面上： [bStats - QuickShop-Hikari](https://bstats.org/plugin/bukkit/QuickShop-Hikari/14281)
 
-### Quit bStats Metrics
+### 退出 bStats 统计
 
-To quit bStats metrics, you can disable bstats service in QuickShop-Hikari's configuration:
+如果你要退出 bStats 统计，您可以在 QuickShop-Hikari 的配置文件中禁用 bStats 服务：
 
 ```yaml
-#Disallow QuickShop to send metrics data to bStats.
-#Please let the metrics enabled, it helps the author :).
-disabled-metrics: false
+#Privacy Controller allows you turn on/off some options that related to privacy. This is our move towards privacy transparency.
+#By audit all privacy reviewing activities, execute `/quickshop paste` to generate a paste and check `Privacy Logs` section.
+#To out-put from bStats completely, go to /plugins/bStats/config.yml.
+privacy:
+  # Category Control
+  type:
+    # Including bStats metrics with `Statistic - ` prefix, see all metrics we collected on https://bstats.org/plugin/bukkit/QuickShop-Hikari/14281
+    STATISTIC: true
+    # Including bStats metrics with `Research - ` prefix, see all metrics we collected on https://bstats.org/plugin/bukkit/QuickShop-Hikari/14281
+    RESEARCH: true
 ```
 
-Note: The collected data won't deleted from bStats, to remove exists data, please contact bStats administrators.\
-Note: We respect your bStats global settings, if you has been disabled bStats in global, we won't send any data to bStats.
+Note: The collected data won't deleted from bStats, to remove exists data, please contact bStats administrators.  
+注意：收集到的数据不会从 bStats 中删除，要删除存在的数据，请联系 bStats 管理员。  
+注意：我们尊重您的 bStats 全局设置。如果您在全局禁用了bStats，我们不会向bStats发送任何数据。
 
-## Rollbar Error Tracking
+## RollBar错误跟踪
 
-We use [Rollbar](https://rollbar.com/) to collect error reports. All errors on your server which related to QuickShop-Hikari will be automaticlly submit to our Rollbar bin.
+We use [Rollbar](https://rollbar.com/) to collect error reports. All errors on your server which related to QuickShop-Hikari will be automatically submit to our Rollbar bin.
 
-You can check Rollbar's Privacy Policy [here](https://docs.rollbar.com/docs/privacy-policy).
+您可以在这里查看 Rollbar 的隐私政策 [](https://docs.rollbar.com/docs/privacy-policy)。
 
-Including:
+包括:
 
-- Time
-- Error and StackTrace
-- OS Name
+- 时间
+- 错误和堆栈跟踪
+- 操作系统
 - OS Arch
-- OS Version
-- System CPU Cores
-- Java Version
-- Server/Bukkit Build Version
-- Server Players
-- Online Mode
-- Your QuickShop-Hikari unique ID
+- 操作系统版本
+- 系统 CPU 核心
+- Java版本
+- 服务器/Bukkit 构建版本
+- 玩家数量
+- 在线模式
+- 您的 QuickShop-Hikari 个人ID
 
-### Regenerate QuickShop-Hikari unique ID
+### 重新生成 QuickShop-Hikari 个人ID
 
-While you install QuickShop-Hikari in fresh, the your unique ID will be generated and write into your `config.yml`.\
+当您首次安装QuickShop-Hikari时，您的个人ID将被生成并写入 `config.yml`。  
+ID的生成完全随机，不以其他信息作为参考。个人ID用于我们的错误信息跟踪以及其他适用于 QuickShop-Hikari 的场景。  
 The ID does not depend on any other information for calculation and is completely random, It is used in our bug tracking and other scenarios where different QuickShop-Hikari instances need to be identified.
 
-In case you are sure that no addon is using this value, you can remove this from the configuration file so that QuickShop-Hikari will generate a new unique ID.
+如果没有插件正在使用此ID，您可以从配置文件中删除它，以便QuickShop-Hikari能够生成一个新的个人ID。
 
-### Quit Rollbar Error Tracking
+### 退出Rollbar错误跟踪
 
-To quit Rollbar Error Tracking, you can disable rollbar service in QuickShop-Hikari's configuration:
+若要退出 Rollbar 错误跟踪，您可以在 QuickShop-Hikari 的配置中禁用 Rollbar 服务：
 
 ```yaml
-# Should QS be allowed to automatically report errors to the author?
-# It will also create a paste for data-recovery or debug when the server boots up.
+# QS 是否允许自动向作者报告错误？
+# 这会在服务器启动时自动创建数据恢复或调试用的剪贴板。
 auto-report-errors: true
 ```
 
-Note: The collected data won't deleted from Rollbar, to remove exists data, please contact QuickShop-Hikari developer.
+注意：收集到的数据将不会从Rollbar删除，要删除存在的数据，请联系 QuickShop-Hikari 开发人员。
 
 ## Paste
 
-When you creating a paste by `/quickshop paste` command, you data will upload to [Lucko's Bytebin](https://bytebin.lucko.me/).\
+通过 `/quickshop paste` 创建剪贴板内容后，你的数据将会被上传至 [Lucko 的 bytebin 剪贴板](https://bytebin.lucko.me/)。  
+若要防止数据上传，你可以通过命令 `/quickshop paste file` 保存至硬盘，这些内容将会留在本地而不会上传至网络。  
 To avoid data uploading, you can create local paste by using command `/quickshop paste file`, the paste will save to your local disk without uploading.
 
-The Paste Viewer hosting on Github Pages, access the uploaded data through CloudFlare Worker.
+Github 页面上的Paste预览主机通过CloudFlare Worker访问上传的数据。
 
-While we generating your Paste, we will censor your sensitive data, Don't send your Paste to anyone you don't trust.
+当我们生成您的Paste时，我们会检查您的敏感数据。不要将您的Paste发送给您不信任的人。
 
-## IP Detecting
+## 更新
 
-We will send an IP lookup request to CloudFlare to determine if your server is located in mainland China. For more information, please see: [Regional legal restrictions](netease.md).
+为了检查更新，QuickShop-Hikari将请求CodeMC.io的Nexus检查更新。
 
-The URL we will request: `https://cloudflare.com/cdn-cgi/trace`.
-
-## Updater
-
-For checking update, QuickShop-Hikari will request CodeMC.io's Nexus for checking updates.
-
-To disable update checker, you can turn it off by adjust the configuration:
+要禁用更新检查，您可以通过调整配置来关闭它：
 
 ```yaml
-#Should QS be allowed to check for updates?
+# 是否允许 QS 检查更新？
 updater: false
 ```
-
-## Donating
-
-When you donating on ko-fi.com, ko-fi will collect your personal data, click [here](https://more.ko-fi.com/privacy) to check ko-fi's privacy policy.
-
-Your personal data will also send to Ghost_chu's web server for showcase your name on our supporter list, including:
-
-- Time
-- Your Ko-fi username.
-- Donation Type
-- Is public
-- Message ID
-- Message
-- Kofi Transaction ID
-- Tier Name
-
-The data collected is stored in the territory of the People's Republic of China and is managed in accordance with the relevant laws and regulations of the server location (Beijing).\
-To remove your data, please contact QuickShop-Hikari developer.
-
-The data below will show up for everyone at [here](https://quickshop-kofi-proxy.ghostchu.workers.dev/):
-
-- Time
-- Type
-- Your Ko-fi username
-
-If you donation has been set to private, it won't show up.
