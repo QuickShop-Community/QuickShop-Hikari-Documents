@@ -63,9 +63,9 @@ This feature is **DISABLED** by default.
 
 :::
 
-The offline-player auto-complete can offer better experenice for player auto-complete.  
+The offline-player auto-complete can offer better experience for player auto-complete.  
 But it can create massive Mojang API requests if server running under online-mode.  
-It can increase the load of Mojang's API server and may ban your ip for few mintues to too frequent requests.  
+It can increase the load of Mojang's API server and may ban your ip for few minutes to too frequent requests.  
 Turn off this feature by set the settings in config.yml like below:
 
 ```yaml
