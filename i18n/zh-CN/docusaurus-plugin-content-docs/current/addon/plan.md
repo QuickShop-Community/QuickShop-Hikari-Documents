@@ -18,8 +18,7 @@ Plan 扩展组件允许通过 Plan 在服务器上展示最近的 QuickShop-Hika
 - 所有商店（商店列表）
 - 最近的购买历史(包括删除或无效的商店)，仅在最近365天或者最近1000行将被显示。
 
-由于 Plan 的局限性， 我们不能将更多数据添加到列表中，因为最大列列数被插件硬编码，无法更改。 该数值在服务器范围内限制为 `5` 。\
-仍然是 Plan 的限制，列表排序被打乱，所以显示顺序不是实际顺序。\
+Due the Plan limitations, We can't add more data into the list because the maximum columns are hardcoded limited to `5` in server scope.  
 And still is Plan limitations, the list sorting is disturbed, so the display order is not the actual order.
 
 ## 玩家范围
@@ -28,8 +27,7 @@ And still is Plan limitations, the list sorting is disturbed, so the display ord
 - 所有拥有的商店（商店列表）
 - 最近的购买历史记录（包括已删除或无效的商店），仅显示最近 365 天内的 50 行。
 
-由于 Plan 的局限性， 我们不能将更多数据添加到列表中，因为最大列列数是硬编码的。 在玩家范围内限制为 `4` 。\
-仍然是 Plan 限制，列表排序被打乱，所以显示顺序不是实际顺序。\
+Due the Plan limitations, We can't add more data into the list because the maximum columns are hardcoded limited to `4` in player scope.  
 And still is Plan limitations, the list sorting is disturbed, so the display order is not the actual order.
 
 ## 展示
