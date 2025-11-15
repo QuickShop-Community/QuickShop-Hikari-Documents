@@ -2,7 +2,7 @@
 
 Shop Purger allow server administrator purge the shops if the player in idle or banned.
 
-## Configuration
+## 配置
 
 ```yaml
 # Shops purger
@@ -23,4 +23,4 @@ purge:
   return-create-fee: true
 ```
 
-Ban auto purge currently only supportd Vanilla banning system, it doesn't support 3rd-party ban management like Litebans, AdvancedBan.
+Ban auto purge currently only support Vanilla banning system, it doesn't support 3rd-party ban management like Litebans, AdvancedBan.
