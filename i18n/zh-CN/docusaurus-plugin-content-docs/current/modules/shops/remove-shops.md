@@ -10,4 +10,4 @@ Install the `Compat-WorldEdit` from [Modrinth](https://modrinth.com/plugin/quick
 
 To remove all shops you owned, simple execute `/quickshop removeall` and all your shops will be deleted.
 
-To remove someone all shops, execute `/quickshop removeall <player>` as server administrator and that player all shops will be removed.
+要移除某个玩家的商店，让服务器管理员执行 `/quickshop removeall <player>`，这样这个玩家的所有商店将会被移除。
