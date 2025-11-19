@@ -21,7 +21,7 @@ By default, QuickShop will protect shop container and shop sign from entity, blo
 | -------------------------------------------- | ---------------------------------------------- | ------------------------------------------------ | --------------------------------------------------------- |
 | ![block-protect](./img/protection-block.png) | ![entity-protect](./img/protection-entity.png) | ![explode-protect](./img/protection-explode.png) | ![hopper-protect](./img/protection-hopper.png)            |
 
-You can toggle the protections above by tweak settings:
+你可以通过调整设置来切换上述的保护功能：
 
 ```yaml
 #The protection that a shop should check.
