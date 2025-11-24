@@ -1,6 +1,6 @@
 # 本地化
 
-QuickShop-Hikari使用客户端语言为玩家显示语言。 所有翻译均由志愿者在Crowdin上提供。 All translations offered by volunteers on Crowdin.
+QuickShop-Hikari使用客户端语言为玩家显示语言。 所有翻译均由志愿者在Crowdin上提供。 所有翻译都是由志愿者在 Crowdin 上提供的。
 
 ## Crowdin 项目
 
@@ -10,7 +10,7 @@ To help translate QuickShop-Hikari, please visit our [Crowdin Homepage](https://
 
 ## Crowdin OTA
 
-QuickShop-Hikari will auto update translations from Crowdin via Crowdin OTA, all directly local changes will override when you reload QuickShop-Hikari or restart your server.
+QuickShop-Hikari 会自动通过 Crowdin OTA 从 Crowdin 更新翻译。当您重新加载 QuickShop-Hikari 或重启服务器时，在本地进行的直接更改将被覆盖。
 
 您的插件会保持最新翻译，无需任何调整。
 
