@@ -4,9 +4,9 @@
 
 ## 对比
 
-✔️ = 完全支持\
-✔️ + = 增强的充分支持\
-❌ = 不支持\
+✔️ = 完全支持  
+✔️ + = 增强的充分支持  
+❌ = 不支持  
 ⚠️ = 部分支持（或不支持）
 
 | 功能介绍                                                                     | Reremake                 | Hikari                   |
@@ -63,8 +63,8 @@
 
 ## 我应该使用哪一个？
 
-Well, it depends on what your needs are.\
-If you have an old server (<1.20) instance, Reremake is your only choice.\
+Well, it depends on what your needs are.  
+If you have an old server ({'<'}1.20) instance, Reremake is your only choice.  
 ~~If you are in China which has GFW interfere, you also should consider Reremake because it doesn't need to load libraries from Global Internet.~~ Solved in 6.0.0.0.
 
 如果所有这些都不适用，请尝试Hikari！
