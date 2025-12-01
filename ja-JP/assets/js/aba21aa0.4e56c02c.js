@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkquick_shop_hikari_documents=globalThis.webpackChunkquick_shop_hikari_documents||[]).push([[5742],{7093:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);
