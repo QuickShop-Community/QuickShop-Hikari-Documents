@@ -18,7 +18,7 @@ Recorded data can be displayed from Hikari v2.0.0.0 onwards, but only after vers
 - All shops (to a Shops list)
 - Recent Purchase History (include deleted or invalided shops), only in recent 365 days and 1000 rows will be shown up.
 
-Due the Plan limitations, We can't add more data into the list because the maxmium columns are hardcoded limited to `5` in server scope.\
+Due the Plan limitations, We can't add more data into the list because the maximum columns are hardcoded limited to `5` in server scope.  
 And still is Plan limitations, the list sorting is disturbed, so the display order is not the actual order.
 
 ## Player Scope
@@ -27,7 +27,7 @@ And still is Plan limitations, the list sorting is disturbed, so the display ord
 - All owned shops (to a Shops list)
 - Recent Purchase History (include deleted or invalided shops), only in recent 365 days and 50 rows will be shown up.
 
-Due the Plan limitations, We can't add more data into the list because the maxmium columns are hardcoded limited to `4` in player scope.\
+Due the Plan limitations, We can't add more data into the list because the maximum columns are hardcoded limited to `4` in player scope.  
 And still is Plan limitations, the list sorting is disturbed, so the display order is not the actual order.
 
 ## Showcase

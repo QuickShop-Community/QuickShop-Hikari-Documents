@@ -6,12 +6,6 @@ Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-
 
 :::
 
-:::info
-
-This addon was added into QuickShop-Hikari at 4.1.0.0-SNAPSHOT
-
-:::
-
 This addon added a command `/quickshop list` to allow the player or server administrator to listing all shops.
 
 ## Permissions

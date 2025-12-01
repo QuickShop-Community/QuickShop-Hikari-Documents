@@ -2,12 +2,6 @@
 
 :::info
 
-This feature added in 6.0.0.0.
-
-:::
-
-:::info
-
 This wiki images may use non-English locale.
 
 :::

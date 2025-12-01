@@ -4,21 +4,21 @@
 
 ## 数据表
 
-This section explains the database tables created by QuickShop-Hikari.\
-Unless otherwise specified, the initial `qs_` in table name is the table prefix.\
-该部分解释了 QuickShop-Hikari 创建的数据库表\
-除非特别注明，表内默认的 `qs_` 即为表前缀。\
+This section explains the database tables created by QuickShop-Hikari.  
+Unless otherwise specified, the initial `qs_` in table name is the table prefix.  
+该部分解释了 QuickShop-Hikari 创建的数据库表  
+除非特别注明，表内默认的 `qs_` 即为表前缀。  
 若要查找每个表的最新代码定义，请参阅：[DataTables.java](https://github.com/QuickShop-Community/QuickShop-Hikari/blob/hikari/quickshop-bukkit/src/main/java/com/ghostchu/quickshop/database/DataTables.java)
 
 ### `数据`
 
-此数据表存储此服务器上的所有现有存储数据或已删除但仍以特定形式引用的存储数据，并且不包含坐标信息。\
-无论如何，数据记录在创建后都不应被修改，直到它被删除。\
-对商店的任何新更改都应创建一个新副本，将更改应用于该副本，并将其作为新记录插入。\
-No matter what, a data record should not be modified after it is created, until it got deleted.\
+此数据表存储此服务器上的所有现有存储数据或已删除但仍以特定形式引用的存储数据，并且不包含坐标信息。  
+无论如何，数据记录在创建后都不应被修改，直到它被删除。  
+对商店的任何新更改都应创建一个新副本，将更改应用于该副本，并将其作为新记录插入。  
+No matter what, a data record should not be modified after it is created, until it got deleted.  
 Any new changes to the shop should create a new copy, apply the changes to the copy, and insert it as a new record.
 
-Basiclly, Copy-on-write.
+Basically, Copy-on-write.
 
 仅当没有任何表引用其数据记录时，才会从数据库中删除数据记录 `data_id`.
 
@@ -33,7 +33,7 @@ Basiclly, Copy-on-write.
 | unlimited                                                 | BIT NOT NULL                              | 0       | 用于表示该商店是否为无限收购/出售，0 表示有限，1 表示无限                                                                   |
 | hologram                                                  | BIT NOT NULL                              | 0       | 表示商店展示物品的暂停状态，0 表示跟随全局设置，1 表示禁用                                                                   |
 | tax_account                          | VARCHAR(36)            | NULL    | 税收账户的 UUID，若非空，则税收将会汇入指定账户                                                                        |
-| permissions                                               | MEDIUMTEXT                                | 空 Json  | 显示商店玩家权限组的覆盖状态，序列化为 JSON 格式字符串                                                                    |
+| permissions                                               | MEDIUMTEXT                                | 空 Json  | Indicates the override status of the store player permission group, serialized to JSON string     |
 | extra                                                     | LONGTEXT                                  | 空 Yaml  | 用于存储 QuickShop Hikari 的实验性设定或其他插件的持久化数据                                                           |
 | inv_wrapper                          | VARCHAR(255) NOT NULL  | 无       | 该商店条目使用的 InventoryWrapper 独立 ID                                                                   |
 | inv_symbol_link | TEXT NOT NULL                             | 无       | 用于传递至 InventoryWrapper 的界面标识符，用于定位界面                                                              |
@@ -42,8 +42,8 @@ Basiclly, Copy-on-write.
 
 ### `shops`
 
-该表用于存储商店数据映射，因此商店 ID 不会在商店数据变化时变化。\
-多个 `shop_id` 可以对应同一个 `data_id`。\
+该表用于存储商店数据映射，因此商店 ID 不会在商店数据变化时变化。  
+多个 `shop_id` 可以对应同一个 `data_id`。  
 Multiple `shop_id` can correspond to the same `data_id`.
 
 | Column Name                  | 数据类型                     | 默认值  | 说明                   |

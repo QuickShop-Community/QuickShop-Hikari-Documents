@@ -6,13 +6,13 @@ Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-
 
 :::
 
-GreifPrevention compatibility module added compaitibility with GF.
+GreifPrevention compatibility module added compatibility with GF.
 
 ## How does it work
 
 This module allow QuickShop-Hikari check if player have permission to create or use QuickShop in specific region.
 
-And delete shops when claim removed, untrusted, unclimed, expired, resized or subclaim created.
+And delete shops when claim removed, untrusted, unclaimed, expired, resized or subclaim created.
 
 ## Configuration
 

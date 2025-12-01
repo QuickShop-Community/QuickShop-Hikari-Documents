@@ -4,7 +4,7 @@ ItemStack加载器是加载Bukkit ItemStack的工具。
 
 :::caution
 
-Before use this function, you **MUST** create a server full backup. 在使用此功能之前， **必须** 创建服务器完整备份。 启用此功能后，所有更改都会写入世界和数据库，并且是持久性的，没有备份的回滚是不可能的。
+Before use this function, you **MUST** create a server full backup. After enable this function, all changes will write into worlds and databases, and it is persistent, rollback without backup is impossible.
 
 :::
 

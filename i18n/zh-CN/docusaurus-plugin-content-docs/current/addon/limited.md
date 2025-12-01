@@ -6,12 +6,6 @@
 
 :::
 
-:::info
-
-此插件在 4.1.0.0-SNAPSHOT 添加到 QuickShop-Hikari 中
-
-:::
-
 此插件允许商店所有者对其商店在一段时间内的销售数量设置限制。
 
 ## 权限设置
@@ -41,10 +35,10 @@
 /quickshop limit period MONTH
 ```
 
-该系统基于QuickShop-Hikari日历系统。\
-时间使用 “值变化” 更新系统进行更新，这意味着 2022-12-31 到 2023-01-01 也被视为一年，且同时会更新月、周、日、小时、分钟、秒的限制。\
-其余的也都一样。\
-The timing is updated using the "value change" update system, which means that 2022-12-31 to 2023-01-01 is also considered a year.\
+该系统基于QuickShop-Hikari日历系统。  
+时间使用 “值变化” 更新系统进行更新，这意味着 2022-12-31 到 2023-01-01 也被视为一年，且同时会更新月、周、日、小时、分钟、秒的限制。  
+其余的也都一样。  
+The timing is updated using the "value change" update system, which means that 2022-12-31 to 2023-01-01 is also considered a year.  
 Same for days, months and hours.
 
 可用时间单位：

@@ -10,6 +10,6 @@
 
 ## How does it work?
 
-BungeeCord Bridge 插件将会注册一个 `quickshop:bungee` 频道，可使玩家跨服输入插件所要求的信息。
+BungeeCord Bridge plugins will register a `quickshop:bungee` channel for forwarding the player commands and chats to a sub-server when the sub-server is waiting for the player's input.
 
 所有转发都由 QuickShop-Hikari 在 Spigot 服务器上表示，并在不需要时结束。

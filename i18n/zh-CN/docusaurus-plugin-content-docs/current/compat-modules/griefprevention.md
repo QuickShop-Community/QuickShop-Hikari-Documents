@@ -6,13 +6,13 @@
 
 :::
 
-GreifPrevention 兼容模块添加了与 GF 的兼容性。
+GreifPrevention compatibility module added compatibility with GF.
 
 ## How does it work
 
 此模块允许 QuickShop-Hikari 检查玩家是否有权限在特定区域创建或使用 QuickShop。
 
-And delete shops when claim removed, untrusted, unclimed, expired, resized or subclaim created.
+And delete shops when claim removed, untrusted, unclaimed, expired, resized or subclaim created.
 
 ## 配置
 

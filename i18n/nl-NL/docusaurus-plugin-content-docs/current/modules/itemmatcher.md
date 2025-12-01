@@ -4,7 +4,7 @@ ItemMatcher is a utility used by QuickShop-Hikari to compare the items, it is th
 
 :::caution
 
-If this feature is misconfigured, it will cause the plugin to stop working, and it can even be used for dupes, glitches or even worse.\
+If this feature is misconfigured, it will cause the plugin to stop working, and it can even be used for dupes, glitches or even worse.  
 **TL;DR: Keep default unless you know what you're doing.**
 
 :::
@@ -26,10 +26,10 @@ matcher:
   work-type: 1
 ```
 
-By default, QuickShop-Hikari will use Bukkit's matcher to provide the best cross-compatibility.\
+By default, QuickShop-Hikari will use Bukkit's matcher to provide the best cross-compatibility.  
 But still, you can toggle to QuickShop Item Matcher if you need to customize the comparing or running QuickShop on the server jar which have bug affect the Bukkit comparing system.
 
-## Customize the metadata compareing
+## Customize the metadata comparing
 
 Customize only works under QuickShop Item Matcher.
 

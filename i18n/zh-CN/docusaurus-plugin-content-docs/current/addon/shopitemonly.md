@@ -6,14 +6,8 @@
 
 :::
 
-:::info
-
-此插件在 4.1.0.0-SNAPSHOT 添加到 QuickShop-Hikari 中
-
-:::
-
-此插件可防止玩家将非商店物品放入商店容器中。\
-不适用于 InventoryWrapper API 控制的商店。\
+此插件可防止玩家将非商店物品放入商店容器中。  
+不适用于 InventoryWrapper API 控制的商店。  
 Does not apply to stores that use the item inventory redirection API (aka. InventoryWrapper API).
 
 此插件将在诸如玩家关闭容器或漏斗访问等事件中检查容器中的（或转移的）物品。

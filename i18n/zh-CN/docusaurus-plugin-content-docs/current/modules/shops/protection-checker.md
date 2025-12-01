@@ -79,7 +79,7 @@ shop:
   protection-checking: true
 ```
 
-Or only disable in specific worlds:
+或者只是明确地在某个世界禁用：
 
 ```yaml
 shop:

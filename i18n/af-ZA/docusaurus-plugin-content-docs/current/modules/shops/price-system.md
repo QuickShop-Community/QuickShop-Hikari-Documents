@@ -67,13 +67,13 @@ rules: # Rules set
 
 The `example1` and `example2` are rule name, you can write any random name that you can read.
 
-The `items` is a list that contains the items which you want limit to.\
+The `items` is a list that contains the items which you want limit to.  
 The item name can be [Bukkit Material Name](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html) or [Item Reference](../item-ref.md) tag.
 
 The `currency` only works under [Multi Currency](../multi-currency.md) mode.
 
-The `min` means the item minimal price.\
-The `max` means the item maxmium price.
+The `min` means the item minimal price.  
+The `max` means the item maximum price.
 
 All items in one rule set to share the same price limit, to give different price limit, you must create another rule.
 

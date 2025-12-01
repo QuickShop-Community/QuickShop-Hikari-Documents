@@ -1,29 +1,29 @@
-# Placeholders
+# 变量
 
-QuickShop-Hikari integrates with the PlaceHolderAPI and provides the ability to use PlaceHolders.
+QuickShop-Hikari 与 PlaceholderAPI 一同安装时，会提供一些可在其他地方使用的变量。
 
-## Use 3rd-party placeholders in QuickShop-Hikari
+## 在本插件中使用第三方变量
 
-Most messages are supports PlaceHolderAPI's placeholders.
+本插件中的大部分消息均支持嵌入 PlaceholderAPI 的变量。
 
-## QuickShop Placeholders
+## QuickShop 变量
 
-QuickShop-Hikari registered some placeholders into PlaceHolderAPI, you can use them in any plugin that also support PlaceHolderAPI.
+QuickShop-Hikari 会向 PlaceholderAPI 注册一些变量，你可以在其他支持的地方使用它们。
 
-All placeholders are cached for 15mins to avoid impact server performance.
+所有变量的数据缓存至多 15 分钟，避免影响服务器性能。
 
-- `%qs_metrics_recent_purchases_global_all_x%` - Count all purchases in recent x days with all types
-- `%qs_metrics_recent_purchases_global_selling_x%` - Count all purchases in recent x days which only selling shops
-- `%qs_metrics_recent_purchases_global_buying_x%` - Count all purchases in recent x days which only buying shops
-- `%qs_metrics_recent_purchases_global_buying_x%` - Count all purchases in recent x days which only buying shops
-- `%qs_metrics_recent_purchases_player_all_x%` - Count all purchases in recent x days with all types
-- `%qs_metrics_recent_purchases_player_selling_x%` - Count all purchases in recent x days which only selling shops for single player
-- `%qs_metrics_recent_purchases_player_buying_x%` - Count all purchases in recent x days which only buying shops for single player
-- `%qs_metrics_recent_purchases_player_buying_x%` - Count all purchases in recent x days which only buying shops for single player
-- `%qs_metrics_recent_transactionamount_global_all_x%` - Count all purchases transaction amount in recent x days with all types
-- `%qs_metrics_recent_transactionamount_global_selling_x%` - Count all purchases transaction amount in recent x days which only selling shops
-- `%qs_metrics_recent_transactionamount_global_buying_x%` - Count all purchases transaction amount in recent x days which only buying shops
-- `%qs_metrics_recent_transactionamount_global_buying_x%` - Count all purchases transaction amount in recent x days which only buying shops
+- `%qs_metrics_recent_purchases_global_all_x%` - 最近 x 日任意类型交易次数总计
+- `%qs_metrics_recent_purchases_global_selling_x%` - 最近 x 日出售类型交易次数总计
+- `%qs_metrics_recent_purchases_global_buying_x%` - 最近 x 日收购类型交易次数总计
+- `%qs_metrics_recent_purchases_global_buying_x%` - 最近 x 日仅收购类型交易次数总计
+- `%qs_metrics_recent_purchases_player_all_x%` - 最近 x 日任意类型交易次数总计
+- `%qs_metrics_recent_purchases_player_selling_x%` - 最近 x 日单玩家出售类型交易次数总计
+- `%qs_metrics_recent_purchases_player_buying_x%` - 最近 x 日单玩家仅收购类型交易次数总计
+- `%qs_metrics_recent_purchases_player_buying_x%` - 最近 x 日单玩家收购类型交易次数总计
+- `%qs_metrics_recent_transactionamount_global_all_x%` - 最近 x 日任意类型交易次数总计
+- `%qs_metrics_recent_transactionamount_global_selling_x%` - 最近 x 日仅出售类型交易额度总计
+- `%qs_metrics_recent_transactionamount_global_buying_x%` - 最近 x 日仅收购类型交易额度总计
+- `%qs_metrics_recent_transactionamount_global_buying_x%` - 最近 x 日仅收购类型交易额度总计
 - `%qs_metrics_recent_transactionamount_player_all_x%` - Count all purchases transaction amount in recent x days with all types
 - `%qs_metrics_recent_transactionamount_player_selling_x%` - Count all purchases transaction amount in recent x days which only selling shops for single player
 - `%qs_metrics_recent_transactionamount_player_buying_x%` - Count all purchases transaction amount in recent x days which only buying shops for single player

@@ -6,12 +6,6 @@ Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-
 
 :::
 
-:::info
-
-This addon was added into QuickShop-Hikari at 4.1.0.0-SNAPSHOT
-
-:::
-
 This addon allows store owners to set a limit on the number of sales for their store over a period of time.
 
 ## Permissions
@@ -41,8 +35,8 @@ Limit players to purchase up to 16 items per month.
 /quickshop limit period MONTH
 ```
 
-The system is based on the QuickShop-Hikari calendar system.\
-The timing is updated using the "value change" update system, which means that 2022-12-31 to 2023-01-01 is also considered a year.\
+The system is based on the QuickShop-Hikari calendar system.  
+The timing is updated using the "value change" update system, which means that 2022-12-31 to 2023-01-01 is also considered a year.  
 Same for days, months and hours.
 
 Available time units:

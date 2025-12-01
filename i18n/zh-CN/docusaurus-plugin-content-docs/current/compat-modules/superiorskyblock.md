@@ -2,17 +2,17 @@
 
 :::info
 
-Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at.md).
+找不到在哪里下载JAR？ [点击这里](../faq/where-addons-compacts-at.md). [Click here](../faq/where-addons-compacts-at.md).
 
 :::
 
-This module added [SuperiorSkyBlock](https://www.spigotmc.org/resources/%E2%9A%A1%EF%B8%8F-superiorskyblock2-%E2%9A%A1%EF%B8%8F-the-best-core-on-market-%E2%9A%A1%EF%B8%8F-1-19-2-support.87411/) supports.
+This module added [SuperiorSkyBlock](https://www.spigotmc.org/resources/87411/) supports.
 
 ## How does it work?
 
-Island owner will grant full of controls of all shops on their island, and auto delete those shops when shop owner uncooped.
+岛屿拥有者将可自由管理岛屿上的商店，且在对应玩家解除合作时能自动移除他们开设的商店。
 
-## Configuration
+## 配置
 
 ```yaml
 owner-create-only: false
