@@ -1,68 +1,63 @@
-# 安装
+# Installation
 
-This page will walk you through the process of installing QuickShop-Hikari on your PaperMC server.
+This page will walk you through the process of installing QuickShop-Hikari on your Spigot server.
 
-## 环境需求
+## Requirements
 
-- A [Paper][paper]-based Minecraft server (1.20 or higher, Java 21)
-- [Vault][vault]，用于连接 QuickShop 和您的经济插件。
-- For virtual item displays, and per-player localization you need a supported protocol library:
-  - [ProtocolLib][plib]
-  - [PacketEvents][https://www.spigotmc.org/resources/packetevents-api.80279/]
-- 任何兼容 Vault 的经济插件，例如 [XConomy][xconomy]。如果你已经安装了 [EssentialsX][essx] 可直接使用其内置的经济系统。
-- 一个权限管理插件，例如 [LuckPerms][luckperm].
+- A [Spigot][spigot]-based Minecraft server (1.20 or higher, Java 21)
+  - You can also use [Paper][paper], which is a fork of Spigot for better compatibility, more features and higher performance.
+- [Vault][vault] for bridging the economy system between QuickShop and your economy plugins.
+- [ProtocolLib][plib] for virtual display item, Per-player localization.
+- Any Vault compatible economy plugin, such as [XConomy][xconomy], If you have [EssentialsX][essx], it will also works well.
+- A permission management plugin like [LuckPerms][luckperm].
 
 In this document, we assume that you are using the latest version of QuickShop-Hikari, ProtocolLib, XConomy, Vault and LuckPerms under Windows 11 operation system (Linux is basically the same).
 
-## 安装前置依赖
+## Installing dependencies
 
-Before installing QuickShop-Hikari, you should make sure that you have all dependencies installed, including [Vault][vault], [ProtocolLib][plib] or \[PacketEvents]\[https\://www\.spigotmc.org/resources/packetevents-api.80279/], [XConomy][xconomy] (or [EssentialsX][essx] if you want) and [LuckPerms][luckperm]!
+Before installing QuickShop-Hikari, you should make sure that you have all dependencies installed, including [Vault][vault], [ProtocolLib][plib], [XConomy][xconomy] (or [EssentialsX][essx] if you want) and [LuckPerms][luckperm]!
 
-下载以上插件并将它们放入 `plugins` 文件夹即可！
+Download the plugins and drop them into `plugins` folder and you're all set!
 
-## Configuring the Display Protocol
+## Installing QuickShop-Hikari
 
-If you have both ProtocolLib and PacketEvents, and you want to utilize PacketEvents for your display items, you'll need to set it as such in config.yml: `shop. display-protocol: 'packetevents'`
-
-## 安装 QuickShop-Hikari
-
-从 [Modrinth][qs-modrinth] 下载最新版本的 QuickShop-Hikari。在此步骤中，请暂时忽略 `Compat-` 前缀的文件。  
-您需要下载的是带有 **Primary** 标签的一个文件，类似于下面的图片：  
+Download the latest version of QuickShop-Hikari from [Modrinth][qs-modrinth], if you find multiple files that have `Compat-` prefix in file name, ignore them in this step.\
 The only file you need to download should have a **Primary** tag like this in the image below:
 
 ![download primary file](./img/download-primary.png)
 
-将 QuickShop 的 jar 文件放入 `plugins` 文件夹，启动服务端，在控制台输入 `qs` 指令。 如果你正确地安装了插件，QuickShop 的指令帮助将会显示到控制台： If you properly installed the plugin, a command help page will pop-up like this in the image below:
+Drop the QuickShop jar into your `plugins` folder, start the server, then execute `qs` in the console. If you properly installed the plugin, a command help page will pop-up like this in the image below:
 
 ![console test](./img/qs-command-test.png)
 
-如果您在控制台中看到任何报错，可以阅读常见问题章节或加入我们的 [Discord][dc] 支持服务器，并在 `#qsh-support` 频道询问它们。
+If you see any errors in the output, you can read the FAQ section or join our [Discord][dc] support server and ask them in the `#qsh-support` channel.
 
-## 配置 QuickShop 以允许玩家使用
+## Configure QuickShop to allow players to use it
 
-默认情况下，玩家无法创建商店。
+By default, players are unable to create shops.
 
-要允许玩家创建和拥有商店，您必须授予他们必要的权限。
+To allow players to create and own shops, you must grant the necessary permissions to them.
 
-对大多数用户来说，你需要做的只是运行一个简单的命令：
+Fortunately, for most of the users, all you need to do is to run a simple command:
 
 ```mcfunction
 /lp group default permission set quickshop.player true
 ```
 
-and you're done! 这样就完成了！ 玩家现在可以创建和使用商店，也可以使用其他功能。
+and you're done! Players are now able to create and use shops, they will also have access to other features.
 
-对于高级权限设置，您可以看 [这一章节](./permissions.md)。
+For advanced permission setup, you can check [here](./permissions.md).
 
 ## All set! You are good to go!
 
-现在，QuickShop-Hikari 正在您的服务器上运行。关于更多设置，请查看左侧的导航面板并阅读不同的部分。
+Now QuickShop-Hikari is running on your server, for more settings, check the navigation panel on the left and see different sections.
 
+[spigot]: https://www.spigotmc.org/wiki/buildtools/
 [paper]: https://papermc.io/
-[vault]: https://www.spigotmc.org/resources/vaultunlocked.117277/
-[xconomy]: https://www.spigotmc.org/resources/xconomy.75669/
+[vault]: https://www.spigotmc.org/resources/34315/
+[xconomy]: https://www.spigotmc.org/resources/75669/
 [essx]: https://modrinth.com/plugin/essentialsx
-[plib]: https://www.spigotmc.org/resources/protocollib.1997/
+[plib]: https://www.spigotmc.org/resources/1997
 [luckperm]: https://luckperms.net/
 [qs-modrinth]: https://modrinth.com/plugin/quickshop-hikari
 [dc]: https://discord.gg/Bu3dVtmsD3
