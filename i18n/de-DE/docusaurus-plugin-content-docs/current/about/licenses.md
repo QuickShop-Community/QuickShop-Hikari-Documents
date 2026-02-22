@@ -1,11 +1,10 @@
 # Licenses
 
-Quickshop-Hikari is dual licensed under [GNU General Public License v3.0][gplv3] and \[GNU Affero General Public License v3.0]\[https\://www\.gnu.org/licenses/agpl-3.0.html].  
-New contributions will follow the updated license of \[GNU Affero General Public License v3.0]\[https\://www\.gnu.org/licenses/agpl-3.0.html].
+QuickShop-Hikari are licensed under [GNU General Public License v3.0][gplv3].
 
-## Third-party components
+## Thrid-party componments
 
-QuickShop-Hikari contains multiple 3rd-party open-source components.  
+QuickShop-Hikari contains multiple 3rd-party open-source components.\
 In accordance with the relevant requirements of their license, we list them below.
 
 ### Apache Commons Compress
@@ -108,7 +107,7 @@ All rights reserved.
 
 [See DOM4J's License](https://github.com/dom4j/dom4j/blob/master/LICENSE)
 
-###
+### CrowdinOTA
 
 [The MIT License][mit]
 
@@ -120,8 +119,8 @@ For extra components (e.g Addons or Compatibility Modules), they are published i
 
 ### Paste Viewer
 
-Paster Viewer style powered by [Sakura.css](https://github.com/oxalorg/sakura).  
-Pastebin service powered by [Lucko's Bytebin](https://bytebin.lucko.me/), [support Lucko](https://github.com/sponsors/lucko).
+Paster Viewer style powered by [Sakura.css](https://github.com/oxalorg/sakura).\
+Pastebin service powerted by [Lucko's Bytebin](https://bytebin.lucko.me/), [support Lucko](https://github.com/sponsors/lucko).
 
 ### Reversed Proxy
 
