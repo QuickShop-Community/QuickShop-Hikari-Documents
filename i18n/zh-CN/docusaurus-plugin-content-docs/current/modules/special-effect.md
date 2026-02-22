@@ -1,12 +1,11 @@
-# 游戏中的声音和效果
+# In game sounds and effects
 
-当您键入并执行快速shop命令时，您应该听到打字机的声音，可以在 config.yml 中进行更改。  
-这不是一个重要的功能，但可以有。  
+When you typing and execute a quickshop command, you should hear the sounds like typewriter, it can be changed in config.yml.\
 It's not an important feature, but can have (why not :)).
 
-无论如何，如果您不喜欢它们，可以禁用它们。
+Anyway, you can disable them if you dislike them.
 
-## 配置
+## Configuration
 
 ```yaml
 #Special in-game effect
