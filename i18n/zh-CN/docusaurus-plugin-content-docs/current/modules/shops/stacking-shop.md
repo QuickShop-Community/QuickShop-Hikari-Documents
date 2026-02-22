@@ -1,10 +1,10 @@
-# 堆叠商店
+# Stacking Shop
 
 QuickShop allow you sell/buy multiple item in bundles.
 
 ## Stacking shop
 
-| Regular Shop                     | 堆叠商店                          |
+| Regular Shop                     | Stacking Shop                 |
 | -------------------------------- | ----------------------------- |
 | ![regular](img/non-stacking.png) | ![stacking](img/stacking.png) |
 
