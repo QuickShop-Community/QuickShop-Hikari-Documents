@@ -1,47 +1,47 @@
-# 折扣促销扩展
+# Discount Addon
 
 :::info
 
-找不到在哪里下载JAR？ [点击这里](../faq/where-addons-compacts-at.md). [Click here](../faq/where-addons-compacts-at).
+Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at.md).
 
 :::
 
-折扣促销扩展模块向 QuickShop-Hikari 添加了优惠码功能。
+Discount Addon added Discount Code in your QuickShop-Hikari server.
 
-## 权限节点
+## Permission
 
-- **quickshopaddon.discount.use** _(默认: 所有人)_  
-  允许使用任何 `/quickshop discount` 命令的权限。
-- **quickshopaddon.discount.bypass** _(默认: OP)_  
-  允许绕过权限检查，强制修改、删除优惠码。
-- **quickshopaddon.discount.create.server_all_shops** _(默认：OP)_  
-  创建范围为 “服务器上任何人的所有商店” 的优惠码权限。
-- **quickshopaddon.discount.create.player_all_shops** _(默认：所有人)_  
-  创建范围为 “优惠码创建者拥有的所有的商店” 的优惠码权限。
-- **quickshopaddon.discount.create.specific_shops** _(默认：所有人)_  
-  创建范围为 “优惠码所指定的商店” 的优惠码权限。
+- **quickshopaddon.discount.use** _(default: everyone)_\
+  Permission to use any `/quickshop discount` commands.
+- **quickshopaddon.discount.bypass** _(default: OP)_\
+  Permission to bypass the owner checks to force config discount codes, add non-self shops in allow list or remove a discount code.
+- **quickshopaddon.discount.create.server_all_shops** _(default: OP)_\
+  Permission to create discount code that applied to all shops in your server.
+- **quickshopaddon.discount.create.player_all_shops** _(default: everyone)_\
+  Permission to create discount code that applied to player themself shops.
+- **quickshopaddon.discount.create.specific_shops** _(default: everyone)_\
+  Permission to create discount code that applied to shops in the code allow list.
 
-## 创建优惠码
+## Create a discount code
 
-若要创建一个优惠码，则需要使用 discount 命令：
+To create a discount code, you need use discount command:
 
 ```plain
-/quickshop discount create <code> <code-type> <rate> [最大使用次数] [门槛价格] [过期时间]
+/quickshop discount create <code> <code-type> <rate> [max-usage] [threshold] [expired-time]
 ```
 
-命令可能比较长，但你有一个命令助手来帮助你补全指令。
+Command pretty long, but you have in-game command assistant to help you in your tab complete hint.
 
 ![](https://user-images.githubusercontent.com/30802565/208291577-59fcd76e-2b4a-4e87-bdf5-582ba573795e.png)
 
-### 可用的代码类型
+### Available Code Type
 
-- SERVER_ALL_SHOPS (可应用到服务器上任何人的任何商店)
-- PLAYER_ALL_SHOPS (可应用到优惠码创建者所拥有的所有商店)
-- SPECIFIC_SHOPS (生效于通过命令 `/quickshop discount config <code> addshop` 添加的商店)
+- SERVER_ALL_SHOPS (Applied to all shops in your server)
+- PLAYER_ALL_SHOPS (Applied to all shops belongs to code creator)
+- SPECIFIC_SHOPS (Applied to shops in allow list that added by command `/quickshop discount config <code> addshop`)
 
-## 安装优惠码
+## Install a code
 
-如需使用优惠码，则必须在和商店交易之前安装优惠码。
+To use a Discount Code, you need install them before purchase shops.
 
 ```plain
 /quickshop discount install <code>
@@ -49,17 +49,17 @@
 
 The installed code will remember during this session.
 
-## 卸载优惠码
+## Uninstall a code
 
-若要卸载优惠码，您需要使用命令：
+To uninstall a Discount Code, you need use command:
 
 ```plain
 /quickshop discount uninstall <code>
 ```
 
-## Show details for a installed discount code
+## Show detailes for a installed discount code
 
-通过使用 `info` 子命令, 你可以查询优惠码创建者、适用范围、剩余使用次数、过期时间、最低使用门槛和折扣率。
+To use `info` subcommand, you can query the code creator, range, remaining usage, expired time, threshold and discount rate.
 
 ```plain
 /quickshop disount info
@@ -67,47 +67,45 @@ The installed code will remember during this session.
 
 ![](https://user-images.githubusercontent.com/30802565/208291677-85469f8b-2c34-4563-bb57-619cfe70e105.png)
 
-## 删除优惠码
+## Remove discount code
 
-若要移除一个指定的优惠码，请执行命令：
+To remove your a specified discount code, execute command:
 
 ```plain
 /quickshop discount remove <code>
 ```
 
-## 检查优惠码是否可以应用于特定商店
+## Check if discount code can be applied to specific shop
 
-You need install a discount code first, then you click the shop you want to check, a promote message will show up when you can enjoy the discount in this shop.  
+You need install a discount code first, then you click the shop you want to check, a promot message will show up when you can enjoy the discount in this shop.\
 If code not accepted by target shop, you will also receive a warning message when you click it.
 
 ![](https://user-images.githubusercontent.com/30802565/208291999-a32277bb-4111-4dde-bcd4-1d5f5b40ce9e.png)
 
 ## Apply the discounting
 
-您需要先安装一个优惠码，然后在接受您的优惠码的一个商店购买物品。  
-如果符合优惠条件，优惠码将自动生效，并在原价上计算折扣，并消耗优惠码的剩余使用次数。  
-Then discount will applied to your purchase, and your remaining count will be consumed.
+You need install a discount code first, then purchase a shop that accept your code.\
+Then discount will applied to your puchase, and your remaining count will be consumed.
 
 ![](https://user-images.githubusercontent.com/30802565/208292084-633fe7e1-239c-4b8c-99b2-87fc9e824e1f.png)
 
-_注意：如果上述附加条件未得到满足，优惠码将不会应用，您将不会得到折扣， 但同时剩余使用次数也不会被消耗，您将在提示信息中获得具体原因。_
+_NOTE: If the above additional conditions are not met, the Discount Code will not be applied and you will not get a discount, but at the same time, the Discount Code will not be consumed, and the prompt message will contain the specific reason._
 
-## 自动清理过期的优惠码
+## Auto Purge Expired Code
 
-An expired discount code will automatically removed while server startup or in 30mins.  
-过期的优惠码将在服务器启动或 30 分钟内自动删除。  
-在他们被清除之前，使用过期代码的玩家将收到一个错误消息，表明代码已过期。
+An expired discount code will automaticlly removed while server startup or in 30mins.\
+Before they got purged, players who use a expired code will receive a error message that says the code has been expired.
 
-## 时间格式转换
+## Convert your time
 
-过期时间接受 Zulu 时间格式和秒计 UNIX 时间戳格式：
+Expired time accepts both Zulu Time format and UNIX Timestamp in seconds format:
 
 ![](https://user-images.githubusercontent.com/30802565/208248088-01b1cbfe-ff79-4448-8a34-7e95324a71e1.png)
 
-您可以使用这个在线网站来帮助转换时间格式：  
+There have a such pretty online website can help you convert the time:\
 [https://www.unixtimestamp.com/](https://www.unixtimestamp.com/)
 
-Zulu 时间 (ISO 8601 Extended) 格式：
+For Zulu Time (ISO 8601 Extended) format:
 
 ```plain
 yyyy-MM-dd'T'HH:mm:ssZZ
