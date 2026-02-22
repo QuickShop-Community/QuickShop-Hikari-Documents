@@ -2,7 +2,7 @@
 
 :::info
 
-找不到在哪里下载JAR？ [点此](../faq/where-addons-compacts-at.md)。 [Click here](../faq/where-addons-compacts-at.md).
+找不到在哪里下载JAR？ [点此](../faq/where-addons-compacts-at.md)。 [Click here](../faq/where-addons-compacts-at).
 
 :::
 
