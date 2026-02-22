@@ -1,29 +1,29 @@
-# DiscordSRV 附加组件
+# DiscordSRV Addon
 
 :::info
 
-找不到在哪里下载JAR？ [点击这里](../faq/where-addons-compacts-at.md). [Click here](../faq/where-addons-compacts-at).
+Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at.md).
 
 :::
 
-DiscordSRV 附加组件将允许您将 QuickShop-Hikari 绑定到您的 [DiscordSRV](https://www.spigotmc.org/resources/discordsrv.18494/)，并通过Discord DM 向您的玩家发送实时通知。
+DiscordSRV addon will allow you hook QuickShop-Hikari into your [DiscordSRV](https://www.spigotmc.org/resources/discordsrv.18494/), send real-time notifications to your players through Discord DM.
 
-## 它是如何工作的
+## How it works
 
-附加组件将读取DiscordSRV玩家绑定数据，并使用DiscordSRV的API向玩家发送嵌入消息
+Addon will read DiscordSRV's player binding data and use DiscordSRV's API send embed messages to player.
 
-嵌入消息可以在使用中自定义 [语言覆盖系统](../modules/localization.md)。
+Embed messages can be customize in use [Language Override System](../modules/localization.md).
 
-## 配置
+## Configuration
 
 ```yaml
-# 配置文件版本号，不要修改
+# the config-version, don't touch it.
 config-version: 2
 
-# 管理员频道 ID，该频道将会接收管理员消息
+# the moderator discord channel ID used for sending mod messages.
 moderator-channel: "000000000000000000"
 
-# 功能管理
+# the features should be enabled.
 features:
   notify-shop-permission-changed: true
   notify-shop-price-changed: true
@@ -37,10 +37,13 @@ features:
   mod-notify-shop-transfer: false
 ```
 
-## 每个玩家设置
+## Per-player Settings
 
-Players are able to use `/quickshop discord <type> <enable/disable>` to toggle personal notification settings.
+Players are able to use `/quickshop discord <type> <enable/disable>` to toggle personal notifaction settings.
 
-## 截图
+## Screenshot
 
-![](https://user-images.githubusercontent.com/30802565/206912863-aecd677f-194a-40bf-8f2c-564f7e3be368.png) ![](https://user-images.githubusercontent.com/30802565/206912864-34a5114a-53c7-41d4-9931-75532c6525b8.png) ![](https://user-images.githubusercontent.com/30802565/206912867-01a5b862-82d3-4988-929d-d6db20f0dd44.png) ![](https://user-images.githubusercontent.com/30802565/206912869-2b0609a8-46f8-4ba0-8a8e-9e2afb77e0a9.png)
+![](https://user-images.githubusercontent.com/30802565/206912863-aecd677f-194a-40bf-8f2c-564f7e3be368.png)
+![](https://user-images.githubusercontent.com/30802565/206912864-34a5114a-53c7-41d4-9931-75532c6525b8.png)
+![](https://user-images.githubusercontent.com/30802565/206912867-01a5b862-82d3-4988-929d-d6db20f0dd44.png)
+![](https://user-images.githubusercontent.com/30802565/206912869-2b0609a8-46f8-4ba0-8a8e-9e2afb77e0a9.png)
