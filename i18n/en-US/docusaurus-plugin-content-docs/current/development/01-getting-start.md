@@ -6,7 +6,7 @@ This series of articles will help you build extensions for QuickShop-Hikari or i
 
 ## License
 
-QuickShop-Hikari is open source using the [AGPLv3](agplv3) license and you can always find our source code on [Github](https://github.com/QuickShop-Community/QuickShop-Hikari).  
+QuickShop-Hikari is open source using the [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.html) license and you can always find our source code on [Github](https://github.com/QuickShop-Community/QuickShop-Hikari).  
 You are free to modify and use any part of QuickShop-Hikari's source code as long as you adhere to the AGPLv3 agreement.
 
 ## 🚧Don't trust Javadoc too much
@@ -59,5 +59,3 @@ For APIs that may trigger network IO or long-time disk IO, you are required not 
 You can see [Util.ensureThread()](https://github.com/QuickShop-Community/QuickShop-Hikari/blob/3d1d271e1106ea1c83cc6068f8232ab7c7860918/quickshop-bukkit/src/main/java/com/ghostchu/quickshop/util/Util.java#L351) and find out the requirements of the different APIs by looking up their use. APIs that do not use Util.ensureThread() are allowed to be called from any thread by default.
 
 You should never bypass this restriction, we only add this check if necessary, it is the most basic guarantee of plugin performance and server stability, if you trigger a thread check, please use the scheduler to complete your task.
-
-[agplv3]: https://www.gnu.org/licenses/agpl-3.0.html
