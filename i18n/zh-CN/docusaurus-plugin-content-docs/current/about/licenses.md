@@ -1,69 +1,67 @@
-# 许可协议
+# Licenses
 
-Quickshop-Hikari is dual licensed under [GNU General Public License v3.0][gplv3] and \[GNU Affero General Public License v3.0]\[https\://www\.gnu.org/licenses/agpl-3.0.html].  
-New contributions will follow the updated license of \[GNU Affero General Public License v3.0]\[https\://www\.gnu.org/licenses/agpl-3.0.html].
+QuickShop-Hikari are licensed under [GNU General Public License v3.0][gplv3].
 
-## Third-party components
+## Thrid-party componments
 
-QuickShop-Hikari包含多个第三方开源组件。  
-根据其许可证的相关要求，我们在下面列出它们。  
+QuickShop-Hikari contains multiple 3rd-party open-source components.\
 In accordance with the relevant requirements of their license, we list them below.
 
 ### Apache Commons Compress
 
-[Apache许可证2.0][apache]
+[Apache Licenses v2.0][apache]
 
 ### Apache Commons Lang 3
 
-[Apache许可证2.0][apache]
+[Apache Licenses v2.0][apache]
 
-### Apache 通用文本
+### Apache Commons Text
 
-[Apache许可证2.0][apache]
+[Apache Licenses v2.0][apache]
 
-### Apache Commons 编解码器
+### Apache Commons Codec
 
-[Apache许可证2.0][apache]
+[Apache Licenses v2.0][apache]
 
-### Rollbar-Java工具
+### Rollbar-Java
 
-[MIT许可证][mit]
+[The MIT License][mit]
 
 ### SLF4J
 
-[MIT许可证][mit]
+[The MIT License][mit]
 
-### EasySQL（带有 API 和 HikariCP）
+### EasySQL (with API and HikariCP)
 
-[MIT许可证][mit]
+[The MIT License][mit]
 
 ### Unirest-Java
 
-[MIT许可证][mit]
+[The MIT License][mit]
 
-### Jetbrain 的 JVM 语法高亮
+### Jetbrain's Annotations for JVM-based languages
 
-[Apache许可证2.0][apache]
+[Apache Licenses v2.0][apache]
 
 ### SimpleReloadLib
 
-[MIT许可证][mit]
+[The MIT License][mit]
 
-### Adventure（API、平台与 MiniMessage）
+### Adventure (API, Platform and MiniMessage)
 
-[MIT许可证][mit]
+[The MIT License][mit]
 
 ### MineDown
 
-[MIT许可证][mit]
+[The MIT License][mit]
 
-### JDBC 流
+### JDBC Stream
 
-[MIT许可证][mit]
+[The MIT License][mit]
 
 ### StreamEX
 
-[Apache许可证2.0][apache]
+[Apache Licenses v2.0][apache]
 
 ### ProtocolLib
 
@@ -71,21 +69,21 @@ In accordance with the relevant requirements of their license, we list them belo
 
 ### MockBukkit
 
-[MIT许可证][mit]
+[The MIT License][mit]
 
 ### GemsEconomy
 
-版权所有。
+All rights reserved.
 
 ### PaperLib
 
-[MIT许可证][mit]
+[The MIT License][mit]
 
-### 面向 Java 的 H2（数据库）
+### H2 for Java (Database)
 
-混合许可证，包括 MPL2.0 和 EPL1.0。
+Mixed License, Including MPL2.0 and EPL1.0.
 
-请参阅 H2 [许可证](https://github.com/h2database/h2database/blob/master/LICENSE.txt)
+See [H2's License](https://github.com/h2database/h2database/blob/master/LICENSE.txt)
 
 ### SquirrelID
 
@@ -97,7 +95,7 @@ In accordance with the relevant requirements of their license, we list them belo
 
 ### json-smart
 
-未知
+Unknown
 
 ### CSVJDBC
 
@@ -105,57 +103,56 @@ In accordance with the relevant requirements of their license, we list them belo
 
 ### DOM4J
 
-版权所有。
+All rights reserved.
 
-[见 DOM4J 的许可](https://github.com/dom4j/dom4j/blob/master/LICENSE)
+[See DOM4J's License](https://github.com/dom4j/dom4j/blob/master/LICENSE)
 
 ### CrowdinOTA
 
-[MIT许可证][mit]
+[The MIT License][mit]
 
-## 额外组件
+## Extra Components
 
-对于额外组件(例如附加组件或兼容性模块)，它们是独立于QuickShop-Hikari二进制文件发布的。 请参考相应项目的许可文件。 Please refer to the license file of the corresponding project.
+For extra components (e.g Addons or Compatibility Modules), they are published independently of the QuickShop-Hikari binary. Please refer to the license file of the corresponding project.
 
-## 在线服务
+## Online Services
 
 ### Paste Viewer
 
-由 [Sakura.css](https://github.com/oxalorg/sakura)提供的Paster Viewer style。  
-由 [Lucko's Bytebin](https://bytebin.lucko.me/)提供的 Pastebin服务 [支持 Lucko](https://github.com/sponsors/lucko)。  
-Pastebin service powered by [Lucko's Bytebin](https://bytebin.lucko.me/), [support Lucko](https://github.com/sponsors/lucko).
+Paster Viewer style powered by [Sakura.css](https://github.com/oxalorg/sakura).\
+Pastebin service powerted by [Lucko's Bytebin](https://bytebin.lucko.me/), [support Lucko](https://github.com/sponsors/lucko).
 
-### 反向代理
+### Reversed Proxy
 
 #### Bytebin Proxy
 
-由CloudFlare Worker提供的服务
+Service provided by CloudFlare Worker.
 
-#### Ko-Fi API Proxy
+#### Ko-fi API Proxy
 
-由CloudFlare Worker提供的服务
+Service provided by CloudFlare Worker.
 
-### 捐赠服务
+### Donation Service
 
 #### Ko-fi
 
-由 ko-fi.com 提供服务
+Service provided by ko-fi.com.
 
 #### Ko-fi webhook callback
 
-由腾讯云(CN)提供服务
+Service provided by Tencent Cloud (CN).
 
-### Metric服务
+### Metric Service
 
 #### bStats
 
-数据由bStats.org收集
+Metrics are collected by bStats.org.
 
-### 翻译平台
+### Translation Platform
 
 #### Crowdin
 
-翻译由社区成员、OTA和Crowdin平台提供。
+Translation are provided by Community Members, OTA and Platform by Crowdin.
 
 [apache]: https://www.apache.org/licenses/
 [mit]: https://opensource.org/licenses/MIT
