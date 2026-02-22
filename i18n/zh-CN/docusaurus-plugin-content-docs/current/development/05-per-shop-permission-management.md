@@ -1,7 +1,7 @@
 # 0x05 分商店权限
 
-QuickShop-Hikari 有一个分商店管理权限的系统。\
-因此，直接对权限进行判断是不够的，你还需要进行一些额外的检查。\
+QuickShop-Hikari 有一个分商店管理权限的系统。  
+因此，直接对权限进行判断是不够的，你还需要进行一些额外的检查。  
 Therefore, for a normal permission node check is not enough, you need to attach an additional check.
 
 ## 检查商店
