@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">Packet System for Virtual Display Items | QuickShop-Hikari Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://quickshop-community.github.io/QuickShop-Hikari-Documents/ja-JP/docs/development/protocol-system"><meta data-rh="true" property="og:locale" content="ja_JP"><meta data-rh="true" property="og:locale:alternate" content="de_DE"><meta data-rh="true" property="og:locale:alternate" content="en_US"><meta data-rh="true" property="og:locale:alternate" content="zh_CN"><meta data-rh="true" property="og:locale:alternate" content="zh_HK"><meta data-rh="true" property="og:locale:alternate" content="zh_TW"><meta data-rh="true" name="docusaurus_locale" content="ja-JP"><meta data-rh="true" name="docsearch:language" content="ja-JP"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Packet System for Virtual Display Items | QuickShop-Hikari Docs"><meta data-rh="true" name="description" content="Overview"><meta data-rh="true" property="og:description" content="Overview"><link data-rh="true" rel="icon" href="/QuickShop-Hikari-Documents/ja-JP/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/ja-JP/docs/development/protocol-system"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/de-DE/docs/development/protocol-system" hreflang="de-DE"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/docs/development/protocol-system" hreflang="en-US"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/ja-JP/docs/development/protocol-system" hreflang="ja-JP"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-CN/docs/development/protocol-system" hreflang="zh-CN"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-HK/docs/development/protocol-system" hreflang="zh-HK"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-TW/docs/development/protocol-system" hreflang="zh-TW"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/docs/development/protocol-system" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Packet System for Virtual Display Items","item":"https://quickshop-community.github.io/QuickShop-Hikari-Documents/ja-JP/docs/development/protocol-system"}]}</script><link rel="stylesheet" href="/QuickShop-Hikari-Documents/ja-JP/assets/css/styles.26e22c3d.css">
-<script src="/QuickShop-Hikari-Documents/ja-JP/assets/js/runtime~main.fba9e83c.js" defer="defer"></script>
-<script src="/QuickShop-Hikari-Documents/ja-JP/assets/js/main.bb526061.js" defer="defer"></script>
+<script src="/QuickShop-Hikari-Documents/ja-JP/assets/js/runtime~main.f08521c7.js" defer="defer"></script>
+<script src="/QuickShop-Hikari-Documents/ja-JP/assets/js/main.79585941.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -21,55 +21,91 @@
 <ul>
 <li class=""><strong>Purpose</strong>: Manages packet handling and initialization logic.</li>
 <li class=""><strong>Interface</strong>: <code>PacketHandler&lt;T&gt;</code></li>
-<li class=""><strong>Key Methods</strong>:</li>
-<li class=""><code>Map&lt;String, PacketFactory&lt;?&gt;&gt; factories()</code></li>
+<li class=""><strong>Key Methods</strong>:<!-- -->
+<ul>
+<li class=""><code>Map&lt;String, PacketFactory&lt;?&gt;&gt; factories()</code>
+<ul>
 <li class="">Retrieves a map of supported <code>PacketFactory</code> instances keyed by game versions.</li>
-<li class=""><code>void initialize()</code></li>
+</ul>
+</li>
+<li class=""><code>void initialize()</code>
+<ul>
 <li class="">Initializes the packet handler.</li>
-<li class=""><code>Optional&lt;PacketFactory&lt;?&gt;&gt; factory(String version)</code></li>
+</ul>
+</li>
+<li class=""><code>Optional&lt;PacketFactory&lt;?&gt;&gt; factory(String version)</code>
+<ul>
 <li class="">Retrieves a <code>PacketFactory</code> for a specific game version.</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-packetfactory">2. <strong>PacketFactory</strong><a href="#2-packetfactory" class="hash-link" aria-label="Direct link to 2-packetfactory" title="Direct link to 2-packetfactory" translate="no">​</a></h3>
 <ul>
 <li class=""><strong>Purpose</strong>: Creates and sends specific packet types.</li>
 <li class=""><strong>Interface</strong>: <code>PacketFactory&lt;T&gt;</code></li>
-<li class=""><strong>Supported Packets</strong>:</li>
-<li class=""><strong>Spawn Packet</strong>:</li>
+<li class=""><strong>Supported Packets</strong>:<!-- -->
+<ul>
+<li class=""><strong>Spawn Packet</strong>:<!-- -->
+<ul>
 <li class="">Spawns a virtual item at a specified location. Typically created using <code>createSpawnPacket()</code>.</li>
 <li class="">Example Use: Representing shop items visually.</li>
-<li class=""><strong>Metadata Packet</strong>:</li>
+</ul>
+</li>
+<li class=""><strong>Metadata Packet</strong>:<!-- -->
+<ul>
 <li class="">Updates an entity&#x27;s metadata, such as appearance or name. Created using <code>createMetaDataPacket()</code>.</li>
 <li class="">Example Use: Updating item display name or properties.</li>
-<li class=""><strong>Velocity Packet</strong>:</li>
+</ul>
+</li>
+<li class=""><strong>Velocity Packet</strong>:<!-- -->
+<ul>
 <li class="">Assigns motion or velocity to an entity. Created using <code>createVelocityPacket()</code>.</li>
 <li class="">Example Use: Custom animations for virtual items.</li>
-<li class=""><strong>Destroy Packet</strong>:</li>
+</ul>
+</li>
+<li class=""><strong>Destroy Packet</strong>:<!-- -->
+<ul>
 <li class="">Removes the entity from the client view. Created using <code>createDestroyPacket()</code>.</li>
 <li class="">Example Use: Unloading or removing a virtual display item.</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <p>Developers implementing custom <code>PacketFactory</code> should ensure these packets are correctly handled and optimized for performance.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-virtualdisplayitemmanager">3. <strong>VirtualDisplayItemManager</strong><a href="#3-virtualdisplayitemmanager" class="hash-link" aria-label="Direct link to 3-virtualdisplayitemmanager" title="Direct link to 3-virtualdisplayitemmanager" translate="no">​</a></h3>
 <ul>
 <li class=""><strong>Purpose</strong>: Oversees the lifecycle of virtual display items and integrates with packet handlers.</li>
-<li class=""><strong>Key Features</strong>:</li>
+<li class=""><strong>Key Features</strong>:<!-- -->
+<ul>
 <li class="">Registers and initializes <code>PacketHandler</code> instances (e.g., <code>ProtocolLibHandler</code> and <code>PacketEventsHandler</code>).</li>
 <li class="">Manages virtual display items mapped to chunks.</li>
 <li class="">Provides thread-safe operations for adding and removing display items.</li>
 </ul>
+</li>
+</ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-virtualdisplayitem">4. <strong>VirtualDisplayItem</strong><a href="#4-virtualdisplayitem" class="hash-link" aria-label="Direct link to 4-virtualdisplayitem" title="Direct link to 4-virtualdisplayitem" translate="no">​</a></h3>
 <ul>
 <li class=""><strong>Purpose</strong>: Represents a virtual item displayed to players.</li>
-<li class=""><strong>Key Features</strong>:</li>
+<li class=""><strong>Key Features</strong>:<!-- -->
+<ul>
 <li class="">Generates and caches packets for spawning, metadata, velocity, and destruction.</li>
 <li class="">Manages packet senders for each player.</li>
 <li class="">Handles spawn and removal operations dynamically.</li>
 </ul>
+</li>
+</ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-protocollibhandler-and-packeteventshandler">5. <strong>ProtocolLibHandler and PacketEventsHandler</strong><a href="#5-protocollibhandler-and-packeteventshandler" class="hash-link" aria-label="Direct link to 5-protocollibhandler-and-packeteventshandler" title="Direct link to 5-protocollibhandler-and-packeteventshandler" translate="no">​</a></h3>
 <ul>
 <li class=""><strong>Purpose</strong>: Provide implementations of <code>PacketHandler</code> using ProtocolLib and PacketEvents, respectively.</li>
-<li class=""><strong>Differences</strong>:</li>
+<li class=""><strong>Differences</strong>:<!-- -->
+<ul>
 <li class=""><code>ProtocolLibHandler</code> leverages ProtocolLib API.</li>
 <li class=""><code>PacketEventsHandler</code> uses the PacketEvents library.</li>
+</ul>
+</li>
 </ul>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="expanding-the-protocol-system">Expanding the Protocol System<a href="#expanding-the-protocol-system" class="hash-link" aria-label="Direct link to Expanding the Protocol System" title="Direct link to Expanding the Protocol System" translate="no">​</a></h2>
@@ -82,12 +118,18 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="supported-game-versions">Supported Game Versions<a href="#supported-game-versions" class="hash-link" aria-label="Direct link to Supported Game Versions" title="Direct link to Supported Game Versions" translate="no">​</a></h2>
 <p>Packet factories are provided for specific game versions through two primary implementations:</p>
 <ul>
-<li class=""><strong>ProtocolLib</strong>:</li>
+<li class=""><strong>ProtocolLib</strong>:<!-- -->
+<ul>
 <li class="">Versions: 1.20.1 - 1.21.4</li>
 <li class="">Factories: <code>PacketFactoryv1_20</code>, <code>PacketFactoryv1_21</code></li>
-<li class=""><strong>PacketEvents</strong>:</li>
+</ul>
+</li>
+<li class=""><strong>PacketEvents</strong>:<!-- -->
+<ul>
 <li class="">Versions: 1.20.1 - 1.21.4</li>
 <li class="">Factories: <code>PacketFactoryv1_20</code>, <code>PacketFactoryv1_21</code></li>
+</ul>
+</li>
 </ul>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Direct link to Best Practices" title="Direct link to Best Practices" translate="no">​</a></h2>
