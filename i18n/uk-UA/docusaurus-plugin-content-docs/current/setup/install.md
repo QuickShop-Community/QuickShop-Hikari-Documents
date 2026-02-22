@@ -8,15 +8,15 @@ This page will walk you through the process of installing QuickShop-Hikari on yo
 - [Vault][vault] for bridging the economy system between QuickShop and your economy plugins.
 - For virtual item displays, and per-player localization you need a supported protocol library:
   - [ProtocolLib][plib]
-  - [PacketEvents](pevents)
+  - [PacketEvents][https://www.spigotmc.org/resources/packetevents-api.80279/]
 - Any Vault compatible economy plugin, such as [XConomy][xconomy], If you have [EssentialsX][essx], it will also works well.
 - A permission management plugin like [LuckPerms][luckperm].
 
-In this document, we assume that you are using the latest version of QuickShop-Hikari, ProtocolLib or PacketEvents, XConomy, Vault and LuckPerms under Windows 11 operation system (Linux is basically the same).
+In this document, we assume that you are using the latest version of QuickShop-Hikari, ProtocolLib, XConomy, Vault and LuckPerms under Windows 11 operation system (Linux is basically the same).
 
 ## Installing dependencies
 
-Before installing QuickShop-Hikari, you should make sure that you have all dependencies installed, including [Vault][vault], [ProtocolLib][plib] or [PacketEvents](pevents), [XConomy][xconomy] (or [EssentialsX][essx] if you want) and [LuckPerms][luckperm]!
+Before installing QuickShop-Hikari, you should make sure that you have all dependencies installed, including [Vault][vault], [ProtocolLib][plib] or \[PacketEvents]\[https\://www\.spigotmc.org/resources/packetevents-api.80279/], [XConomy][xconomy] (or [EssentialsX][essx] if you want) and [LuckPerms][luckperm]!
 
 Download the plugins and drop them into `plugins` folder and you're all set!
 
@@ -62,7 +62,6 @@ Now QuickShop-Hikari is running on your server, for more settings, check the nav
 [xconomy]: https://www.spigotmc.org/resources/xconomy.75669/
 [essx]: https://modrinth.com/plugin/essentialsx
 [plib]: https://www.spigotmc.org/resources/protocollib.1997/
-[pevents]: https://www.spigotmc.org/resources/packetevents-api.80279/
 [luckperm]: https://luckperms.net/
 [qs-modrinth]: https://modrinth.com/plugin/quickshop-hikari
 [dc]: https://discord.gg/Bu3dVtmsD3
