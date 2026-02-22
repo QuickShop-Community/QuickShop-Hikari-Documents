@@ -1,6 +1,6 @@
 # Interaction Manager
 
-The Interaction Manager allows you to customize the click handler.\
+The Interaction Manager allows you to customize the click handler.  
 For example, you can set store creation or interaction to occur only when you click on a store while sneaking.
 
 ## Configuration
