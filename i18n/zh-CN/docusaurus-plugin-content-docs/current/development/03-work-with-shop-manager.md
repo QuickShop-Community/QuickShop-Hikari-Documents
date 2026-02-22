@@ -10,8 +10,8 @@ ShopManager manager = api.getShopManager();
 
 ## 获取商店
 
-Since Minecraft has a special "Large Chest", we can't simply get the store map directly from the coordinates.\
-因为 Minecraft 有一个特殊的“大型箱子”，我们不能直接通过坐标绘制商店分布地图。\
+Since Minecraft has a special "Large Chest", we can't simply get the store map directly from the coordinates.  
+因为 Minecraft 有一个特殊的“大型箱子”，我们不能直接通过坐标绘制商店分布地图。  
 QuickShop-Hikari 的商店只会与半个“大型箱子”绑定，所以若要获取商店信息，你需要找到箱子方块本身，以及与其相连的另一个箱子。
 
 好消息是，插件内置了一个 API，能快速处理这种情况。
@@ -72,8 +72,8 @@ manager.deleteShop(shop) // 从内存与数据库中完全删除此商店
 
 ## 识别商店
 
-Please note that store locations are technically variable and you should not use coordinates to identify a store.\
-需要注意的是，商店位置是一种内部变量，且不应通过坐标查找商店。\
+Please note that store locations are technically variable and you should not use coordinates to identify a store.  
+需要注意的是，商店位置是一种内部变量，且不应通过坐标查找商店。  
 另外，RuntimeRandomUniqueId 不应用于识别商店，因为正如其名称所述，它的值会在服务器每次重启时刷新，因此它应当只用于玩家与服务器交互时的场景。
 
 ```java
