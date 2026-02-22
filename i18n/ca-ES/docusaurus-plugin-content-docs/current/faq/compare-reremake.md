@@ -4,9 +4,9 @@ If you are a Reremake user, you may be confused about the differences between Hi
 
 ## Comparison
 
-✔️ = Full Support\
-✔️+ = Enhanced full support\
-❌ = Unsupported\
+✔️ = Full Support  
+✔️+ = Enhanced full support  
+❌ = Unsupported  
 ⚠️ = Partial Support (or doesn't work)
 
 | Features                                                                                | Reremake                                                | Hikari                   |
@@ -63,8 +63,8 @@ If you are a Reremake user, you may be confused about the differences between Hi
 
 ## Which one should I use?
 
-Well, it depends on what your needs are.\
-If you have an old server ({'<'}1.20) instance, Reremake is your only choice.\
+Well, it depends on what your needs are.  
+If you have an old server ({'<'}1.20) instance, Reremake is your only choice.  
 ~~If you are in China which has GFW interfere, you also should consider Reremake because it doesn't need to load libraries from Global Internet.~~ Solved in 6.0.0.0.
 
 If none of these applies, give Hikari a try!
