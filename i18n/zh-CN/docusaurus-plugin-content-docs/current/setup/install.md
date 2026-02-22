@@ -6,7 +6,9 @@
 
 - A [Paper][paper]-based Minecraft server (1.20 or higher, Java 21)
 - [Vault][vault]，用于连接 QuickShop 和您的经济插件。
-- [ProtocolLib][plib]，用于显示仅玩家可见的虚拟悬浮物品。
+- For virtual item displays, and per-player localization you need a supported protocol library:
+  - [ProtocolLib][plib]
+  - [PacketEvents](pevents)
 - 任何兼容 Vault 的经济插件，例如 [XConomy][xconomy]。如果你已经安装了 [EssentialsX][essx] 可直接使用其内置的经济系统。
 - 一个权限管理插件，例如 [LuckPerms][luckperm].
 
@@ -14,9 +16,13 @@
 
 ## 安装前置依赖
 
-在安装 QuickShop-Hikari 之前，请确保您已经安装了所有前置插件：[Vault][vault]、[ProtocolLib][plib]、[XConomy][xconomy]（也可以是 [EssentialsX][essx]) 和 [LuckPerms][luckperm]！
+Before installing QuickShop-Hikari, you should make sure that you have all dependencies installed, including [Vault][vault], [ProtocolLib][plib] or [PacketEvents](pevents), [XConomy][xconomy] (or [EssentialsX][essx] if you want) and [LuckPerms][luckperm]!
 
 下载以上插件并将它们放入 `plugins` 文件夹即可！
+
+## Configuring the Display Protocol
+
+If you have both ProtocolLib and PacketEvents, and you want to utilize PacketEvents for your display items, you'll need to set it as such in config.yml: `shop. display-protocol: 'packetevents'`
 
 ## 安装 QuickShop-Hikari
 
@@ -53,10 +59,11 @@ and you're done! 这样就完成了！ 玩家现在可以创建和使用商店�
 现在，QuickShop-Hikari 正在您的服务器上运行。关于更多设置，请查看左侧的导航面板并阅读不同的部分。
 
 [paper]: https://papermc.io/
-[vault]: https://www.spigotmc.org/resources/34315/
-[xconomy]: https://www.spigotmc.org/resources/75669/
+[vault]: https://www.spigotmc.org/resources/vaultunlocked.117277/
+[xconomy]: https://www.spigotmc.org/resources/xconomy.75669/
 [essx]: https://modrinth.com/plugin/essentialsx
-[plib]: https://www.spigotmc.org/resources/1997
+[plib]: https://www.spigotmc.org/resources/protocollib.1997/
+[pevents]: https://www.spigotmc.org/resources/packetevents-api.80279/
 [luckperm]: https://luckperms.net/
 [qs-modrinth]: https://modrinth.com/plugin/quickshop-hikari
 [dc]: https://discord.gg/Bu3dVtmsD3
