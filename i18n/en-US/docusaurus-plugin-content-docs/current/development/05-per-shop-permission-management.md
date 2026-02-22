@@ -1,6 +1,6 @@
 # 0x05 Per shop permission
 
-QuickShop-Hikari has a per shop permission management system.\
+QuickShop-Hikari has a per shop permission management system.  
 Therefore, for a normal permission node check is not enough, you need to attach an additional check.
 
 ## Check with shop
