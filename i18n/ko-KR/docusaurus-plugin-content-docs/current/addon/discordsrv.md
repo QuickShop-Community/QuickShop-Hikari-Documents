@@ -2,7 +2,7 @@
 
 :::info
 
-Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at).
+Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at.md).
 
 :::
 
@@ -39,7 +39,7 @@ features:
 
 ## Per-player Settings
 
-Players are able to use `/quickshop discord <type> <enable/disable>` to toggle personal notification settings.
+Players are able to use `/quickshop discord <type> <enable/disable>` to toggle personal notifaction settings.
 
 ## Screenshot
 
