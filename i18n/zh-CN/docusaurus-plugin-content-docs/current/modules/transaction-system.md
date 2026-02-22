@@ -1,17 +1,17 @@
-# 交易系统
+# Transaction System
 
-QuickShop-Hikari 有一个系统来确保交易一致性，避免交易过程中的错误。
+QuickShop-Hikari have a system to ensure the transactional consistency, Avoid errors in the transaction process that destroy the data consistency of both parties.
 
-TL;DR 如果交易失败，QuickShop 将会回滚双方的钱和物品，将背包和金钱回滚到交易开始之前的状态。
+TL;DR If the transaction fails, QuickShop will roll back the money of both parties, restore the Inventory to the state before the transaction started, and reverse the transaction.
 
-## 它是如何工作的?
+## How it works?
 
-目前，QuickShop-Hikari 有两种类型支持交易系统。
+Currently, QuickShop-Hikari have two of types that support Transaction System.
 
-## 经济
+## For Economy
 
-QuickShop 记录存款或提取的余额金额，并在交易失败时重新提取和重新存回。
+QuickShop record the amounts of balance that deposit or withdraw, and re-withdraw and re-deposit back them when transaction failed.
 
 ## For Inventory
 
-QuickShop 将为商店容器的物品栏和玩家物品栏拍摄快照，并在交易失败时恢复快照。
+QuickShop will take a snapshot for both shop inventory and player inventory, and restore the snapshot them when transaction failed.
