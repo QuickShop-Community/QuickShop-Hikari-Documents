@@ -1,32 +1,32 @@
-# DisplayControl 插件
+# DisplayControl Addon
 
 :::info
 
-找不到在哪里下载JAR？ [点击这里](../faq/where-addons-compacts-at.md). [Click here](../faq/where-addons-compacts-at).
+Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at.md).
 
 :::
 
-DisplayControl插件使您能够允许玩家控制不同客户端的悬浮物。
+DisplayControl Addon gives you the ability to allow player controls the display item behavior on different clients.
 
-**此插件仅适用于虚拟悬浮物。**
+**THIS ADDON ONLY WORKS WITH VIRTUAL DISPLAY ITEM TOGETHER**
 
 ## Requirement
 
-如果您在Bukkit/Spigot 服务器上使用BungeeCord ，您将需要在BungeeCord 环境中安装 [Compat-BungeeCord-Geyser Bridge](../compat-modules/bungeecord-geyser.md) 。 否则，将不会运行。
+If you Bukkit/Spigot server behind a BungeeCord, you will need to install [Compat-BungeeCord-Geyser Bridge](../compat-modules/bungeecord-geyser.md) on your BungeeCord instance.
 Otherwise, it will doesn't work at all.
 
-## 命令
+## Commands
 
 `/quickshop displaycontrol <auto/enable/disable>`
 
-- `auto` - 默认在Java版客户端运行，同时禁止在基岩版客户端运行。
+- `auto` - Default behavior, will enable display on Java Edition clients, and disable on Bedrock clients.
 - `enable` - Always enable display on all clients. _If the server disabled display items, this option will respect the server global settings._
-- `disable` -始终禁止在所有客户端运行。
+- `disable` - Always disable display on all clients.
 
-## 权限
+## Permissions
 
-- `quickshopaddon.displaycontrol.use` - 允许玩家使用命令 `/quickshop displaycontrol`
+- `quickshopaddon.displaycontrol.use` - Allows players to use `/quickshop displaycontrol` commands
 
-## 演示
+## Demo
 
-![display-control 演示](img/display-control.gif)
+![display-control demo](img/display-control.gif)
