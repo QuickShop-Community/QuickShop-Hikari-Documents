@@ -4,7 +4,7 @@ Not only Chests, but also all Containers all supported used for QuickShop contai
 
 ![shop-blocks](img/shop-blocks.png)
 
-## Configuration
+## 配置
 
 To add or remove shop blocks, you can change the settings in config.yml:
 
