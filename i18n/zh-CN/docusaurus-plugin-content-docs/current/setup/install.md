@@ -8,15 +8,15 @@ This page will walk you through the process of installing QuickShop-Hikari on yo
 - [Vault][vault]，用于连接 QuickShop 和您的经济插件。
 - For virtual item displays, and per-player localization you need a supported protocol library:
   - [ProtocolLib][plib]
-  - [PacketEvents](pevents)
+  - [PacketEvents][https://www.spigotmc.org/resources/packetevents-api.80279/]
 - 任何兼容 Vault 的经济插件，例如 [XConomy][xconomy]。如果你已经安装了 [EssentialsX][essx] 可直接使用其内置的经济系统。
 - 一个权限管理插件，例如 [LuckPerms][luckperm].
 
-In this document, we assume that you are using the latest version of QuickShop-Hikari, ProtocolLib or PacketEvents, XConomy, Vault and LuckPerms under Windows 11 operation system (Linux is basically the same).
+In this document, we assume that you are using the latest version of QuickShop-Hikari, ProtocolLib, XConomy, Vault and LuckPerms under Windows 11 operation system (Linux is basically the same).
 
 ## 安装前置依赖
 
-Before installing QuickShop-Hikari, you should make sure that you have all dependencies installed, including [Vault][vault], [ProtocolLib][plib] or [PacketEvents](pevents), [XConomy][xconomy] (or [EssentialsX][essx] if you want) and [LuckPerms][luckperm]!
+Before installing QuickShop-Hikari, you should make sure that you have all dependencies installed, including [Vault][vault], [ProtocolLib][plib] or \[PacketEvents]\[https\://www\.spigotmc.org/resources/packetevents-api.80279/], [XConomy][xconomy] (or [EssentialsX][essx] if you want) and [LuckPerms][luckperm]!
 
 下载以上插件并将它们放入 `plugins` 文件夹即可！
 
@@ -63,7 +63,6 @@ and you're done! 这样就完成了！ 玩家现在可以创建和使用商店�
 [xconomy]: https://www.spigotmc.org/resources/xconomy.75669/
 [essx]: https://modrinth.com/plugin/essentialsx
 [plib]: https://www.spigotmc.org/resources/protocollib.1997/
-[pevents]: https://www.spigotmc.org/resources/packetevents-api.80279/
 [luckperm]: https://luckperms.net/
 [qs-modrinth]: https://modrinth.com/plugin/quickshop-hikari
 [dc]: https://discord.gg/Bu3dVtmsD3
