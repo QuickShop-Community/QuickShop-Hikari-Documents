@@ -2,7 +2,7 @@
 
 QuickShop have a built-in shop searcher will allow you search the shops on your server without load any chunks.
 
-## 使用说明
+## Usage
 
 Execute command `/quickshop find <itemname>`.
 
