@@ -6,6 +6,8 @@ Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-
 
 :::
 
+This compatiblity module is no longer maintained as AngelChest has become unsupported.
+
 This compatibility module adds [AngelChest](https://www.spigotmc.org/resources/88214) support.
 
 ## How does it work?
