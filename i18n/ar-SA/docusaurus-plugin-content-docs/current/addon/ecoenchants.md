@@ -2,7 +2,13 @@
 
 :::info
 
-Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at).
+Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at.md).
+
+:::
+
+:::info
+
+This addon was added into QuickShop-Hikari at 5.0.0.0
 
 :::
 
