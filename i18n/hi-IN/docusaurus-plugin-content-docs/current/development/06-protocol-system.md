@@ -15,30 +15,30 @@ This documentation will guide developers through the components, implementation 
 - **Purpose**: Manages packet handling and initialization logic.
 - **Interface**: `PacketHandler<T>`
 - **Key Methods**:
- - `Map<String, PacketFactory<?>> factories()`
-  - Retrieves a map of supported `PacketFactory` instances keyed by game versions.
- - `void initialize()`
-  - Initializes the packet handler.
- - `Optional<PacketFactory<?>> factory(String version)`
-  - Retrieves a `PacketFactory` for a specific game version.
+  - `Map<String, PacketFactory<?>> factories()`
+    - Retrieves a map of supported `PacketFactory` instances keyed by game versions.
+  - `void initialize()`
+    - Initializes the packet handler.
+  - `Optional<PacketFactory<?>> factory(String version)`
+    - Retrieves a `PacketFactory` for a specific game version.
 
 ### 2. **PacketFactory**
 
 - **Purpose**: Creates and sends specific packet types.
 - **Interface**: `PacketFactory<T>`
 - **Supported Packets**:
- - **Spawn Packet**:
-  - Spawns a virtual item at a specified location. Typically created using `createSpawnPacket()`.
-  - Example Use: Representing shop items visually.
- - **Metadata Packet**:
-  - Updates an entity's metadata, such as appearance or name. Created using `createMetaDataPacket()`.
-  - Example Use: Updating item display name or properties.
- - **Velocity Packet**:
-  - Assigns motion or velocity to an entity. Created using `createVelocityPacket()`.
-  - Example Use: Custom animations for virtual items.
- - **Destroy Packet**:
-  - Removes the entity from the client view. Created using `createDestroyPacket()`.
-  - Example Use: Unloading or removing a virtual display item.
+  - **Spawn Packet**:
+    - Spawns a virtual item at a specified location. Typically created using `createSpawnPacket()`.
+    - Example Use: Representing shop items visually.
+  - **Metadata Packet**:
+    - Updates an entity's metadata, such as appearance or name. Created using `createMetaDataPacket()`.
+    - Example Use: Updating item display name or properties.
+  - **Velocity Packet**:
+    - Assigns motion or velocity to an entity. Created using `createVelocityPacket()`.
+    - Example Use: Custom animations for virtual items.
+  - **Destroy Packet**:
+    - Removes the entity from the client view. Created using `createDestroyPacket()`.
+    - Example Use: Unloading or removing a virtual display item.
 
 Developers implementing custom `PacketFactory` should ensure these packets are correctly handled and optimized for performance.
 
@@ -46,24 +46,24 @@ Developers implementing custom `PacketFactory` should ensure these packets are c
 
 - **Purpose**: Oversees the lifecycle of virtual display items and integrates with packet handlers.
 - **Key Features**:
- - Registers and initializes `PacketHandler` instances (e.g., `ProtocolLibHandler` and `PacketEventsHandler`).
- - Manages virtual display items mapped to chunks.
- - Provides thread-safe operations for adding and removing display items.
+  - Registers and initializes `PacketHandler` instances (e.g., `ProtocolLibHandler` and `PacketEventsHandler`).
+  - Manages virtual display items mapped to chunks.
+  - Provides thread-safe operations for adding and removing display items.
 
 ### 4. **VirtualDisplayItem**
 
 - **Purpose**: Represents a virtual item displayed to players.
 - **Key Features**:
- - Generates and caches packets for spawning, metadata, velocity, and destruction.
- - Manages packet senders for each player.
- - Handles spawn and removal operations dynamically.
+  - Generates and caches packets for spawning, metadata, velocity, and destruction.
+  - Manages packet senders for each player.
+  - Handles spawn and removal operations dynamically.
 
 ### 5. **ProtocolLibHandler and PacketEventsHandler**
 
 - **Purpose**: Provide implementations of `PacketHandler` using ProtocolLib and PacketEvents, respectively.
 - **Differences**:
- - `ProtocolLibHandler` leverages ProtocolLib API.
- - `PacketEventsHandler` uses the PacketEvents library.
+  - `ProtocolLibHandler` leverages ProtocolLib API.
+  - `PacketEventsHandler` uses the PacketEvents library.
 
 ---
 
@@ -140,11 +140,11 @@ public class CustomPacketFactory implements PacketFactory<CustomPacket> {
 Packet factories are provided for specific game versions through two primary implementations:
 
 - **ProtocolLib**:
- - Versions: 1.20.1 - 1.21.4
- - Factories: `PacketFactoryv1_20`, `PacketFactoryv1_21`
+  - Versions: 1.20.1 - 1.21.4
+  - Factories: `PacketFactoryv1_20`, `PacketFactoryv1_21`
 - **PacketEvents**:
- - Versions: 1.20.1 - 1.21.4
- - Factories: `PacketFactoryv1_20`, `PacketFactoryv1_21`
+  - Versions: 1.20.1 - 1.21.4
+  - Factories: `PacketFactoryv1_20`, `PacketFactoryv1_21`
 
 ---
 
