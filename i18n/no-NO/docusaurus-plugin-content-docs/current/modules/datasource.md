@@ -48,7 +48,7 @@ Execute the `/quickshop export` command in console, quickshop will export a zip 
 
 ![exported data](img/database-export.png)
 
-Stop your database, switch the datasource, and start the server.\
+Stop your database, switch the datasource, and start the server.  
 You may noticed all shops are gone, because new datasources had no data inside, we will restore them from export.
 
 Rename that exported ZIP file to `recovery.zip`, execute `/quickshop recovery` and restart your server, all shops should back.
