@@ -2,16 +2,14 @@
 
 :::info
 
-找不到在哪里下载JAR？ [点击这里](../faq/where-addons-compacts-at.md). [Click here](../faq/where-addons-compacts-at).
+Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at.md).
 
 :::
 
-This compatiblity module is no longer maintained as AngelChest has become unsupported.
-
-该拓展模块增加了对 [AngelChest](https://www.spigotmc.org/resources/88214) 插件的支持。
+This compatibility module adds [AngelChest](https://www.spigotmc.org/resources/88214) support.
 
 ## How does it work?
 
-本拓展模块将会注册针对 IslandDeletedEvent、IslandResettedEvent、TeamLeaveEvent 和 TeamLeaveEvent 调用的监听器，并会在岛屿删除或成员被踢出时移除对应的商店。
+Compatibility Module will register a listener to listen for IslandDeletedEvent, IslandResettedEvent, TeamLeaveEvent and TeamKickEvent calls, and will remove shops when an island gets deleted or a team member is kicked from that island.
 
-它允许岛屿拥有者覆盖岛屿上所有商店的权限，这样他们就可以对岛屿上的商店修改或是删除，无论是否由他创建。
+It also allows the island owner to override all shops permissions on their island, so the island owner can modify or remove all of shops on their island, even those not created by island owner.
