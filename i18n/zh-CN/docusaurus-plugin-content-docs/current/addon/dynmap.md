@@ -1,26 +1,26 @@
-# Dynmap Addon
+# Dynmap 插件
 
 :::info
 
-Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at.md).
+找不到在哪里下载JAR？ [点击这里](../faq/where-addons-compacts-at.md). [Click here](../faq/where-addons-compacts-at).
 
 :::
 
-Dynmap Addon can display the QuickShop-Hikari shops on your [Dynmap](https://modrinth.com/plugin/dynmap) instance!
+Dynmap Addon can display the shop on your [Dynmap](https://modrinth.com/plugin/dynmap) instance!
 
-## Showcase
+## 展示
 
 ![dynmap](img/dynmap.png)
 
-## Configuration
+## 配置
 
 ```yaml
 config-version: 1
 display-by-default: true
 ```
 
-## Localization
+## 本地化
 
-Dynmap Addon use the `game-language` settings in your QuickShop-Hikari configuration.
+BlueMap 插件使用QuickShop-Hikari 已配置的游戏语言。
 
 You can customize the string via QuickShop-Hikari's [Localization System](../modules/localization.md).
