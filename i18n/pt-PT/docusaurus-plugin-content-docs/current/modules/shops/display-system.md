@@ -14,7 +14,7 @@ This work mode has been removed. If you were using it before, QuickShop will be 
 
 ## Virtual DisplayItem
 
-This work mode will send a Item packet to player's client to trick client display a floating item that above the shop container.  
+This work mode will send a Item packet to player's client to trick client display a floating item that above the shop container.\
 Player _can_ see the item BUT it actually not exists on the server, it won't affect the server performance and more security.
 
 To use this feature, you need to install [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/) and set `display-type` to `2`.
@@ -44,7 +44,7 @@ For some reason you don't want the shops on your server spawn the display items,
 
 ## Per shop disable display item
 
-Too many items in same region may hurt client fps, especially when you are in a shopping center.  
+Too many items in same region may hurt client fps, especially when you are in a shopping center.\
 You can disable or enable display item for single shop by looking a quickshop and execute:
 
 ```mcfunction
@@ -55,7 +55,7 @@ Note: If display item already globally disabled, it won't force spawn display it
 
 ## DisplayItem Guard
 
-When QuickShop working **under Real DisplayItem mode**, DisplayItem Guard will enabled to protect DisplayItem dupe with Hopper, Water etc.  
+When QuickShop working **under Real DisplayItem mode**, DisplayItem Guard will enabled to protect DisplayItem dupe with Hopper, Water etc.\
 Server administrators will receive alert when player trying to dupe display items.
 
 You can disable the alert by tweak the settings:
