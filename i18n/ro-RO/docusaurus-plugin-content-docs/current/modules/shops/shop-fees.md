@@ -36,17 +36,17 @@ shop:
 
 ## Creation fee
 
-It is controlled by `shop.cost`, set it to `0` for free.  
+It is controlled by `shop.cost`, set it to `0` for free.\
 You can refund the creation cost by turn on `shop.refund` option, and if you want refund player from quickshop tax account, you can also turn on option `shop.refund-from-tax-account`, but player may won't receive the refund if tax account run out of money.
 
 ## Price changing fee
 
-To prevent player change their shops price too frequently, you can turn on price changing fee by turn on option `shop.price-change-requires-fee`.  
-After the option is enabled, player need to pay the tax account money that specified by `shop.fee-for-price-change` option everytime their changes.
+To prevent player change their shops price too frequently, you can turn on price changing fee by turn on option `shop.price-change-requires-fee`.\
+After the option is enabled, player need to pay the tax account money that specficed by `shop.fee-for-price-change` option everytime their changes.
 
 ## Naming fee
 
-You can set that require player pay for naming their shop by set option `shop.name-fee` to an non-zero number.  
+You can set that require player pay for naming their shop by set option `shop.name-fee` to an non-zero number.\
 Everytime player want to change their shop's name, player must pay for it.
 
 ## Ongoing Fee
@@ -89,7 +89,7 @@ You can also turn on `show-tax` to allow player see the taxes included in transa
 
 ### Tax Account
 
-By default, all tax were going to a account named `tax`.  
+By default, all tax were going to a account named `tax`.\
 Depends on the difference in economy plugins and the design of your server, default value may won't work well, and you might want change it.
 
 `tax-account` accepts both player username and player's uuid.
