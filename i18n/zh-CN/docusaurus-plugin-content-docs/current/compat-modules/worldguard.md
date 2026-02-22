@@ -1,20 +1,16 @@
-# WorldGuard插件
+# WorldGuard
 
 :::info
 
-找不到在哪里下载JAR？ [点击这里](../faq/where-addons-compacts-at.md). [Click here](../faq/where-addons-compacts-at).
+Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at.md).
 
 :::
 
-它将两种权限分配到 WorldGuard 注册表中： `quickshophikari-create` 和 `quickshophikari-trade`.
+It registered two of flags into WorldGuard flags registry: `quickshophikari-create` and `quickshophikari-trade`.
 
-你可以使用它们来控制玩家在你所规划世界区域的权限。
+You can use them to control the players permission in your worldguard region.
 
-## 🆕 Global Support (6.2.0.11+)
-
-As of 6.2.0.11 QuickShop now supports using the flags in the global context.
-
-## 配置
+## Configuration
 
 ```yaml
 create:
