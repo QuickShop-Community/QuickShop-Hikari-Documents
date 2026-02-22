@@ -1,8 +1,8 @@
-# Shop Protection
+# 商店保护
 
 ## Player Protection
 
-By default, players that don't have permission or not the owner cannot remove another player's shop.\
+By default, players that don't have permission or not the owner cannot remove another player's shop.  
 And they also cannot open the shop container, put in items or take out items.
 
 But for some reason, you don't want QuickShop handle shop protection, you can disable by tweak config settings to disable it like below:
@@ -21,7 +21,7 @@ By default, QuickShop will protect shop container and shop sign from entity, blo
 | -------------------------------------------- | ---------------------------------------------- | ------------------------------------------------ | --------------------------------------------------------- |
 | ![block-protect](./img/protection-block.png) | ![entity-protect](./img/protection-entity.png) | ![explode-protect](./img/protection-explode.png) | ![hopper-protect](./img/protection-hopper.png)            |
 
-你可以通过调整设置来切换上述的保护功能：
+You can toggle the protections above by tweak settings:
 
 ```yaml
 #The protection that a shop should check.
