@@ -24,7 +24,7 @@ The History GUI displays the details of each recorded transaction and other usef
 
 ### Transaction details
 
-When hovering over a detail item, information such as store name (or coordinates), purchaser, item, amount, tax, etc. will be displayed.\
+When hovering over a detail item, information such as store name (or coordinates), purchaser, item, amount, tax, etc. will be displayed.  
 If you are checking the history of more than one store, the player head will be replaced with an item from the corresponding store.
 
 ![history-gui](./img/history-gui.png)
