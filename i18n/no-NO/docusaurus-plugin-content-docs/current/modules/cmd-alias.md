@@ -23,7 +23,7 @@ custom-commands:
   - cshop
 ```
 
-Simple add or remove prefix from `custom-commands` list, then you might need to restart your server to make it take effect.\
+Simple add or remove prefix from `custom-commands` list, then you might need to restart your server to make it take effect.  
 The effect should be like this:
 
 ![command-alias](./img/command-alias.png)
