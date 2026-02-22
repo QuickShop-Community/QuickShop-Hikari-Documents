@@ -6,4 +6,6 @@
 
 :::
 
+As of 6.2.0.11, this is no longer a separate compatibility module — it is now built directly into QuickShop. Find out more [here](../modules/shops/worldedit.md).
+
 简单的拓展模块，可以在编辑区内一并删除商店，防止诸如幽灵商店等问题的出现。
