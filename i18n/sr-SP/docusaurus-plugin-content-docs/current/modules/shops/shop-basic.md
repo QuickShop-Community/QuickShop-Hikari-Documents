@@ -4,7 +4,7 @@ This page of document will help you learn how to create and purchase a quickshop
 
 ## Create a selling shop
 
-First of all, you need to put a shop container (e.g Chest), and under **Survival mode**, **left click** the container, QuickShop will ask you for the price.  
+First of all, you need to put a shop container (e.g Chest), and under **Survival mode**, **left click** the container, QuickShop will ask you for the price.\
 Type `10` for price in chat, you will created a shop that selling items for 10$.
 
 | Ask for price, enter in chat      | Shop Created                          |
@@ -23,7 +23,7 @@ To fill your shop stock, just simple put your items into shop container, and you
 
 ## Turn a shop to buying mode
 
-Right-click the shop info sign, a control panel will pop up at your chat.  
+Right-click the shop info sign, a control panel will pop up at your chat.\
 Click `Shop Mode: Selling [Change]` button, then your shop now is a buying shop!
 
 | Click the `[Change]` button                      | Shop Buying now                      |
@@ -32,7 +32,7 @@ Click `Shop Mode: Selling [Change]` button, then your shop now is a buying shop!
 
 ## Turn a shop to freeze mode
 
-Right-click the shop info sign, a control panel will pop up at your chat.  
+Right-click the shop info sign, a control panel will pop up at your chat.\
 Click `Freeze mode: ✘ [Toggle]` button, then your shop now is a buying shop!
 
 | Click the `[Toggle]` button                      | Shop freeze mode now                 |
