@@ -37,3 +37,13 @@ QuickShop-Hikari 对此问题已经有一些处理，但无法完美解决。如
 ```bash
 -Dcom.ghostchu.quickshop.command.subcommand.SubCommand_Benefit.allowOffline=true
 ```
+
+### 🆕 Starting in 6.3.0.0 SNAPSHOT 2
+
+Beginning with 6.3.0.0 SNAPSHOT 2 the JVM Startup Flag has been replaced with an entry in config.yml
+
+Use
+
+```yaml
+shop.allow-offline-benefit: true
+```
