@@ -1,13 +1,14 @@
 # Installation
 
-This page will walk you through the process of installing QuickShop-Hikari on your Spigot server.
+This page will walk you through the process of installing QuickShop-Hikari on your PaperMC server.
 
 ## Requirements
 
-- A [Spigot][spigot]-based Minecraft server (1.20 or higher, Java 21)
-  - You can also use [Paper][paper], which is a fork of Spigot for better compatibility, more features and higher performance.
+- A [Paper][paper]-based Minecraft server (1.20 or higher, Java 21)
 - [Vault][vault] for bridging the economy system between QuickShop and your economy plugins.
-- [ProtocolLib][plib] for virtual display item, Per-player localization.
+- For virtual item displays, and per-player localization you need a supported protocol library:
+  - [ProtocolLib][plib]
+  - [PacketEvents][https://www.spigotmc.org/resources/packetevents-api.80279/]
 - Any Vault compatible economy plugin, such as [XConomy][xconomy], If you have [EssentialsX][essx], it will also works well.
 - A permission management plugin like [LuckPerms][luckperm].
 
@@ -15,13 +16,17 @@ In this document, we assume that you are using the latest version of QuickShop-H
 
 ## Installing dependencies
 
-Before installing QuickShop-Hikari, you should make sure that you have all dependencies installed, including [Vault][vault], [ProtocolLib][plib], [XConomy][xconomy] (or [EssentialsX][essx] if you want) and [LuckPerms][luckperm]!
+Before installing QuickShop-Hikari, you should make sure that you have all dependencies installed, including [Vault][vault], [ProtocolLib][plib] or \[PacketEvents]\[https\://www\.spigotmc.org/resources/packetevents-api.80279/], [XConomy][xconomy] (or [EssentialsX][essx] if you want) and [LuckPerms][luckperm]!
 
 Download the plugins and drop them into `plugins` folder and you're all set!
 
+## Configuring the Display Protocol
+
+If you have both ProtocolLib and PacketEvents, and you want to utilize PacketEvents for your display items, you'll need to set it as such in config.yml: `shop. display-protocol: 'packetevents'`
+
 ## Installing QuickShop-Hikari
 
-Download the latest version of QuickShop-Hikari from [Modrinth][qs-modrinth], if you find multiple files that have `Compat-` prefix in file name, ignore them in this step.\
+Download the latest version of QuickShop-Hikari from [Modrinth][qs-modrinth], if you find multiple files that have `Compat-` prefix in file name, ignore them in this step.  
 The only file you need to download should have a **Primary** tag like this in the image below:
 
 ![download primary file](./img/download-primary.png)
@@ -52,12 +57,11 @@ For advanced permission setup, you can check [here](./permissions.md).
 
 Now QuickShop-Hikari is running on your server, for more settings, check the navigation panel on the left and see different sections.
 
-[spigot]: https://www.spigotmc.org/wiki/buildtools/
 [paper]: https://papermc.io/
-[vault]: https://www.spigotmc.org/resources/34315/
-[xconomy]: https://www.spigotmc.org/resources/75669/
+[vault]: https://www.spigotmc.org/resources/vaultunlocked.117277/
+[xconomy]: https://www.spigotmc.org/resources/xconomy.75669/
 [essx]: https://modrinth.com/plugin/essentialsx
-[plib]: https://www.spigotmc.org/resources/1997
+[plib]: https://www.spigotmc.org/resources/protocollib.1997/
 [luckperm]: https://luckperms.net/
 [qs-modrinth]: https://modrinth.com/plugin/quickshop-hikari
 [dc]: https://discord.gg/Bu3dVtmsD3
