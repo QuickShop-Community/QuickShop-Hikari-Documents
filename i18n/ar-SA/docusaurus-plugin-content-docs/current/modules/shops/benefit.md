@@ -37,3 +37,13 @@ By default, for security, QuickShop-Hikari disallow add offline players into sho
 ```bash
 -Dcom.ghostchu.quickshop.command.subcommand.SubCommand_Benefit.allowOffline=true
 ```
+
+### 🆕 Starting in 6.3.0.0 SNAPSHOT 2
+
+Beginning with 6.3.0.0 SNAPSHOT 2 the JVM Startup Flag has been replaced with an entry in config.yml
+
+Use
+
+```yaml
+shop.allow-offline-benefit: true
+```
