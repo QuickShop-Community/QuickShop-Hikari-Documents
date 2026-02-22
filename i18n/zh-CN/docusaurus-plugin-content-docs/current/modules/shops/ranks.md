@@ -6,7 +6,7 @@ QuickShop provides a ranks system to allow control the maximum shops that player
 
 This feature is permission based and permission will be generated dynamically.
 
-## 配置
+## Configuration
 
 ```yaml
 #Limits the amount of shops a player can create and own.
@@ -32,7 +32,7 @@ limits:
 
 In the example above, all players can own up to `10` shops by default, BUT, a permission node `quickshoplol.supervip` was defined that allow player who have that permission own up to `20` shops.
 
-Basically, a permission node generate by `<node parent>.<node child>`, that mean you can replace the `quickshoplol` and `supervip` etc to what you want.
+Basiclly, a permission node generate by `<node parent>.<node child>`, that mean you can replace the `quickshoplol` and `supervip` etc to what you want.
 
 ```yaml
 #Limits the amount of shops a player can create and own.
@@ -58,5 +58,5 @@ In this example, the player who have `linustechtips.cotton` permission can creat
 
 ## Bypass permission
 
-QuickShop doesn't have limit bypass permission, but you could set the number to a number that big enough like 999999.  
+QuickShop doesn't have limit bypass permission, but you could set the number to a number that big enough like 999999.\
 When a player has multiple ranks, QuickShop will pick the biggest one (more shops).
