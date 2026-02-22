@@ -10,6 +10,10 @@ It registered two of flags into WorldGuard flags registry: `quickshophikari-crea
 
 You can use them to control the players permission in your worldguard region.
 
+## 🆕 Global Support (6.2.0.11+)
+
+As of 6.2.0.11 QuickShop now supports using the flags in the global context.
+
 ## Configuration
 
 ```yaml
