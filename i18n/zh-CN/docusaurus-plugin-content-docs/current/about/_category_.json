@@ -1,8 +1,8 @@
 {
-  "label": "About",
-  "position": 100000,
+  "label": "安装",
+  "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "About QuickShop-Hikari"
+    "description": "Install QuickShop-Hikari and setup permissions."
   }
 }
