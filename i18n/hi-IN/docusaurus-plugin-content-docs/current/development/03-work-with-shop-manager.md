@@ -10,7 +10,7 @@ ShopManager manager = api.getShopManager();
 
 ## Getting a shop
 
-Since Minecraft has a special "Large Chest", we can't simply get the store map directly from the coordinates.\
+Since Minecraft has a special "Large Chest", we can't simply get the store map directly from the coordinates.  
 QuickShop-Hikari's store is only bound to one half of "Large Chest", so to get the store, you need to query both the cube itself and its associated cube.
 
 The good thing is that there is an API in the plugin that allows you to handle this situation very easily.
@@ -71,7 +71,7 @@ manager.deleteShop(shop) // Permanently delete this store, both memory and datab
 
 ## Identify a store
 
-Please note that store locations are technically variable and you should not use coordinates to identify a store.\
+Please note that store locations are technically variable and you should not use coordinates to identify a store.  
 Also RuntimeRandomUniqueId should not be used to identify the store, as the name suggests, the value changes every time the server restarts, it should only be used to handle scenarios where the player interacts with the server.
 
 ```java
