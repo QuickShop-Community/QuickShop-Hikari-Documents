@@ -2,7 +2,7 @@
 
 :::info
 
-Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at).
+Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at.md).
 
 :::
 
@@ -10,7 +10,7 @@ This module added [Residence](https://www.spigotmc.org/resources/residence-1-7-1
 
 ## How does it work?
 
-This module registers two of flags `quickshop-create` and `quickshop-trade` into your Residence flags registry.  
+This module registers two of flags `quickshop-create` and `quickshop-trade` into your Residence flags registry.\
 You can use them to control the players permission in your residence.
 
 Also, this module allow residence's owner grant full controls of all shops inside their residence.
