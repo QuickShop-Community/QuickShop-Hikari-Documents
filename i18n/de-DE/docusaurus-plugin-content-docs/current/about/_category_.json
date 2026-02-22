@@ -2,7 +2,7 @@
   "label": "About",
   "position": 100000,
   "link": {
-    "type": "Generierter Index",
-    "description": "Über Qsh"
+    "type": "generated-index",
+    "description": "About QuickShop-Hikari"
   }
 }
