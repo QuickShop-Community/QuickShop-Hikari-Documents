@@ -24,7 +24,7 @@
 
 ### 交易细节
 
-When hovering over a detail item, information such as store name (or coordinates), purchaser, item, amount, tax, etc. will be displayed.\
+When hovering over a detail item, information such as store name (or coordinates), purchaser, item, amount, tax, etc. will be displayed.  
 在浏览物品时，商店名称（及其坐标）、买家、交易物品、数量、税收等都会展示在这里。\
 如果你需要检查多个商店的历史记录，玩家头颅会被对应商店的图标替换。
 
