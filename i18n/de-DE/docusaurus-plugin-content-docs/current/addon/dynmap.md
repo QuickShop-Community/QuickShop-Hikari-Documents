@@ -2,11 +2,11 @@
 
 :::info
 
-Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at.md).
+Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at).
 
 :::
 
-Dynmap Addon can display the QuickShop-Hikari shops on your [Dynmap](https://modrinth.com/plugin/dynmap) instance!
+Dynmap Addon can display the shop on your [Dynmap](https://modrinth.com/plugin/dynmap) instance!
 
 ## Showcase
 
