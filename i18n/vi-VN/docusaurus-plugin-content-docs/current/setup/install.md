@@ -1,6 +1,6 @@
 # Installation
 
-This page will walk you through the process of installing QuickShop-Hikari on your Spigot server.
+This page will walk you through the process of installing QuickShop-Hikari on your PaperMC server.
 
 ## Requirements
 
@@ -12,7 +12,7 @@ This page will walk you through the process of installing QuickShop-Hikari on yo
 - Any Vault compatible economy plugin, such as [XConomy][xconomy], If you have [EssentialsX][essx], it will also works well.
 - A permission management plugin like [LuckPerms][luckperm].
 
-In this document, we assume that you are using the latest version of QuickShop-Hikari, ProtocolLib, XConomy, Vault and LuckPerms under Windows 11 operation system (Linux is basically the same).
+In this document, we assume that you are using the latest version of QuickShop-Hikari, ProtocolLib or PacketEvents, XConomy, Vault and LuckPerms under Windows 11 operation system (Linux is basically the same).
 
 ## Installing dependencies
 
