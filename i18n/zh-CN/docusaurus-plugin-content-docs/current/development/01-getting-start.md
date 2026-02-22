@@ -6,9 +6,8 @@ Hello! 你好呀~ 欢迎来到QuickShop-Hikari的开发者社区！
 
 ## License
 
-QuickShop-Hikari 以 [GPLv3协议](https://www.gnu.org/licenses/quick-guide-gplv3.en.html) 许可证开源，你可以随时在 [Github 页面](https://github.com/QuickShop-Community/QuickShop-Hikari) 浏览本项目的源码。\
-你可以自由修改或使用 QuickShop-Hikari 任意部分的代码，但前提是遵守 GPLv3 协议。\
-You are free to modify and use any part of QuickShop-Hikari's source code as long as you adhere to the GPLv3 agreement.
+QuickShop-Hikari is open source using the [AGPLv3](agplv3) license and you can always find our source code on [Github](https://github.com/QuickShop-Community/QuickShop-Hikari).  
+You are free to modify and use any part of QuickShop-Hikari's source code as long as you adhere to the AGPLv3 agreement.
 
 ## 🚧不要太相信 Javadoc
 
@@ -49,7 +48,7 @@ QuickShop-Hikari 将操作源分为三种类型：
 
 - 服务器主线程
 - 异步线程（任何其他线程，但不包括服务器主线程）
-- Hybird
+- Hybrid
 
 如果通过错误的线程访问 API，QuickShop-Hikari 将强制性显示运行错误。
 
@@ -60,3 +59,5 @@ QuickShop-Hikari 将操作源分为三种类型：
 你可以浏览 [Util.ensureThread()](https://github.com/QuickShop-Community/QuickShop-Hikari/blob/3d1d271e1106ea1c83cc6068f8232ab7c7860918/quickshop-bukkit/src/main/java/com/ghostchu/quickshop/util/Util.java#L351) 并通过查找用法得出不同 API 的使用条件。 默认情况下，允许从任何线程调用不使用 Util.ensureThread() 的 API。 APIs that do not use Util.ensureThread() are allowed to be called from any thread by default.
 
 您不应绕过此限制，我们只是在必要时添加此检查，它是插件性能和服务器稳定性的最基本保证。 如果您触发了线程检查，请使用调度器来完成您的任务。
+
+[agplv3]: https://www.gnu.org/licenses/agpl-3.0.html
