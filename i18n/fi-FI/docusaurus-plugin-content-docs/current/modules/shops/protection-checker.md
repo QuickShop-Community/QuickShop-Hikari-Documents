@@ -4,7 +4,7 @@ QuickShop use a util called `Protection Checker` to prevent players create shops
 
 ## How does it work?
 
-When player trying to create a shop at a location, QuickShop will create a new _fake_ `BlockBreakEvent` to simulate player break blocks.  
+When player trying to create a shop at a location, QuickShop will create a new _fake_ `BlockBreakEvent` to simulate player break blocks.\
 If it is canceled by any plugin, QuickShop will refuse the shop creation.
 
 ## Side Effects
@@ -17,7 +17,7 @@ When a possible conflict detected by QuickShop and this operation triggered by S
 
 ![detected](img/permission-checker-conflict-demo.png)
 
-You can retrieve those information from the tips:
+You can retrieve those infomations from the tips:
 
 - PluginName (`BreakTest`)
 - Plugin Listener Class Name (`com.ghsotchu.test.breaktest.TestListener`)
