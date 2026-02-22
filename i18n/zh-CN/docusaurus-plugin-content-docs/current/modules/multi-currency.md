@@ -1,12 +1,10 @@
-# Multi Currency
+# 多币种支持
 
-QuickShop-Hikari supports some Multi-Currency economy plugin or bridge plugin, but they're not out of the box, you must configure them to take effect.
+QuickShop-Hikari支持一些多货币经济插件或桥接插件，但它们不是开箱即用的，您必须配置它们才能生效。
 
-## Supported Economy Plugin
+## 支持的经济插件
 
 QuickShop-Hikari currently supports multi-currency economy plugins that support [VaultUnlocked](https://modrinth.com/plugin/vaultunlocked)
-
-<!--* Any other economy plugin that support [Reserve](https://www.spigotmc.org/resources/50739/)-->
 
 ## Enable Multi-Currency support
 
@@ -52,5 +50,5 @@ OngoingFee will always use server scope default currency (`currency`).
 
 ## Shop Tax Currency
 
-Shop tax will use per-shop currency with global tax rate (cannot change yet).\
+Shop tax will use per-shop currency with global tax rate (cannot change yet).  
 If you really want this feature, open a Feature Request on our Issue Tracker!
