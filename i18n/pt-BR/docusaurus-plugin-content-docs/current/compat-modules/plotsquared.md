@@ -2,7 +2,7 @@
 
 :::info
 
-Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at).
+Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at.md).
 
 :::
 
@@ -10,7 +10,7 @@ This module added supports to [PlotSquared v6](https://www.spigotmc.org/resource
 
 ## How does it work?
 
-This module will register two of flags `quickshop-create` and `quickshop-trade` into your PSv6 permission flags registry.  
+This module will register two of flags `quickshop-create` and `quickshop-trade` into your PSv6 permission flags registry.\
 You can use them to control the players permission in your plot.
 
 Also it supports delete shops when a player untrusted from your plot.
