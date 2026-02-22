@@ -2,25 +2,24 @@
 
 :::info
 
-找不到在哪里下载JAR？ [点击这里](../faq/where-addons-compacts-at.md). [Click here](../faq/where-addons-compacts-at).
+Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at.md).
 
 :::
 
-此模块已添加 [Residence](https://www.spigotmc.org/resources/residence-1-7-10-up-to-1-19.11480/) 支持。
+This module added [Residence](https://www.spigotmc.org/resources/residence-1-7-10-up-to-1-19.11480/) supports.
 
 ## How does it work?
 
-此模块用于注册两种权限 `quickshop-create` and `quickshop-trade` 到您的领地权限管理。  
-您可以使用它们来控制您领地的玩家权限。  
+This module registers two of flags `quickshop-create` and `quickshop-trade` into your Residence flags registry.\
 You can use them to control the players permission in your residence.
 
-此外，该模块允许领地所有人对领地内的所有商店实行全面控制。
+Also, this module allow residence's owner grant full controls of all shops inside their residence.
 
-## 配置
+## Configuration
 
 ```yaml
-# 是否阻止领地外创建商店？
+#Should we prevent the creation of a shop or trade with a shop outside Residence's area?
 whitelist-mode: false
-# 允许领地拥有者管理领地内的任意商店。
+#Allow residence owner grant all shops full-control permission in their claim.
 allow-permission-override: true
 ```
