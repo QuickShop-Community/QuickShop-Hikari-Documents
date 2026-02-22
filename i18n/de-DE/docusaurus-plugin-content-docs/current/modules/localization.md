@@ -110,6 +110,16 @@ To disable the CrowdinOTA, please add it in the startup flag:
 -Dcom.ghostchu.quickshop.localization.text.SimpleTextManager.enableCrowdinOTA=false
 ```
 
+#### 🆕 Starting in 6.3.0.0 SNAPSHOT 2
+
+Beginning with 6.3.0.0 SNAPSHOT 2 the JVM Startup Flag has been replaced with an entry in config.yml
+
+Use
+
+```yaml
+use-crowdin-ota: false
+```
+
 ### Self-Hosted OTA Server
 
 If you self-hosted our translation server by using [CrowdinCopyDeploy](https://github.com/Ghost-chu/CrowdinCopyDeploy) tool, you're able to change the OTA server to yourself server.
@@ -118,4 +128,12 @@ If you self-hosted our translation server by using [CrowdinCopyDeploy](https://g
 -Dcom.ghostchu.quickshop.localization.text.SimpleTextManager=<YOUR_SERVER_ADDRESS>
 ```
 
+#### 🆕 Starting in 6.3.0.0 SNAPSHOT 2
 
+Beginning with 6.3.0.0 SNAPSHOT 2 the JVM Startup Flag has been replaced with an entry in config.yml
+
+Use
+
+```yaml
+crowdin-host: <YOUR_SERVER_ADDRESS>
+```
