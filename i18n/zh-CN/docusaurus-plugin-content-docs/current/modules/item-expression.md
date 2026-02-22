@@ -1,31 +1,31 @@
-# Item Expression
+# 物品表达式
 
-Hikari allows you to use a string to represent or match items.
+Hikari允许您使用字符串来表示或匹配物品。
 
-## Matching with Material name
+## 匹配 Material 名称
 
-Fill in the Material name of Bukkit directly.
+直接填写Bukkit的 Material 名称。
 
 ```yaml
 - BEDROCK # select items that matches given material name
 - GOLDEN_SWORD
 ```
 
-You can find all materials in [here](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html).
+您可以在这里 [找到所有 Material 名称](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)。
 
-## Matching with Item Reference
+## 匹配 物品引用
 
-Add `@` prefix before item reference name.
+在物品引用名称前添加 `@` 前缀。
 
 ```yaml
 - "@purediamond" # select items that matches with specfics item references
 ```
 
-Please also check [here](item-ref.md)
+您可参考 [物品引用系统](item-ref.md)
 
-## Matching with Enchantment
+## 匹配 附魔
 
-Add `%` prefix before enchantment namespaced key.
+在附魔 Namespaced Key 之前添加 `%` 前缀。
 
 ```yaml
 - "%minecraft:sharpness" # select all items with sharpness enchantment
