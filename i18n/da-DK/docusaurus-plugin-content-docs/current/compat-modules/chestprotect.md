@@ -2,7 +2,7 @@
 
 :::info
 
-Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at.md).
+Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at).
 
 :::
 
@@ -10,5 +10,5 @@ This compatibility module added [Chest Protect](https://www.spigotmc.org/resourc
 
 ## How does it work?
 
-This compatibility module will prevent fake protection check events from passing to Chest Protect's listeners, so the protections won't be deleted by accident.\
+This compatibility module will prevent fake protection check events from passing to Chest Protect's listeners, so the protections won't be deleted by accident.  
 It also prevents players from creating shops on ChestProtect protected containers.
