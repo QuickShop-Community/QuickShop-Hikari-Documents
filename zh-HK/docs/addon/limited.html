@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">Limited Addon | QuickShop-Hikari Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-HK/docs/addon/limited"><meta data-rh="true" property="og:locale" content="zh_HK"><meta data-rh="true" property="og:locale:alternate" content="de_DE"><meta data-rh="true" property="og:locale:alternate" content="en_US"><meta data-rh="true" property="og:locale:alternate" content="ja_JP"><meta data-rh="true" property="og:locale:alternate" content="zh_CN"><meta data-rh="true" property="og:locale:alternate" content="zh_TW"><meta data-rh="true" name="docusaurus_locale" content="zh-HK"><meta data-rh="true" name="docsearch:language" content="zh-HK"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Limited Addon | QuickShop-Hikari Docs"><meta data-rh="true" name="description" content="Can&#x27;t find where to download the JAR? Click here."><meta data-rh="true" property="og:description" content="Can&#x27;t find where to download the JAR? Click here."><link data-rh="true" rel="icon" href="/QuickShop-Hikari-Documents/zh-HK/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-HK/docs/addon/limited"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/de-DE/docs/addon/limited" hreflang="de-DE"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/docs/addon/limited" hreflang="en-US"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/ja-JP/docs/addon/limited" hreflang="ja-JP"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-CN/docs/addon/limited" hreflang="zh-CN"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-HK/docs/addon/limited" hreflang="zh-HK"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-TW/docs/addon/limited" hreflang="zh-TW"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/docs/addon/limited" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Addon","item":"https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-HK/docs/category/addon"},{"@type":"ListItem","position":2,"name":"Limited Addon","item":"https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-HK/docs/addon/limited"}]}</script><link rel="stylesheet" href="/QuickShop-Hikari-Documents/zh-HK/assets/css/styles.26e22c3d.css">
-<script src="/QuickShop-Hikari-Documents/zh-HK/assets/js/runtime~main.6d48cbf6.js" defer="defer"></script>
-<script src="/QuickShop-Hikari-Documents/zh-HK/assets/js/main.c39b2de6.js" defer="defer"></script>
+<script src="/QuickShop-Hikari-Documents/zh-HK/assets/js/runtime~main.181eca31.js" defer="defer"></script>
+<script src="/QuickShop-Hikari-Documents/zh-HK/assets/js/main.4dce680a.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -25,14 +25,14 @@
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">/quickshop limit set 32</span><br></span></code></pre></div></div>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="periodic-repetition-limit">Periodic repetition limit<a href="#periodic-repetition-limit" class="hash-link" aria-label="Direct link to Periodic repetition limit" title="Direct link to Periodic repetition limit" translate="no">​</a></h3>
 <p>This restriction type allows resetting everyone&#x27;s quota at certain intervals.</p>
-<p>Limit players to purchase up to 16 items per month.</p>
+<p>Limit players to purchasing up to 32 items per month:</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">/quickshop limit set 32</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">/quickshop limit period MONTH</span><br></span></code></pre></div></div>
 <p>The system is based on the QuickShop-Hikari calendar system.<br>
 <!-- -->The timing is updated using the &quot;value change&quot; update system, which means that 2022-12-31 to 2023-01-01 is also considered a year.<br>
 <!-- -->Same for days, months and hours.</p>
 <p>Available time units:</p>
 <ul>
-<li class=""><del>SECOND - 1 second</del> DELETED DUE PERFORMANCE IMPACT, all exists and new second rules will update every minute instead</li>
+<li class=""><del>SECOND - 1 second</del> REMOVED DUE TO PERFORMANCE IMPACT. All existing and new second-based rules are updated every minute instead.</li>
 <li class="">MINUTE - 1 minute</li>
 <li class="">HOUR - 1 hour</li>
 <li class="">DAY - 1 day</li>
@@ -40,7 +40,7 @@
 <li class="">MONTH - 1 month</li>
 <li class="">YEAR - 1 year</li>
 </ul>
-<p>Due to the limitation of QuickShop-Hikari&#x27;s calendar timing system, it is impossible to set other values (for example, 3 days)</p>
+<p>Due to a limitation of QuickShop-Hikari&#x27;s calendar system, it is not possible to set custom intervals (for example, 3 days).</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="purchase-notice">Purchase Notice<a href="#purchase-notice" class="hash-link" aria-label="Direct link to Purchase Notice" title="Direct link to Purchase Notice" translate="no">​</a></h2>
 <p>When a player purchases from a store that has set a limit, the plugin will prompt the player with the remaining purchase quota after the purchase.</p>
 <p><img decoding="async" loading="lazy" alt="purchase" src="/QuickShop-Hikari-Documents/zh-HK/assets/images/limited_purchase-15762576d124bf5707382b940b09419b.png" width="1586" height="935" class="img_ev3q"></p>
