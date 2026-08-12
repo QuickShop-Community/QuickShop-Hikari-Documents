@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">限售附属 | QuickShop-Hikari Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-CN/docs/addon/limited"><meta data-rh="true" property="og:locale" content="zh_CN"><meta data-rh="true" property="og:locale:alternate" content="de_DE"><meta data-rh="true" property="og:locale:alternate" content="en_US"><meta data-rh="true" property="og:locale:alternate" content="ja_JP"><meta data-rh="true" property="og:locale:alternate" content="zh_HK"><meta data-rh="true" property="og:locale:alternate" content="zh_TW"><meta data-rh="true" name="docusaurus_locale" content="zh-CN"><meta data-rh="true" name="docsearch:language" content="zh-CN"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="限售附属 | QuickShop-Hikari Docs"><meta data-rh="true" name="description" content="找不到在哪里下载 JAR 文件？ 点击这里。"><meta data-rh="true" property="og:description" content="找不到在哪里下载 JAR 文件？ 点击这里。"><link data-rh="true" rel="icon" href="/QuickShop-Hikari-Documents/zh-CN/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-CN/docs/addon/limited"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/de-DE/docs/addon/limited" hreflang="de-DE"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/docs/addon/limited" hreflang="en-US"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/ja-JP/docs/addon/limited" hreflang="ja-JP"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-CN/docs/addon/limited" hreflang="zh-CN"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-HK/docs/addon/limited" hreflang="zh-HK"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-TW/docs/addon/limited" hreflang="zh-TW"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/docs/addon/limited" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Addon","item":"https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-CN/docs/category/addon"},{"@type":"ListItem","position":2,"name":"限售附属","item":"https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-CN/docs/addon/limited"}]}</script><link rel="stylesheet" href="/QuickShop-Hikari-Documents/zh-CN/assets/css/styles.26e22c3d.css">
-<script src="/QuickShop-Hikari-Documents/zh-CN/assets/js/runtime~main.383abeda.js" defer="defer"></script>
-<script src="/QuickShop-Hikari-Documents/zh-CN/assets/js/main.834af035.js" defer="defer"></script>
+<script src="/QuickShop-Hikari-Documents/zh-CN/assets/js/runtime~main.9b4ef923.js" defer="defer"></script>
+<script src="/QuickShop-Hikari-Documents/zh-CN/assets/js/main.c616ab4b.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -25,14 +25,14 @@
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">/quickshop limit set 32</span><br></span></code></pre></div></div>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="定期重复限制">定期重复限制<a href="#定期重复限制" class="hash-link" aria-label="Direct link to 定期重复限制" title="Direct link to 定期重复限制" translate="no">​</a></h3>
 <p>此限制类型允许按特定时间间隔重置每个人的配额。</p>
-<p>Limit players to purchasing up to 32 items per month:</p>
+<p>限制玩家每月最多购买 32 件物品：</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">/quickshop limit set 32</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">/quickshop limit period MONTH</span><br></span></code></pre></div></div>
 <p>该系统基于QuickShop-Hikari日历系统。<br>
 <!-- -->时间使用 “值变化” 更新系统进行更新，这意味着 2022-12-31 到 2023-01-01 也被视为一年，且同时会更新月、周、日、小时、分钟、秒的限制。<br>
 <!-- -->其余的也都一样。</p>
 <p>可用时间单位：</p>
 <ul>
-<li class=""><del>SECOND - 1 second</del> REMOVED DUE TO PERFORMANCE IMPACT. All existing and new second-based rules are updated every minute instead.</li>
+<li class=""><del>SECOND - 1 秒</del> 出于性能考虑而删除。 所有现存的按秒规则都会强制转为按分规则。</li>
 <li class="">MINUTE - 1分钟</li>
 <li class="">HOUR - 1 小时</li>
 <li class="">DAY -1 天</li>
@@ -40,7 +40,7 @@
 <li class="">MONTH - 1 个月</li>
 <li class="">YEAR - 1年</li>
 </ul>
-<p>Due to a limitation of QuickShop-Hikari&#x27;s calendar system, it is not possible to set custom intervals (for example, 3 days).</p>
+<p>由于 QuickShop-Hikari 的日历计时系统的限制，无法设置其他值（例如，3天）。</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="购买通知">购买通知<a href="#购买通知" class="hash-link" aria-label="Direct link to 购买通知" title="Direct link to 购买通知" translate="no">​</a></h2>
 <p>当玩家从设置了限制的商店购买时，插件会在购买后提示玩家剩余的购买配额。</p>
 <p><img decoding="async" loading="lazy" alt="purchase" src="/QuickShop-Hikari-Documents/zh-CN/assets/images/limited_purchase-15762576d124bf5707382b940b09419b.png" width="1586" height="935" class="img_ev3q"></p>
