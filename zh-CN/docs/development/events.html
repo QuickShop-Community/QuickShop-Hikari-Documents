@@ -2,301 +2,301 @@
 <html lang="zh-CN" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-development/events" data-has-hydrated="false">
 <head>
 <meta charset="UTF-8">
-<meta name="generator" content="Docusaurus v3.9.2">
-<title data-rh="true">QuickShop Custom Events (Developer Guide) | QuickShop-Hikari Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-CN/docs/development/events"><meta data-rh="true" property="og:locale" content="zh_CN"><meta data-rh="true" property="og:locale:alternate" content="de_DE"><meta data-rh="true" property="og:locale:alternate" content="en_US"><meta data-rh="true" property="og:locale:alternate" content="ja_JP"><meta data-rh="true" property="og:locale:alternate" content="zh_HK"><meta data-rh="true" property="og:locale:alternate" content="zh_TW"><meta data-rh="true" name="docusaurus_locale" content="zh-CN"><meta data-rh="true" name="docsearch:language" content="zh-CN"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="QuickShop Custom Events (Developer Guide) | QuickShop-Hikari Docs"><meta data-rh="true" name="description" content="QuickShop-Hikari provides a comprehensive custom event system that allows developers to hook into nearly every stage of shop lifecycle, transactions, and management."><meta data-rh="true" property="og:description" content="QuickShop-Hikari provides a comprehensive custom event system that allows developers to hook into nearly every stage of shop lifecycle, transactions, and management."><link data-rh="true" rel="icon" href="/QuickShop-Hikari-Documents/zh-CN/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-CN/docs/development/events"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/de-DE/docs/development/events" hreflang="de-DE"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/docs/development/events" hreflang="en-US"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/ja-JP/docs/development/events" hreflang="ja-JP"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-CN/docs/development/events" hreflang="zh-CN"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-HK/docs/development/events" hreflang="zh-HK"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-TW/docs/development/events" hreflang="zh-TW"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/docs/development/events" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"QuickShop Custom Events (Developer Guide)","item":"https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-CN/docs/development/events"}]}</script><link rel="stylesheet" href="/QuickShop-Hikari-Documents/zh-CN/assets/css/styles.26e22c3d.css">
-<script src="/QuickShop-Hikari-Documents/zh-CN/assets/js/runtime~main.9b4ef923.js" defer="defer"></script>
-<script src="/QuickShop-Hikari-Documents/zh-CN/assets/js/main.c616ab4b.js" defer="defer"></script>
+<meta name="generator" content="Docusaurus v3.10.2">
+<title data-rh="true">QuickShop 自定义事件（开发者指南） | QuickShop-Hikari Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-CN/docs/development/events"><meta data-rh="true" property="og:locale" content="zh_CN"><meta data-rh="true" property="og:locale:alternate" content="de_DE"><meta data-rh="true" property="og:locale:alternate" content="en_US"><meta data-rh="true" property="og:locale:alternate" content="ja_JP"><meta data-rh="true" property="og:locale:alternate" content="zh_HK"><meta data-rh="true" property="og:locale:alternate" content="zh_TW"><meta data-rh="true" name="docusaurus_locale" content="zh-CN"><meta data-rh="true" name="docsearch:language" content="zh-CN"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="QuickShop 自定义事件（开发者指南） | QuickShop-Hikari Docs"><meta data-rh="true" name="description" content="QuickShop-Hikari 提供了一个全面的自定义事件系统，让开发者能够将商店生命周期的几乎每个阶段绑定到交易和管理。"><meta data-rh="true" property="og:description" content="QuickShop-Hikari 提供了一个全面的自定义事件系统，让开发者能够将商店生命周期的几乎每个阶段绑定到交易和管理。"><link data-rh="true" rel="icon" href="/QuickShop-Hikari-Documents/zh-CN/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-CN/docs/development/events"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/de-DE/docs/development/events" hreflang="de-DE"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/docs/development/events" hreflang="en-US"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/ja-JP/docs/development/events" hreflang="ja-JP"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-CN/docs/development/events" hreflang="zh-CN"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-HK/docs/development/events" hreflang="zh-HK"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-TW/docs/development/events" hreflang="zh-TW"><link data-rh="true" rel="alternate" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/docs/development/events" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"QuickShop 自定义事件（开发者指南）","item":"https://quickshop-community.github.io/QuickShop-Hikari-Documents/zh-CN/docs/development/events"}]}</script><link rel="stylesheet" href="/QuickShop-Hikari-Documents/zh-CN/assets/css/styles.c174ff5c.css">
+<script src="/QuickShop-Hikari-Documents/zh-CN/assets/js/runtime~main.73133454.js" defer="defer"></script>
+<script src="/QuickShop-Hikari-Documents/zh-CN/assets/js/main.19d891be.js" defer="defer"></script>
 </head>
-<body class="navigation-with-keyboard">
+<body>
 <svg style="display: none;"><defs>
 <symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
 </defs></svg>
-<script>document.documentElement.setAttribute("data-theme","dark"),document.documentElement.setAttribute("data-theme-choice","dark"),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/QuickShop-Hikari-Documents/zh-CN/"><b class="navbar__title text--truncate"></b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/QuickShop-Hikari-Documents/zh-CN/docs/intro">Home</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/QuickShop-Hikari-Documents/zh-CN/docs/setup/install">Getting Started</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/QuickShop-Hikari-Documents/zh-CN/docs/category/addon">Addons</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/QuickShop-Hikari-Documents/zh-CN/docs/category/compatibility-modules">Compatibility</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>简体中文</a><ul class="dropdown__menu"><li><a href="/QuickShop-Hikari-Documents/de-DE/docs/development/events" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="de-DE">Deutsch</a></li><li><a href="/QuickShop-Hikari-Documents/docs/development/events" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en-US">English</a></li><li><a href="/QuickShop-Hikari-Documents/ja-JP/docs/development/events" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ja-JP">日本語</a></li><li><a href="/QuickShop-Hikari-Documents/zh-CN/docs/development/events" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="zh-CN">简体中文</a></li><li><a href="/QuickShop-Hikari-Documents/zh-HK/docs/development/events" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="zh-HK">繁體中文（中國香港特別行政區）</a></li><li><a href="/QuickShop-Hikari-Documents/zh-TW/docs/development/events" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="zh-TW">繁體中文（中國臺灣）</a></li></ul></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="Search" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/QuickShop-Hikari-Documents/zh-CN/docs/intro"><span title="欢迎使用 QuickShop-Hikari 帮助文档" class="linkLabel_WmDU">欢迎使用 QuickShop-Hikari 帮助文档</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/QuickShop-Hikari-Documents/zh-CN/docs/category/setup"><span title="Setup" class="categoryLinkLabel_W154">Setup</span></a><button aria-label="Expand sidebar category &#x27;Setup&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/QuickShop-Hikari-Documents/zh-CN/docs/category/faq"><span title="FAQ" class="categoryLinkLabel_W154">FAQ</span></a><button aria-label="Expand sidebar category &#x27;FAQ&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/QuickShop-Hikari-Documents/zh-CN/docs/category/features"><span title="Features" class="categoryLinkLabel_W154">Features</span></a><button aria-label="Expand sidebar category &#x27;Features&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/QuickShop-Hikari-Documents/zh-CN/docs/category/addon"><span title="Addon" class="categoryLinkLabel_W154">Addon</span></a><button aria-label="Expand sidebar category &#x27;Addon&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/QuickShop-Hikari-Documents/zh-CN/docs/category/addon-unofficial"><span title="Addon (Unofficial)" class="categoryLinkLabel_W154">Addon (Unofficial)</span></a><button aria-label="Expand sidebar category &#x27;Addon (Unofficial)&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/QuickShop-Hikari-Documents/zh-CN/docs/category/compatibility-modules"><span title="Compatibility Modules" class="categoryLinkLabel_W154">Compatibility Modules</span></a><button aria-label="Expand sidebar category &#x27;Compatibility Modules&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/QuickShop-Hikari-Documents/zh-CN/docs/category/internal"><span title="Internal" class="categoryLinkLabel_W154">Internal</span></a><button aria-label="Expand sidebar category &#x27;Internal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/QuickShop-Hikari-Documents/zh-CN/docs/category/about"><span title="About" class="categoryLinkLabel_W154">About</span></a><button aria-label="Expand sidebar category &#x27;About&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/QuickShop-Hikari-Documents/zh-CN/docs/changelogs/6.2.0.10"><span title="changelogs" class="categoryLinkLabel_W154">changelogs</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/getting-start"><span title="development" class="categoryLinkLabel_W154">development</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/getting-start"><span title="0x01 初次上手" class="linkLabel_WmDU">0x01 初次上手</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/get-api-instances"><span title="0x02 获取实例" class="linkLabel_WmDU">0x02 获取实例</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/work-with-shop-manager"><span title="0x03 着手使用商店管理器（Shop(Manager)）" class="linkLabel_WmDU">0x03 着手使用商店管理器（Shop(Manager)）</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/blacklist-price-limiter"><span title="0x04 黑名单（Blacklist）与价格限制（PriceLimiter）" class="linkLabel_WmDU">0x04 黑名单（Blacklist）与价格限制（PriceLimiter）</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/per-shop-permission-management"><span title="0x05 分商店权限" class="linkLabel_WmDU">0x05 分商店权限</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/protocol-system"><span title="虚拟展示物品发包系统" class="linkLabel_WmDU">虚拟展示物品发包系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/interaction-manager"><span title="交互系统（开发者指南）" class="linkLabel_WmDU">交互系统（开发者指南）</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/tax-manager"><span title="税收系统（开发者指南）" class="linkLabel_WmDU">税收系统（开发者指南）</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/layout-provider"><span title="商店排版提供器（开发者指南）" class="linkLabel_WmDU">商店排版提供器（开发者指南）</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/events"><span title="QuickShop Custom Events (Developer Guide)" class="linkLabel_WmDU">QuickShop Custom Events (Developer Guide)</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/QuickShop-Hikari-Documents/zh-CN/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">development</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">QuickShop Custom Events (Developer Guide)</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>QuickShop Custom Events (Developer Guide)</h1></header>
-<p>QuickShop-Hikari provides a comprehensive custom event system that allows developers to hook into nearly every stage of shop lifecycle, transactions, and management.</p>
-<p>As of 6.2.0.11, the event system has been:</p>
+<script>document.documentElement.setAttribute("data-theme","dark"),document.documentElement.setAttribute("data-theme-choice","dark"),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/QuickShop-Hikari-Documents/zh-CN/"><b class="navbar__title text--truncate"></b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/QuickShop-Hikari-Documents/zh-CN/docs/intro">Home</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/QuickShop-Hikari-Documents/zh-CN/docs/setup/install">Getting Started</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/QuickShop-Hikari-Documents/zh-CN/docs/category/addon">Addons</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/QuickShop-Hikari-Documents/zh-CN/docs/category/compatibility-modules">Compatibility</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>简体中文</a><ul class="dropdown__menu"><li><a href="/QuickShop-Hikari-Documents/de-DE/docs/development/events" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="de-DE">Deutsch</a></li><li><a href="/QuickShop-Hikari-Documents/docs/development/events" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en-US">English</a></li><li><a href="/QuickShop-Hikari-Documents/ja-JP/docs/development/events" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ja-JP">日本語</a></li><li><a href="/QuickShop-Hikari-Documents/zh-CN/docs/development/events" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="zh-CN">简体中文</a></li><li><a href="/QuickShop-Hikari-Documents/zh-HK/docs/development/events" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="zh-HK">繁體中文（中國香港特別行政區）</a></li><li><a href="/QuickShop-Hikari-Documents/zh-TW/docs/development/events" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="zh-TW">繁體中文（中國臺灣）</a></li></ul></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="Search" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/QuickShop-Hikari-Documents/zh-CN/docs/intro"><span class="linkLabel_WmDU">欢迎使用 QuickShop-Hikari 帮助文档</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/QuickShop-Hikari-Documents/zh-CN/docs/category/setup"><span class="categoryLinkLabel_W154">Setup</span></a><button aria-label="Expand sidebar category &#x27;Setup&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/QuickShop-Hikari-Documents/zh-CN/docs/category/faq"><span class="categoryLinkLabel_W154">FAQ</span></a><button aria-label="Expand sidebar category &#x27;FAQ&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/QuickShop-Hikari-Documents/zh-CN/docs/category/features"><span class="categoryLinkLabel_W154">Features</span></a><button aria-label="Expand sidebar category &#x27;Features&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/QuickShop-Hikari-Documents/zh-CN/docs/category/addon"><span class="categoryLinkLabel_W154">Addon</span></a><button aria-label="Expand sidebar category &#x27;Addon&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/QuickShop-Hikari-Documents/zh-CN/docs/category/addon-unofficial"><span class="categoryLinkLabel_W154">Addon (Unofficial)</span></a><button aria-label="Expand sidebar category &#x27;Addon (Unofficial)&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/QuickShop-Hikari-Documents/zh-CN/docs/category/compatibility-modules"><span class="categoryLinkLabel_W154">Compatibility Modules</span></a><button aria-label="Expand sidebar category &#x27;Compatibility Modules&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/QuickShop-Hikari-Documents/zh-CN/docs/category/internal"><span class="categoryLinkLabel_W154">Internal</span></a><button aria-label="Expand sidebar category &#x27;Internal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/QuickShop-Hikari-Documents/zh-CN/docs/category/about"><span class="categoryLinkLabel_W154">About</span></a><button aria-label="Expand sidebar category &#x27;About&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/QuickShop-Hikari-Documents/zh-CN/docs/changelogs/6.2.0.10"><span class="categoryLinkLabel_W154">changelogs</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/getting-start"><span class="categoryLinkLabel_W154">development</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/getting-start"><span class="linkLabel_WmDU">0x01 初次上手</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/get-api-instances"><span class="linkLabel_WmDU">0x02 获取实例</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/work-with-shop-manager"><span class="linkLabel_WmDU">0x03 着手使用商店管理器（Shop(Manager)）</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/blacklist-price-limiter"><span class="linkLabel_WmDU">0x04 黑名单（Blacklist）与价格限制（PriceLimiter）</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/per-shop-permission-management"><span class="linkLabel_WmDU">0x05 分商店权限</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/protocol-system"><span class="linkLabel_WmDU">虚拟展示物品发包系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/interaction-manager"><span class="linkLabel_WmDU">交互系统（开发者指南）</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/tax-manager"><span class="linkLabel_WmDU">税收系统（开发者指南）</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/layout-provider"><span class="linkLabel_WmDU">商店排版提供器（开发者指南）</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/events"><span class="linkLabel_WmDU">QuickShop 自定义事件（开发者指南）</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/QuickShop-Hikari-Documents/zh-CN/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">development</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">QuickShop 自定义事件（开发者指南）</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>QuickShop 自定义事件（开发者指南）</h1></header>
+<p>QuickShop-Hikari 提供了一个全面的自定义事件系统，让开发者能够将商店生命周期的几乎每个阶段绑定到交易和管理。</p>
+<p>在 6.2.0.11 后，事件系统已经：</p>
 <ul>
-<li class="">Fully refactored</li>
-<li class="">Phase-based (PRE / MAIN / POST)</li>
-<li class="">More consistent</li>
-<li class="">More extensible</li>
-<li class="">Better integrated with ShopType and Tax systems</li>
+<li class="">全面重构</li>
+<li class="">分阶段（PRE/MAIN/POST）</li>
+<li class="">更加一致</li>
+<li class="">更可扩展</li>
+<li class="">更好地与 ShopType 和税收系统集成</li>
 </ul>
-<p>This page documents the supported custom events available to developers.</p>
-<p>This page was last updated for version <code>6.2.0.11</code>.</p>
+<p>此页面记录了开发者可用的支持的自定义事件。</p>
+<p>此页最后更新版本为 <code>6.2.0.11</code>。</p>
 <hr>
-<h1>Event Architecture Overview</h1>
-<p>All QuickShop events extend: <code>AbstractQSEvent</code></p>
-<p>Many events are phase-based and follow a predictable lifecycle:</p>
+<h1>事件结构概述</h1>
+<p>所有 QuickShop 事件都会继承：<code>AbstractQSEvent </code></p>
+<p>所有事件都有阶段，且其生命周期可预测：</p>
 <ul>
-<li class="">PRE (Cancelable)</li>
-<li class="">MAIN (Core logic execution)</li>
-<li class="">POST (After execution)</li>
+<li class="">PRE（可取消）</li>
+<li class="">MAIN（核心逻辑执行）</li>
+<li class="">POST（执行后）</li>
 </ul>
-<p>Cancelable events allow you to block the action safely.</p>
+<p>可取消的事件允许你安全阻止操作。</p>
 <hr>
-<h1>Shop Lifecycle Events</h1>
-<p>These events relate to creation, deletion, and state changes of shops.</p>
+<h1>商店生命周期事件</h1>
+<p>这些事件涉及商店的创建、删除和状态更改。</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shopcreateevent">ShopCreateEvent<a href="#shopcreateevent" class="hash-link" aria-label="Direct link to ShopCreateEvent" title="Direct link to ShopCreateEvent" translate="no">​</a></h2>
-<p>Triggered when a shop is being created.</p>
+<p>创建商店时触发。</p>
 <ul>
-<li class="">Cancelable</li>
-<li class="">Fired before the shop is fully registered</li>
-<li class="">Can modify initial shop properties</li>
+<li class="">可取消</li>
+<li class="">在商店完全注册前触发</li>
+<li class="">可修改初始商店属性</li>
 </ul>
-<p>Common uses:</p>
+<p>常见用法：</p>
 <ul>
-<li class="">Restrict creation conditions</li>
-<li class="">Modify default values</li>
-<li class="">Enforce region rules</li>
+<li class="">限制创建条件</li>
+<li class="">修改默认值</li>
+<li class="">强制执行区域规则</li>
 </ul>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shopdeleteevent">ShopDeleteEvent<a href="#shopdeleteevent" class="hash-link" aria-label="Direct link to ShopDeleteEvent" title="Direct link to ShopDeleteEvent" translate="no">​</a></h2>
-<p>Triggered when a shop is deleted.</p>
+<p>删除商店时触发。</p>
 <ul>
-<li class="">Fired before removal</li>
-<li class="">Can be used for logging or cleanup</li>
+<li class="">移除前触发</li>
+<li class="">可以用于日志记录或清理</li>
 </ul>
-<p>Common uses:</p>
+<p>常见用法：</p>
 <ul>
-<li class="">External database sync</li>
-<li class="">Custom logging</li>
-<li class="">Reward refunds</li>
+<li class="">外部数据库同步</li>
+<li class="">自定义日志</li>
+<li class="">奖励退还</li>
 </ul>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shopdatabaseevent">ShopDatabaseEvent<a href="#shopdatabaseevent" class="hash-link" aria-label="Direct link to ShopDatabaseEvent" title="Direct link to ShopDatabaseEvent" translate="no">​</a></h2>
-<p>Triggered when a shop is saved, updated, or persisted.</p>
-<p>Common uses:</p>
+<p>商店保存、更新或持久化时触发。</p>
+<p>常见用法：</p>
 <ul>
-<li class="">Sync external storage</li>
-<li class="">Monitor database updates</li>
-<li class="">Analytics</li>
+<li class="">同步外部存储</li>
+<li class="">监视数据库更新</li>
+<li class="">统计数据</li>
 </ul>
 <hr>
-<h1>Shop Modification Events</h1>
-<p>These events fire when shop properties are changed.</p>
+<h1>商店修改事件</h1>
+<p>商店属性被更改时触发。</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shoppriceevent">ShopPriceEvent<a href="#shoppriceevent" class="hash-link" aria-label="Direct link to ShopPriceEvent" title="Direct link to ShopPriceEvent" translate="no">​</a></h2>
-<p>Triggered when a shop price changes.</p>
+<p>商店价格改变时触发。</p>
 <ul>
-<li class="">Cancelable (PRE phase)</li>
-<li class="">Provides old and new price values</li>
+<li class="">可取消（PRE 阶段）</li>
+<li class="">提供新旧价格</li>
 </ul>
-<p>Common uses:</p>
+<p>常见用法：</p>
 <ul>
-<li class="">Enforce price caps</li>
-<li class="">Apply dynamic pricing rules</li>
-<li class="">Integrate economy balancing plugins</li>
+<li class="">强制执行价格上限</li>
+<li class="">应用动态定价规则</li>
+<li class="">联动经济平衡插件</li>
 </ul>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shopnameevent">ShopNameEvent<a href="#shopnameevent" class="hash-link" aria-label="Direct link to ShopNameEvent" title="Direct link to ShopNameEvent" translate="no">​</a></h2>
-<p>Triggered when a shop name is changed.</p>
-<p>Common uses:</p>
+<p>商店名称改变时触发。</p>
+<p>常见用法：</p>
 <ul>
-<li class="">Filter inappropriate names</li>
-<li class="">Apply formatting rules</li>
+<li class="">屏蔽违规名称</li>
+<li class="">使用格式规则</li>
 </ul>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shopownerevent">ShopOwnerEvent<a href="#shopownerevent" class="hash-link" aria-label="Direct link to ShopOwnerEvent" title="Direct link to ShopOwnerEvent" translate="no">​</a></h2>
-<p>Triggered when shop ownership changes.</p>
-<p>Common uses:</p>
+<p>商店转让时触发。</p>
+<p>常见用法：</p>
 <ul>
-<li class="">Restrict transfers</li>
-<li class="">Sync permissions</li>
-<li class="">Audit logs</li>
+<li class="">限制转让</li>
+<li class="">同步权限</li>
+<li class="">审核日志</li>
 </ul>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shopunlimitedevent">ShopUnlimitedEvent<a href="#shopunlimitedevent" class="hash-link" aria-label="Direct link to ShopUnlimitedEvent" title="Direct link to ShopUnlimitedEvent" translate="no">​</a></h2>
-<p>Triggered when unlimited mode is toggled.</p>
-<p>Common uses:</p>
+<p>商店切换无限模式时触发。</p>
+<p>常见用法：</p>
 <ul>
-<li class="">Restrict unlimited to admins</li>
-<li class="">Enforce custom stock rules</li>
+<li class="">限制管理员不受限制</li>
+<li class="">强制自定义库存规则</li>
 </ul>
 <hr>
-<h1>Shop Type Events</h1>
-<p>The legacy <code>ShopType</code> enum has been replaced with a flexible system.</p>
+<h1>商店类型事件</h1>
+<p>旧版的 <code>ShopType</code> 常量已经被更灵活的系统替代。</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shoptypeenhancedevent">ShopTypeEnhancedEvent<a href="#shoptypeenhancedevent" class="hash-link" aria-label="Direct link to ShopTypeEnhancedEvent" title="Direct link to ShopTypeEnhancedEvent" translate="no">​</a></h2>
-<p>Triggered when a shop&#x27;s type changes.</p>
-<p>Supports:</p>
+<p>商店类型改变时触发。</p>
+<p>支持：</p>
 <ul>
 <li class="">SELLING</li>
 <li class="">BUYING</li>
 <li class="">FROZEN</li>
-<li class="">Custom shop types (via IShopType)</li>
+<li class="">自定义商店类型（通过 IShopType 设置）</li>
 </ul>
-<p>Common uses:</p>
+<p>常见用法：</p>
 <ul>
-<li class="">Restrict specific shop types</li>
-<li class="">React to freeze/unfreeze</li>
-<li class="">Update external maps or UIs</li>
+<li class="">限制特定的商店类型</li>
+<li class="">冻结/解冻相关操作</li>
+<li class="">更新外部地图或界面</li>
 </ul>
 <hr>
-<h1>Transaction Events</h1>
-<p>These events fire during trading.</p>
+<h1>交易事件</h1>
+<p>交易时触发。</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shoppretransactionevent">ShopPreTransactionEvent<a href="#shoppretransactionevent" class="hash-link" aria-label="Direct link to ShopPreTransactionEvent" title="Direct link to ShopPreTransactionEvent" translate="no">​</a></h2>
-<p>Fired before a transaction is processed.</p>
+<p>处理交易前触发。</p>
 <ul>
-<li class="">Cancelable</li>
-<li class="">Allows validation</li>
+<li class="">可取消</li>
+<li class="">可验证</li>
 </ul>
-<p>Common uses:</p>
+<p>常见用法：</p>
 <ul>
-<li class="">Block trades conditionally</li>
-<li class="">Apply custom checks</li>
+<li class="">阻止满足条件的交易</li>
+<li class="">应用自定义检查</li>
 </ul>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shoptransactionevent">ShopTransactionEvent<a href="#shoptransactionevent" class="hash-link" aria-label="Direct link to ShopTransactionEvent" title="Direct link to ShopTransactionEvent" translate="no">​</a></h2>
-<p>Triggered when a transaction occurs.</p>
-<p>Provides:</p>
+<p>交易进行时触发。</p>
+<p>提供：</p>
 <ul>
-<li class="">Buyer</li>
-<li class="">Seller</li>
-<li class="">Price</li>
-<li class="">Item</li>
-<li class="">Quantity</li>
+<li class="">买家</li>
+<li class="">卖家</li>
+<li class="">价格</li>
+<li class="">物品</li>
+<li class="">数量</li>
 </ul>
-<p>Common uses:</p>
+<p>常见用法：</p>
 <ul>
-<li class="">Logging</li>
-<li class="">Statistics</li>
-<li class="">External economy sync</li>
+<li class="">记录</li>
+<li class="">统计</li>
+<li class="">外部经济同步</li>
 </ul>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shopenhancedtaxevent">ShopEnhancedTaxEvent<a href="#shopenhancedtaxevent" class="hash-link" aria-label="Direct link to ShopEnhancedTaxEvent" title="Direct link to ShopEnhancedTaxEvent" translate="no">​</a></h2>
-<p>Triggered during tax calculation.</p>
-<p>Replaces legacy tax events.</p>
-<p>Provides:</p>
+<p>计算税收时触发。</p>
+<p>替换旧版税收事件。</p>
+<p>提供：</p>
 <ul>
-<li class="">Access to TaxRates</li>
-<li class="">Ability to modify owner tax</li>
-<li class="">Ability to modify buyer tax</li>
-<li class="">Transaction builder reference</li>
+<li class="">获取 TaxRates</li>
+<li class="">允许修改卖家税收</li>
+<li class="">允许修改买家税收</li>
+<li class="">交易构造器参考</li>
 </ul>
-<p>Common uses:</p>
+<p>常见用法：</p>
 <ul>
-<li class="">VIP tax discounts</li>
-<li class="">Dynamic taxation</li>
-<li class="">Region-based tax multipliers</li>
+<li class="">VIP 减税</li>
+<li class="">动态税</li>
+<li class="">基于区域的税率倍率</li>
 </ul>
 <hr>
-<h1>Limit &amp; Restriction Events</h1>
+<h1>限制事件</h1>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="userlimitcalculationevent">UserLimitCalculationEvent<a href="#userlimitcalculationevent" class="hash-link" aria-label="Direct link to UserLimitCalculationEvent" title="Direct link to UserLimitCalculationEvent" translate="no">​</a></h2>
-<p>Triggered when calculating how many shops a user may own.</p>
-<p>Allows:</p>
+<p>计算玩家拥有商店上限时触发。</p>
+<p>允许：</p>
 <ul>
-<li class="">Modifying shop limit</li>
-<li class="">Adding extra allowance</li>
-<li class="">Applying rank-based scaling</li>
+<li class="">修改商店限制</li>
+<li class="">增加额外限度</li>
+<li class="">应用等级比例</li>
 </ul>
-<p>Common uses:</p>
+<p>常见用法：</p>
 <ul>
-<li class="">Rank-based bonuses</li>
-<li class="">Permission-based shop limits</li>
-<li class="">Event-based shop cap increases</li>
+<li class="">基于等级的奖励</li>
+<li class="">基于权限的商店限制</li>
+<li class="">基于活动的商店上限增加</li>
 </ul>
 <hr>
-<h1>Interaction Events</h1>
-<p>These events relate to player interaction behavior.</p>
+<h1>交互事件</h1>
+<p>与玩家交互行为相关的事件。</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="interactionpreevent">InteractionPreEvent<a href="#interactionpreevent" class="hash-link" aria-label="Direct link to InteractionPreEvent" title="Direct link to InteractionPreEvent" translate="no">​</a></h2>
-<p>Fired before interaction behavior executes.</p>
+<p>交互行为执行前触发。</p>
 <ul>
-<li class="">Cancelable</li>
-<li class="">Provides InteractionType</li>
-<li class="">Provides InteractionBehavior</li>
+<li class="">可取消</li>
+<li class="">提供 InteractionType</li>
+<li class="">提供 InteractionBehavior</li>
 </ul>
-<p>Common uses:</p>
+<p>常见用法：</p>
 <ul>
-<li class="">Restrict specific click types</li>
-<li class="">Override interaction logic</li>
+<li class="">限制特定的点击类型</li>
+<li class="">重写交互逻辑</li>
 </ul>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="interactionpostevent">InteractionPostEvent<a href="#interactionpostevent" class="hash-link" aria-label="Direct link to InteractionPostEvent" title="Direct link to InteractionPostEvent" translate="no">​</a></h2>
-<p>Triggered after interaction execution.</p>
-<p>Common uses:</p>
+<p>交互执行后触发。</p>
+<p>常见用法：</p>
 <ul>
-<li class="">Metrics</li>
-<li class="">Logging</li>
-<li class="">Custom UI updates</li>
+<li class="">统计</li>
+<li class="">记录</li>
+<li class="">刷新自定义界面</li>
 </ul>
 <hr>
-<h1>Display &amp; Visual Events</h1>
+<h1>显示和视觉事件</h1>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shopdisplayupdateevent">ShopDisplayUpdateEvent<a href="#shopdisplayupdateevent" class="hash-link" aria-label="Direct link to ShopDisplayUpdateEvent" title="Direct link to ShopDisplayUpdateEvent" translate="no">​</a></h2>
-<p>Triggered when a display item updates.</p>
-<p>Common uses:</p>
+<p>展示物品更新时触发。</p>
+<p>常见用法：</p>
 <ul>
-<li class="">Replace display logic</li>
-<li class="">Sync external map markers</li>
-<li class="">Customize display rendering</li>
+<li class="">替换显示逻辑</li>
+<li class="">同步外部地图标记</li>
+<li class="">自定义显示渲染</li>
 </ul>
 <hr>
-<h1>Layout &amp; Formatting Events</h1>
+<h1>排版和格式事件</h1>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="shoplayoutresolveevent">ShopLayoutResolveEvent<a href="#shoplayoutresolveevent" class="hash-link" aria-label="Direct link to ShopLayoutResolveEvent" title="Direct link to ShopLayoutResolveEvent" translate="no">​</a></h2>
-<p>Triggered when resolving sign layout.</p>
-<p>Common uses:</p>
+<p>解析告示牌排版时触发。</p>
+<p>常见用法：</p>
 <ul>
-<li class="">Inject custom placeholders</li>
-<li class="">Modify sign lines</li>
-<li class="">Apply per-player formatting</li>
+<li class="">注入自定义变量</li>
+<li class="">修改告示牌文本行</li>
+<li class="">分玩家显示格式</li>
 </ul>
 <hr>
-<h1>Phase-Based Events</h1>
-<p>Many events extend a phased event base class.</p>
-<p>Phases include:</p>
+<h1>基于阶段的事件</h1>
+<p>许多事件继承了阶段事件的基础类。</p>
+<p>例如：</p>
 <ul>
 <li class="">PRE</li>
 <li class="">MAIN</li>
 <li class="">POST</li>
 </ul>
-<p>When listening for events:</p>
+<p>监听事件时：</p>
 <ul>
-<li class="">Use PRE to cancel or modify</li>
-<li class="">Use POST for logging or side effects</li>
+<li class="">若需取消或修改，请使用 PRE</li>
+<li class="">若需要记录或执行其他代码，请使用 POST</li>
 </ul>
-<p>Example:</p>
-<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">@EventHandler</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">public void onPriceChange(ShopPriceEvent event) {</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    if (event.getNewPrice() &lt; 0) {</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">        event.setCancelled(true);</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">}</span><br></span></code></pre></div></div>
+<p>示例：</p>
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#F8F8F2"><span class="token plain">@EventHandler</span><br></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">public void onPriceChange(ShopPriceEvent event) {</span><br></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">    if (event.getNewPrice() &lt; 0) {</span><br></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">        event.setCancelled(true);</span><br></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">    }</span><br></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">}</span><br></div></code></pre></div></div>
 <hr>
-<h1>Event Registration Example</h1>
-<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">@EventHandler</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">public void onTransaction(ShopTransactionEvent event) {</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    Player buyer = event.getBuyer();</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    double price = event.getPrice();</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    buyer.sendMessage(&quot;You spent &quot; + price);</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">}</span><br></span></code></pre></div></div>
-<p>Make sure your class is registered as a Bukkit listener.</p>
+<h1>事件注册示例</h1>
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#F8F8F2"><span class="token plain">@EventHandler</span><br></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">public void onTransaction(ShopTransactionEvent event) {</span><br></div><div class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">    Player buyer = event.getBuyer();</span><br></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">    double price = event.getPrice();</span><br></div><div class="token-line" style="color:#F8F8F2"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">    buyer.sendMessage(&quot;你支付了 &quot; + price);</span><br></div><div class="token-line" style="color:#F8F8F2"><span class="token plain">}</span><br></div></code></pre></div></div>
+<p>确保你的类注册为 Bukkit 监听器。</p>
 <hr>
-<h1>Deprecated Events (6.2.0.11)</h1>
-<p>The following legacy events were replaced:</p>
+<h1>已弃用事件（6.2.0.11）</h1>
+<p>如下旧版事件已被替换：</p>
 <ul>
-<li class="">ShopTypeEvent → replaced with ShopTypeEnhancedEvent</li>
-<li class="">ShopTaxEvent → replaced with ShopEnhancedTaxEvent</li>
-<li class="">ShopUpdateEvent → replaced with ShopDatabaseEvent</li>
+<li class="">ShopTypeEvent → 替换为 ShopTypeEnhancedEvent</li>
+<li class="">ShopTaxEvent → 替换为 ShopEnhancedTaxEvent</li>
+<li class="">ShopUpdateEvent → 替换为 ShopDatabaseEvent</li>
 </ul>
-<p>Do not use deprecated events in new development.</p>
+<p>不要在新版本开发中使用这些已弃用事件。</p>
 <hr>
-<h1>Best Practices</h1>
+<h1>最佳做法</h1>
 <ul>
-<li class="">Always check event phase if applicable.</li>
-<li class="">Avoid heavy operations inside PRE phase.</li>
-<li class="">Never block the main thread with I/O.</li>
-<li class="">Respect cancellation states.</li>
-<li class="">Prefer enhanced events over legacy ones.</li>
+<li class="">尽可能检查事件阶段。</li>
+<li class="">避免 PRE 阶段大量操作。</li>
+<li class="">不要用读写阻塞主线程。</li>
+<li class="">尊重取消状态。</li>
+<li class="">优先使用增强事件而非旧版事件。</li>
 </ul>
 <hr>
-<h1>Summary</h1>
-<p>QuickShop-Hikari provides events for:</p>
+<h1>总结</h1>
+<p>QuickShop-Hikari 对如下情况提供了事件：</p>
 <ul>
-<li class="">Shop lifecycle</li>
-<li class="">Price updates</li>
-<li class="">Ownership changes</li>
-<li class="">Shop type changes</li>
-<li class="">Transactions</li>
-<li class="">Tax calculations</li>
-<li class="">User limits</li>
-<li class="">Interaction handling</li>
-<li class="">Layout resolution</li>
-<li class="">Display updates</li>
+<li class="">商店生命周期</li>
+<li class="">价格更新</li>
+<li class="">商店转让</li>
+<li class="">商店类型更改</li>
+<li class="">交易</li>
+<li class="">税收计算</li>
+<li class="">用户限制</li>
+<li class="">交互处理</li>
+<li class="">排版解析</li>
+<li class="">显示更新</li>
 </ul>
-<p>The 6.2.0.11 event system is designed for:</p>
+<p>6.2.0.11 事件系统的设计是为了：</p>
 <ul>
-<li class="">Extensibility</li>
-<li class="">Stability</li>
-<li class="">Performance</li>
-<li class="">Modern API structure</li>
+<li class="">扩展性</li>
+<li class="">稳定性</li>
+<li class="">性能</li>
+<li class="">现代 API 结构</li>
 </ul>
-<p>For advanced integrations, it is recommended to use the enhanced event variants introduced in 6.2.x.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://crowdin.com/project/quickshop-hikari-documents/zh-CN" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/layout-provider"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">商店排版提供器（开发者指南）</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#shopcreateevent" class="table-of-contents__link toc-highlight">ShopCreateEvent</a></li><li><a href="#shopdeleteevent" class="table-of-contents__link toc-highlight">ShopDeleteEvent</a></li><li><a href="#shopdatabaseevent" class="table-of-contents__link toc-highlight">ShopDatabaseEvent</a></li><li><a href="#shoppriceevent" class="table-of-contents__link toc-highlight">ShopPriceEvent</a></li><li><a href="#shopnameevent" class="table-of-contents__link toc-highlight">ShopNameEvent</a></li><li><a href="#shopownerevent" class="table-of-contents__link toc-highlight">ShopOwnerEvent</a></li><li><a href="#shopunlimitedevent" class="table-of-contents__link toc-highlight">ShopUnlimitedEvent</a></li><li><a href="#shoptypeenhancedevent" class="table-of-contents__link toc-highlight">ShopTypeEnhancedEvent</a></li><li><a href="#shoppretransactionevent" class="table-of-contents__link toc-highlight">ShopPreTransactionEvent</a></li><li><a href="#shoptransactionevent" class="table-of-contents__link toc-highlight">ShopTransactionEvent</a></li><li><a href="#shopenhancedtaxevent" class="table-of-contents__link toc-highlight">ShopEnhancedTaxEvent</a></li><li><a href="#userlimitcalculationevent" class="table-of-contents__link toc-highlight">UserLimitCalculationEvent</a></li><li><a href="#interactionpreevent" class="table-of-contents__link toc-highlight">InteractionPreEvent</a></li><li><a href="#interactionpostevent" class="table-of-contents__link toc-highlight">InteractionPostEvent</a></li><li><a href="#shopdisplayupdateevent" class="table-of-contents__link toc-highlight">ShopDisplayUpdateEvent</a></li><li><a href="#shoplayoutresolveevent" class="table-of-contents__link toc-highlight">ShopLayoutResolveEvent</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Get QuickShop-Hikari</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://modrinth.com/mod/quickshop-hikari" target="_blank" rel="noopener noreferrer" class="footer__link-item">Modrinth<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://www.spigotmc.org/resources/100125" target="_blank" rel="noopener noreferrer" class="footer__link-item">SpigotMC<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://ci.codemc.io/job/Ghost-chu/job/QuickShop-Hikari" target="_blank" rel="noopener noreferrer" class="footer__link-item">CodeMC CI<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/QuickShop-Community/QuickShop-Hikari" target="_blank" rel="noopener noreferrer" class="footer__link-item">Github Releases<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/Bu3dVtmsD3" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/QuickShop-Community/QuickShop-Hikari/discussions" target="_blank" rel="noopener noreferrer" class="footer__link-item">Github<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://www.spigotmc.org/threads/547268" target="_blank" rel="noopener noreferrer" class="footer__link-item">SpigotMC<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/QuickShop-Community/QuickShop-Hikari" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://ghost-chu.github.io/quickshop-hikari-paste-viewer" target="_blank" rel="noopener noreferrer" class="footer__link-item">Paste Viewer<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">All contents are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Built with Docusaurus.</div></div></div></footer><div class="qs-star-layer" aria-hidden="true"><div class="qs-star qs-star-golden" style="top:8%;left:12%"></div><div class="qs-star" style="top:18%;left:28%"></div><div class="qs-star qs-star-golden" style="top:25%;left:65%"></div><div class="qs-star" style="top:32%;left:82%"></div><div class="qs-star" style="top:40%;left:15%"></div><div class="qs-star qs-star-golden" style="top:46%;left:52%"></div><div class="qs-star" style="top:55%;left:78%"></div><div class="qs-star qs-star-golden" style="top:62%;left:34%"></div><div class="qs-star" style="top:70%;left:10%"></div><div class="qs-star qs-star-golden" style="top:78%;left:60%"></div><div class="qs-star" style="top:12%;left:50%"></div><div class="qs-star qs-star-golden" style="top:22%;left:90%"></div><div class="qs-star" style="top:35%;left:40%"></div><div class="qs-star qs-star-golden" style="top:48%;left:5%"></div><div class="qs-star" style="top:58%;left:24%"></div><div class="qs-star qs-star-golden" style="top:68%;left:88%"></div><div class="qs-shooting-star"></div><div class="qs-shooting-star qs-shooting-star-2"></div></div></div>
+<p>进阶集成建议使用 6.2.x 引入的增强事件变体。</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://crowdin.com/project/quickshop-hikari-documents/zh-CN" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/QuickShop-Hikari-Documents/zh-CN/docs/development/layout-provider"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">商店排版提供器（开发者指南）</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#shopcreateevent" class="table-of-contents__link toc-highlight">ShopCreateEvent</a></li><li><a href="#shopdeleteevent" class="table-of-contents__link toc-highlight">ShopDeleteEvent</a></li><li><a href="#shopdatabaseevent" class="table-of-contents__link toc-highlight">ShopDatabaseEvent</a></li><li><a href="#shoppriceevent" class="table-of-contents__link toc-highlight">ShopPriceEvent</a></li><li><a href="#shopnameevent" class="table-of-contents__link toc-highlight">ShopNameEvent</a></li><li><a href="#shopownerevent" class="table-of-contents__link toc-highlight">ShopOwnerEvent</a></li><li><a href="#shopunlimitedevent" class="table-of-contents__link toc-highlight">ShopUnlimitedEvent</a></li><li><a href="#shoptypeenhancedevent" class="table-of-contents__link toc-highlight">ShopTypeEnhancedEvent</a></li><li><a href="#shoppretransactionevent" class="table-of-contents__link toc-highlight">ShopPreTransactionEvent</a></li><li><a href="#shoptransactionevent" class="table-of-contents__link toc-highlight">ShopTransactionEvent</a></li><li><a href="#shopenhancedtaxevent" class="table-of-contents__link toc-highlight">ShopEnhancedTaxEvent</a></li><li><a href="#userlimitcalculationevent" class="table-of-contents__link toc-highlight">UserLimitCalculationEvent</a></li><li><a href="#interactionpreevent" class="table-of-contents__link toc-highlight">InteractionPreEvent</a></li><li><a href="#interactionpostevent" class="table-of-contents__link toc-highlight">InteractionPostEvent</a></li><li><a href="#shopdisplayupdateevent" class="table-of-contents__link toc-highlight">ShopDisplayUpdateEvent</a></li><li><a href="#shoplayoutresolveevent" class="table-of-contents__link toc-highlight">ShopLayoutResolveEvent</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Get QuickShop-Hikari</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://modrinth.com/mod/quickshop-hikari" target="_blank" rel="noopener noreferrer" class="footer__link-item">Modrinth<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://www.spigotmc.org/resources/100125" target="_blank" rel="noopener noreferrer" class="footer__link-item">SpigotMC<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://ci.codemc.io/job/Ghost-chu/job/QuickShop-Hikari" target="_blank" rel="noopener noreferrer" class="footer__link-item">CodeMC CI<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/QuickShop-Community/QuickShop-Hikari" target="_blank" rel="noopener noreferrer" class="footer__link-item">Github Releases<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/Bu3dVtmsD3" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/QuickShop-Community/QuickShop-Hikari/discussions" target="_blank" rel="noopener noreferrer" class="footer__link-item">Github<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://www.spigotmc.org/threads/547268" target="_blank" rel="noopener noreferrer" class="footer__link-item">SpigotMC<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/QuickShop-Community/QuickShop-Hikari" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://ghost-chu.github.io/quickshop-hikari-paste-viewer" target="_blank" rel="noopener noreferrer" class="footer__link-item">Paste Viewer<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">All contents are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Built with Docusaurus.</div></div></div></footer><div class="qs-star-layer" aria-hidden="true"><div class="qs-star qs-star-golden" style="top:8%;left:12%"></div><div class="qs-star" style="top:18%;left:28%"></div><div class="qs-star qs-star-golden" style="top:25%;left:65%"></div><div class="qs-star" style="top:32%;left:82%"></div><div class="qs-star" style="top:40%;left:15%"></div><div class="qs-star qs-star-golden" style="top:46%;left:52%"></div><div class="qs-star" style="top:55%;left:78%"></div><div class="qs-star qs-star-golden" style="top:62%;left:34%"></div><div class="qs-star" style="top:70%;left:10%"></div><div class="qs-star qs-star-golden" style="top:78%;left:60%"></div><div class="qs-star" style="top:12%;left:50%"></div><div class="qs-star qs-star-golden" style="top:22%;left:90%"></div><div class="qs-star" style="top:35%;left:40%"></div><div class="qs-star qs-star-golden" style="top:48%;left:5%"></div><div class="qs-star" style="top:58%;left:24%"></div><div class="qs-star qs-star-golden" style="top:68%;left:88%"></div><div class="qs-shooting-star"></div><div class="qs-shooting-star qs-shooting-star-2"></div></div></div>
 </body>
 </html>
