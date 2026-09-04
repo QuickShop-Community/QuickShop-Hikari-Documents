@@ -1,156 +1,164 @@
 import React from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-
+import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.css';
 
-export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+const docAreas = [
+  {
+    eyebrow: 'START HERE',
+    title: 'Getting Started',
+    description: 'Install QuickShop Hikari and get your first shop running.',
+    to: '/docs/setup/install',
+    icon: '01',
+  },
+  {
+    eyebrow: 'CONFIGURE',
+    title: 'Documentation',
+    description: 'Browse configuration, commands, permissions, shops, and administration guides.',
+    to: '/docs/intro',
+    icon: '02',
+  },
+  {
+    eyebrow: 'EXTEND',
+    title: 'Addons',
+    description: 'Discover addons that extend QuickShop Hikari with additional functionality.',
+    to: '/docs/category/addon',
+    icon: '03',
+  },
+  {
+    eyebrow: 'INTEGRATE',
+    title: 'Compatibility',
+    description: 'Find compatibility modules and integration information for your server stack.',
+    to: '/docs/category/compatibility-modules',
+    icon: '04',
+  },
+];
 
-  const title = siteConfig.title || 'QuickShop Hikari Docs';
-  const tagline =
-    siteConfig.tagline ||
-    'A shop plugin that lets players buy and sell items from containers without commands.';
+const quickLinks = [
+  { label: 'Installation', to: '/docs/setup/install' },
+  { label: 'Browse all docs', to: '/docs/intro' },
+  { label: 'QuickShop Hikari website', href: 'https://quickshophikari.org/en' },
+  { label: 'Project on GitHub', href: 'https://github.com/QuickShop-Community/QuickShop-Hikari' },
+];
+
+export default function Home() {
+  const logo = useBaseUrl('img/quickshop-hikari-logo.webp');
 
   return (
     <Layout
-      title={title}
-      description="QuickShop-Hikari User Documents">
+      title="Documentation"
+      description="Official documentation for QuickShop Hikari."
+    >
       <main className={styles.page}>
-        {/* Big center panel like the Next.js site */}
-        <section className={styles.contentShell}>
-          {/* HERO */}
-          <header className={styles.hero}>
-            <div className={styles.heroLogo}>
-              <img
-                src="img/logo.webp"
-                alt="QuickShop Hikari Logo"
-                height="250px"
-              />
+        <section className={styles.hero}>
+          <div className={styles.heroGlowOne} aria-hidden="true" />
+          <div className={styles.heroGlowTwo} aria-hidden="true" />
+
+          <div className={styles.heroInner}>
+            <div className={styles.heroCopy}>
+              <div className={styles.eyebrow}>
+                <span className={styles.eyebrowDot} />
+                OFFICIAL DOCUMENTATION
+              </div>
+
+              <h1>
+                Build better shops with
+                <span> QuickShop Hikari.</span>
+              </h1>
+
+              <p className={styles.lead}>
+                Everything you need to install, configure, customize, and extend
+                QuickShop Hikari on your Minecraft server.
+              </p>
+
+              <div className={styles.actions}>
+                <Link className={styles.primaryButton} to="/docs/setup/install">
+                  Get Started
+                  <span aria-hidden="true">→</span>
+                </Link>
+
+                <Link className={styles.secondaryButton} to="/docs/intro">
+                  Browse Documentation
+                </Link>
+              </div>
+
+              <div className={styles.quickLinks} aria-label="Quick links">
+                {quickLinks.map((item) => (
+                  <Link
+                    key={item.label}
+                    className={styles.quickLink}
+                    to={item.to}
+                    href={item.href}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
             </div>
 
-            <h1 className={styles.heroTitle}>{title}</h1>
+            <div className={styles.heroVisual}>
+              <div className={styles.logoCard}>
+                <div className={styles.logoHalo} aria-hidden="true" />
+                <img src={logo} alt="QuickShop Hikari" />
+              </div>
 
-            <p className={styles.heroTagline}>
-              {tagline}{' '}
-              This documentation covers setup, configuration, addons, and
-              compatibility modules.
-            </p>
-
-            <div className={styles.heroButtons}>
-              <Link
-                className={clsx(styles.heroButton, styles.heroButtonPrimary)}
-                to="/docs/setup/install">
-                Getting Started
-              </Link>
-
-              <Link
-                className={clsx(styles.heroButton, styles.heroButtonGhost)}
-                to="/docs/category/compatibility-modules">
-                Compatibility Modules
-              </Link>
-
-              <Link
-                className={clsx(styles.heroButton, styles.heroButtonGhost)}
-                to="/docs/category/addon">
-                Addons
-              </Link>
-
-              <Link
-                className={clsx(styles.heroButton, styles.heroButtonModrinth)}
-                to="https://modrinth.com/plugin/quickshop-hikari">
-                View on Modrinth
-              </Link>
-
-              <Link
-                className={clsx(styles.heroButton, styles.heroButtonDiscord)}
-                to="https://discord.gg/Bu3dVtmsD3">
-                Join Discord
-              </Link>
+              <div className={styles.visualSparkleOne} aria-hidden="true">✦</div>
+              <div className={styles.visualSparkleTwo} aria-hidden="true">✦</div>
             </div>
+          </div>
+        </section>
 
-            <p className={styles.heroMeta}>
-              <span className={clsx(styles.dot, styles.dotGreen)} />
-              Paper 1.20+ ready
-              <span className={styles.metaSep}>•</span>
-              <span className={clsx(styles.dot, styles.dotBlue)} />
-              Active snapshots
-              <span className={styles.metaSep}>•</span>
-              <span className={clsx(styles.dot, styles.dotPink)} />
-              Open source
+        <section className={styles.docsSection}>
+          <div className={styles.sectionHeading}>
+            <div>
+              <div className={styles.sectionEyebrow}>DOCUMENTATION</div>
+              <h2>Find what you need.</h2>
+            </div>
+            <p>
+              Jump into the most common documentation areas, or use search in
+              the navigation bar to find a specific topic.
             </p>
-          </header>
+          </div>
 
-          {/* SECTION GRID */}
-          <section className={styles.sectionGrid}>
-            <article className={styles.sectionCard}>
-              <h2>Installation</h2>
-              <p>
-                Learn how to install QuickShop Hikari, and verify
-                that everything is working correctly on your server.
-              </p>
-              <ul>
-                <li>
-                  <Link to="/docs/setup/install">Installation</Link>
-                </li>
-                <li>
-                  <Link to="/docs/category/faq">
-                    FAQ &amp; common issues
-                  </Link>
-                </li>
-              </ul>
-            </article>
+          <div className={styles.cardGrid}>
+            {docAreas.map((area) => (
+              <Link key={area.title} className={styles.docCard} to={area.to}>
+                <div className={styles.cardTop}>
+                  <span className={styles.cardIcon}>{area.icon}</span>
+                  <span className={styles.cardEyebrow}>{area.eyebrow}</span>
+                </div>
+                <h3>{area.title}</h3>
+                <p>{area.description}</p>
+                <span className={styles.cardArrow} aria-hidden="true">→</span>
+              </Link>
+            ))}
+          </div>
+        </section>
 
-            <article className={styles.sectionCard}>
-              <h2>Configuration &amp; Permissions</h2>
-              <p>
-                Tweak every aspect of QuickShop: language, taxes, protections,
-                limits, and integration with your permission system.
-              </p>
-              <ul>
-                <li>
-                  <Link to="#">
-                    Configuration overview(WIP)
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/docs/setup/permissions">
-                    Permissions &amp; roles
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#">
-                    Commands &amp; arguments(WIP)
-                  </Link>
-                </li>
-              </ul>
-            </article>
-
-            <article className={styles.sectionCard}>
-              <h2>Addons &amp; Compatibility</h2>
-              <p>
-                Explore official addons and compatibility modules to connect
-                QuickShop Hikari with other plugins and networks.
-              </p>
-              <ul>
-                <li>
-                  <Link to="/docs/category/addon">Official addons</Link>
-                </li>
-                <li>
-                  <Link to="/docs/category/compatibility-modules">
-                    Compatibility modules
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/docs/category/addon-unofficial">
-                    Community addons
-                  </Link>
-                </li>
-              </ul>
-            </article>
-          </section>
+        <section className={styles.helpBanner}>
+          <div>
+            <div className={styles.helpEyebrow}>NEED MORE HELP?</div>
+            <h2>Documentation is only one part of the community.</h2>
+            <p>
+              Visit the main QuickShop Hikari site or join the community when
+              you need releases, project information, or support resources.
+            </p>
+          </div>
+          <div className={styles.helpActions}>
+            <Link
+              className={styles.helpPrimary}
+              href="https://quickshophikari.org/en"
+            >
+              Visit Main Site
+            </Link>
+            <Link
+              className={styles.helpSecondary}
+              href="https://discord.gg/Bu3dVtmsD3"
+            >
+              Join Discord
+            </Link>
+          </div>
         </section>
       </main>
     </Layout>

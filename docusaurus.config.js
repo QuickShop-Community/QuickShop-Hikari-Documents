@@ -1,67 +1,51 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const DefaultLocale = 'en-US';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'QuickShop-Hikari Docs',
-  tagline: 'QuickShop-Hikari User Documents',
+  title: 'QuickShop Hikari Documentation',
+  tagline: 'Documentation for QuickShop Hikari',
   url: 'https://quickshop-community.github.io/',
-  baseUrl: '/QuickShop-Hikari-Documents',
+  baseUrl: '/QuickShop-Hikari-Documents/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
   trailingSlash: false,
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'QuickShop-Community', // Usually your GitHub org/user name.
-  projectName: 'QuickShop-Hikari-Documents', // Usually your repo name.
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
+  organizationName: 'QuickShop-Community',
+  projectName: 'QuickShop-Hikari-Documents',
+
   i18n: {
     defaultLocale: 'en-US',
-    //locales: ['af-ZA', 'ar-SA', 'bg-BG', 'ca-ES', 'cs-CZ', 'da-DK', 'de-DE', 'el-GR', 'en-US', 'es-ES', 'fi-FI', 'fr-FR', 'he-IL', 'hi-IN', 'hu-HU', 'it-IT', 'ja-JP', 'ko-KR', 'lt-LT', 'nl-NL', 'no-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ro-RO', 'ru-RU', 'sr-Cyrl', 'sr-SP', 'sv-SE', 'th-TH', 'tr-TR', 'uk-UA', 'vi-VN', 'zh-CN', 'zh-HK', 'zh-TW'],
-    locales: [ 'de-DE', 'en-US', 'ja-JP', 'zh-CN', 'zh-HK', 'zh-TW'],
+    locales: ['de-DE', 'en-US', 'ja-JP', 'zh-CN', 'zh-HK', 'zh-TW'],
     localeConfigs: {
-    'de-DE': {
-      label: 'Deutsch',
-    },
-    'en-US': {
-      label: 'English',
-    },
-    'ja-JP': {
-      label: '日本語',
-    },
-    'zh-CN': {
-      label: '简体中文',
-    },
-    'zh-HK': {
-      label: '繁體中文（中國香港特別行政區）',
-    },
-    'zh-TW': {
-      label: '繁體中文（中國臺灣）',
+      'de-DE': { label: 'Deutsch' },
+      'en-US': { label: 'English' },
+      'ja-JP': { label: '日本語' },
+      'zh-CN': { label: '简体中文' },
+      'zh-HK': { label: '繁體中文（中國香港特別行政區）' },
+      'zh-TW': { label: '繁體中文（中國臺灣）' },
     },
   },
-},
 
   markdown: {
     hooks: {
       onBrokenMarkdownLinks: 'warn',
     },
   },
+
   themes: [
     [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      ({
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
         hashed: true,
-        language: ["en", "zh", "ja", "de"],
-        // ```
-      }),
+        language: ['en', 'zh', 'ja', 'de'],
+      },
     ],
   ],
+
   presets: [
     [
       'classic',
@@ -87,56 +71,58 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      navbar: {
-      title: '',
-      items: [
-        // LEFT SIDE NAV LINKS
-        {
-          type: 'doc',
-          docId: 'intro',          // main landing doc
-          label: 'Home',
-          position: 'left',
-        },
-        {
-          type: 'doc',
-          docId: 'setup/install', // adjust if your path is different
-          label: 'Getting Started',
-          position: 'left',
-        },
-        {
-          type: 'doc',
-          docId: '/category/addon', // /docs/category/addon
-          label: 'Addons',
-          position: 'left',
-        },
-        {
-          type: 'doc',
-          docId: '/category/compatibility-modules', // /docs/category/compatibility-modules
-          label: 'Compatibility',
-          position: 'left',
-        },
-
-        // Docusaurus locale dropdown (keep this!)
-        {
-          type: 'localeDropdown',
-          position: 'right',
-        },
+      metadata: [
+        { name: 'theme-color', content: '#0868f7' },
       ],
-    },
+
+      navbar: {
+        title: '',
+        logo: {
+          alt: 'QuickShop Hikari',
+          src: 'img/quickshop-hikari-logo.webp',
+        },
+        items: [
+          {
+            to: '/',
+            label: 'Home',
+            position: 'left',
+            exact: true,
+          },
+          {
+            type: 'doc',
+            docId: 'setup/install',
+            label: 'Getting Started',
+            position: 'left',
+          },
+          {
+            type: 'doc',
+            docId: '/category/addon',
+            label: 'Addons',
+            position: 'left',
+          },
+          {
+            type: 'doc',
+            docId: '/category/compatibility-modules',
+            label: 'Compatibility',
+            position: 'left',
+          },
+          {
+            href: 'https://quickshophikari.org/en',
+            label: 'Main Site',
+            position: 'right',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
+        ],
+      },
+
       footer: {
         style: 'dark',
         links: [
-          // {
-          //   title: 'Docs',
-          //   items: [
-          //     {
-          //       label: 'Tutorial',
-          //       to: '/docs/intro',
-          //     },
-          //   ],
-          // },
           {
-            title: 'Get QuickShop-Hikari',
+            title: 'Get QuickShop Hikari',
             items: [
               {
                 label: 'Modrinth',
@@ -151,7 +137,7 @@ const config = {
                 href: 'https://ci.codemc.io/job/Ghost-chu/job/QuickShop-Hikari',
               },
               {
-                label: 'Github Releases',
+                label: 'GitHub Releases',
                 href: 'https://github.com/QuickShop-Community/QuickShop-Hikari',
               },
             ],
@@ -164,7 +150,7 @@ const config = {
                 href: 'https://discord.gg/Bu3dVtmsD3',
               },
               {
-                label: 'Github',
+                label: 'GitHub Discussions',
                 href: 'https://github.com/QuickShop-Community/QuickShop-Hikari/discussions',
               },
               {
@@ -176,10 +162,10 @@ const config = {
           {
             title: 'More',
             items: [
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
+              {
+                label: 'Main Website',
+                href: 'https://quickshophikari.org/en',
+              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/QuickShop-Community/QuickShop-Hikari',
@@ -191,13 +177,16 @@ const config = {
             ],
           },
         ],
-        copyright: `All contents are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Built with Docusaurus.`,
+        copyright:
+          'All contents are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Built with Docusaurus.',
       },
+
       colorMode: {
-        defaultMode: 'dark', // or 'dark', depending on your preference
-        disableSwitch: true,
-        respectPrefersColorScheme: false, // Optional: set to false if you don't want to respect system preferences
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
       },
+
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
