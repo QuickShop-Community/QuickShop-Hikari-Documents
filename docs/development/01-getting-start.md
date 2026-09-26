@@ -21,7 +21,7 @@ When there is a conflict between the article and the content in the Javadoc, ple
 <repositories>
     <repository>
         <id>codemc</id>
-        <url>https://repo.codemc.io/repository/maven-public/</url>
+        <url>https://repo.codemc.io/repository/ghost-chu/</url>
     </repository>
 </repositories>
 
