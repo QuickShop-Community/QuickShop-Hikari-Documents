@@ -22,22 +22,6 @@ QShopWebUI runs an embedded HTTP server inside the plugin and reads live shop da
 - Item images fall back to the MC Item Gallery CDN when a local texture is missing
 - Single-port multiplexing: the plugin can serve both Minecraft players and the web UI on the same port, for hosts that only allow one port
 
-## Requirements
-
-| Dependency | Version |
-| --- | --- |
-| Java | 17 or later |
-| Paper (or Spigot) | 1.18 or later |
-| QuickShop-Hikari | recent 5.x / 6.x (accessed through reflection) |
-
-### Optional dependencies
-
-| Plugin | Purpose |
-| --- | --- |
-| Vault + economy plugin | Buying and selling from the web UI |
-| AuthMe | Verifies the player's game password before web purchases |
-| qssuite-limited (Limited addon) | Web purchases follow the shop's per-player purchase limit |
-
 ## Installation
 
 1. Download the latest `QShopWebUI-x.y.z.jar` from [GitHub Releases](https://github.com/ALingqing/QshopWebUI/releases).
