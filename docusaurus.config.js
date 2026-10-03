@@ -107,6 +107,11 @@ const config = {
             position: 'left',
           },
           {
+            to: '/localization',
+            label: 'Localization',
+            position: 'left',
+          },
+          {
             href: 'https://quickshophikari.org/en',
             label: 'Main Site',
             position: 'right',

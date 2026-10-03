@@ -1,0 +1,327 @@
+.page {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 20% 0%, rgba(8, 104, 247, 0.08), transparent 32rem),
+        var(--ifm-background-color);
+}
+
+.hero {
+    padding: 4.5rem 0 3rem;
+    border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.hero h1 {
+    margin-bottom: 0.75rem;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    letter-spacing: -0.04em;
+}
+
+.hero p {
+    max-width: 760px;
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--ifm-color-emphasis-700);
+}
+
+.eyebrow {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--ifm-color-primary);
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.stat {
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--ifm-color-emphasis-200);
+    border-radius: 12px;
+    background: var(--ifm-background-surface-color);
+}
+
+.stat strong {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.stat span {
+    color: var(--ifm-color-emphasis-600);
+    font-size: 0.85rem;
+}
+
+.content {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.searchContainer {
+    margin-bottom: 1rem;
+}
+
+.searchLabel {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+.search {
+    width: 100%;
+    padding: 0.95rem 1rem;
+    border: 1px solid var(--ifm-color-emphasis-300);
+    border-radius: 10px;
+    background: var(--ifm-background-surface-color);
+    color: var(--ifm-font-color-base);
+    font: inherit;
+}
+
+.search:focus {
+    outline: 2px solid var(--ifm-color-primary);
+    outline-offset: 1px;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filters label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+.filters select {
+    padding: 0.5rem 0.7rem;
+    border: 1px solid var(--ifm-color-emphasis-300);
+    border-radius: 8px;
+    background: var(--ifm-background-surface-color);
+    color: var(--ifm-font-color-base);
+}
+
+.resultsHeader {
+    display: flex;
+    gap: 0.35rem;
+    margin-bottom: 1rem;
+    color: var(--ifm-color-emphasis-600);
+}
+
+.entries {
+    display: grid;
+    gap: 1rem;
+}
+
+.entry {
+    padding: 1.4rem;
+    border: 1px solid var(--ifm-color-emphasis-200);
+    border-radius: 14px;
+    background: var(--ifm-background-surface-color);
+}
+
+.entryHeader {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.key {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ifm-color-primary);
+}
+
+.description {
+    margin: 0.8rem 0 0;
+    color: var(--ifm-color-emphasis-700);
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.4rem;
+}
+
+.badge {
+    height: fit-content;
+    padding: 0.25rem 0.55rem;
+    border-radius: 999px;
+    background: var(--ifm-color-primary-lightest);
+    color: var(--ifm-color-primary-darkest);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section {
+    margin-top: 1.4rem;
+}
+
+.section h3 {
+    margin-bottom: 0.6rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ifm-color-emphasis-600);
+}
+
+.translation {
+    margin: 0;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.plainText {
+    display: flex;
+    gap: 0.75rem;
+    align-items: baseline;
+    margin-top: 0.7rem;
+}
+
+.placeholderList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.placeholder {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.5rem 0.7rem;
+    border-radius: 8px;
+    background: var(--ifm-color-emphasis-100);
+}
+
+.usageList {
+    display: grid;
+    gap: 0.6rem;
+}
+
+.usage {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 0.75rem;
+    padding: 0.7rem;
+    border-radius: 8px;
+    background: var(--ifm-color-emphasis-100);
+}
+
+.usageType {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--ifm-color-primary);
+}
+
+.usage strong,
+.usage code,
+.source {
+    display: block;
+}
+
+.source {
+    margin-top: 0.25rem;
+    font-size: 0.78rem;
+    color: var(--ifm-color-emphasis-600);
+}
+
+.warnings {
+    display: grid;
+    gap: 0.5rem;
+    margin-top: 1.2rem;
+}
+
+.warning {
+    display: flex;
+    gap: 0.7rem;
+    padding: 0.7rem;
+    border-left: 3px solid var(--ifm-color-warning);
+    background: var(--ifm-color-warning-contrast-background);
+}
+
+.emptyState {
+    padding: 4rem 1rem;
+    text-align: center;
+    color: var(--ifm-color-emphasis-600);
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 2rem;
+}
+
+.pageNumbers {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.pageButton {
+    min-width: 2.5rem;
+    padding: 0.55rem 0.75rem;
+    border: 1px solid var(--ifm-color-emphasis-300);
+    border-radius: 8px;
+    background: var(--ifm-background-surface-color);
+    color: var(--ifm-font-color-base);
+    cursor: pointer;
+    font: inherit;
+}
+
+.pageButton:hover:not(:disabled) {
+    border-color: var(--ifm-color-primary);
+    color: var(--ifm-color-primary);
+}
+
+.pageButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.45;
+}
+
+.activePage {
+    border-color: var(--ifm-color-primary);
+    background: var(--ifm-color-primary);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .entryHeader {
+        flex-direction: column;
+    }
+
+    .badges {
+        justify-content: flex-start;
+    }
+
+    .usage {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .pagination {
+        flex-wrap: wrap;
+    }
+
+    .pageNumbers {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+}
