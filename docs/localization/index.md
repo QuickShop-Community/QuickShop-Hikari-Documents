@@ -18,5 +18,5 @@ The library provides searchable information about localization keys, default mes
 
 ## Related guides
 
-- [Customizing Messages](./customizing)
-- [Placeholders](./placeholders)
+- [Customizing Messages](/docs/localization/customizing)
+- [Placeholders](/docs/localization/placeholders)
