@@ -17,7 +17,8 @@ jobs:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: 24
+          check-latest: true
           cache: npm
           package-manager-cache: false
 

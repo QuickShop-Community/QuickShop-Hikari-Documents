@@ -1091,16 +1091,53 @@
   resolved "https://registry.npmjs.org/@colors/colors/-/colors-1.5.0.tgz"
   integrity sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==
 
-"@crowdin/cli@^3.19.4":
-  version "3.19.4"
-  resolved "https://registry.npmjs.org/@crowdin/cli/-/cli-3.19.4.tgz"
-  integrity sha512-j0SiRGKOH/Pa/TdBeIxBBRrByHPqmVqWVo/LSjnri1lLPGywjcu9kB+pib7P4wmI00jgcVu+80yGdun5zRcDNQ==
-  dependencies:
-    command-exists-promise "^2.0.2"
-    node-fetch "2.7.0"
-    shelljs "^0.8.5"
-    tar "^6.2.0"
-    yauzl "^3.1.0"
+"@crowdin/cli-darwin-arm64@5.5.0":
+  version "5.5.0"
+  resolved "https://registry.npmjs.org/@crowdin/cli-darwin-arm64/-/cli-darwin-arm64-5.5.0.tgz"
+  integrity sha512-X4yQTLLYxjZbIzN7YM4CDbcPUKyEJNaO9il+sDFOJ+ao1Nv3AuZqel1GSfcDHHymJvJQwfr8761jDTO8wY3nhQ==
+
+"@crowdin/cli-darwin-x64@5.5.0":
+  version "5.5.0"
+  resolved "https://registry.npmjs.org/@crowdin/cli-darwin-x64/-/cli-darwin-x64-5.5.0.tgz"
+  integrity sha512-IPDULFtREOTEH3xLqWph0V/vCySDvcP12rVTC2uzhAnQGCRXHpiLtw0lsmrD/aIHpPac5g5mjOMh4xVItDSn8A==
+
+"@crowdin/cli-linux-arm64-musl@5.5.0":
+  version "5.5.0"
+  resolved "https://registry.npmjs.org/@crowdin/cli-linux-arm64-musl/-/cli-linux-arm64-musl-5.5.0.tgz"
+  integrity sha512-pS7/qzhjyuYbuYZVx1tSe6gYqo5ExOJ/Sn3MlCOa5SZjqsvD39TUggnOwiZ0fn4zBTnjbA2n7/iHmHrOhED/5A==
+
+"@crowdin/cli-linux-arm64@5.5.0":
+  version "5.5.0"
+  resolved "https://registry.npmjs.org/@crowdin/cli-linux-arm64/-/cli-linux-arm64-5.5.0.tgz"
+  integrity sha512-twt1GUAIa/jWiPbfrwONyrr0I7EUymctfmWKOL3B5pF6Ooc1FvUWMCHeGGCawhZr91XcU5zQj/WhxEJb/zD+Hw==
+
+"@crowdin/cli-linux-x64-musl@5.5.0":
+  version "5.5.0"
+  resolved "https://registry.npmjs.org/@crowdin/cli-linux-x64-musl/-/cli-linux-x64-musl-5.5.0.tgz"
+  integrity sha512-N5hUFBvhIufVmvt48t97n6gnisDbhgSz3hG8rr0q72ksM4ikNbxQ3pWxEYi0/+w/YPgrbPTIOMDIP76nXcbT6w==
+
+"@crowdin/cli-linux-x64@5.5.0":
+  version "5.5.0"
+  resolved "https://registry.npmjs.org/@crowdin/cli-linux-x64/-/cli-linux-x64-5.5.0.tgz"
+  integrity sha512-SGX/A3JmRyAaeWZLO90YMAqSU4iH6gJlU3B6hjrDMczB7/zJKlJk6taORDUntvD15s5aI3ZBkzE63URjEo/a7Q==
+
+"@crowdin/cli-win32-x64@5.5.0":
+  version "5.5.0"
+  resolved "https://registry.npmjs.org/@crowdin/cli-win32-x64/-/cli-win32-x64-5.5.0.tgz"
+  integrity sha512-iXPfr3ejps28QLG+imZk6v/1JslAGbGXn/TcZS84tc9CvOturzSOuBxWQSqzFCTOcvq5s4ao4bEVSlybhvdHvw==
+
+"@crowdin/cli@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.npmjs.org/@crowdin/cli/-/cli-5.5.0.tgz"
+  integrity sha512-UX15vdEtnOObFIiMQfpTgzbkhIGPR4hATyNustHLzHJR3qIllahaKCkDUcloZor+CdwVjUyvV0NWS7o6fBH+Jw==
+  optionalDependencies:
+    "@crowdin/cli-darwin-arm64" "5.5.0"
+    "@crowdin/cli-darwin-x64" "5.5.0"
+    "@crowdin/cli-linux-arm64" "5.5.0"
+    "@crowdin/cli-linux-arm64-musl" "5.5.0"
+    "@crowdin/cli-linux-x64" "5.5.0"
+    "@crowdin/cli-linux-x64-musl" "5.5.0"
+    "@crowdin/cli-win32-x64" "5.5.0"
 
 "@csstools/cascade-layer-name-parser@^2.0.5":
   version "2.0.5"
@@ -1999,10 +2036,10 @@
     cssesc "^3.0.0"
     immediate "^3.2.3"
 
-"@easyops-cn/docusaurus-search-local@^0.52.3":
-  version "0.52.3"
-  resolved "https://registry.npmjs.org/@easyops-cn/docusaurus-search-local/-/docusaurus-search-local-0.52.3.tgz"
-  integrity sha512-bkKHD+FoAY+sBvd9vcHudx8X5JQXkyGBcpstpJwOUTTpKwT0rOtUtnfmizpMu113LqdHxOxvlekYkGeTNGYYvw==
+"@easyops-cn/docusaurus-search-local@^0.55.3":
+  version "0.55.3"
+  resolved "https://registry.npmjs.org/@easyops-cn/docusaurus-search-local/-/docusaurus-search-local-0.55.3.tgz"
+  integrity sha512-PlMKmxuonvZ1C+/zJS1hJaF1xaxD1TsUvOMzpP6DdQMtZqmTaYjcLGM12ePzl0m1rp3AgfTBeDbFNHQhwnH/dA==
   dependencies:
     "@docusaurus/plugin-content-docs" "^2 || ^3"
     "@docusaurus/theme-translations" "^2 || ^3"
@@ -2023,6 +2060,26 @@
     tslib "^2.4.0"
 
 "@emnapi/core@^1.4.3":
+<<<<<<< HEAD
+  version "1.9.0"
+  resolved "https://registry.npmjs.org/@emnapi/core/-/core-1.9.0.tgz"
+  integrity sha512-0DQ98G9ZQZOxfUcQn1waV2yS8aWdZ6kJMbYCJB3oUBecjWYO1fqJ+a1DRfPF3O5JEkwqwP1A9QEN/9mYm2Yd0w==
+  dependencies:
+    "@emnapi/wasi-threads" "1.2.0"
+    tslib "^2.4.0"
+
+"@emnapi/runtime@^1.4.3":
+  version "1.9.0"
+  resolved "https://registry.npmjs.org/@emnapi/runtime/-/runtime-1.9.0.tgz"
+  integrity sha512-QN75eB0IH2ywSpRpNddCRfQIhmJYBCJ1x5Lb3IscKAL8bMnVAKnRg8dCoXbHzVLLH7P38N2Z3mtulB7W0J0FKw==
+  dependencies:
+    tslib "^2.4.0"
+
+"@emnapi/wasi-threads@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/@emnapi/wasi-threads/-/wasi-threads-1.2.0.tgz"
+  integrity sha512-N10dEJNSsUx41Z6pZsXU8FjPjpBEplgH24sfkmITrBED1/U2Esum9F3lfLrMjKHHjmi557zQn7kR9R+XWXu5Rg==
+=======
   version "1.11.3"
   resolved "https://registry.yarnpkg.com/@emnapi/core/-/core-1.11.3.tgz#5e95348a42cd1e06f0b9aa380cd74091daa4d520"
   integrity sha512-zLpS5asjEb7lq8jYLq37N6XKaE41DIexlY1rF/z4/tIl3wo13Sqm28fRyfIsKZD+NZ8mM5RoKkpW/rBcuoSZSg==
@@ -2041,6 +2098,7 @@
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/@emnapi/wasi-threads/-/wasi-threads-1.2.3.tgz#c9bf72fd4be5b928aee894820e8d814ed73916e9"
   integrity sha512-ELEBe8PsLvvJ6QMr0zLt8ffvOHW/dc1m3CEzNMg7aJUv3bMaoDtw2TXyDAwkYBuroxxuHEwhRTLJSe5sya547g==
+>>>>>>> parent of 4a1ecc80e (Upgrade react packages: react/react-dom 19.2.8 -> 19.3.1)
   dependencies:
     tslib "^2.4.0"
 
@@ -2207,7 +2265,11 @@
 
 "@napi-rs/wasm-runtime@^0.2.3":
   version "0.2.12"
+<<<<<<< HEAD
+  resolved "https://registry.npmjs.org/@napi-rs/wasm-runtime/-/wasm-runtime-0.2.12.tgz"
+=======
   resolved "https://registry.yarnpkg.com/@napi-rs/wasm-runtime/-/wasm-runtime-0.2.12.tgz#3e78a8b96e6c33a6c517e1894efbd5385a7cb6f2"
+>>>>>>> parent of 4a1ecc80e (Upgrade react packages: react/react-dom 19.2.8 -> 19.3.1)
   integrity sha512-ZVWUcfwY4E/yPitQJl481FjFo3K22D6qF0DuFH6Y/nbnE11GY5uguDxZMGXPQ8WQ0128MXQD7TnfHyK4oWoIJQ==
   dependencies:
     "@emnapi/core" "^1.4.3"
@@ -2216,69 +2278,121 @@
 
 "@node-rs/jieba-android-arm-eabi@1.10.4":
   version "1.10.4"
+<<<<<<< HEAD
+  resolved "https://registry.npmjs.org/@node-rs/jieba-android-arm-eabi/-/jieba-android-arm-eabi-1.10.4.tgz"
+=======
   resolved "https://registry.yarnpkg.com/@node-rs/jieba-android-arm-eabi/-/jieba-android-arm-eabi-1.10.4.tgz#c8c0be3895f01c86a0138cbb1b2228d0895c6854"
+>>>>>>> parent of 4a1ecc80e (Upgrade react packages: react/react-dom 19.2.8 -> 19.3.1)
   integrity sha512-MhyvW5N3Fwcp385d0rxbCWH42kqDBatQTyP8XbnYbju2+0BO/eTeCCLYj7Agws4pwxn2LtdldXRSKavT7WdzNA==
 
 "@node-rs/jieba-android-arm64@1.10.4":
   version "1.10.4"
+<<<<<<< HEAD
+  resolved "https://registry.npmjs.org/@node-rs/jieba-android-arm64/-/jieba-android-arm64-1.10.4.tgz"
+=======
   resolved "https://registry.yarnpkg.com/@node-rs/jieba-android-arm64/-/jieba-android-arm64-1.10.4.tgz#02bcf7a52d6036983398fa041d50ab73e53e8e03"
+>>>>>>> parent of 4a1ecc80e (Upgrade react packages: react/react-dom 19.2.8 -> 19.3.1)
   integrity sha512-XyDwq5+rQ+Tk55A+FGi6PtJbzf974oqnpyCcCPzwU3QVXJCa2Rr4Lci+fx8oOpU4plT3GuD+chXMYLsXipMgJA==
 
 "@node-rs/jieba-darwin-arm64@1.10.4":
   version "1.10.4"
+<<<<<<< HEAD
+  resolved "https://registry.npmjs.org/@node-rs/jieba-darwin-arm64/-/jieba-darwin-arm64-1.10.4.tgz"
+=======
   resolved "https://registry.yarnpkg.com/@node-rs/jieba-darwin-arm64/-/jieba-darwin-arm64-1.10.4.tgz#2f39e7f21d1f01afe06fb4c5deeb7ac098f7870c"
+>>>>>>> parent of 4a1ecc80e (Upgrade react packages: react/react-dom 19.2.8 -> 19.3.1)
   integrity sha512-G++RYEJ2jo0rxF9626KUy90wp06TRUjAsvY/BrIzEOX/ingQYV/HjwQzNPRR1P1o32a6/U8RGo7zEBhfdybL6w==
 
 "@node-rs/jieba-darwin-x64@1.10.4":
   version "1.10.4"
+<<<<<<< HEAD
+  resolved "https://registry.npmjs.org/@node-rs/jieba-darwin-x64/-/jieba-darwin-x64-1.10.4.tgz"
+=======
   resolved "https://registry.yarnpkg.com/@node-rs/jieba-darwin-x64/-/jieba-darwin-x64-1.10.4.tgz#c3d007962f5b247c3a8a0707dd393ee71f840ea6"
+>>>>>>> parent of 4a1ecc80e (Upgrade react packages: react/react-dom 19.2.8 -> 19.3.1)
   integrity sha512-MmDNeOb2TXIZCPyWCi2upQnZpPjAxw5ZGEj6R8kNsPXVFALHIKMa6ZZ15LCOkSTsKXVC17j2t4h+hSuyYb6qfQ==
 
 "@node-rs/jieba-freebsd-x64@1.10.4":
   version "1.10.4"
+<<<<<<< HEAD
+  resolved "https://registry.npmjs.org/@node-rs/jieba-freebsd-x64/-/jieba-freebsd-x64-1.10.4.tgz"
+=======
   resolved "https://registry.yarnpkg.com/@node-rs/jieba-freebsd-x64/-/jieba-freebsd-x64-1.10.4.tgz#5ab23591604f4a256f6bad1e4230faeac5220a0d"
+>>>>>>> parent of 4a1ecc80e (Upgrade react packages: react/react-dom 19.2.8 -> 19.3.1)
   integrity sha512-/x7aVQ8nqUWhpXU92RZqd333cq639i/olNpd9Z5hdlyyV5/B65LLy+Je2B2bfs62PVVm5QXRpeBcZqaHelp/bg==
 
 "@node-rs/jieba-linux-arm-gnueabihf@1.10.4":
   version "1.10.4"
+<<<<<<< HEAD
+  resolved "https://registry.npmjs.org/@node-rs/jieba-linux-arm-gnueabihf/-/jieba-linux-arm-gnueabihf-1.10.4.tgz"
+=======
   resolved "https://registry.yarnpkg.com/@node-rs/jieba-linux-arm-gnueabihf/-/jieba-linux-arm-gnueabihf-1.10.4.tgz#415237af704f9bbd10742995f02f779679a840b1"
+>>>>>>> parent of 4a1ecc80e (Upgrade react packages: react/react-dom 19.2.8 -> 19.3.1)
   integrity sha512-crd2M35oJBRLkoESs0O6QO3BBbhpv+tqXuKsqhIG94B1d02RVxtRIvSDwO33QurxqSdvN9IeSnVpHbDGkuXm3g==
 
 "@node-rs/jieba-linux-arm64-gnu@1.10.4":
   version "1.10.4"
+<<<<<<< HEAD
+  resolved "https://registry.npmjs.org/@node-rs/jieba-linux-arm64-gnu/-/jieba-linux-arm64-gnu-1.10.4.tgz"
+=======
   resolved "https://registry.yarnpkg.com/@node-rs/jieba-linux-arm64-gnu/-/jieba-linux-arm64-gnu-1.10.4.tgz#3e9debcc6c903852a28df9caa3d004cb08bc9299"
+>>>>>>> parent of 4a1ecc80e (Upgrade react packages: react/react-dom 19.2.8 -> 19.3.1)
   integrity sha512-omIzNX1psUzPcsdnUhGU6oHeOaTCuCjUgOA/v/DGkvWC1jLcnfXe4vdYbtXMh4XOCuIgS1UCcvZEc8vQLXFbXQ==
 
 "@node-rs/jieba-linux-arm64-musl@1.10.4":
   version "1.10.4"
+<<<<<<< HEAD
+  resolved "https://registry.npmjs.org/@node-rs/jieba-linux-arm64-musl/-/jieba-linux-arm64-musl-1.10.4.tgz"
+=======
   resolved "https://registry.yarnpkg.com/@node-rs/jieba-linux-arm64-musl/-/jieba-linux-arm64-musl-1.10.4.tgz#faf11579a7cc3f798780819403b1fb34a0360d9e"
+>>>>>>> parent of 4a1ecc80e (Upgrade react packages: react/react-dom 19.2.8 -> 19.3.1)
   integrity sha512-Y/tiJ1+HeS5nnmLbZOE+66LbsPOHZ/PUckAYVeLlQfpygLEpLYdlh0aPpS5uiaWMjAXYZYdFkpZHhxDmSLpwpw==
 
 "@node-rs/jieba-linux-x64-gnu@1.10.4":
   version "1.10.4"
+<<<<<<< HEAD
+  resolved "https://registry.npmjs.org/@node-rs/jieba-linux-x64-gnu/-/jieba-linux-x64-gnu-1.10.4.tgz"
+=======
   resolved "https://registry.yarnpkg.com/@node-rs/jieba-linux-x64-gnu/-/jieba-linux-x64-gnu-1.10.4.tgz#05187afe917370ef2607564897ec5979f8e67ca9"
+>>>>>>> parent of 4a1ecc80e (Upgrade react packages: react/react-dom 19.2.8 -> 19.3.1)
   integrity sha512-WZO8ykRJpWGE9MHuZpy1lu3nJluPoeB+fIJJn5CWZ9YTVhNDWoCF4i/7nxz1ntulINYGQ8VVuCU9LD86Mek97g==
 
 "@node-rs/jieba-linux-x64-musl@1.10.4":
   version "1.10.4"
+<<<<<<< HEAD
+  resolved "https://registry.npmjs.org/@node-rs/jieba-linux-x64-musl/-/jieba-linux-x64-musl-1.10.4.tgz"
+=======
   resolved "https://registry.yarnpkg.com/@node-rs/jieba-linux-x64-musl/-/jieba-linux-x64-musl-1.10.4.tgz#d38addcb65de3b6c5e8af4bcdfaf7495bb676534"
+>>>>>>> parent of 4a1ecc80e (Upgrade react packages: react/react-dom 19.2.8 -> 19.3.1)
   integrity sha512-uBBD4S1rGKcgCyAk6VCKatEVQb6EDD5I40v/DxODi5CuZVCANi9m5oee/MQbAoaX7RydA2f0OSCE9/tcwXEwUg==
 
 "@node-rs/jieba-wasm32-wasi@1.10.4":
   version "1.10.4"
+<<<<<<< HEAD
+  resolved "https://registry.npmjs.org/@node-rs/jieba-wasm32-wasi/-/jieba-wasm32-wasi-1.10.4.tgz"
+=======
   resolved "https://registry.yarnpkg.com/@node-rs/jieba-wasm32-wasi/-/jieba-wasm32-wasi-1.10.4.tgz#28662dba21da3fdf7a7904dac19ecffba9244457"
+>>>>>>> parent of 4a1ecc80e (Upgrade react packages: react/react-dom 19.2.8 -> 19.3.1)
   integrity sha512-Y2umiKHjuIJy0uulNDz9SDYHdfq5Hmy7jY5nORO99B4pySKkcrMjpeVrmWXJLIsEKLJwcCXHxz8tjwU5/uhz0A==
   dependencies:
     "@napi-rs/wasm-runtime" "^0.2.3"
 
 "@node-rs/jieba-win32-arm64-msvc@1.10.4":
   version "1.10.4"
+<<<<<<< HEAD
+  resolved "https://registry.npmjs.org/@node-rs/jieba-win32-arm64-msvc/-/jieba-win32-arm64-msvc-1.10.4.tgz"
+=======
   resolved "https://registry.yarnpkg.com/@node-rs/jieba-win32-arm64-msvc/-/jieba-win32-arm64-msvc-1.10.4.tgz#7d8dffe5e54fc9ca0f8fddef93fde72ecc2a4ae4"
+>>>>>>> parent of 4a1ecc80e (Upgrade react packages: react/react-dom 19.2.8 -> 19.3.1)
   integrity sha512-nwMtViFm4hjqhz1it/juQnxpXgqlGltCuWJ02bw70YUDMDlbyTy3grCJPpQQpueeETcALUnTxda8pZuVrLRcBA==
 
 "@node-rs/jieba-win32-ia32-msvc@1.10.4":
   version "1.10.4"
+<<<<<<< HEAD
+  resolved "https://registry.npmjs.org/@node-rs/jieba-win32-ia32-msvc/-/jieba-win32-ia32-msvc-1.10.4.tgz"
+=======
   resolved "https://registry.yarnpkg.com/@node-rs/jieba-win32-ia32-msvc/-/jieba-win32-ia32-msvc-1.10.4.tgz#5081fa5e4ca84ba8044f52e0d53d9c07b2ab370b"
+>>>>>>> parent of 4a1ecc80e (Upgrade react packages: react/react-dom 19.2.8 -> 19.3.1)
   integrity sha512-DCAvLx7Z+W4z5oKS+7vUowAJr0uw9JBw8x1Y23Xs/xMA4Em+OOSiaF5/tCJqZUCJ8uC4QeImmgDFiBqGNwxlyA==
 
 "@node-rs/jieba-win32-x64-msvc@1.10.4":
@@ -2508,9 +2622,15 @@
     defer-to-connect "^2.0.1"
 
 "@tybys/wasm-util@^0.10.0":
+<<<<<<< HEAD
+  version "0.10.1"
+  resolved "https://registry.npmjs.org/@tybys/wasm-util/-/wasm-util-0.10.1.tgz"
+  integrity sha512-9tTaPJLSiejZKx+Bmog4uSubteqTvFrVrURwkmHixBo0G4seD0zUxp98E1DzUBJxLQ3NPwXrGKDiVjwx/DpPsg==
+=======
   version "0.10.3"
   resolved "https://registry.yarnpkg.com/@tybys/wasm-util/-/wasm-util-0.10.3.tgz#015cba9e9dd47ce14d03d2a8c5d547bfb169665d"
   integrity sha512-F3fo1MYrRJYL3zER0OUOmkutjr1Vp23m7OsSgp7nq4SP6OqX6C/56XFIPAl5bt3zaBRjmW7SGz3u/6LwFpYcOg==
+>>>>>>> parent of 4a1ecc80e (Upgrade react packages: react/react-dom 19.2.8 -> 19.3.1)
   dependencies:
     tslib "^2.4.0"
 
@@ -3315,11 +3435,6 @@ browserslist@^4.0.0, browserslist@^4.23.0, browserslist@^4.24.0, browserslist@^4
     node-releases "^2.0.53"
     update-browserslist-db "^1.3.0"
 
-buffer-crc32@~0.2.3:
-  version "0.2.13"
-  resolved "https://registry.npmjs.org/buffer-crc32/-/buffer-crc32-0.2.13.tgz"
-  integrity sha512-VO9Ht/+p3SN7SKWqcrgEzjGbRSJYTx+Q1pTQC0wrWqHx0vpJraQ6GtHx8tvcg1rlK1byhU5gccxgOgj7B0TDkQ==
-
 buffer-from@^1.0.0:
   version "1.1.2"
   resolved "https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.2.tgz"
@@ -3524,11 +3639,6 @@ chokidar@^3.5.3, chokidar@^3.6.0:
   optionalDependencies:
     fsevents "~2.3.2"
 
-chownr@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/chownr/-/chownr-2.0.0.tgz"
-  integrity sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==
-
 chrome-trace-event@^1.0.2:
   version "1.0.4"
   resolved "https://registry.npmjs.org/chrome-trace-event/-/chrome-trace-event-1.0.4.tgz"
@@ -3574,11 +3684,14 @@ clone-deep@^4.0.1:
     kind-of "^6.0.2"
     shallow-clone "^3.0.0"
 
+<<<<<<< HEAD
+=======
 clsx@^1.2.1:
   version "1.2.1"
   resolved "https://registry.npmjs.org/clsx/-/clsx-1.2.1.tgz"
   integrity sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==
 
+>>>>>>> parent of 4a1ecc80e (Upgrade react packages: react/react-dom 19.2.8 -> 19.3.1)
 clsx@^2.0.0, clsx@^2.1.1:
   version "2.1.1"
   resolved "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz"
@@ -3625,11 +3738,6 @@ comma-separated-tokens@^2.0.0:
   version "2.0.3"
   resolved "https://registry.npmjs.org/comma-separated-tokens/-/comma-separated-tokens-2.0.3.tgz"
   integrity sha512-Fu4hJdvzeylCfQPp9SGWidpzrMs7tTrlu6Vb8XGaRGck8QSNZJJp538Wrb60Lax4fPwR64ViY468OIUTbRlGZg==
-
-command-exists-promise@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.npmjs.org/command-exists-promise/-/command-exists-promise-2.0.2.tgz"
-  integrity sha512-T6PB6vdFrwnHXg/I0kivM3DqaCGZLjjYSOe0a5WgFKcz1sOnmOeIjnhQPXVXX3QjVbLyTJ85lJkX6lUpukTzaA==
 
 commander@^10.0.0:
   version "10.0.1"
@@ -4708,17 +4816,10 @@ fs-extra@^11.1.1, fs-extra@^11.2.0:
     jsonfile "^6.0.1"
     universalify "^2.0.0"
 
-fs-minipass@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/fs-minipass/-/fs-minipass-2.1.0.tgz"
-  integrity sha512-V/JgOLFCS+R6Vcq0slCuaeWEdNC3ouDlJMNIsacH2VtALiu9mV4LPrHc5cDl8k5aw6J8jwgWWpiTo5RYhmIzvg==
-  dependencies:
-    minipass "^3.0.0"
-
-fs.realpath@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
-  integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
+fsevents@~2.3.2:
+  version "2.3.3"
+  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz"
+  integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 
 fsevents@~2.3.2:
   version "2.3.3"
@@ -4797,18 +4898,6 @@ glob-to-regexp@^0.4.1:
   version "0.4.1"
   resolved "https://registry.npmjs.org/glob-to-regexp/-/glob-to-regexp-0.4.1.tgz"
   integrity sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==
-
-glob@^7.0.0:
-  version "7.2.3"
-  resolved "https://registry.npmjs.org/glob/-/glob-7.2.3.tgz"
-  integrity sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==
-  dependencies:
-    fs.realpath "^1.0.0"
-    inflight "^1.0.4"
-    inherits "2"
-    minimatch "^3.1.1"
-    once "^1.3.0"
-    path-is-absolute "^1.0.0"
 
 global-dirs@^3.0.0:
   version "3.0.1"
@@ -5290,6 +5379,9 @@ infima@0.2.0-alpha.45:
   resolved "https://registry.npmjs.org/infima/-/infima-0.2.0-alpha.45.tgz"
   integrity sha512-uyH0zfr1erU1OohLk0fT4Rrb94AOhguWNOcD9uGrSpRvNB+6gZXUoJX5J0NtvzBO10YZ9PgvA4NFgt+fYg8ojw==
 
+<<<<<<< HEAD
+inherits@^2.0.1, inherits@^2.0.3, inherits@~2.0.3, inherits@~2.0.4, inherits@2.0.4:
+=======
 inflight@^1.0.4:
   version "1.0.6"
   resolved "https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz"
@@ -5299,6 +5391,7 @@ inflight@^1.0.4:
     wrappy "1"
 
 inherits@2, inherits@2.0.4, inherits@^2.0.1, inherits@^2.0.3, inherits@~2.0.3, inherits@~2.0.4:
+>>>>>>> parent of 4a1ecc80e (Upgrade react packages: react/react-dom 19.2.8 -> 19.3.1)
   version "2.0.4"
   resolved "https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
@@ -5322,11 +5415,6 @@ inline-style-parser@0.2.7:
   version "0.2.7"
   resolved "https://registry.npmjs.org/inline-style-parser/-/inline-style-parser-0.2.7.tgz"
   integrity sha512-Nb2ctOyNR8DqQoR0OwRG95uNWIC0C1lCgf5Naz5H6Ji72KZ8OcFZLz2P5sNgwlyoJ8Yif11oMuYs5pBQa86csA==
-
-interpret@^1.0.0:
-  version "1.4.0"
-  resolved "https://registry.npmjs.org/interpret/-/interpret-1.4.0.tgz"
-  integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
 
 invariant@^2.2.4:
   version "2.2.4"
@@ -6554,7 +6642,11 @@ minimalistic-assert@^1.0.0:
   resolved "https://registry.npmjs.org/minimalistic-assert/-/minimalistic-assert-1.0.1.tgz"
   integrity sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A==
 
+<<<<<<< HEAD
+minimatch@3.1.5:
+=======
 minimatch@3.1.5, minimatch@^3.1.1:
+>>>>>>> parent of 4a1ecc80e (Upgrade react packages: react/react-dom 19.2.8 -> 19.3.1)
   version "3.1.5"
   resolved "https://registry.npmjs.org/minimatch/-/minimatch-3.1.5.tgz"
   integrity sha512-VgjWUsnnT6n+NUk6eZq77zeFdpW2LWDzP6zFGrCbHXiYNul5Dzqk2HHQ5uFH2DNW5Xbp8+jVzaeNt94ssEEl4w==
@@ -6565,31 +6657,6 @@ minimist@^1.2.0:
   version "1.2.8"
   resolved "https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz"
   integrity sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==
-
-minipass@^3.0.0:
-  version "3.3.6"
-  resolved "https://registry.npmjs.org/minipass/-/minipass-3.3.6.tgz"
-  integrity sha512-DxiNidxSEK+tHG6zOIklvNOwm3hvCrbUrdtzY74U6HKTJxvIDfOUL5W5P2Ghd3DTkhhKPYGqeNUIh5qcM4YBfw==
-  dependencies:
-    yallist "^4.0.0"
-
-minipass@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.npmjs.org/minipass/-/minipass-5.0.0.tgz"
-  integrity sha512-3FnjYuehv9k6ovOEbyOswadCDPX1piCfhV8ncmYtHOjuPwylVWsghTLo7rabjC3Rx5xD4HDx8Wm1xnMF7S5qFQ==
-
-minizlib@^2.1.1:
-  version "2.1.2"
-  resolved "https://registry.npmjs.org/minizlib/-/minizlib-2.1.2.tgz"
-  integrity sha512-bAxsR8BVfj60DWXHE3u30oHzfl4G7khkSuPW+qvpd7jFRHm7dLxOjUk1EHACJ/hxLY8phGJ0YhYHZo7jil7Qdg==
-  dependencies:
-    minipass "^3.0.0"
-    yallist "^4.0.0"
-
-mkdirp@^1.0.3:
-  version "1.0.4"
-  resolved "https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz"
-  integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
 mrmime@^2.0.0:
   version "2.0.1"
@@ -6651,13 +6718,6 @@ node-emoji@^2.1.0:
     char-regex "^1.0.2"
     emojilib "^2.4.0"
     skin-tone "^2.0.0"
-
-node-fetch@2.7.0:
-  version "2.7.0"
-  resolved "https://registry.npmjs.org/node-fetch/-/node-fetch-2.7.0.tgz"
-  integrity sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==
-  dependencies:
-    whatwg-url "^5.0.0"
 
 node-forge@^1:
   version "1.3.2"
@@ -6749,13 +6809,6 @@ on-headers@~1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/on-headers/-/on-headers-1.1.0.tgz"
   integrity sha512-737ZY3yNnXy37FHkQxPzt4UZ2UWPWiCZWLvFZ4fu5cueciegX0zGPnrlY6bwRg4FdQOe9YU8MkmJwGhoMybl8A==
-
-once@^1.3.0:
-  version "1.4.0"
-  resolved "https://registry.npmjs.org/once/-/once-1.4.0.tgz"
-  integrity sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==
-  dependencies:
-    wrappy "1"
 
 onetime@^5.1.2:
   version "5.1.2"
@@ -6936,11 +6989,6 @@ path-exists@^5.0.0:
   resolved "https://registry.npmjs.org/path-exists/-/path-exists-5.0.0.tgz"
   integrity sha512-RjhtfwJOxzcFmNOi6ltcbcu4Iu+FL3zEj83dk4kAS+fVpTxXLO1b38RvJgT/0QwvV/L3aY9TAnyv0EOqW4GoMQ==
 
-path-is-absolute@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz"
-  integrity sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==
-
 path-is-inside@1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/path-is-inside/-/path-is-inside-1.0.2.tgz"
@@ -6977,11 +7025,6 @@ path-type@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/path-type/-/path-type-4.0.0.tgz"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
-
-pend@~1.2.0:
-  version "1.2.0"
-  resolved "https://registry.npmjs.org/pend/-/pend-1.2.0.tgz"
-  integrity sha512-F3asv42UuXchdzt+xXqfW1OGlVBe+mxa2mqI0pg5yAHZPvFmY3Y6drSf/GQ1A86WgWEN9Kzh/WrgKa6iGcHXLg==
 
 picocolors@^1.0.0, picocolors@^1.1.1:
   version "1.1.1"
@@ -7577,12 +7620,7 @@ pretty-time@^1.1.0:
   resolved "https://registry.npmjs.org/pretty-time/-/pretty-time-1.1.0.tgz"
   integrity sha512-28iF6xPQrP8Oa6uxE6a1biz+lWeTOAPKggvjB8HAs6nVMKZwf5bG++632Dx614hIWgUPkgivRfG+a8uAXGTIbA==
 
-prism-react-renderer@^1.3.5:
-  version "1.3.5"
-  resolved "https://registry.npmjs.org/prism-react-renderer/-/prism-react-renderer-1.3.5.tgz"
-  integrity sha512-IJ+MSwBWKG+SM3b2SUfdrhC+gu01QkV2KmRQgREThBfSQRoufqRfxfHUxpG1WcaFjP+kojcFyO9Qqtpgt3qLCg==
-
-prism-react-renderer@^2.3.0:
+prism-react-renderer@^2.3.0, prism-react-renderer@^2.4.1:
   version "2.4.1"
   resolved "https://registry.npmjs.org/prism-react-renderer/-/prism-react-renderer-2.4.1.tgz"
   integrity sha512-ey8Ls/+Di31eqzUxC46h8MksNuGx/n0AAC8uKpwFau4RPDYLuE3EXTp8N8G2vX2N7UC/+IXeNUnlWBGGcAG+Ig==
@@ -7788,10 +7826,17 @@ react-router@5.3.4, react-router@^5.3.4:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
+<<<<<<< HEAD
+react@*, "react@^16.14.0 || ^17 || ^18 || ^19", "react@^16.6.0 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react@^18.0.0 || ^19.0.0", react@^19.3.1, "react@>= 16.8.0 < 20.0.0", react@>=15, react@>=16, react@>=16.0.0:
+  version "19.3.1"
+  resolved "https://registry.npmjs.org/react/-/react-19.3.1.tgz"
+  integrity sha512-QNhWdt7nrgVWWQG58QuGsAR3jv3Hbe4mb4vz7w2csnHavciZJgda1CPNaldF6eVxv90ud3jUXpKlHL69gO38yw==
+=======
 react@^19.2.8:
   version "19.2.8"
   resolved "https://registry.npmjs.org/react/-/react-19.2.8.tgz"
   integrity sha512-PWaYA1L/q9u2u7xYQi+Y3L3Yfnie7XyLeaJICV1MGD6LprsBxcAqGjYyr0eY3p+QdsA+x/Irkt4Qif8D63+Sbw==
+>>>>>>> parent of 4a1ecc80e (Upgrade react packages: react/react-dom 19.2.8 -> 19.3.1)
 
 readable-stream@^2.0.1:
   version "2.3.8"
@@ -7821,13 +7866,6 @@ readdirp@~3.6.0:
   integrity sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==
   dependencies:
     picomatch "^2.2.1"
-
-rechoir@^0.6.2:
-  version "0.6.2"
-  resolved "https://registry.npmjs.org/rechoir/-/rechoir-0.6.2.tgz"
-  integrity sha512-HFM8rkZ+i3zrV+4LQjwQ0W+ez98pApMGM3HUrN04j3CqzPOzl9nmP15Y8YXNm8QHGv/eacOVEjqhmWpkRV0NAw==
-  dependencies:
-    resolve "^1.1.6"
 
 recma-build-jsx@^1.0.0:
   version "1.0.0"
@@ -8064,7 +8102,7 @@ resolve-pathname@^3.0.0:
   resolved "https://registry.npmjs.org/resolve-pathname/-/resolve-pathname-3.0.0.tgz"
   integrity sha512-C7rARubxI8bXFNB/hqcp/4iUeIXJhJZvFPFPiSPRnhU5UPxzMFIl+2E6yY6c4k9giDJAhtV+enfA+G89N6Csng==
 
-resolve@^1.1.6, resolve@^1.22.11:
+resolve@^1.22.11:
   version "1.22.11"
   resolved "https://registry.npmjs.org/resolve/-/resolve-1.22.11.tgz"
   integrity sha512-RfqAvLnMl313r7c9oclB1HhUEAezcpLjz95wFH4LVuhk9JF/r22qmVP9AMmOU4vMX7Q8pN8jwNg/CSpdFnMjTQ==
@@ -8330,15 +8368,6 @@ shell-quote@^1.8.3:
   version "1.8.3"
   resolved "https://registry.npmjs.org/shell-quote/-/shell-quote-1.8.3.tgz"
   integrity sha512-ObmnIF4hXNg1BqhnHmgbDETF8dLPCggZWBjkQfhZpbszZnYur5DUljTcCHii5LC3J5E0yeO/1LIMyH+UvHQgyw==
-
-shelljs@^0.8.5:
-  version "0.8.5"
-  resolved "https://registry.npmjs.org/shelljs/-/shelljs-0.8.5.tgz"
-  integrity sha512-TiwcRcrkhHvbrZbnRcFYMLl30Dfov3HKqzp5tO5b4pt6G/SezKcYhmDg15zXVBswHmctSAQKznqNW2LO5tTDow==
-  dependencies:
-    glob "^7.0.0"
-    interpret "^1.0.0"
-    rechoir "^0.6.2"
 
 side-channel-list@^1.0.0:
   version "1.0.0"
@@ -8671,18 +8700,6 @@ tapable@^2.0.0, tapable@^2.2.0, tapable@^2.2.1, tapable@^2.3.0:
   resolved "https://registry.npmjs.org/tapable/-/tapable-2.3.0.tgz"
   integrity sha512-g9ljZiwki/LfxmQADO3dEY1CbpmXT5Hm2fJ+QaGKwSXUylMybePR7/67YW7jOrrvjEgL1Fmz5kzyAjWVWLlucg==
 
-tar@^6.2.0:
-  version "6.2.1"
-  resolved "https://registry.npmjs.org/tar/-/tar-6.2.1.tgz"
-  integrity sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==
-  dependencies:
-    chownr "^2.0.0"
-    fs-minipass "^2.0.0"
-    minipass "^5.0.0"
-    minizlib "^2.1.1"
-    mkdirp "^1.0.3"
-    yallist "^4.0.0"
-
 terser-webpack-plugin@^5.3.11, terser-webpack-plugin@^5.3.9:
   version "5.3.14"
   resolved "https://registry.npmjs.org/terser-webpack-plugin/-/terser-webpack-plugin-5.3.14.tgz"
@@ -8745,11 +8762,6 @@ totalist@^3.0.0:
   version "3.0.1"
   resolved "https://registry.npmjs.org/totalist/-/totalist-3.0.1.tgz"
   integrity sha512-sf4i37nQ2LBx4m3wB74y+ubopq6W/dIzXg0FDGjsYnZHVa1Da8FH853wlL2gtUhg+xJXjfk3kUZS3BRoQeoQBQ==
-
-tr46@~0.0.3:
-  version "0.0.3"
-  resolved "https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz"
-  integrity sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==
 
 tree-dump@^1.0.3, tree-dump@^1.1.0:
   version "1.1.0"
@@ -9032,11 +9044,6 @@ web-namespaces@^2.0.0:
   resolved "https://registry.npmjs.org/web-namespaces/-/web-namespaces-2.0.1.tgz"
   integrity sha512-bKr1DkiNa2krS7qxNtdrtHAmzuYGFQLiQ13TsorsdT6ULTkPLKuu5+GsFpDlg6JFjUTwX2DyhMPG2be8uPrqsQ==
 
-webidl-conversions@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz"
-  integrity sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==
-
 webpack-bundle-analyzer@^4.10.2:
   version "4.10.2"
   resolved "https://registry.npmjs.org/webpack-bundle-analyzer/-/webpack-bundle-analyzer-4.10.2.tgz"
@@ -9191,14 +9198,6 @@ whatwg-mimetype@^4.0.0:
   resolved "https://registry.npmjs.org/whatwg-mimetype/-/whatwg-mimetype-4.0.0.tgz"
   integrity sha512-QaKxh0eNIi2mE9p2vEdzfagOKHCcj1pJ56EEHGQOVxp8r9/iszLUUV7v89x9O1p/T+NlTM5W7jW6+cz4Fq1YVg==
 
-whatwg-url@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.npmjs.org/whatwg-url/-/whatwg-url-5.0.0.tgz"
-  integrity sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==
-  dependencies:
-    tr46 "~0.0.3"
-    webidl-conversions "^3.0.0"
-
 which@^2.0.1:
   version "2.0.2"
   resolved "https://registry.npmjs.org/which/-/which-2.0.2.tgz"
@@ -9226,11 +9225,6 @@ wrap-ansi@^8.0.1, wrap-ansi@^8.1.0:
     ansi-styles "^6.1.0"
     string-width "^5.0.1"
     strip-ansi "^7.0.1"
-
-wrappy@1:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz"
-  integrity sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==
 
 write-file-atomic@^3.0.3:
   version "3.0.3"
@@ -9275,19 +9269,6 @@ yallist@^3.0.2:
   version "3.1.1"
   resolved "https://registry.npmjs.org/yallist/-/yallist-3.1.1.tgz"
   integrity sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==
-
-yallist@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.npmjs.org/yallist/-/yallist-4.0.0.tgz"
-  integrity sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
-
-yauzl@^3.1.0:
-  version "3.2.0"
-  resolved "https://registry.npmjs.org/yauzl/-/yauzl-3.2.0.tgz"
-  integrity sha512-Ow9nuGZE+qp1u4JIPvg+uCiUr7xGQWdff7JQSk5VGYTAZMDe2q8lxJ10ygv10qmSj031Ty/6FNJpLO4o1Sgc+w==
-  dependencies:
-    buffer-crc32 "~0.2.3"
-    pend "~1.2.0"
 
 yocto-queue@^1.0.0:
   version "1.2.2"
