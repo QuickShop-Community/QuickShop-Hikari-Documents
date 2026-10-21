@@ -2,46 +2,51 @@
 
 This documents is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-### Help us translate / improve this document
+## Help us translate / improve this document
 
 For translate, please check here: [Crowdin](https://crowdin.com/project/qs-hikari-docs)  
 
 If you want help us improve the page, please switch to `American English` and click `Edit this page` on the document bottom to open a Pull Request.
 
-### Installation
+## Requirements
 
-```
-$ yarn
+Node.js `22.23.4+`, `24.22.1+` or `26.12.1+`. Older releases of these lines are affected by the
+[October 2026 Node.js security advisories](https://nodejs.org/en/blog/vulnerability/) and are not supported.
+
+## Installation
+
+```bash
+yarn
 ```
 
-### Local Development
+## Local Development
 
-```
-$ yarn start
+```bash
+yarn start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Build
+## Build
 
-```
-$ yarn build
+```bash
+yarn build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-### Deployment
+## Deployment
 
 Using SSH:
 
-```
-$ USE_SSH=true yarn deploy
+```bash
+USE_SSH=true yarn deploy
 ```
 
 Not using SSH:
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
+```bash
+GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
