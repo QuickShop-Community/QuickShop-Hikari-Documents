@@ -21,17 +21,10 @@
     "@docusaurus/preset-classic": "^3.10.2",
     "@easyops-cn/docusaurus-search-local": "^0.55.3",
     "@mdx-js/react": "^3.1.1",
-<<<<<<< HEAD
     "clsx": "^2.1.1",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
-=======
-    "clsx": "^1.2.1",
-    "prism-react-renderer": "^1.3.5",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8"
->>>>>>> parent of 4a1ecc80e (Upgrade react packages: react/react-dom 19.2.8 -> 19.3.1)
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.10.2"
