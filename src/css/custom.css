@@ -53,10 +53,26 @@ h6 {
   height: var(--ifm-navbar-height);
   padding: 0 2rem;
   border-bottom: 1px solid rgba(219, 234, 254, 0.95);
-  background: rgba(255, 255, 255, 0.93);
+  background: transparent;
   box-shadow: 0 8px 30px rgba(15, 57, 125, 0.055);
+  isolation: isolate;
+}
+
+/*
+ * The frosted background lives on a pseudo-element on purpose. A backdrop-filter
+ * on .navbar itself would make it the containing block of the fixed-position
+ * mobile navigation sidebar, which then collapses to the navbar's height instead
+ * of covering the viewport.
+ */
+.navbar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.93);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
+  pointer-events: none;
 }
 
 .navbar__inner {
@@ -425,6 +441,9 @@ code {
 
 [data-theme='dark'] .navbar {
   border-color: rgba(59, 130, 246, 0.16);
+}
+
+[data-theme='dark'] .navbar::before {
   background: rgba(5, 16, 34, 0.93);
 }
 
