@@ -1,0 +1,238 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.main-getting-started": {
+    "message": "Getting Started",
+    "description": "The label for category 'Getting Started' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Guides & Examples": {
+    "message": "Guides & Examples",
+    "description": "The label for category 'Guides & Examples' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.guides-getting-started": {
+    "message": "Getting Started",
+    "description": "The label for category 'Getting Started' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Shop Customization": {
+    "message": "Shop Customization",
+    "description": "The label for category 'Shop Customization' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Economy And Trading": {
+    "message": "Economy And Trading",
+    "description": "The label for category 'Economy And Trading' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Server Administration": {
+    "message": "Server Administration",
+    "description": "The label for category 'Server Administration' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Integrations And Addons": {
+    "message": "Integrations And Addons",
+    "description": "The label for category 'Integrations And Addons' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Configuration": {
+    "message": "Configuration",
+    "description": "The label for category 'Configuration' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Localization": {
+    "message": "Localization",
+    "description": "The label for category 'Localization' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Shop Management": {
+    "message": "Shop Management",
+    "description": "The label for category 'Shop Management' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Shop Basics": {
+    "message": "Shop Basics",
+    "description": "The label for category 'Shop Basics' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Pricing & Economy": {
+    "message": "Pricing & Economy",
+    "description": "The label for category 'Pricing & Economy' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Shop Appearance": {
+    "message": "Shop Appearance",
+    "description": "The label for category 'Shop Appearance' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Shop Controls & Permissions": {
+    "message": "Shop Controls & Permissions",
+    "description": "The label for category 'Shop Controls & Permissions' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Trading & Transactions": {
+    "message": "Trading & Transactions",
+    "description": "The label for category 'Trading & Transactions' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Advanced Shop Features": {
+    "message": "Advanced Shop Features",
+    "description": "The label for category 'Advanced Shop Features' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Advanced Administration": {
+    "message": "Advanced Administration",
+    "description": "The label for category 'Advanced Administration' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Integrations": {
+    "message": "Integrations",
+    "description": "The label for category 'Integrations' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Compatibility Modules": {
+    "message": "Compatibility Modules",
+    "description": "The label for category 'Compatibility Modules' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Official Addons": {
+    "message": "Official Addons",
+    "description": "The label for category 'Official Addons' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Community Addons": {
+    "message": "Community Addons",
+    "description": "The label for category 'Community Addons' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Developer Documentation": {
+    "message": "Developer Documentation",
+    "description": "The label for category 'Developer Documentation' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Internals": {
+    "message": "Internals",
+    "description": "The label for category 'Internals' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Help & Troubleshooting": {
+    "message": "Help & Troubleshooting",
+    "description": "The label for category 'Help & Troubleshooting' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Changelogs": {
+    "message": "Changelogs",
+    "description": "The label for category 'Changelogs' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.About": {
+    "message": "About",
+    "description": "The label for category 'About' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.doc.guides-overview": {
+    "message": "Overview",
+    "description": "The label for the doc item 'Overview' in sidebar 'tutorialSidebar', linking to the doc guides/index"
+  },
+  "sidebar.tutorialSidebar.doc.Economy Formatter": {
+    "message": "Economy Formatter",
+    "description": "The label for the doc item 'Economy Formatter' in sidebar 'tutorialSidebar', linking to the doc configuration/economy-formatter"
+  },
+  "sidebar.tutorialSidebar.doc.localization-overview": {
+    "message": "Overview",
+    "description": "The label for the doc item 'Overview' in sidebar 'tutorialSidebar', linking to the doc configuration/localization"
+  },
+  "sidebar.tutorialSidebar.doc.Localization Guide": {
+    "message": "Localization Guide",
+    "description": "The label for the doc item 'Localization Guide' in sidebar 'tutorialSidebar', linking to the doc configuration/localization/index"
+  },
+  "sidebar.tutorialSidebar.doc.Customizing Messages": {
+    "message": "Customizing Messages",
+    "description": "The label for the doc item 'Customizing Messages' in sidebar 'tutorialSidebar', linking to the doc configuration/localization/customizing"
+  },
+  "sidebar.tutorialSidebar.doc.Localization Placeholders": {
+    "message": "Localization Placeholders",
+    "description": "The label for the doc item 'Localization Placeholders' in sidebar 'tutorialSidebar', linking to the doc configuration/localization/placeholders"
+  },
+  "sidebar.tutorialSidebar.doc.Notification System": {
+    "message": "Notification System",
+    "description": "The label for the doc item 'Notification System' in sidebar 'tutorialSidebar', linking to the doc configuration/notification-system"
+  },
+  "sidebar.tutorialSidebar.doc.Plugin Placeholders": {
+    "message": "Plugin Placeholders",
+    "description": "The label for the doc item 'Plugin Placeholders' in sidebar 'tutorialSidebar', linking to the doc configuration/placeholders"
+  },
+  "sidebar.tutorialSidebar.doc.Sounds & Effects": {
+    "message": "Sounds & Effects",
+    "description": "The label for the doc item 'Sounds & Effects' in sidebar 'tutorialSidebar', linking to the doc configuration/special-effect"
+  },
+  "sidebar.tutorialSidebar.doc.Creating and Purchasing Shops": {
+    "message": "Creating and Purchasing Shops",
+    "description": "The label for the doc item 'Creating and Purchasing Shops' in sidebar 'tutorialSidebar', linking to the doc shop-management/shop-basic"
+  },
+  "sidebar.tutorialSidebar.doc.Shop Benefits": {
+    "message": "Shop Benefits",
+    "description": "The label for the doc item 'Shop Benefits' in sidebar 'tutorialSidebar', linking to the doc shop-management/benefit"
+  },
+  "sidebar.tutorialSidebar.doc.Price Limiter": {
+    "message": "Price Limiter",
+    "description": "The label for the doc item 'Price Limiter' in sidebar 'tutorialSidebar', linking to the doc shop-management/price-system"
+  },
+  "sidebar.tutorialSidebar.doc.Taxation System": {
+    "message": "Taxation System",
+    "description": "The label for the doc item 'Taxation System' in sidebar 'tutorialSidebar', linking to the doc shop-management/taxes"
+  },
+  "sidebar.tutorialSidebar.doc.Shop Sign Waxing": {
+    "message": "Shop Sign Waxing",
+    "description": "The label for the doc item 'Shop Sign Waxing' in sidebar 'tutorialSidebar', linking to the doc shop-management/sign-wax"
+  },
+  "sidebar.tutorialSidebar.doc.Shop Control Panel (GUI)": {
+    "message": "Shop Control Panel (GUI)",
+    "description": "The label for the doc item 'Shop Control Panel (GUI)' in sidebar 'tutorialSidebar', linking to the doc shop-management/control-panel-ui"
+  },
+  "sidebar.tutorialSidebar.doc.Shop Staff": {
+    "message": "Shop Staff",
+    "description": "The label for the doc item 'Shop Staff' in sidebar 'tutorialSidebar', linking to the doc shop-management/control-panel-ui-staff"
+  },
+  "sidebar.tutorialSidebar.doc.shop-permissions": {
+    "message": "Per-Shop Permissions",
+    "description": "The label for the doc item 'Per-Shop Permissions' in sidebar 'tutorialSidebar', linking to the doc shop-management/per-shop-perms-management"
+  },
+  "sidebar.tutorialSidebar.doc.Shop Trade Menu": {
+    "message": "Shop Trade Menu",
+    "description": "The label for the doc item 'Shop Trade Menu' in sidebar 'tutorialSidebar', linking to the doc shop-management/trade-ui"
+  },
+  "sidebar.tutorialSidebar.doc.Admin Shops": {
+    "message": "Admin Shops",
+    "description": "The label for the doc item 'Admin Shops' in sidebar 'tutorialSidebar', linking to the doc shop-management/adminshop"
+  },
+  "sidebar.tutorialSidebar.doc.Shop Tags": {
+    "message": "Shop Tags",
+    "description": "The label for the doc item 'Shop Tags' in sidebar 'tutorialSidebar', linking to the doc shop-management/tag-system"
+  },
+  "sidebar.tutorialSidebar.doc.Batch Remove Shops": {
+    "message": "Batch Remove Shops",
+    "description": "The label for the doc item 'Batch Remove Shops' in sidebar 'tutorialSidebar', linking to the doc shop-management/remove-shops"
+  },
+  "sidebar.tutorialSidebar.doc.WorldEdit & FAWE Support": {
+    "message": "WorldEdit & FAWE Support",
+    "description": "The label for the doc item 'WorldEdit & FAWE Support' in sidebar 'tutorialSidebar', linking to the doc shop-management/worldedit"
+  },
+  "sidebar.tutorialSidebar.doc.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for the doc item 'Getting Started' in sidebar 'tutorialSidebar', linking to the doc developers/getting-start"
+  },
+  "sidebar.tutorialSidebar.doc.Accessing the API": {
+    "message": "Accessing the API",
+    "description": "The label for the doc item 'Accessing the API' in sidebar 'tutorialSidebar', linking to the doc developers/get-api-instances"
+  },
+  "sidebar.tutorialSidebar.doc.Working with ShopManager": {
+    "message": "Working with ShopManager",
+    "description": "The label for the doc item 'Working with ShopManager' in sidebar 'tutorialSidebar', linking to the doc developers/work-with-shop-manager"
+  },
+  "sidebar.tutorialSidebar.doc.Blacklist & Price Limiter": {
+    "message": "Blacklist & Price Limiter",
+    "description": "The label for the doc item 'Blacklist & Price Limiter' in sidebar 'tutorialSidebar', linking to the doc developers/blacklist-price-limiter"
+  },
+  "sidebar.tutorialSidebar.doc.developer-permissions": {
+    "message": "Per-Shop Permissions",
+    "description": "The label for the doc item 'Per-Shop Permissions' in sidebar 'tutorialSidebar', linking to the doc developers/per-shop-permission-management"
+  },
+  "sidebar.tutorialSidebar.doc.Virtual Display Packet System": {
+    "message": "Virtual Display Packet System",
+    "description": "The label for the doc item 'Virtual Display Packet System' in sidebar 'tutorialSidebar', linking to the doc developers/protocol-system"
+  },
+  "sidebar.tutorialSidebar.doc.Interaction Manager": {
+    "message": "Interaction Manager",
+    "description": "The label for the doc item 'Interaction Manager' in sidebar 'tutorialSidebar', linking to the doc developers/interaction-manager"
+  },
+  "sidebar.tutorialSidebar.doc.Tax Manager": {
+    "message": "Tax Manager",
+    "description": "The label for the doc item 'Tax Manager' in sidebar 'tutorialSidebar', linking to the doc developers/tax-manager"
+  },
+  "sidebar.tutorialSidebar.doc.Shop Layout Provider": {
+    "message": "Shop Layout Provider",
+    "description": "The label for the doc item 'Shop Layout Provider' in sidebar 'tutorialSidebar', linking to the doc developers/layout-provider"
+  },
+  "sidebar.tutorialSidebar.doc.Custom Events": {
+    "message": "Custom Events",
+    "description": "The label for the doc item 'Custom Events' in sidebar 'tutorialSidebar', linking to the doc developers/events"
+  }
+}
