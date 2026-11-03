@@ -1,3 +1,6 @@
+---
+slug: /about/privacy
+---
 # Privacy
 
 When using QuickShop-Hikari, some features communicate with external service providers. Some of these services are required when you explicitly use a feature, while others can be disabled through QuickShop-Hikari or the service's own configuration.

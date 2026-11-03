@@ -1,0 +1,28 @@
+---
+slug: /compat-modules/residence
+---
+# Residence
+
+:::info
+
+Can't find where to download the JAR? [Click here](../faq/where-addons-compacts-at).
+
+:::
+
+This module added [Residence](https://www.spigotmc.org/resources/residence-1-7-10-up-to-1-19.11480/) supports.
+
+## How does it work?
+
+This module registers two of flags `quickshop-create` and `quickshop-trade` into your Residence flags registry.  
+You can use them to control the players permission in your residence.
+
+This module also lets residence owners take full control of all shops inside their residences.
+
+## Configuration
+
+```yaml
+#Should we prevent the creation of a shop or trade with a shop outside Residence's area?
+whitelist-mode: false
+#Allow residence owner grant all shops full-control permission in their claim.
+allow-permission-override: true
+```

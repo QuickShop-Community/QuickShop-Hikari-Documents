@@ -1,3 +1,6 @@
+---
+slug: /about/netease
+---
 # Regional legal restrictions
 
 :::info
