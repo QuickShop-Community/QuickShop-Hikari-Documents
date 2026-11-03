@@ -1,0 +1,54 @@
+{
+  "link.title.Get QuickShop Hikari": {
+    "message": "Get QuickShop Hikari",
+    "description": "The title of the footer links column with title=Get QuickShop Hikari in the footer"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.More": {
+    "message": "More",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Modrinth": {
+    "message": "Modrinth",
+    "description": "The label of footer link with label=Modrinth linking to https://modrinth.com/mod/quickshop-hikari"
+  },
+  "link.item.label.SpigotMC": {
+    "message": "SpigotMC",
+    "description": "The label of footer link with label=SpigotMC linking to https://www.spigotmc.org/threads/547268"
+  },
+  "link.item.label.CodeMC CI": {
+    "message": "CodeMC CI",
+    "description": "The label of footer link with label=CodeMC CI linking to https://ci.codemc.io/job/Ghost-chu/job/QuickShop-Hikari"
+  },
+  "link.item.label.GitHub Releases": {
+    "message": "GitHub Releases",
+    "description": "The label of footer link with label=GitHub Releases linking to https://github.com/QuickShop-Community/QuickShop-Hikari"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "The label of footer link with label=Discord linking to https://discord.gg/Bu3dVtmsD3"
+  },
+  "link.item.label.GitHub Discussions": {
+    "message": "GitHub Discussions",
+    "description": "The label of footer link with label=GitHub Discussions linking to https://github.com/QuickShop-Community/QuickShop-Hikari/discussions"
+  },
+  "link.item.label.Main Website": {
+    "message": "Main Website",
+    "description": "The label of footer link with label=Main Website linking to https://quickshophikari.org/en"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/QuickShop-Community/QuickShop-Hikari"
+  },
+  "link.item.label.Paste Viewer": {
+    "message": "Paste Viewer",
+    "description": "The label of footer link with label=Paste Viewer linking to https://ghost-chu.github.io/quickshop-hikari-paste-viewer"
+  },
+  "copyright": {
+    "message": "All contents are licensed under <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\">CC BY-NC-SA 4.0</a>. Built with Docusaurus.",
+    "description": "The footer copyright"
+  }
+}
