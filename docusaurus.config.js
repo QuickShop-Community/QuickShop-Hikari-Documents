@@ -84,44 +84,14 @@ const config = {
           src: 'img/quickshop-hikari-logo.webp',
         },
         items: [
-          {
-            to: '/',
-            label: 'Home',
-            position: 'left',
-            exact: true,
-          },
-          {
-            type: 'doc',
-            docId: 'setup/install',
-            label: 'Getting Started',
-            position: 'left',
-          },
-          {
-            type: 'doc',
-            docId: '/category/addon',
-            label: 'Addons',
-            position: 'left',
-          },
-          {
-            type: 'doc',
-            docId: '/category/compatibility-modules',
-            label: 'Compatibility',
-            position: 'left',
-          },
-          {
-            to: '/localization',
-            label: 'Localization',
-            position: 'left',
-          },
-          {
-            href: 'https://quickshophikari.org/en',
-            label: 'Main Site',
-            position: 'right',
-          },
-          {
-            type: 'localeDropdown',
-            position: 'right',
-          },
+          { to: '/', label: 'Home', position: 'left', exact: true },
+          { type: 'doc', docId: 'getting-started/install', label: 'Getting Started', position: 'left' },
+          { type: 'doc', docId: 'guides/index', label: 'Guides', position: 'left' },
+          { to: '/docs/category/official-addons', label: 'Addons', position: 'left' },
+          { to: '/docs/category/compatibility-modules', label: 'Compatibility', position: 'left' },
+          { to: '/localization', label: 'Localization', position: 'left' },
+          { href: 'https://quickshophikari.org/en', label: 'Main Site', position: 'right' },
+          { type: 'localeDropdown', position: 'right' },
         ],
       },
 
