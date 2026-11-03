@@ -8,18 +8,18 @@ This page will walk you through the process of installing QuickShop-Hikari on yo
 ## Requirements
 
 * A [Paper][paper]-based Minecraft server (1.20 or higher, Java 21)
-* [Vault][vault] to bridge QuickShop and your economy plugin.
+* [VaultUnlocked][vault] to bridge QuickShop and your economy plugin. Do not install the original Vault alongside VaultUnlocked.
 * For virtual item displays and per-player localization, you need a supported protocol library:
   * [ProtocolLib][plib]
   * [PacketEvents](https://www.spigotmc.org/resources/packetevents-api.80279/)
-* Any Vault-compatible economy plugin, such as [XConomy][xconomy]. [EssentialsX][essx] is also supported.
+* A Vault-compatible economy plugin, such as [LiteEco][liteeco].
 * A permission management plugin like [LuckPerms][luckperm].
 
-This guide assumes that you are using the latest versions of QuickShop-Hikari, ProtocolLib, XConomy, Vault, and LuckPerms on Windows 11. The process is largely the same on Linux.
+This guide assumes that you are using compatible versions of QuickShop-Hikari, VaultUnlocked, LiteEco, a supported protocol library, and LuckPerms on Windows 11. The process is largely the same on Linux.
 
 ## Installing dependencies
 
-Before installing QuickShop-Hikari, you should make sure that you have all dependencies installed, including [Vault][vault], [ProtocolLib][plib] or [PacketEvents](https://www.spigotmc.org/resources/packetevents-api.80279/), [XConomy][xconomy] (or [EssentialsX][essx] if you want) and [LuckPerms][luckperm]!
+Before installing QuickShop-Hikari, install [VaultUnlocked][vault] and [LiteEco][liteeco] for economy support, [ProtocolLib][plib] or [PacketEvents](https://www.spigotmc.org/resources/packetevents-api.80279/) for the optional display and localization features, and [LuckPerms][luckperm] for permission management. Do not install the original Vault alongside VaultUnlocked.
 
 Download the plugins and place them in the `plugins` folder.
 
@@ -62,8 +62,7 @@ Now QuickShop-Hikari is running on your server, for more settings, check the nav
 
 [paper]: https://papermc.io/
 [vault]: https://www.spigotmc.org/resources/vaultunlocked.117277/
-[xconomy]: https://www.spigotmc.org/resources/xconomy.75669/
-[essx]: https://modrinth.com/plugin/essentialsx
+[liteeco]: https://www.spigotmc.org/resources/liteeco-simple-economy-plugin-1-21-x.101934/
 [plib]: https://www.spigotmc.org/resources/protocollib.1997/
 [luckperm]: https://luckperms.net/
 [qs-modrinth]: https://modrinth.com/plugin/quickshop-hikari

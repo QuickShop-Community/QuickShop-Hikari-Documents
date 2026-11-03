@@ -94,6 +94,13 @@ module.exports = {
       "collapsible": true,
       "collapsed": true,
       "items": [
+        {"type":"doc","id":"configuration/commands-reference","label":"Commands Reference"},
+        {"type":"doc","id":"configuration/config-reference","label":"Configuration Reference"},
+        {
+          "type": "doc",
+          "id": "configuration/permissions-reference",
+          "label": "Permissions Reference"
+        },
         {
           "type": "doc",
           "id": "configuration/economy-formatter",

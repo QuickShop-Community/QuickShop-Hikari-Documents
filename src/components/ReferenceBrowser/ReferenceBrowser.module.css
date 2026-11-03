@@ -1,0 +1,15 @@
+.browser{margin-top:1rem}.filters{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:1rem;margin:1rem 0}.filters label{font-weight:600;font-size:.85rem;display:flex;flex-direction:column;gap:.4rem}.filters input,.filters select{width:100%;border:1px solid var(--ifm-color-emphasis-300);border-radius:8px;background:var(--ifm-background-surface-color);color:var(--ifm-font-color-base);padding:.65rem}.count{display:flex;align-items:center;justify-content:space-between;color:var(--ifm-color-emphasis-700);margin:1rem 0}.count button{background:none;border:0;color:var(--ifm-color-primary);cursor:pointer}.results{display:grid;gap:.65rem}.card{border:1px solid var(--ifm-color-emphasis-300);border-radius:12px;overflow:hidden}.cardHeader{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;width:100%;border:0;background:transparent;color:var(--ifm-font-color-base);text-align:left;padding:1rem;cursor:pointer}.cardHeader code{color:var(--ifm-color-primary);font-weight:700;overflow-wrap:anywhere}.desc{display:block;margin-top:.45rem;font-size:.9rem}.details{border-top:1px solid var(--ifm-color-emphasis-200);padding:1rem;display:grid;gap:1rem}.details>div{display:grid;gap:.3rem}.details strong{font-size:.8rem;color:var(--ifm-color-emphasis-700)}.details code{overflow-wrap:anywhere}.pills{display:flex;flex-wrap:wrap;gap:.5rem}.note{font-size:.85rem;color:var(--ifm-color-emphasis-700);margin:0}@media(max-width:700px){.filters{grid-template-columns:1fr}}
+/* Match the documentation theme in both light and dark modes. */
+.browser{color:var(--ifm-font-color-base)}
+.card{background:var(--ifm-background-surface-color);border-color:var(--ifm-color-emphasis-300)}
+.cardHeader{color:var(--ifm-font-color-base)}
+.cardHeader:hover{background:var(--ifm-color-emphasis-100)}
+.cardHeader code,.details code,.pills code{background:var(--ifm-color-emphasis-100);color:var(--ifm-color-primary);border:1px solid var(--ifm-color-emphasis-200);border-radius:5px;padding:.12rem .35rem}
+.cardHeader code{display:inline-block;max-width:100%;font-size:.82rem}
+.desc{line-height:1.5;color:var(--ifm-font-color-base)}
+.details{background:var(--ifm-background-surface-color)}
+.filters input,.filters select{background:var(--ifm-background-color);color:var(--ifm-font-color-base)}
+.filters input::placeholder{color:var(--ifm-color-emphasis-600)}
+[data-theme='dark'] .browser .card{background:var(--ifm-background-surface-color)}
+[data-theme='dark'] .browser .cardHeader code,[data-theme='dark'] .browser .details code,[data-theme='dark'] .browser .pills code{background:rgba(61,135,231,.12);color:#89baff;border-color:rgba(120,165,230,.28)}
+[data-theme='dark'] .browser .filters input,[data-theme='dark'] .browser .filters select{background:var(--ifm-background-color);border-color:var(--ifm-color-emphasis-400)}

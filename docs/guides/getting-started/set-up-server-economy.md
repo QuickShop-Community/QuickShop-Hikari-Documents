@@ -17,7 +17,7 @@ slug: /guides/getting-started/set-up-server-economy
 
 ### 1. Install the economy bridge
 
-Install VaultUnlocked and GemsEconomy, following their official installation instructions. VaultUnlocked provides the economy bridge; GemsEconomy provides the economy. Do not install the original Vault alongside VaultUnlocked.
+Install VaultUnlocked and [LiteEco](https://www.spigotmc.org/resources/liteeco-simple-economy-plugin-1-21-x.101934/), following their official installation instructions. VaultUnlocked provides the economy bridge; LiteEco provides the economy. Do not install the original Vault alongside VaultUnlocked.
 
 ### 2. Install QuickShop
 

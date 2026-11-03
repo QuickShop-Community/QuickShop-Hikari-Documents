@@ -1,0 +1,557 @@
+[
+  {
+    "name": "buy",
+    "usage": "/quickshop buy",
+    "description": "Changes a shop to BUY mode",
+    "permissions": [
+      "quickshop.create.buy",
+      "quickshop.other.buy"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "about",
+    "usage": "/quickshop about",
+    "description": "Shows QuickShop info",
+    "permissions": [
+      "quickshop.about"
+    ],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "language",
+    "usage": "/quickshop language",
+    "description": "Change the currently used language",
+    "permissions": [],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "purge",
+    "usage": "/quickshop purge",
+    "description": "Start the shop purge task in the background",
+    "permissions": [
+      "quickshop.purge",
+      "quickshop.tag.purge"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "paste",
+    "usage": "/quickshop paste",
+    "description": "Uploads server data to Pastebin",
+    "permissions": [
+      "quickshop.paste"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "remove",
+    "usage": "/quickshop remove",
+    "description": "Removes the shop you're looking at",
+    "permissions": [],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "ban",
+    "usage": "/quickshop ban",
+    "description": "Ban a player from the shop",
+    "permissions": [],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "empty",
+    "usage": "/quickshop empty",
+    "description": "Removes all items from a shop",
+    "permissions": [
+      "quickshop.empty"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "alwayscounting",
+    "usage": "/quickshop alwayscounting",
+    "description": "Set if the shop should always count the content of its container even while unlimited",
+    "permissions": [],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "setowner",
+    "usage": "/quickshop setowner",
+    "description": "Changes the ownership of a shop.",
+    "permissions": [
+      "quickshop.other.setowner",
+      "quickshop.setowner"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "reload",
+    "usage": "/quickshop reload",
+    "description": "Reloads the config.yml of QuickShop",
+    "permissions": [
+      "quickshop.reload"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "freeze",
+    "usage": "/quickshop freeze",
+    "description": "Disable or Enable shop trading",
+    "permissions": [
+      "quickshop.other.freeze"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "price",
+    "usage": "/quickshop price",
+    "description": "Changes the buy/sell price of a shop",
+    "permissions": [
+      "quickshop.other.price"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "find",
+    "usage": "/quickshop find",
+    "description": "Locates the nearest shop of a specific type.",
+    "permissions": [
+      "quickshop.find"
+    ],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "create",
+    "usage": "/quickshop create",
+    "description": "Creates a new shop from the targeted chest",
+    "permissions": [],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "lock",
+    "usage": "/quickshop lock",
+    "description": "Switch the shop's lock status",
+    "permissions": [],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "currency",
+    "usage": "/quickshop currency",
+    "description": "Set or remove the currency setting of the shop",
+    "permissions": [
+      "quickshop.currency",
+      "quickshop.other.currency"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "removeworld",
+    "usage": "/quickshop removeworld",
+    "description": "Remove ALL shops in a specified world",
+    "permissions": [
+      "quickshop.removeworld"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "info",
+    "usage": "/quickshop info",
+    "description": "Show QuickShop statistics",
+    "permissions": [
+      "quickshop.info"
+    ],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "owner",
+    "usage": "/quickshop owner",
+    "description": "Changes the ownership of a shop.",
+    "permissions": [],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "amount",
+    "usage": "/quickshop amount",
+    "description": "To set the amount of items (Useful when having chat issues)",
+    "permissions": [
+      "quickshop.other.amount"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "item",
+    "usage": "/quickshop item",
+    "description": "Change shop item of a shop",
+    "permissions": [
+      "quickshop.other.item"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "debug",
+    "usage": "/quickshop debug",
+    "description": "Enables Developer mode",
+    "permissions": [
+      "quickshop.debug"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "unlimited",
+    "usage": "/quickshop unlimited",
+    "description": "Gives a shop unlimited stock.",
+    "permissions": [
+      "quickshop.unlimited"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "sell",
+    "usage": "/quickshop sell",
+    "description": "Changes a shop to SELL mode",
+    "permissions": [
+      "quickshop.create.sell",
+      "quickshop.other.sell"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "fetchmessage",
+    "usage": "/quickshop fetchmessage",
+    "description": "Show unread shop messages",
+    "permissions": [
+      "quickshop.fetchmessage"
+    ],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "staff",
+    "usage": "/quickshop staff",
+    "description": "Manage your shop staff",
+    "permissions": [
+      "quickshop.other.staff",
+      "quickshop.staff"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "staffall",
+    "usage": "/quickshop staffall",
+    "description": "Manage your shop staff of all shops you own.",
+    "permissions": [
+      "quickshop.staffall"
+    ],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "clean",
+    "usage": "/quickshop clean",
+    "description": "Removes all (loaded) shops without any stock",
+    "permissions": [
+      "quickshop.clean"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "refill",
+    "usage": "/quickshop refill",
+    "description": "Adds a given number of items to a shop",
+    "permissions": [
+      "quickshop.refill"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "help",
+    "usage": "/quickshop help",
+    "description": "Shows the QuickShop help",
+    "permissions": [],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "removeall",
+    "usage": "/quickshop removeall",
+    "description": "Remove ALL shops of a specified player",
+    "permissions": [],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "unban",
+    "usage": "/quickshop unban",
+    "description": "Unban a player from the shop",
+    "permissions": [],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "transfer",
+    "usage": "/quickshop transfer",
+    "description": "Transfer ALL shops of a player to someone else",
+    "permissions": [],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "transferall",
+    "usage": "/quickshop transferall",
+    "description": "Transfer ALL shops of a player to someone else",
+    "permissions": [
+      "quickshop.transferall"
+    ],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "transferownership",
+    "usage": "/quickshop transferownership",
+    "description": "Transfer the shop you're looking at to someone else",
+    "permissions": [
+      "quickshop.transferownership"
+    ],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "size",
+    "usage": "/quickshop size",
+    "description": "Change per-bulk amount of a shop",
+    "permissions": [],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "supercreate",
+    "usage": "/quickshop supercreate",
+    "description": "Create a shop while bypassing all protection checks",
+    "permissions": [],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "taxaccount",
+    "usage": "/quickshop taxaccount",
+    "description": "Set the tax account that the shop using",
+    "permissions": [
+      "quickshop.other.taxaccount",
+      "quickshop.taxaccount"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "name",
+    "usage": "/quickshop name",
+    "description": "Changes the name of a specific shop",
+    "permissions": [],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "toggledisplay",
+    "usage": "/quickshop toggledisplay",
+    "description": "Toggle the shop's display-item status",
+    "permissions": [
+      "quickshop.other.toggledisplay",
+      "quickshop.toggledisplay"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "toggledisplayall",
+    "usage": "/quickshop toggledisplayall",
+    "description": "Toggle all shop display items you own, or for the server.",
+    "permissions": [
+      "quickshop.toggledisplayall"
+    ],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "permission",
+    "usage": "/quickshop permission",
+    "description": "Shop permission management",
+    "permissions": [
+      "quickshop.permission"
+    ],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "lookup",
+    "usage": "/quickshop lookup",
+    "description": "Manage lookup-able items table",
+    "permissions": [
+      "quickshop.lookup"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "database",
+    "usage": "/quickshop database",
+    "description": "View and maintain the QuickShop Database",
+    "permissions": [
+      "quickshop.database"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "benefit",
+    "usage": "/quickshop benefit",
+    "description": "Settings of divide benefits between shop owner and other players",
+    "permissions": [
+      "quickshop.benefit",
+      "quickshop.other.benefit"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "benefitall",
+    "usage": "/quickshop benefitall",
+    "description": "Settings of divide benefits between shop owner and other players for all shops you own.",
+    "permissions": [
+      "quickshop.benefitall"
+    ],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "browse",
+    "usage": "/quickshop browse",
+    "description": "Browse shops that exist in this server.",
+    "permissions": [
+      "quickshop.browse"
+    ],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "tag",
+    "usage": "/quickshop tag",
+    "description": "Add, remove or query tags of a shop",
+    "permissions": [
+      "quickshop.tag"
+    ],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "suggestprice",
+    "usage": "/quickshop suggestprice",
+    "description": "Suggest a recommend price for looking shop, based on other shops",
+    "permissions": [
+      "quickshop.suggestprice"
+    ],
+    "permissionVerified": false,
+    "access": "Player",
+    "reviewRequired": false
+  },
+  {
+    "name": "history",
+    "usage": "/quickshop history",
+    "description": "View the history transactions of a shop",
+    "permissions": [
+      "quickshop.history",
+      "quickshop.other.history"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  },
+  {
+    "name": "sign",
+    "usage": "/quickshop sign",
+    "description": "Change the sign material of a shop",
+    "permissions": [
+      "quickshop.other.sign",
+      "quickshop.sign"
+    ],
+    "permissionVerified": false,
+    "access": "Admin",
+    "reviewRequired": false
+  }
+]
