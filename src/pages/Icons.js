@@ -11,7 +11,7 @@ const paths = {
   puzzle:<path d="M9 3H4v6a2.5 2.5 0 1 1 0 5v6h6a2.5 2.5 0 1 1 5 0h5v-6a2.5 2.5 0 1 1 0-5V4h-6a2.5 2.5 0 1 0-5 0Z"/>,
   wrench:<><path d="M21 6a6 6 0 0 1-8 7l-8 8-3-3 8-8a6 6 0 0 1 7-8l-4 4 4 4 4-4Z"/></>,
   book:<><path d="M12 6c-3-2-6-2-10-1v15c4-1 7-1 10 1 3-2 6-2 10-1V5c-4-1-7-1-10 1Zm0 0v15"/></>,
-  changelog:<><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></>,
+  changelog:<><path d="M8 3h9a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a3 3 0 0 1 3-3Z"/><path d="M9 8h6M9 12h6M9 16h3"/><path d="m15 16 2 2 3-4"/></>,
   arrow:<path d="M5 12h14m-6-6 6 6-6 6"/>,
   external:<path d="M13 5h6v6m0-6-9 9M19 14v5H5V5h5"/>,
   download:<path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/>,
