@@ -1,0 +1,25 @@
+---
+title: Permissions Reference
+description: Search QuickShop-Hikari permission nodes by category, access, and version.
+sidebar_label: Permissions Reference
+slug: /configuration/permissions-reference
+---
+
+import PermissionsReference from '@site/src/components/PermissionsReference/PermissionsReference';
+
+# Permissions Reference
+
+Search QuickShop-Hikari permissions, inspect their source-based descriptions, review defaults, and copy LuckPerms commands. **6.2.0.11 is the documentation baseline assigned to every node**, not a verified first-introduction release. Optional add-on and compatibility permissions only apply when those integrations are installed.
+
+:::warning Recommended permission setup
+For the recommended setup, follow [**Getting Started → Permissions**](/docs/setup/permissions), particularly the **Simple Permissions** section:
+
+- **`quickshop.player`** provides the sub-permission nodes intended for players.
+- **`quickshop.moderator`** provides the sub-permission nodes intended for moderators. Only grant this to trusted staff.
+
+Granting individual permission nodes instead of using the recommended setup can expose your server to adverse side effects, including unintended access to shop management or administrative features. **Server operators should fully understand the effect of every permission node before granting it to players.**
+:::
+
+<PermissionsReference />
+
+For setup instructions, see [Permissions](/docs/setup/permissions) and [Configure Shop Permissions](/docs/guides/getting-started/configure-shop-permissions).

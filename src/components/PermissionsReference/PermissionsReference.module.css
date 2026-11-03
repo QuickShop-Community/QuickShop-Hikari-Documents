@@ -1,0 +1,37 @@
+.reference{max-width:100%;margin:1.5rem 0}.filters{background:var(--ifm-background-surface-color);border:1px solid var(--ifm-color-emphasis-300);border-radius:14px;padding:1.25rem}.filters label,.groupInput{display:flex;flex-direction:column;gap:.4rem;font-size:.86rem;font-weight:600}.filters input,.filters select,.groupInput input{width:100%;min-width:0;padding:.72rem .85rem;border:1px solid var(--ifm-color-emphasis-300);border-radius:9px;color:var(--ifm-font-color-base);background:var(--ifm-background-color);font:inherit}.filterGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.85rem;margin-top:1rem}.notice{font-size:.84rem;margin:1rem 0 0;color:var(--ifm-color-emphasis-700)}.toolbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin:1rem 0;font-size:.87rem;color:var(--ifm-color-emphasis-700)}.toolbar button{background:none;border:0;color:var(--ifm-color-primary);font-weight:600;cursor:pointer}.entries{display:grid;gap:.7rem}.entry{border:1px solid var(--ifm-color-emphasis-300);border-radius:12px;background:var(--ifm-background-surface-color);overflow:hidden}.entryHeader{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;width:100%;text-align:left;padding:1rem 1.15rem;background:transparent;border:0;color:inherit;cursor:pointer}.entryHeader:hover{background:var(--ifm-color-emphasis-100)}.entryMain{display:flex;flex-direction:column;gap:.45rem;min-width:0}.entryMain code{overflow-wrap:anywhere;font-weight:700;color:var(--ifm-color-primary);background:transparent;border:0;padding:0}.description{font-size:.92rem}.meta{font-size:.79rem;color:var(--ifm-color-emphasis-700)}.details{padding:1rem 1.15rem;border-top:1px solid var(--ifm-color-emphasis-200)}.detailsGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-bottom:1rem}.detailsGrid>div{display:flex;flex-direction:column;gap:.3rem}.detailsGrid small,.details>small{color:var(--ifm-color-emphasis-700)}.detailsGrid strong{font-size:.87rem}.groupInput{max-width:260px;margin-bottom:.7rem}.command{display:flex;align-items:center;justify-content:space-between;gap:.7rem;background:var(--ifm-color-emphasis-100);padding:.65rem;border-radius:8px;margin-bottom:.6rem}.command code{overflow-wrap:anywhere;background:transparent;border:0}.command button{border:1px solid var(--ifm-color-emphasis-400);background:var(--ifm-background-color);color:var(--ifm-font-color-base);border-radius:6px;padding:.4rem .75rem;cursor:pointer}.empty{text-align:center;padding:2rem;color:var(--ifm-color-emphasis-700)}@media(max-width:760px){.filterGrid{grid-template-columns:1fr}.detailsGrid{grid-template-columns:1fr 1fr}.command{align-items:stretch;flex-direction:column}}
+.review{color:var(--ifm-color-warning-darkest);font-size:.82rem}.sourceNote{font-size:.78rem;overflow-wrap:anywhere;color:var(--ifm-color-emphasis-700)}
+
+.filterGrid{grid-template-columns:repeat(3,minmax(0,1fr))}.riskBadge{align-self:flex-start;font-size:.73rem;font-weight:700;border:1px solid var(--ifm-color-emphasis-400);border-radius:999px;padding:.15rem .55rem}.riskBadge[data-risk="Low"]{color:var(--ifm-color-success-darkest);border-color:var(--ifm-color-success)}.riskBadge[data-risk="Moderate"]{color:var(--ifm-color-warning-darkest);border-color:var(--ifm-color-warning)}.riskBadge[data-risk="High"],.riskBadge[data-risk="Critical"]{color:var(--ifm-color-danger-darkest);border-color:var(--ifm-color-danger)}.relationships{margin-bottom:1rem;padding:.85rem;border:1px solid var(--ifm-color-emphasis-200);border-radius:9px}.relationships p{margin:.4rem 0;font-size:.87rem}.relationships small{display:block;margin-top:.6rem;color:var(--ifm-color-emphasis-700)}.relationshipList{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.5rem}.relationshipList code{font-size:.79rem;overflow-wrap:anywhere}@media(max-width:760px){.filterGrid{grid-template-columns:1fr}}
+
+.riskNotice{margin:0 0 1rem;font-weight:600}.riskLegend{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1rem;margin:1rem 0;font-size:.85rem}.riskLegend>span{display:inline-flex;align-items:center;gap:.4rem}.riskLegend .riskBadge{display:inline-flex}.relationships{margin:.65rem 0}.relationships>strong{font-size:.85rem}
+
+/* Compact, aligned risk legend for server owners */
+.riskLegend{display:block;margin:1rem 0 1.15rem;padding:1rem;background:var(--ifm-background-surface-color);border:1px solid var(--ifm-color-emphasis-200);border-radius:10px;font-size:.84rem}
+.riskLegendTitle{font-weight:700;margin-bottom:.75rem;color:var(--ifm-heading-color)}
+.riskLegendGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.65rem}
+.riskLegendItem{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:.4rem;min-width:0;padding:.65rem .75rem;background:var(--ifm-color-emphasis-100);border-radius:8px;line-height:1.4;color:var(--ifm-font-color-base)}
+.riskLegendItem .riskBadge{display:inline-flex;align-self:flex-start;white-space:nowrap}
+@media(max-width:1050px){.riskLegendGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.riskLegendGrid{grid-template-columns:1fr}.riskLegendItem{flex-direction:row;align-items:center;gap:.75rem}}
+
+.parentBadge{display:inline-flex;align-items:center;align-self:flex-start;border:1px solid var(--ifm-color-primary-light);background:var(--ifm-color-primary-lightest);color:var(--ifm-color-primary-darkest);border-radius:999px;padding:.15rem .55rem;font-size:.73rem;font-weight:600;line-height:1.45;white-space:nowrap;margin-left:.35rem}
+
+/* Keep permission risk and parent badges together on one wrapping row. */
+.permissionBadges{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;margin-top:.4rem}
+.permissionBadges .riskBadge,.permissionBadges .parentBadge{display:inline-flex;align-items:center;align-self:center;margin:0;line-height:1.45;padding:.15rem .55rem;font-size:.73rem;font-weight:700}
+.permissionBadges .parentBadge{background:var(--ifm-color-emphasis-100);border:1px solid var(--ifm-color-emphasis-400);color:var(--ifm-font-color-base);white-space:normal;overflow-wrap:anywhere}
+
+/* Dark-mode readability and consistent inline permission labels. */
+[data-theme='dark'] .reference .entry,
+[data-theme='dark'] .reference .filters,
+[data-theme='dark'] .reference .riskLegend{background:var(--ifm-background-surface-color);color:var(--ifm-font-color-base)}
+[data-theme='dark'] .reference .entryMain code{background:transparent;color:#89baff}
+[data-theme='dark'] .reference .entryHeader{color:var(--ifm-font-color-base)}
+[data-theme='dark'] .reference .parentBadge{background:rgba(120,165,230,.12);border-color:rgba(120,165,230,.4);color:#c6dcff}
+[data-theme='dark'] .reference .riskBadge[data-risk='Low']{color:#6cdb8c;border-color:#35b966}
+[data-theme='dark'] .reference .riskBadge[data-risk='Moderate']{color:#ffd36e;border-color:#d6a026}
+[data-theme='dark'] .reference .riskBadge[data-risk='High'],
+[data-theme='dark'] .reference .riskBadge[data-risk='Critical']{color:#ff9292;border-color:#e35e67}
+[data-theme='dark'] .reference .riskLegendItem{background:var(--ifm-color-emphasis-100);color:var(--ifm-font-color-base)}
+[data-theme='dark'] .reference .filters input,
+[data-theme='dark'] .reference .filters select{background:var(--ifm-background-color);color:var(--ifm-font-color-base)}
