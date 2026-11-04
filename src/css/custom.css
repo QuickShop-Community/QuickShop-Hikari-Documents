@@ -694,3 +694,36 @@ code {
 .navbar__logo img{height:42px;width:auto;max-width:min(310px,34vw);object-fit:contain}
 @media(max-width:996px){.navbar__logo,.navbar__logo img{height:36px}.navbar__logo img{max-width:min(265px,65vw)}}
 @media(max-width:480px){.navbar__logo,.navbar__logo img{height:30px}.navbar__logo img{max-width:220px}}
+
+
+/* Navbar layout experiment: links left, wordmark centered in the viewport. */
+@media (min-width: 1200px) {
+  .navbar .navbar__inner {
+    position: relative;
+  }
+  .navbar .navbar__brand {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    z-index: 1;
+  }
+  .navbar .navbar__items--left {
+    padding-right: 0;
+  }
+  .navbar .navbar__items--right {
+    margin-left: auto;
+  }
+  .navbar .navbar__brand .navbar__logo {
+    margin-right: 0;
+  }
+  .navbar .navbar__brand img {
+    max-width: 220px;
+    max-height: 38px;
+    width: auto;
+    object-fit: contain;
+  }
+}
+/* Keep standard responsive Docusaurus navigation on narrower screens,
+   avoiding collisions with the menu, search, and locale controls. */

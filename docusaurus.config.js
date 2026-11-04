@@ -10,10 +10,10 @@ const DefaultLocale = 'en-US';
 const config = {
   title: 'QuickShop Hikari Documentation',
   tagline: 'Documentation for QuickShop Hikari',
-  url: 'https://docs.quickshophikari.org',
-  baseUrl: '/',
+  url: 'https://quickshop-community.github.io/',
+  baseUrl: '/QuickShop-Hikari-Documents/',
   onBrokenLinks: 'throw',
-  favicon: 'static/img/favicon.ico',
+  favicon: '/img/favicon.ico',
   trailingSlash: false,
 
   organizationName: 'QuickShop-Community',
