@@ -10,7 +10,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Low"
   },
   {
     "node": "quickshop.alerts",
@@ -23,7 +25,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "High"
   },
   {
     "node": "quickshop.avoid",
@@ -36,7 +42,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:525",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Low"
   },
   {
     "node": "quickshop.avoid.list",
@@ -49,7 +59,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:526",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Low"
   },
   {
     "node": "quickshop.benefit",
@@ -62,7 +76,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.benefitall",
@@ -75,7 +93,9 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:483",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.browse",
@@ -88,7 +108,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Low"
   },
   {
     "node": "quickshop.browse.teleport",
@@ -101,7 +125,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Low"
   },
   {
     "node": "quickshop.bypass.*",
@@ -114,7 +142,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:120",
     "module": "Core",
     "status": "Legacy reference",
-    "reviewRequired": true
+    "reviewRequired": true,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "High"
   },
   {
     "node": "quickshop.bypass.<itemID>",
@@ -127,7 +159,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.bypass.namefee",
@@ -140,7 +174,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "High"
   },
   {
     "node": "quickshop.bypasscreatefee",
@@ -153,7 +191,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.clean",
@@ -166,7 +206,9 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:306",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.cleanghost",
@@ -179,7 +221,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.create.admin",
@@ -192,7 +236,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "Critical"
   },
   {
     "node": "quickshop.create.buy",
@@ -205,7 +253,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.create.changeamount",
@@ -218,7 +270,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.create.changeitem",
@@ -231,7 +287,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.create.changeprice",
@@ -244,7 +304,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.create.cmd",
@@ -257,7 +321,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.create.double",
@@ -270,7 +338,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.create.enderchest",
@@ -283,7 +355,9 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/util/Util.java:391",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.create.sell",
@@ -296,10 +370,14 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
-    "node": "quickshop.create.stacks",
+    "node": "quickshop.create.stack",
     "description": "Allows supplying an item stack amount when using the create command, if stacking is enabled.",
     "default": "not declared",
     "category": "Shop Creation",
@@ -309,7 +387,9 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/subcommand/SubCommand_Create.java:58",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.create.stacks",
@@ -322,7 +402,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.currency",
@@ -335,7 +419,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.database",
@@ -348,7 +436,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Critical"
   },
   {
     "node": "quickshop.debug",
@@ -361,7 +451,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.empty",
@@ -374,7 +466,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.export",
@@ -387,7 +481,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Critical"
   },
   {
     "node": "quickshop.favorite",
@@ -400,7 +496,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:535",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Low"
   },
   {
     "node": "quickshop.favorite.list",
@@ -413,7 +513,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:536",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Low"
   },
   {
     "node": "quickshop.fetchmessage",
@@ -426,7 +530,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Low"
   },
   {
     "node": "quickshop.find",
@@ -439,7 +547,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Low"
   },
   {
     "node": "quickshop.history",
@@ -452,7 +564,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.history.*",
@@ -465,7 +581,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:123",
     "module": "Core",
     "status": "Legacy reference",
-    "reviewRequired": true
+    "reviewRequired": true,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "High"
   },
   {
     "node": "quickshop.history.accessible",
@@ -478,7 +598,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.history.global",
@@ -491,7 +615,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.history.owned",
@@ -504,7 +630,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.info",
@@ -517,7 +647,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Low"
   },
   {
     "node": "quickshop.inventory",
@@ -530,7 +662,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:286",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Low"
   },
   {
     "node": "quickshop.lookup",
@@ -543,7 +679,9 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:468",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.moderator",
@@ -556,7 +694,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.other.amount",
@@ -569,7 +709,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.other.benefit",
@@ -582,7 +724,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "High"
   },
   {
     "node": "quickshop.other.buy",
@@ -595,10 +741,12 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
-    "node": "quickshop.other.amount",
+    "node": "quickshop.other.changeamount",
     "description": "Legacy moderator-group permission reference for changing another shop’s trade amount; no active direct check verified.",
     "default": "not declared",
     "category": "Administration",
@@ -608,10 +756,14 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:126",
     "module": "Core",
     "status": "Legacy reference",
-    "reviewRequired": true
+    "reviewRequired": true,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "High"
   },
   {
-    "node": "quickshop.other.item",
+    "node": "quickshop.other.changeitem",
     "description": "Legacy moderator-group permission reference for changing another shop’s item; no active direct check verified.",
     "default": "not declared",
     "category": "Administration",
@@ -621,7 +773,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:125",
     "module": "Core",
     "status": "Legacy reference",
-    "reviewRequired": true
+    "reviewRequired": true,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "High"
   },
   {
     "node": "quickshop.other.currency",
@@ -634,7 +790,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "High"
   },
   {
     "node": "quickshop.other.destroy",
@@ -647,7 +807,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "Critical"
   },
   {
     "node": "quickshop.other.freeze",
@@ -660,7 +824,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.other.history",
@@ -673,7 +839,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "High"
   },
   {
     "node": "quickshop.other.item",
@@ -686,7 +856,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.other.open",
@@ -699,7 +871,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "High"
   },
   {
     "node": "quickshop.other.preview",
@@ -712,7 +888,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "High"
   },
   {
     "node": "quickshop.other.price",
@@ -725,7 +905,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "High"
   },
   {
     "node": "quickshop.other.search",
@@ -738,7 +922,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "High"
   },
   {
     "node": "quickshop.other.sell",
@@ -751,7 +939,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.other.setowner",
@@ -764,7 +954,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/subcommand/SubCommand_SetOwner.java:44",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "Critical"
   },
   {
     "node": "quickshop.other.shopnaming",
@@ -777,7 +971,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "High"
   },
   {
     "node": "quickshop.other.sign",
@@ -790,7 +988,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "High"
   },
   {
     "node": "quickshop.other.staff",
@@ -803,7 +1005,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "High"
   },
   {
     "node": "quickshop.other.taxaccount",
@@ -816,7 +1022,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "High"
   },
   {
     "node": "quickshop.other.toggledisplay",
@@ -829,7 +1039,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "High"
   },
   {
     "node": "quickshop.other.use",
@@ -842,7 +1056,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "High"
   },
   {
     "node": "quickshop.paste",
@@ -855,7 +1073,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Critical"
   },
   {
     "node": "quickshop.permission",
@@ -868,7 +1088,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.permission.bypass",
@@ -881,7 +1105,9 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:463",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Critical"
   },
   {
     "node": "quickshop.player",
@@ -894,7 +1120,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Low"
   },
   {
     "node": "quickshop.preview",
@@ -907,7 +1135,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Low"
   },
   {
     "node": "quickshop.price.restriction.bypass.<ruleName>",
@@ -920,7 +1152,9 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/shop/SimplePriceLimiter.java:161",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.purge",
@@ -933,7 +1167,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "Critical"
   },
   {
     "node": "quickshop.recovery",
@@ -946,7 +1184,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Critical"
   },
   {
     "node": "quickshop.refill",
@@ -959,7 +1199,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.reload",
@@ -972,7 +1214,9 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:312",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.removeall.other",
@@ -985,7 +1229,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Critical"
   },
   {
     "node": "quickshop.removeall.self",
@@ -998,7 +1244,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.removeworld",
@@ -1011,7 +1259,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Critical"
   },
   {
     "node": "quickshop.reset",
@@ -1024,7 +1274,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Critical"
   },
   {
     "node": "quickshop.self-trade",
@@ -1037,7 +1289,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Low"
   },
   {
     "node": "quickshop.setowner",
@@ -1050,7 +1304,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "Critical"
   },
   {
     "node": "quickshop.shopnaming",
@@ -1063,7 +1321,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.showdisabled",
@@ -1076,7 +1338,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.sign",
@@ -1089,7 +1353,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.staff",
@@ -1102,7 +1370,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.staffall",
@@ -1115,7 +1387,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.suggestprice",
@@ -1128,7 +1404,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Low"
   },
   {
     "node": "quickshop.tag",
@@ -1141,7 +1421,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:545",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Low"
   },
   {
     "node": "quickshop.tag.add",
@@ -1154,7 +1438,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:546",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.tag.clear",
@@ -1167,7 +1455,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:553",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.tag.clearall",
@@ -1180,7 +1472,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:554",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.tag.delete",
@@ -1193,7 +1489,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:547",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.tag.list",
@@ -1206,7 +1506,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:548",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.tag.purge",
@@ -1219,7 +1523,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:549",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.tag.shops",
@@ -1232,7 +1540,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:550",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.tag.tagged",
@@ -1245,7 +1557,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:551",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.tag.tagged.teleport",
@@ -1258,7 +1574,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:552",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.tax",
@@ -1271,7 +1591,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.tax.bypassunlimited",
@@ -1284,7 +1606,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.taxaccount",
@@ -1297,7 +1621,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "High"
   },
   {
     "node": "quickshop.toggledisplay",
@@ -1310,7 +1638,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.toggledisplayall",
@@ -1323,7 +1655,9 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:451",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.toggledisplayall.admin",
@@ -1336,7 +1670,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/subcommand/SubCommand_ToggleDisplayAll.java:104",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "Critical"
   },
   {
     "node": "quickshop.togglefreeze",
@@ -1349,7 +1687,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.transferall",
@@ -1362,7 +1702,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.transferall.other",
@@ -1375,7 +1719,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Critical"
   },
   {
     "node": "quickshop.transferownership",
@@ -1388,7 +1734,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Moderate"
   },
   {
     "node": "quickshop.transferownership.other",
@@ -1401,7 +1751,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.moderator"
+    ],
+    "risk": "Critical"
   },
   {
     "node": "quickshop.unlimited",
@@ -1414,7 +1768,9 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Critical"
   },
   {
     "node": "quickshop.use",
@@ -1427,7 +1783,11 @@
     "source": "quickshop-bukkit/src/main/resources/plugin.yml",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Low"
   },
   {
     "node": "quickshop.watch",
@@ -1440,7 +1800,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:563",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Low"
   },
   {
     "node": "quickshop.watch.list",
@@ -1453,7 +1817,11 @@
     "source": "quickshop-bukkit/src/main/java/com/ghostchu/quickshop/command/SimpleCommandManager.java:564",
     "module": "Core",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [
+      "quickshop.player"
+    ],
+    "risk": "Low"
   },
   {
     "node": "quickshop.addon.towny.nation",
@@ -1466,7 +1834,9 @@
     "source": "compatibility/towny/src/main/java/com/ghostchu/quickshop/compatibility/towny/Main.java:141",
     "module": "Compatibility integration",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Low"
   },
   {
     "node": "quickshop.addon.towny.town",
@@ -1479,7 +1849,9 @@
     "source": "compatibility/towny/src/main/java/com/ghostchu/quickshop/compatibility/towny/Main.java:135",
     "module": "Compatibility integration",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Low"
   },
   {
     "node": "quickshop.admin",
@@ -1492,7 +1864,9 @@
     "source": "compatibility/openinv/src/main/java/com/ghostchu/quickshop/compatibility/openinv/OpenInvCommand.java:40",
     "module": "Compatibility integration",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.arm.admin",
@@ -1505,7 +1879,9 @@
     "source": "compatibility/advancedregionmarket/src/main/java/com/ghostchu/quickshop/compatibility/advancedregionmarket/Main.java:57",
     "module": "Compatibility integration",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.echest",
@@ -1518,7 +1894,9 @@
     "source": "compatibility/openinv/src/main/java/com/ghostchu/quickshop/compatibility/openinv/Main.java:38",
     "module": "Compatibility integration",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Low"
   },
   {
     "node": "quickshop.iridium.override",
@@ -1531,7 +1909,9 @@
     "source": "compatibility/iridiumskyblock/src/main/java/com/ghostchu/quickshop/compatibility/iridiumskyblock/Main.java:75",
     "module": "Compatibility integration",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshop.superior.override",
@@ -1544,7 +1924,9 @@
     "source": "compatibility/superiorskyblock/src/main/java/com/ghostchu/quickshop/compatibility/superiorskyblock/Main.java:135",
     "module": "Compatibility integration",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshopaddon.discord.use",
@@ -1557,7 +1939,9 @@
     "source": "addon/discordsrv/src/main/resources/plugin.yml",
     "module": "discordsrv",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Low"
   },
   {
     "node": "quickshopaddon.discount.bypass",
@@ -1570,7 +1954,9 @@
     "source": "addon/discount/src/main/resources/plugin.yml",
     "module": "discount",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshopaddon.discount.create.player_all_shops",
@@ -1583,7 +1969,9 @@
     "source": "addon/discount/src/main/resources/plugin.yml",
     "module": "discount",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Moderate"
   },
   {
     "node": "quickshopaddon.discount.create.server_all_shops",
@@ -1596,7 +1984,9 @@
     "source": "addon/discount/src/main/resources/plugin.yml",
     "module": "discount",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshopaddon.discount.create.specific_shops",
@@ -1609,7 +1999,9 @@
     "source": "addon/discount/src/main/resources/plugin.yml",
     "module": "discount",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Moderate"
   },
   {
     "node": "quickshopaddon.discount.list",
@@ -1622,7 +2014,9 @@
     "source": "addon/discount/src/main/java/com/ghostchu/quickshop/addon/discount/command/DiscountCommand.java:317",
     "module": "discount",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Low"
   },
   {
     "node": "quickshopaddon.discount.listall",
@@ -1635,7 +2029,9 @@
     "source": "addon/discount/src/main/java/com/ghostchu/quickshop/addon/discount/command/DiscountCommand.java:330",
     "module": "discount",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshopaddon.discount.remove.bypass",
@@ -1648,7 +2044,9 @@
     "source": "addon/discount/src/main/java/com/ghostchu/quickshop/addon/discount/command/DiscountCommand.java:189",
     "module": "discount",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshopaddon.discount.use",
@@ -1661,7 +2059,9 @@
     "source": "addon/discount/src/main/resources/plugin.yml",
     "module": "discount",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Low"
   },
   {
     "node": "quickshopaddon.displaycontrol.use",
@@ -1674,7 +2074,9 @@
     "source": "addon/displaycontrol/src/main/resources/plugin.yml",
     "module": "displaycontrol",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Low"
   },
   {
     "node": "quickshopaddon.dyesigns.clear",
@@ -1687,7 +2089,9 @@
     "source": "addon/dyesigns/src/main/resources/plugin.yml",
     "module": "dyesigns",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Moderate"
   },
   {
     "node": "quickshopaddon.dyesigns.clear.other",
@@ -1700,7 +2104,9 @@
     "source": "addon/dyesigns/src/main/resources/plugin.yml",
     "module": "dyesigns",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshopaddon.dyesigns.dye",
@@ -1713,7 +2119,9 @@
     "source": "addon/dyesigns/src/main/resources/plugin.yml",
     "module": "dyesigns",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Low"
   },
   {
     "node": "quickshopaddon.dyesigns.dye.other",
@@ -1726,7 +2134,9 @@
     "source": "addon/dyesigns/src/main/resources/plugin.yml",
     "module": "dyesigns",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshopaddon.dyesigns.glow",
@@ -1739,7 +2149,9 @@
     "source": "addon/dyesigns/src/main/resources/plugin.yml",
     "module": "dyesigns",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Low"
   },
   {
     "node": "quickshopaddon.dyesigns.glow.other",
@@ -1752,7 +2164,9 @@
     "source": "addon/dyesigns/src/main/resources/plugin.yml",
     "module": "dyesigns",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshopaddon.limit.use",
@@ -1765,7 +2179,9 @@
     "source": "addon/limited/src/main/resources/plugin.yml",
     "module": "limited",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshopaddon.list.other",
@@ -1778,7 +2194,9 @@
     "source": "addon/list/src/main/resources/plugin.yml",
     "module": "list",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   },
   {
     "node": "quickshopaddon.list.self",
@@ -1791,7 +2209,9 @@
     "source": "addon/list/src/main/resources/plugin.yml",
     "module": "list",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "Low"
   },
   {
     "node": "quickshopaddon.reremakemigrator.migrator-admin",
@@ -1804,6 +2224,8 @@
     "source": "addon/reremake-migrator/src/main/resources/plugin.yml",
     "module": "reremake-migrator",
     "status": "Active",
-    "reviewRequired": false
+    "reviewRequired": false,
+    "parentGroups": [],
+    "risk": "High"
   }
 ]

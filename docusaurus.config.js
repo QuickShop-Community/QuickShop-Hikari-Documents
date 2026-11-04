@@ -10,10 +10,10 @@ const DefaultLocale = 'en-US';
 const config = {
   title: 'QuickShop Hikari Documentation',
   tagline: 'Documentation for QuickShop Hikari',
-  url: 'https://quickshop-community.github.io/',
-  baseUrl: '/QuickShop-Hikari-Documents/',
+  url: 'https://docs.quickshophikari.org',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
-  favicon: 'img/favicon.ico',
+  favicon: 'static/img/favicon.ico',
   trailingSlash: false,
 
   organizationName: 'QuickShop-Community',
@@ -81,14 +81,14 @@ const config = {
         title: '',
         logo: {
           alt: 'QuickShop Hikari',
-          src: 'img/quickshop-hikari-logo.webp',
+          src: 'img/quickshop-hikari-navbar-wordmark.png',
         },
         items: [
           { to: '/', label: 'Home', position: 'left', exact: true },
-          { type: 'doc', docId: 'getting-started/install', label: 'Getting Started', position: 'left' },
-          { type: 'doc', docId: 'guides/index', label: 'Guides', position: 'left' },
-          { to: '/docs/category/official-addons', label: 'Addons', position: 'left' },
-          { to: '/docs/category/compatibility-modules', label: 'Compatibility', position: 'left' },
+          { to: '/docs/setup/install', label: 'Getting Started', position: 'left', activeBaseRegex: '/docs/(?:setup|getting-started)(?:/|$)' },
+          { to: '/docs/guides', label: 'Guides', position: 'left', activeBaseRegex: '/docs/guides(?:/|$)' },
+          { to: '/docs/category/official-addons', label: 'Addons', position: 'left', activeBaseRegex: '/docs/(?:category/(?:official-addons|community-addons)|addon(?:-3rdparty)?(?:/|$))' },
+          { to: '/docs/category/compatibility-modules', label: 'Compatibility', position: 'left', activeBaseRegex: '/docs/(?:category/compatibility-modules|compat-modules)(?:/|$)' },
           { to: '/localization', label: 'Localization', position: 'left' },
           { href: 'https://quickshophikari.org/en', label: 'Main Site', position: 'right' },
           { type: 'localeDropdown', position: 'right' },
