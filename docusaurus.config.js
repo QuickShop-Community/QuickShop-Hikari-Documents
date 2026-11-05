@@ -13,7 +13,7 @@ const config = {
   url: 'https://quickshop-community.github.io/',
   baseUrl: '/QuickShop-Hikari-Documents/',
   onBrokenLinks: 'throw',
-  favicon: '/img/favicon.ico',
+  favicon: 'img/favicon.ico',
   trailingSlash: false,
 
   organizationName: 'QuickShop-Community',
