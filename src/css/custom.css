@@ -696,34 +696,20 @@ code {
 @media(max-width:480px){.navbar__logo,.navbar__logo img{height:30px}.navbar__logo img{max-width:220px}}
 
 
-/* Navbar layout experiment: links left, wordmark centered in the viewport. */
-@media (min-width: 1200px) {
-  .navbar .navbar__inner {
+/* Docs only: visually align the logo over the left sidebar without changing
+   navbar flex layout. Relative positioning keeps the brand's original layout
+   footprint, so navigation links remain at their previous positions. */
+@media (min-width: 1400px) {
+  body:has(.theme-doc-sidebar-container) .navbar__brand {
     position: relative;
-  }
-  .navbar .navbar__brand {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    z-index: 1;
-  }
-  .navbar .navbar__items--left {
-    padding-right: 0;
-  }
-  .navbar .navbar__items--right {
-    margin-left: auto;
-  }
-  .navbar .navbar__brand .navbar__logo {
-    margin-right: 0;
-  }
-  .navbar .navbar__brand img {
-    max-width: 220px;
-    max-height: 38px;
+    left: calc(16px - max(2rem, (100vw - 1500px) / 2));
+    top: auto;
+    transform: none;
     width: auto;
-    object-fit: contain;
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+  body:has(.theme-doc-sidebar-container) .navbar__logo img {
+    max-width: min(260px, calc(var(--doc-sidebar-width, 300px) - 32px));
   }
 }
-/* Keep standard responsive Docusaurus navigation on narrower screens,
-   avoiding collisions with the menu, search, and locale controls. */
