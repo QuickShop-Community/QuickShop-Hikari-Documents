@@ -31,6 +31,21 @@ jobs:
           npx crowdin download --verbose
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN_UPDATED }}
+      - name: Prepare translated documentation
+        shell: bash
+        run: |
+          # English documentation comes directly from docs/
+          rm -rf i18n/en-US/docusaurus-plugin-content-docs/current
+
+          # Translated Markdown uses relative links to shared images
+          for locale in de-DE ja-JP zh-CN zh-HK zh-TW; do
+            target="i18n/$locale/docusaurus-plugin-content-docs/current"
+
+            if [ -d "$target" ] && [ -d docs/assets ]; then
+              mkdir -p "$target/assets"
+              cp -a docs/assets/. "$target/assets/"
+            fi
+          done    
       - name: Build website
         run: npm run build
       - name: Deploy to GitHub Pages
