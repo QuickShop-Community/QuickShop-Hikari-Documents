@@ -2,9 +2,14 @@ project_id: '777746'
 api_token_env: CROWDIN_PERSONAL_TOKEN
 preserve_hierarchy: true
 files:
-  # JSON 翻译文件
   - source: /i18n/en-US/**/*
     translation: /i18n/%locale%/**/%original_file_name%
-  # Markdown 文档文件 
-  - source: /docs/**/*
+
+  - source: /docs/**/*.md
+    translation: /i18n/%locale%/docusaurus-plugin-content-docs/current/**/%original_file_name%
+
+  - source: /docs/**/*.mdx
+    translation: /i18n/%locale%/docusaurus-plugin-content-docs/current/**/%original_file_name%
+
+  - source: /docs/**/_category_.json
     translation: /i18n/%locale%/docusaurus-plugin-content-docs/current/**/%original_file_name%

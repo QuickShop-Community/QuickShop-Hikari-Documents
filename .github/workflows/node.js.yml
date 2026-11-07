@@ -25,7 +25,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Sync with Crowdin
-        run: npm run crowdin:sync
+        run: |
+          npx docusaurus write-translations
+          npx crowdin upload sources --verbose
+          npx crowdin download --verbose
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN_UPDATED }}
       - name: Build website
